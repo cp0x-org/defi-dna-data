@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:48:28.692Z",
+  "generatedAt": "2026-09-21T21:07:25.699Z",
   "protocolId": "yearn",
   "metrics": {
     "incidents": {
@@ -37,27 +37,27 @@
           }
         ]
       },
-      "fetchedAt": "2026-09-21T10:48:28.692Z"
+      "fetchedAt": "2026-09-21T21:07:25.699Z"
     },
     "tvl": {
-      "value": 177996265.3881287,
+      "value": 179463287.13914073,
       "url": "https://defillama.com/protocol/yearn-finance",
       "extra": {
         "components": [
           {
             "id": "113",
             "name": "Yearn Finance",
-            "tvl": 177996265.3881287
+            "tvl": 179463287.13914073
           }
         ]
       },
-      "fetchedAt": "2026-09-21T10:48:28.692Z"
+      "fetchedAt": "2026-09-21T21:07:25.699Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-09-21T10:48:28.692Z",
+      "fetchedAt": "2026-09-21T21:07:25.699Z",
       "note": "DeFiScan has no data for Yearn."
     },
     "philidor": {
@@ -65,14 +65,14 @@
       "summary": "Philidor scores individual vaults rather than protocols. It rates 77 live Ethereum vault(s) of yearn (every version it files).",
       "details": [
         {
-          "name": "USDC-1 yVault",
-          "value": "Prime 8.64",
-          "description": "Version v3 · TVL $20.9M · Scored 2026-09-21"
-        },
-        {
           "name": "WETH-1 yVault",
           "value": "Prime 8.34",
-          "description": "Version v3 · TVL $19.5M · Scored 2026-09-21"
+          "description": "Version v3 · TVL $20.3M · Scored 2026-09-21"
+        },
+        {
+          "name": "USDC-1 yVault",
+          "value": "Prime 8.64",
+          "description": "Version v3 · TVL $19.7M · Scored 2026-09-21"
         },
         {
           "name": "Curve DOLA-sUSDe Factory yVault",
@@ -87,12 +87,7 @@
         {
           "name": "WETH yVault",
           "value": "Prime 8.62",
-          "description": "Version v2 · TVL $10.2M · Scored 2026-09-21"
-        },
-        {
-          "name": "Spark USDS Compounder",
-          "value": "Core 7.90",
-          "description": "Version v3 · TVL $9.3M · Scored 2026-09-21"
+          "description": "Version v2 · TVL $10.4M · Scored 2026-09-21"
         },
         {
           "name": "USDS-1 yVault",
@@ -102,7 +97,7 @@
         {
           "name": "Staked Yearn CRV Vault",
           "value": "Core 7.90",
-          "description": "Version v2 · TVL $7.9M · Scored 2026-09-21"
+          "description": "Version v2 · TVL $8.4M · Scored 2026-09-21"
         },
         {
           "name": "Morpho Yearn OG USDC Compounder",
@@ -113,6 +108,11 @@
           "name": "DAI-1 yVault",
           "value": "Prime 8.53",
           "description": "Version v3 · TVL $7.4M · Scored 2026-09-21"
+        },
+        {
+          "name": "Yearn yETH Recovery Vault",
+          "value": "Prime 8.34",
+          "description": "Version v3 · TVL $6.8M · Scored 2026-09-21"
         }
       ],
       "updatedAt": "2026-09-21",
@@ -127,24 +127,24 @@
         "vaultsRated": 77,
         "vaults": [
           {
-            "name": "USDC-1 yVault",
-            "version": "v3",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.64,
-            "tvlUsd": 20890619.91542473,
-            "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xbe53a109b494e5c9f97b9cd39fe969be68bf6204"
-          },
-          {
             "name": "WETH-1 yVault",
             "version": "v3",
             "curator": null,
             "tier": "Prime",
             "score": 8.34,
-            "tvlUsd": 19490625.87905569,
+            "tvlUsd": 20312314.46314811,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0"
+          },
+          {
+            "name": "USDC-1 yVault",
+            "version": "v3",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.64,
+            "tvlUsd": 19668804.81220169,
+            "scoredAt": "2026-09-21",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xbe53a109b494e5c9f97b9cd39fe969be68bf6204"
           },
           {
             "name": "Curve DOLA-sUSDe Factory yVault",
@@ -152,7 +152,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 11872929.041844636,
+            "tvlUsd": 11875662.948310161,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x1fc80cfcf5b345b904a0fb36d4222196ed9eb8a5"
           },
@@ -162,7 +162,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.48,
-            "tvlUsd": 11190439.97123008,
+            "tvlUsd": 11214984.556600811,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x696d02db93291651ed510704c9b286841d506987"
           },
@@ -172,19 +172,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.62,
-            "tvlUsd": 10224822.399549084,
+            "tvlUsd": 10412873.233960206,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa258c4606ca8206d8aa700ce2143d7db854d168c"
-          },
-          {
-            "name": "Spark USDS Compounder",
-            "version": "v3",
-            "curator": null,
-            "tier": "Core",
-            "score": 7.9,
-            "tvlUsd": 9261522.894519044,
-            "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xc9f01b5c6048b064e6d925d1c2d7206d4feef8a3"
           },
           {
             "name": "USDS-1 yVault",
@@ -192,7 +182,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 9256852.798885316,
+            "tvlUsd": 9250897.758006962,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x182863131f9a4630ff9e27830d945b1413e347e8"
           },
@@ -202,7 +192,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 7878374.900818831,
+            "tvlUsd": 8358526.741314625,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x27b5739e22ad9033bcbf192059122d163b60349d"
           },
@@ -212,7 +202,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.84,
-            "tvlUsd": 7562244.156483256,
+            "tvlUsd": 7562821.172491652,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0e297de4005883c757c9f09fdf7cf1363c20e626"
           },
@@ -222,7 +212,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.53,
-            "tvlUsd": 7367778.717399626,
+            "tvlUsd": 7369878.473029233,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x028ec7330ff87667b6dfb0d94b954c820195336c"
           },
@@ -232,7 +222,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.34,
-            "tvlUsd": 6651641.912356919,
+            "tvlUsd": 6773976.243746174,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd7a540ba3626c0aa66e7db4088971d0cd64695b6"
           },
@@ -242,7 +232,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 6462376.732650114,
+            "tvlUsd": 6556827.58653846,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9f4330700a36b29952869fac9b33f45eedd8a3d8"
           },
@@ -252,7 +242,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 6386629.548290712,
+            "tvlUsd": 6481053.825308936,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x23346b04a7f55b8760e5860aa5a77383d63491cd"
           },
@@ -262,7 +252,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 6187880.772181915,
+            "tvlUsd": 6288393.401636357,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5b8c556b8b2a78696f0b9b830b3d67623122e270"
           },
@@ -272,7 +262,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.26,
-            "tvlUsd": 5737759.992160119,
+            "tvlUsd": 5738349.824216503,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x310b7ea7475a0b449cfd73be81522f1b88efafaa"
           },
@@ -282,7 +272,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.92,
-            "tvlUsd": 4992980.219725165,
+            "tvlUsd": 4993343.343186488,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa354f35829ae975e850e23e9615b11da1b3dc4de"
           },
@@ -292,7 +282,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.54,
-            "tvlUsd": 4491323.223661186,
+            "tvlUsd": 4491784.924118597,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3b27f92c0e212c671ea351827edf93db27cc0c65"
           },
@@ -302,19 +292,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.54,
-            "tvlUsd": 4417611.891826205,
+            "tvlUsd": 4418066.014882942,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x7da96a3891add058ada2e826306d812c638d87a7"
-          },
-          {
-            "name": "Curve stETH Pool yVault",
-            "version": "v2",
-            "curator": null,
-            "tier": "Core",
-            "score": 7.9,
-            "tvlUsd": 4035522.005082705,
-            "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xdcd90c7f6324cfa40d7169ef80b12031770b4325"
           },
           {
             "name": "WBTC-1 yVault",
@@ -322,7 +302,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.48,
-            "tvlUsd": 4016491.8500144593,
+            "tvlUsd": 4117383.128099855,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x751f0cc6115410a3ee9ec92d08f46ff6da98b708"
           },
@@ -332,9 +312,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.55,
-            "tvlUsd": 4012484.649121789,
+            "tvlUsd": 4113275.2693110146,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa696a63cc78dffa1a63e9e50587c197387ff6c7e"
+          },
+          {
+            "name": "Curve stETH Pool yVault",
+            "version": "v2",
+            "curator": null,
+            "tier": "Core",
+            "score": 7.9,
+            "tvlUsd": 4101072.8685989548,
+            "scoredAt": "2026-09-21",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xdcd90c7f6324cfa40d7169ef80b12031770b4325"
           },
           {
             "name": "Locked yvUSD",
@@ -342,7 +332,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.83,
-            "tvlUsd": 3985206.7022665925,
+            "tvlUsd": 3995606.3794590514,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xaaafea48472f77563961cdb53291dedfb46f9040"
           },
@@ -352,7 +342,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.81,
-            "tvlUsd": 3298254.6899167555,
+            "tvlUsd": 3299194.6650596946,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xda816459f1ab5631232fe5e97a05bbbb94970c95"
           },
@@ -362,7 +352,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.34,
-            "tvlUsd": 3172485.309752113,
+            "tvlUsd": 3254981.2370527172,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xac37729b76db6438ce62042ae1270ee574ca7571"
           },
@@ -382,7 +372,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.84,
-            "tvlUsd": 2390854.640157682,
+            "tvlUsd": 2391040.86803169,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x074134a2784f4f66b6ced6f68849382990ff3215"
           },
@@ -392,9 +382,19 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 2131576.9625343955,
+            "tvlUsd": 2131251.0290716165,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x7c439df9ade8831180ea4d546c1e910d4ba71a86"
+          },
+          {
+            "name": "Spark USDS Compounder",
+            "version": "v3",
+            "curator": null,
+            "tier": "Core",
+            "score": 7.9,
+            "tvlUsd": 1849977.5309391709,
+            "scoredAt": "2026-09-21",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xc9f01b5c6048b064e6d925d1c2d7206d4feef8a3"
           },
           {
             "name": "USDC yVault",
@@ -402,7 +402,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.92,
-            "tvlUsd": 1657571.6421291842,
+            "tvlUsd": 1657700.7533004552,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5f18c75abdae578b483e5f43f12a39cf75b973a9"
           },
@@ -412,7 +412,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 1480698.2379612136,
+            "tvlUsd": 1480754.5756068847,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xf165a634296800812b8b0607a75deddcd4d3cc88"
           },
@@ -422,7 +422,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 1369799.5204597053,
+            "tvlUsd": 1369892.1767318274,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x342d24f2a3233f7ac8a7347fa239187bfd186066"
           },
@@ -432,7 +432,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.09,
-            "tvlUsd": 1321731.630738759,
+            "tvlUsd": 1324350.4719798083,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbf319ddc2edc1eb6fdf9910e39b37be221c8805f"
           },
@@ -442,7 +442,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.58,
-            "tvlUsd": 1286688.806824212,
+            "tvlUsd": 1317357.1506421939,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6e9455d109202b426169f0d8f01a3332dae160f3"
           },
@@ -452,7 +452,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.64,
-            "tvlUsd": 1114051.458269985,
+            "tvlUsd": 1114138.233697953,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x863687e4e9751b57f38b4b0eba04744c72d0f7b8"
           },
@@ -462,7 +462,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.81,
-            "tvlUsd": 899471.2444195987,
+            "tvlUsd": 899727.5862400555,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x19d3364a399d251e894ac732651be8b0e4e85001"
           },
@@ -472,19 +472,9 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 697919.1469207709,
+            "tvlUsd": 706600.932084818,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xaa379c2aa72529d5ec0da8a41e2f41ed7fe4b48c"
-          },
-          {
-            "name": "Curve msETH Factory yVault",
-            "version": "v2",
-            "curator": null,
-            "tier": "Edge",
-            "score": 4.9,
-            "tvlUsd": 588167.1940846007,
-            "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xad2f9a55518dba12e8ab069502820923351667c5"
           },
           {
             "name": "WETH yVault",
@@ -492,9 +482,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.62,
-            "tvlUsd": 587590.7864799681,
+            "tvlUsd": 598397.5206580324,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa9fe4601811213c340e850ea305481aff02f5b28"
+          },
+          {
+            "name": "Curve msETH Factory yVault",
+            "version": "v2",
+            "curator": null,
+            "tier": "Edge",
+            "score": 4.9,
+            "tvlUsd": 591045.6040661721,
+            "scoredAt": "2026-09-21",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xad2f9a55518dba12e8ab069502820923351667c5"
           },
           {
             "name": "Curve Iron Bank Pool yVault",
@@ -502,7 +502,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 484943.02083984157,
+            "tvlUsd": 484995.6401900973,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x27b7b1ad7288079a66d12350c828d3c00a6f07d7"
           },
@@ -512,7 +512,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.67,
-            "tvlUsd": 465321.8281045765,
+            "tvlUsd": 465358.0728403801,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xae7d8db82480e6d8e3873ecbf22cf17b3d8a7308"
           },
@@ -522,7 +522,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 428119.4977484292,
+            "tvlUsd": 427475.79155056865,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x25212df29073fffa7a67399acefc2dd75a831a1a"
           },
@@ -532,7 +532,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.45,
-            "tvlUsd": 397326.73877609434,
+            "tvlUsd": 398061.90867896617,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x09ace8b2f2fe2189a5b37046bbafa29dce31c920"
           },
@@ -542,7 +542,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 330244.8380068853,
+            "tvlUsd": 332844.7435495015,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdb25ca703181e7484a155dd612b06f57e12be5f0"
           },
@@ -552,7 +552,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 317828.6529237877,
+            "tvlUsd": 317730.4952973991,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6"
           },
@@ -562,7 +562,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.73,
-            "tvlUsd": 298875.7709103581,
+            "tvlUsd": 298960.94801822107,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x92545bce636e6ee91d88d2d017182cd0bd2fc22e"
           },
@@ -572,7 +572,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 291612.94352172635,
+            "tvlUsd": 295247.13281764655,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x8078198fc424986ae89ce4a910fc109587b6abf3"
           },
@@ -592,7 +592,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 271303.4856521392,
+            "tvlUsd": 271219.6967742719,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xad86df2e8f989c828b25a7da5eb1ec363283fa3f"
           },
@@ -602,7 +602,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 261173.85497335205,
+            "tvlUsd": 261199.7919269405,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb53b70cb960feeaf2093df3c733e368f6d254898"
           },
@@ -612,7 +612,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.83,
-            "tvlUsd": 247106.54989338346,
+            "tvlUsd": 250237.90879157535,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x75a291f0232add37d72dd1dcff55b715755ecdee"
           },
@@ -622,19 +622,9 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 244603.1401374081,
+            "tvlUsd": 247352.07809907527,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x790a60024bc3aea28385b60480f15a0771f26d09"
-          },
-          {
-            "name": "yYB yVault",
-            "version": "v3",
-            "curator": null,
-            "tier": "Edge",
-            "score": 4.9,
-            "tvlUsd": 230025.38240394372,
-            "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x1f6f16945e395593d8050d6cc33e4328a515b648"
           },
           {
             "name": "Curve iREET-pmUSD Factory yVault",
@@ -642,19 +632,19 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 214839.8908889759,
+            "tvlUsd": 241379.55056641813,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x668c5ef17f2f01503fbb4f285f32161251047720"
           },
           {
-            "name": "Curve frxUSD-crvUSD Factory yVault",
-            "version": "v2",
+            "name": "yYB yVault",
+            "version": "v3",
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 192899.32709692742,
+            "tvlUsd": 229443.25124619142,
             "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x4282b8f159ee677559dc6a20cd478dd0bde75ff2"
+            "url": "https://analytics.philidor.io/vault/ethereum/0x1f6f16945e395593d8050d6cc33e4328a515b648"
           },
           {
             "name": "Curve 3Crypto Pool yVault",
@@ -662,9 +652,19 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 190815.29179912424,
+            "tvlUsd": 193193.30315410582,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe537b5cc158eb71037d4125bdd7538421981e6aa"
+          },
+          {
+            "name": "Curve frxUSD-crvUSD Factory yVault",
+            "version": "v2",
+            "curator": null,
+            "tier": "Edge",
+            "score": 4.9,
+            "tvlUsd": 193016.44305336443,
+            "scoredAt": "2026-09-21",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x4282b8f159ee677559dc6a20cd478dd0bde75ff2"
           },
           {
             "name": "Lido stETH LP (25 DEC 2025)",
@@ -672,7 +672,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 189531.41339848712,
+            "tvlUsd": 191965.88013144117,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x564f7b5d8389f5c4c99e50fed5fc95070e697903"
           },
@@ -682,7 +682,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 186841.4826993228,
+            "tvlUsd": 189506.68480265702,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x04c8bfe2eb09a1e2e9fa97a2fd970e06d87b43de"
           },
@@ -692,7 +692,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 182035.0522535769,
+            "tvlUsd": 181331.56836879475,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe0287ca62fe23f4ffab827d5448d68afe6dd9fd7"
           },
@@ -702,7 +702,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 180308.2638853545,
+            "tvlUsd": 180362.49362288078,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb83461b887398cd981957bd93cb7067cf89c21c0"
           },
@@ -712,7 +712,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.54,
-            "tvlUsd": 171159.84937124178,
+            "tvlUsd": 174307.75270239045,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xeeb6be70ff212238419cd638fab17910cf61cbe7"
           },
@@ -722,7 +722,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 161442.77149455942,
+            "tvlUsd": 162970.03982544044,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x1635b506a88fbf428465ad65d00e8d6b6e5846c3"
           },
@@ -732,7 +732,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 157895.90051282564,
+            "tvlUsd": 157895.9005129727,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x84e13785b5a27879921d6f685f041421c7f482da"
           },
@@ -742,7 +742,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 157528.26811676717,
+            "tvlUsd": 157616.83602327656,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x7ca00559b978cfde81297849be6151d3ccb408a9"
           },
@@ -752,19 +752,9 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 146033.5714078492,
+            "tvlUsd": 147127.3725224083,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x671a912c10bba0cfa74cfc2d6fba9ba1ed9530b2"
-          },
-          {
-            "name": "UNI yVault",
-            "version": "v2",
-            "curator": null,
-            "tier": "Core",
-            "score": 7.9,
-            "tvlUsd": 141833.98494210184,
-            "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xfbeb78a723b8087fd2ea7ef1afec93d35e8bed42"
           },
           {
             "name": "Curve FRAX Factory yVault",
@@ -772,7 +762,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 139877.40584647557,
+            "tvlUsd": 139826.3589624528,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb37094c1b5614bd6ece40afb295c26f4377069d3"
           },
@@ -782,9 +772,19 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 139844.29865666572,
+            "tvlUsd": 139793.26385478638,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb4ada607b9d6b2c9ee07a275e9616b84ac560139"
+          },
+          {
+            "name": "UNI yVault",
+            "version": "v2",
+            "curator": null,
+            "tier": "Core",
+            "score": 7.9,
+            "tvlUsd": 138785.9805797127,
+            "scoredAt": "2026-09-21",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xfbeb78a723b8087fd2ea7ef1afec93d35e8bed42"
           },
           {
             "name": "Curve alUSD Factory yVault",
@@ -792,7 +792,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 131422.20960035705,
+            "tvlUsd": 131435.8474330879,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4cbb6a5ec00ceec252a7091559484f7adb83165f"
           },
@@ -802,7 +802,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 131397.87595449036,
+            "tvlUsd": 131411.511262091,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa74d4b67b3368e83797a35382afb776baae4f5c8"
           },
@@ -812,7 +812,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 131232.3339177449,
+            "tvlUsd": 131255.56108372103,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x8f49c410ac9d05aa7260ef0951b3f328e80d1f3d"
           },
@@ -822,7 +822,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 123069.688459673,
+            "tvlUsd": 123136.01434735073,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x241add131b9aaa7527132b752252b99420937adc"
           },
@@ -832,9 +832,19 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 118644.13514234312,
+            "tvlUsd": 118070.9768348818,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdb26d8815eda864dfa43306766f2f8ca50c03f9e"
+          },
+          {
+            "name": "Curve LINK Pool yVault",
+            "version": "v2",
+            "curator": null,
+            "tier": "Edge",
+            "score": 4.9,
+            "tvlUsd": 117337.64707301071,
+            "scoredAt": "2026-09-21",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xf2db9a7c0acd427a680d640f02d90f6186e71725"
           },
           {
             "name": "Curve reusdsfrx Factory yVault",
@@ -842,7 +852,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 117210.05097912104,
+            "tvlUsd": 117189.78163251258,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd2433ec6de2a932ab7bc1a0080676333aef8b546"
           },
@@ -852,19 +862,9 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 114156.32694872023,
+            "tvlUsd": 116890.57848784895,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc97232527b62efb0d8ed38cf3ea103a6cca4037e"
-          },
-          {
-            "name": "Curve LINK Pool yVault",
-            "version": "v2",
-            "curator": null,
-            "tier": "Edge",
-            "score": 4.9,
-            "tvlUsd": 113603.73158441752,
-            "scoredAt": "2026-09-21",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xf2db9a7c0acd427a680d640f02d90f6186e71725"
           },
           {
             "name": "Morpho Gauntlet USDC Prime Compounder",
@@ -872,7 +872,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.84,
-            "tvlUsd": 109137.73873566084,
+            "tvlUsd": 109146.23966613038,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x694e47afd14a64661a04eee674fb331bcdef3737"
           },
@@ -882,7 +882,7 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 107524.18283099437,
+            "tvlUsd": 108370.68423460374,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe14d13d8b3b85af791b2aadd661cdbd5e6097db1"
           },
@@ -892,18 +892,18 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 100160.67284223305,
+            "tvlUsd": 100165.50629036373,
             "scoredAt": "2026-09-21",
             "url": "https://analytics.philidor.io/vault/ethereum/0x192725c6516656f3e288c08db8228c25fe1f77d5"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-09-21T10:48:28.692Z"
+      "fetchedAt": "2026-09-21T21:07:25.699Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-09-21T10:48:28.692Z",
+      "fetchedAt": "2026-09-21T21:07:25.699Z",
       "note": "Risklayer has no data for Yearn."
     }
   }
