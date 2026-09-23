@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T20:13:29.006Z",
+  "generatedAt": "2026-09-23T10:03:44.000Z",
   "protocolId": "compound-v3",
   "metrics": {
     "incidents": {
@@ -9,21 +9,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-09-22T20:13:29.006Z"
+      "fetchedAt": "2026-09-23T10:03:44.000Z"
     },
     "tvl": {
-      "value": 1414446391.1234715,
+      "value": 1414717745.2981875,
       "url": "https://defillama.com/protocol/compound-v3",
       "extra": {
         "components": [
           {
             "id": "2088",
             "name": "Compound V3",
-            "tvl": 1414446391.1234715
+            "tvl": 1414717745.2981875
           }
         ]
       },
-      "fetchedAt": "2026-09-22T20:13:29.006Z"
+      "fetchedAt": "2026-09-23T10:03:44.000Z"
     }
   },
   "feeds": {
@@ -72,7 +72,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-09-22T20:13:29.006Z"
+      "fetchedAt": "2026-09-23T10:03:44.000Z"
     },
     "philidor": {
       "value": "5 vaults rated",
@@ -81,30 +81,30 @@
         {
           "name": "Compound V3 USDC",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $374.5M · Scored 2026-09-22"
+          "description": "Version v3 · TVL $376.2M · Scored 2026-09-23"
         },
         {
           "name": "Compound V3 USDT",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $170.4M · Scored 2026-09-22"
+          "description": "Version v3 · TVL $170.4M · Scored 2026-09-23"
         },
         {
           "name": "Compound V3 WETH",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $138.6M · Scored 2026-09-22"
+          "description": "Version v3 · TVL $137.2M · Scored 2026-09-23"
         },
         {
           "name": "Compound V3 WBTC",
           "value": "Prime 8.93",
-          "description": "Version v3 · TVL $2.5M · Scored 2026-09-22"
+          "description": "Version v3 · TVL $2.5M · Scored 2026-09-23"
         },
         {
           "name": "Compound V3 USDS",
-          "value": "Core 7.91",
-          "description": "Version v3 · TVL $1.9M · Scored 2026-09-22"
+          "value": "Core 7.90",
+          "description": "Version v3 · TVL $1.8M · Scored 2026-09-23"
         }
       ],
-      "updatedAt": "2026-09-22",
+      "updatedAt": "2026-09-23",
       "url": "https://analytics.philidor.io/protocols/compound",
       "note": "Counted: 5 of the 5 live vault(s) Philidor lists for compound under version v3. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
@@ -123,8 +123,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 374542291.24336183,
-            "scoredAt": "2026-09-22",
+            "tvlUsd": 376196037.16490203,
+            "scoredAt": "2026-09-23",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc3d688b66703497daa19211eedff47f25384cdc3"
           },
           {
@@ -133,8 +133,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 170361561.17352024,
-            "scoredAt": "2026-09-22",
+            "tvlUsd": 170380791.01872742,
+            "scoredAt": "2026-09-23",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3afdc9bca9213a35503b077a6072f3d0d5ab0840"
           },
           {
@@ -143,8 +143,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 138599872.088563,
-            "scoredAt": "2026-09-22",
+            "tvlUsd": 137239472.0348858,
+            "scoredAt": "2026-09-23",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa17581a9e3356d9a858b789d68b4d866e593ae94"
           },
           {
@@ -153,8 +153,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.93,
-            "tvlUsd": 2513332.7031971607,
-            "scoredAt": "2026-09-22",
+            "tvlUsd": 2490094.220087509,
+            "scoredAt": "2026-09-23",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe85dc543813b8c2cfeaac371517b925a166a9293"
           },
           {
@@ -162,19 +162,19 @@
             "version": "v3",
             "curator": null,
             "tier": "Core",
-            "score": 7.91,
-            "tvlUsd": 1863005.5478772374,
-            "scoredAt": "2026-09-22",
+            "score": 7.9,
+            "tvlUsd": 1777930.457161132,
+            "scoredAt": "2026-09-23",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5d409e56d886231adaf00c8775665ad0f9897b56"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-09-22T20:13:29.006Z"
+      "fetchedAt": "2026-09-23T10:03:44.000Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-09-22T20:13:29.006Z",
+      "fetchedAt": "2026-09-23T10:03:44.000Z",
       "note": "Risklayer has no data for Compound v3."
     }
   }
