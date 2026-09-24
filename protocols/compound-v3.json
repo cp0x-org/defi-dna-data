@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:07:14.953Z",
+  "generatedAt": "2026-09-24T20:32:06.375Z",
   "protocolId": "compound-v3",
   "metrics": {
     "incidents": {
@@ -9,21 +9,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-09-24T10:07:14.953Z"
+      "fetchedAt": "2026-09-24T20:32:06.375Z"
     },
     "tvl": {
-      "value": 1390798171.0419395,
+      "value": 1385970084.8467581,
       "url": "https://defillama.com/protocol/compound-v3",
       "extra": {
         "components": [
           {
             "id": "2088",
             "name": "Compound V3",
-            "tvl": 1390798171.0419395
+            "tvl": 1385970084.8467581
           }
         ]
       },
-      "fetchedAt": "2026-09-24T10:07:14.953Z"
+      "fetchedAt": "2026-09-24T20:32:06.375Z"
     }
   },
   "feeds": {
@@ -72,7 +72,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-09-24T10:07:14.953Z"
+      "fetchedAt": "2026-09-24T20:32:06.375Z"
     },
     "philidor": {
       "value": "5 vaults rated",
@@ -81,7 +81,7 @@
         {
           "name": "Compound V3 USDC",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $381.4M · Scored 2026-09-24"
+          "description": "Version v3 · TVL $379.9M · Scored 2026-09-24"
         },
         {
           "name": "Compound V3 USDT",
@@ -91,16 +91,16 @@
         {
           "name": "Compound V3 WETH",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $134.0M · Scored 2026-09-24"
+          "description": "Version v3 · TVL $135.0M · Scored 2026-09-24"
         },
         {
           "name": "Compound V3 WBTC",
-          "value": "Prime 8.93",
+          "value": "Prime 8.89",
           "description": "Version v3 · TVL $2.4M · Scored 2026-09-24"
         },
         {
           "name": "Compound V3 USDS",
-          "value": "Core 7.94",
+          "value": "Core 7.96",
           "description": "Version v3 · TVL $1.8M · Scored 2026-09-24"
         }
       ],
@@ -123,7 +123,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 381447661.4590134,
+            "tvlUsd": 379940706.82852674,
             "scoredAt": "2026-09-24",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc3d688b66703497daa19211eedff47f25384cdc3"
           },
@@ -133,7 +133,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 169619536.54664966,
+            "tvlUsd": 169625946.49027216,
             "scoredAt": "2026-09-24",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3afdc9bca9213a35503b077a6072f3d0d5ab0840"
           },
@@ -143,7 +143,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 133987613.52795097,
+            "tvlUsd": 134971867.35300943,
             "scoredAt": "2026-09-24",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa17581a9e3356d9a858b789d68b4d866e593ae94"
           },
@@ -152,8 +152,8 @@
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.93,
-            "tvlUsd": 2429646.808335506,
+            "score": 8.89,
+            "tvlUsd": 2447714.0525235995,
             "scoredAt": "2026-09-24",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe85dc543813b8c2cfeaac371517b925a166a9293"
           },
@@ -162,19 +162,19 @@
             "version": "v3",
             "curator": null,
             "tier": "Core",
-            "score": 7.94,
-            "tvlUsd": 1798145.8732407195,
+            "score": 7.96,
+            "tvlUsd": 1798248.9948382413,
             "scoredAt": "2026-09-24",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5d409e56d886231adaf00c8775665ad0f9897b56"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-09-24T10:07:14.953Z"
+      "fetchedAt": "2026-09-24T20:32:06.375Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-09-24T10:07:14.953Z",
+      "fetchedAt": "2026-09-24T20:32:06.375Z",
       "note": "Risklayer has no data for Compound v3."
     }
   }
