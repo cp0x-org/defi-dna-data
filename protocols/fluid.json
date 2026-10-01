@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T19:00:10.943Z",
+  "generatedAt": "2026-10-01T19:11:30.127Z",
   "protocolId": "fluid",
   "metrics": {
     "incidents": {
@@ -19,7 +19,7 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     },
     "tvl": {
       "value": 714686684.3908286,
@@ -38,29 +38,86 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "fetchedAt": "2026-10-01T19:11:30.127Z",
       "note": "DeFiScan has no data for Fluid."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "fetchedAt": "2026-10-01T19:11:30.127Z",
       "note": "Philidor Analytics has no data for Fluid."
+    },
+    "pigi": {
+      "value": "3 vaults rated",
+      "summary": "pigi.finance rates individual vaults rather than protocols. It rates 3 of the 7 Ethereum vault(s) it files under Fluid (InstaDapp), Fluid Lite.",
+      "details": [
+        {
+          "name": "Instadapp ETH v2",
+          "value": "C · 55/100",
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $193.5M (30-day average) · Rated 2026-10-01"
+        },
+        {
+          "name": "Fluid Lite - USD Vault",
+          "value": "F · 25/100",
+          "description": "Filed under Fluid Lite · Unknown Pool Type · TVL $43.5M (30-day average) · Rated 2026-10-01"
+        },
+        {
+          "name": "Fluid (InstaDapp) - GHO Lending",
+          "value": "C · 65/100",
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $24.1M (30-day average) · Rated 2026-10-01"
+        }
+      ],
+      "updatedAt": "2026-10-01",
+      "url": "https://app.pigi.finance/vaults",
+      "note": "Counted: 3 rated of the 7 Ethereum vault(s) pigi lists under Fluid (InstaDapp), Fluid Lite. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
+      "extra": {
+        "vaultsListed": 7,
+        "vaultsRated": 3,
+        "vaults": [
+          {
+            "name": "Instadapp ETH v2",
+            "version": "Fluid (InstaDapp)",
+            "curator": null,
+            "tier": "C",
+            "score": 55,
+            "tvlUsd": 193530768.71,
+            "scoredAt": "2026-10-01",
+            "url": "https://app.pigi.finance/vault/9"
+          },
+          {
+            "name": "Fluid Lite - USD Vault",
+            "version": "Fluid Lite",
+            "curator": null,
+            "tier": "F",
+            "score": 25,
+            "tvlUsd": 43484141.06,
+            "scoredAt": "2026-10-01",
+            "url": "https://app.pigi.finance/vault/58"
+          },
+          {
+            "name": "Fluid (InstaDapp) - GHO Lending",
+            "version": "Fluid (InstaDapp)",
+            "curator": null,
+            "tier": "C",
+            "score": 65,
+            "tvlUsd": 24092459.27,
+            "scoredAt": "2026-10-01",
+            "url": "https://app.pigi.finance/vault/7"
+          }
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "fetchedAt": "2026-10-01T19:11:30.127Z",
       "note": "Risklayer has no data for Fluid."
-    },
-    "pigi": {
-      "status": "error",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
-      "note": "pigi vault listing unavailable"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T19:00:10.943Z",
+  "generatedAt": "2026-10-01T19:11:30.127Z",
   "protocolId": "lido",
   "metrics": {
     "incidents": {
@@ -9,7 +9,7 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     },
     "tvl": {
       "value": 26476716805.6546,
@@ -23,7 +23,7 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     }
   },
   "feeds": {
@@ -72,12 +72,44 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "fetchedAt": "2026-10-01T19:11:30.127Z",
       "note": "Philidor Analytics has no data for Lido."
+    },
+    "pigi": {
+      "value": "1 vaults rated",
+      "summary": "pigi.finance rates individual vaults rather than protocols. It rates 1 of the 1 Ethereum vault(s) it files under Lido.",
+      "details": [
+        {
+          "name": "Lido - stETH",
+          "value": "A · 86.11/100",
+          "description": "Filed under Lido · LST · TVL $24.89B (30-day average) · Rated 2026-10-01"
+        }
+      ],
+      "updatedAt": "2026-10-01",
+      "url": "https://app.pigi.finance/vaults",
+      "note": "Counted: 1 rated of the 1 Ethereum vault(s) pigi lists under Lido. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
+      "extra": {
+        "vaultsListed": 1,
+        "vaultsRated": 1,
+        "vaults": [
+          {
+            "name": "Lido - stETH",
+            "version": "Lido",
+            "curator": null,
+            "tier": "A",
+            "score": 86.11,
+            "tvlUsd": 24885984567.15,
+            "scoredAt": "2026-10-01",
+            "url": "https://app.pigi.finance/vault/13"
+          }
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
@@ -193,12 +225,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
-    },
-    "pigi": {
-      "status": "error",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
-      "note": "pigi vault listing unavailable"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T19:00:10.943Z",
+  "generatedAt": "2026-10-01T19:11:30.127Z",
   "protocolId": "yearn",
   "metrics": {
     "incidents": {
@@ -37,7 +37,7 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     },
     "tvl": {
       "value": 183315813.08670658,
@@ -51,13 +51,13 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "fetchedAt": "2026-10-01T19:11:30.127Z",
       "note": "DeFiScan has no data for Yearn."
     },
     "philidor": {
@@ -81,7 +81,7 @@
         },
         {
           "name": "USD yVault",
-          "value": "Prime 8.48",
+          "value": "Prime 8.45",
           "description": "Version v3 · TVL $12.0M · Scored 2026-10-01"
         },
         {
@@ -101,7 +101,7 @@
         },
         {
           "name": "Morpho Yearn OG USDC Compounder",
-          "value": "Prime 8.85",
+          "value": "Prime 8.81",
           "description": "Version v3 · TVL $7.6M · Scored 2026-10-01"
         },
         {
@@ -161,7 +161,7 @@
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.48,
+            "score": 8.45,
             "tvlUsd": 11953713.401193537,
             "scoredAt": "2026-10-01",
             "url": "https://analytics.philidor.io/vault/ethereum/0x696d02db93291651ed510704c9b286841d506987"
@@ -201,7 +201,7 @@
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.85,
+            "score": 8.81,
             "tvlUsd": 7585138.268354155,
             "scoredAt": "2026-10-01",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0e297de4005883c757c9f09fdf7cf1363c20e626"
@@ -879,17 +879,18 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-01T19:00:10.943Z"
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
+    },
+    "pigi": {
+      "url": "https://app.pigi.finance/vaults",
+      "note": "pigi lists 46 Ethereum vault(s) under Yearn, Yearn v3 and has published a rating for none of them.",
+      "status": "none",
+      "fetchedAt": "2026-10-01T19:11:30.127Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "fetchedAt": "2026-10-01T19:11:30.127Z",
       "note": "Risklayer has no data for Yearn."
-    },
-    "pigi": {
-      "status": "error",
-      "fetchedAt": "2026-10-01T19:00:10.943Z",
-      "note": "pigi vault listing unavailable"
     }
   }
 }
