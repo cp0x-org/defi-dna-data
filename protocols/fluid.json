@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:39:49.237Z",
+  "generatedAt": "2026-10-01T19:00:10.943Z",
   "protocolId": "fluid",
   "metrics": {
     "incidents": {
@@ -19,43 +19,48 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     },
     "tvl": {
-      "value": 718520754.5940158,
+      "value": 714686684.3908286,
       "url": "https://defillama.com/protocol/fluid-lending",
       "extra": {
         "components": [
           {
             "id": "4167",
             "name": "Fluid Lending",
-            "tvl": 498093810.63752043
+            "tvl": 493498436.0010539
           },
           {
             "id": "5317",
             "name": "Fluid DEX",
-            "tvl": 220426943.95649537
+            "tvl": 221188248.38977474
           }
         ]
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "DeFiScan has no data for Fluid."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "Philidor Analytics has no data for Fluid."
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "Risklayer has no data for Fluid."
+    },
+    "pigi": {
+      "status": "error",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "note": "pigi vault listing unavailable"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:39:49.237Z",
+  "generatedAt": "2026-10-01T19:00:10.943Z",
   "protocolId": "liquity-v2",
   "metrics": {
     "incidents": {
@@ -9,38 +9,43 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     },
     "tvl": {
-      "value": 107117273.25979888,
+      "value": 107011550.89314659,
       "url": "https://defillama.com/protocol/liquity-v2",
       "extra": {
         "components": [
           {
             "id": "5656",
             "name": "Liquity V2",
-            "tvl": 107117273.25979888
+            "tvl": 107011550.89314659
           }
         ]
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "DeFiScan has no data for Liquity v2."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "Philidor Analytics has no data for Liquity v2."
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "Risklayer has no data for Liquity v2."
+    },
+    "pigi": {
+      "status": "error",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "note": "pigi vault listing unavailable"
     }
   }
 }

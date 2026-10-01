@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:39:49.237Z",
+  "generatedAt": "2026-10-01T19:00:10.943Z",
   "protocolId": "curve",
   "metrics": {
     "incidents": {
@@ -28,26 +28,26 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     },
     "tvl": {
-      "value": 1392874346.526029,
+      "value": 1395213694.1113348,
       "url": "https://defillama.com/protocol/curve-dex",
       "extra": {
         "components": [
           {
             "id": "3",
             "name": "Curve DEX",
-            "tvl": 1236300425.743385
+            "tvl": 1238226025.3991156
           },
           {
             "id": "2994",
             "name": "crvUSD",
-            "tvl": 156573920.782644
+            "tvl": 156987668.71221924
           }
         ]
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     }
   },
   "feeds": {
@@ -95,11 +95,11 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "Philidor Analytics has no data for Curve."
     },
     "risklayer": {
@@ -216,7 +216,12 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
+    },
+    "pigi": {
+      "status": "error",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "note": "pigi vault listing unavailable"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:39:49.237Z",
+  "generatedAt": "2026-10-01T19:00:10.943Z",
   "protocolId": "euler",
   "metrics": {
     "incidents": {
@@ -9,38 +9,43 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     },
     "tvl": {
-      "value": 53575447.991409056,
+      "value": 53628371.88720133,
       "url": "https://defillama.com/protocol/euler-v2",
       "extra": {
         "components": [
           {
             "id": "5044",
             "name": "Euler V2",
-            "tvl": 53575447.991409056
+            "tvl": 53628371.88720133
           }
         ]
       },
-      "fetchedAt": "2026-10-01T11:39:49.237Z"
+      "fetchedAt": "2026-10-01T19:00:10.943Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "DeFiScan has no data for Euler."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "Philidor Analytics has no data for Euler."
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-01T11:39:49.237Z",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
       "note": "Risklayer has no data for Euler."
+    },
+    "pigi": {
+      "status": "error",
+      "fetchedAt": "2026-10-01T19:00:10.943Z",
+      "note": "pigi vault listing unavailable"
     }
   }
 }
