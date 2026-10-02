@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T21:51:04.733Z",
+  "generatedAt": "2026-10-02T11:09:38.216Z",
   "protocolId": "fluid",
   "metrics": {
     "incidents": {
@@ -19,37 +19,37 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-01T21:51:04.733Z"
+      "fetchedAt": "2026-10-02T11:09:38.216Z"
     },
     "tvl": {
-      "value": 716254143.7559214,
+      "value": 723342296.0225128,
       "url": "https://defillama.com/protocol/fluid-lending",
       "extra": {
         "components": [
           {
             "id": "4167",
             "name": "Fluid Lending",
-            "tvl": 495185719.013235
+            "tvl": 499995261.0644212
           },
           {
             "id": "5317",
             "name": "Fluid DEX",
-            "tvl": 221068424.74268642
+            "tvl": 223347034.95809162
           }
         ]
       },
-      "fetchedAt": "2026-10-01T21:51:04.733Z"
+      "fetchedAt": "2026-10-02T11:09:38.216Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-01T21:51:04.733Z",
+      "fetchedAt": "2026-10-02T11:09:38.216Z",
       "note": "DeFiScan has no data for Fluid."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-01T21:51:04.733Z",
+      "fetchedAt": "2026-10-02T11:09:38.216Z",
       "note": "Philidor Analytics has no data for Fluid."
     },
     "pigi": {
@@ -59,20 +59,20 @@
         {
           "name": "Instadapp ETH v2",
           "value": "C · 55/100",
-          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $193.5M (30-day average) · Rated 2026-10-01"
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $194.6M (30-day average) · Rated 2026-10-02"
         },
         {
           "name": "Fluid Lite - USD Vault",
           "value": "F · 25/100",
-          "description": "Filed under Fluid Lite · Unknown Pool Type · TVL $43.5M (30-day average) · Rated 2026-10-01"
+          "description": "Filed under Fluid Lite · Unknown Pool Type · TVL $43.5M (30-day average) · Rated 2026-10-02"
         },
         {
           "name": "Fluid (InstaDapp) - GHO Lending",
           "value": "C · 65/100",
-          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $24.1M (30-day average) · Rated 2026-10-01"
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $24.3M (30-day average) · Rated 2026-10-02"
         }
       ],
-      "updatedAt": "2026-10-01",
+      "updatedAt": "2026-10-02",
       "url": "https://app.pigi.finance/vaults",
       "note": "Counted: 3 rated of the 7 Ethereum vault(s) pigi lists under Fluid (InstaDapp), Fluid Lite. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
@@ -85,8 +85,8 @@
             "curator": null,
             "tier": "C",
             "score": 55,
-            "tvlUsd": 193530768.71,
-            "scoredAt": "2026-10-01",
+            "tvlUsd": 194632368.43,
+            "scoredAt": "2026-10-02",
             "url": "https://app.pigi.finance/vault/9"
           },
           {
@@ -95,8 +95,8 @@
             "curator": null,
             "tier": "F",
             "score": 25,
-            "tvlUsd": 43484141.06,
-            "scoredAt": "2026-10-01",
+            "tvlUsd": 43481314.89,
+            "scoredAt": "2026-10-02",
             "url": "https://app.pigi.finance/vault/58"
           },
           {
@@ -105,18 +105,18 @@
             "curator": null,
             "tier": "C",
             "score": 65,
-            "tvlUsd": 24092459.27,
-            "scoredAt": "2026-10-01",
+            "tvlUsd": 24340849.67,
+            "scoredAt": "2026-10-02",
             "url": "https://app.pigi.finance/vault/7"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-01T21:51:04.733Z"
+      "fetchedAt": "2026-10-02T11:09:38.216Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-01T21:51:04.733Z",
+      "fetchedAt": "2026-10-02T11:09:38.216Z",
       "note": "Risklayer has no data for Fluid."
     }
   }
