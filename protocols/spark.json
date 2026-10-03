@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T21:20:59.533Z",
+  "generatedAt": "2026-10-03T10:28:01.779Z",
   "protocolId": "spark",
   "metrics": {
     "incidents": {
@@ -9,31 +9,31 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-02T21:20:59.533Z"
+      "fetchedAt": "2026-10-03T10:28:01.779Z"
     },
     "tvl": {
-      "value": 9037334645.29164,
+      "value": 8896124333.591656,
       "url": "https://defillama.com/protocol/sparklend",
       "extra": {
         "components": [
           {
             "id": "2929",
             "name": "SparkLend",
-            "tvl": 5635755279.623902
+            "tvl": 5516003632.56551
           },
           {
             "id": "6716",
             "name": "Spark Savings",
-            "tvl": 991084224.832662
+            "tvl": 997617517.4735434
           },
           {
             "id": "5989",
             "name": "Spark Liquidity Layer",
-            "tvl": 2410495140.8350754
+            "tvl": 2382503183.5526037
           }
         ]
       },
-      "fetchedAt": "2026-10-02T21:20:59.533Z"
+      "fetchedAt": "2026-10-03T10:28:01.779Z"
     }
   },
   "feeds": {
@@ -82,7 +82,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-02T21:20:59.533Z"
+      "fetchedAt": "2026-10-03T10:28:01.779Z"
     },
     "philidor": {
       "value": "19 vaults rated",
@@ -91,55 +91,55 @@
         {
           "name": "USDS Savings Vault",
           "value": "Core 7.90",
-          "description": "Version v2 · TVL $4.66B · Scored 2026-10-02"
+          "description": "Version v2 · TVL $4.66B · Scored 2026-10-03"
         },
         {
           "name": "SparkLend wstETH",
-          "value": "Prime 8.73",
-          "description": "Version v1 · TVL $3.59B · Scored 2026-10-02"
+          "value": "Prime 8.72",
+          "description": "Version v1 · TVL $3.64B · Scored 2026-10-03"
         },
         {
           "name": "SparkLend WETH",
-          "value": "Prime 8.88",
-          "description": "Version v1 · TVL $1.61B · Scored 2026-10-02"
+          "value": "Prime 8.87",
+          "description": "Version v1 · TVL $1.63B · Scored 2026-10-03"
         },
         {
           "name": "SparkLend USDS",
-          "value": "Prime 8.45",
-          "description": "Version v1 · TVL $1.40B · Scored 2026-10-02"
-        },
-        {
-          "name": "SparkLend cbBTC",
-          "value": "Prime 8.89",
-          "description": "Version v1 · TVL $483.0M · Scored 2026-10-02"
+          "value": "Prime 8.44",
+          "description": "Version v1 · TVL $1.40B · Scored 2026-10-03"
         },
         {
           "name": "Spark Savings USDT",
           "value": "Prime 8.33",
-          "description": "Version v2 · TVL $447.4M · Scored 2026-10-02"
+          "description": "Version v2 · TVL $447.6M · Scored 2026-10-03"
+        },
+        {
+          "name": "SparkLend cbBTC",
+          "value": "Prime 8.89",
+          "description": "Version v1 · TVL $442.4M · Scored 2026-10-03"
         },
         {
           "name": "SparkLend USDT",
           "value": "Prime 8.12",
-          "description": "Version v1 · TVL $325.9M · Scored 2026-10-02"
+          "description": "Version v1 · TVL $325.1M · Scored 2026-10-03"
         },
         {
           "name": "Spark Savings USDC",
           "value": "Prime 8.72",
-          "description": "Version v2 · TVL $307.9M · Scored 2026-10-02"
+          "description": "Version v2 · TVL $308.3M · Scored 2026-10-03"
         },
         {
           "name": "SparkLend DAI",
           "value": "Prime 8.88",
-          "description": "Version v1 · TVL $262.3M · Scored 2026-10-02"
+          "description": "Version v1 · TVL $262.3M · Scored 2026-10-03"
         },
         {
           "name": "SparkLend LBTC",
           "value": "Core 7.90",
-          "description": "Version v1 · TVL $217.9M · Scored 2026-10-02"
+          "description": "Version v1 · TVL $218.6M · Scored 2026-10-03"
         }
       ],
-      "updatedAt": "2026-10-02",
+      "updatedAt": "2026-10-03",
       "url": "https://analytics.philidor.io/protocols/spark",
       "note": "Counted: 19 of the 19 live vault(s) Philidor lists for spark under every version it files, with 2 shut-down vault(s) left out. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
@@ -156,8 +156,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 4660991820.845114,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 4660185296.8966875,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
           },
           {
@@ -165,9 +165,9 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.73,
-            "tvlUsd": 3589827326.804085,
-            "scoredAt": "2026-10-02",
+            "score": 8.72,
+            "tvlUsd": 3635906545.2416186,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x12b54025c112aa61face2cdb7118740875a566e9"
           },
           {
@@ -175,9 +175,9 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.88,
-            "tvlUsd": 1613624443.2908692,
-            "scoredAt": "2026-10-02",
+            "score": 8.87,
+            "tvlUsd": 1629842209.1452317,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db"
           },
           {
@@ -185,20 +185,10 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.45,
-            "tvlUsd": 1403198590.8029377,
-            "scoredAt": "2026-10-02",
+            "score": 8.44,
+            "tvlUsd": 1402886279.2753496,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
-          },
-          {
-            "name": "SparkLend cbBTC",
-            "version": "v1",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.89,
-            "tvlUsd": 483004380.6455934,
-            "scoredAt": "2026-10-02",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xb3973d459df38ae57797811f2a1fd061da1bc123"
           },
           {
             "name": "Spark Savings USDT",
@@ -206,9 +196,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.33,
-            "tvlUsd": 447435696.074361,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 447557699.895556,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe2e7a17dff93280dec073c995595155283e3c372"
+          },
+          {
+            "name": "SparkLend cbBTC",
+            "version": "v1",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.89,
+            "tvlUsd": 442403016.93552226,
+            "scoredAt": "2026-10-03",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xb3973d459df38ae57797811f2a1fd061da1bc123"
           },
           {
             "name": "SparkLend USDT",
@@ -216,8 +216,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.12,
-            "tvlUsd": 325912234.718064,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 325107983.9637,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe7df13b8e3d6740fe17cbe928c7334243d86c92f"
           },
           {
@@ -226,8 +226,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.72,
-            "tvlUsd": 307946382.155667,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 308255589.347032,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x28b3a8fb53b741a8fd78c0fb9a6b2393d896a43d"
           },
           {
@@ -236,8 +236,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 262285749.28874603,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 262298517.97468984,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b"
           },
           {
@@ -246,8 +246,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 217869241.9574737,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 218646178.99043363,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa9d4ecebd48c282a70cfd3c469d6c8f178a5738e"
           },
           {
@@ -256,8 +256,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.48,
-            "tvlUsd": 179342078.538947,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 178802193.150387,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe"
           },
           {
@@ -266,8 +266,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.84,
-            "tvlUsd": 177401249.0971944,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 177821899.6742022,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4197ba364ae6698015ae5c1468f54087602715b2"
           },
           {
@@ -276,19 +276,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.6,
-            "tvlUsd": 164340783.19184366,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 164355023.04290798,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x83f20f44975d03b1b09e64809b757c47f942beea"
-          },
-          {
-            "name": "SparkLend PYUSD",
-            "version": "v1",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.89,
-            "tvlUsd": 144243510.929276,
-            "scoredAt": "2026-10-02",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x779224df1c756b4edd899854f32a53e8c2b2ce5d"
           },
           {
             "name": "SparkLend weETH",
@@ -296,9 +286,19 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 112765340.55988449,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 113582033.62954433,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
+          },
+          {
+            "name": "SparkLend PYUSD",
+            "version": "v1",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.89,
+            "tvlUsd": 100000204.824608,
+            "scoredAt": "2026-10-03",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x779224df1c756b4edd899854f32a53e8c2b2ce5d"
           },
           {
             "name": "Spark Savings ETH",
@@ -306,8 +306,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.42,
-            "tvlUsd": 56537656.79541413,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 62960850.81715282,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f"
           },
           {
@@ -316,8 +316,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 9.03,
-            "tvlUsd": 41815324.039268,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 41802513.802325,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x377c3bd93f2a2984e1e7be6a5c22c525ed4a4815"
           },
           {
@@ -326,8 +326,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.86,
-            "tvlUsd": 10000433.86548825,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 10000836.133945169,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59275fb72c8004f44ba44432e25082932fd677f1"
           },
           {
@@ -335,15 +335,15 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.46,
-            "tvlUsd": 3310388.1664322764,
-            "scoredAt": "2026-10-02",
+            "score": 8.44,
+            "tvlUsd": 3310562.1909767385,
+            "scoredAt": "2026-10-03",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6715bc100a183cc65502f05845b589c1919ca3d3"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-02T21:20:59.533Z"
+      "fetchedAt": "2026-10-03T10:28:01.779Z"
     },
     "pigi": {
       "value": "6 vaults rated",
@@ -352,35 +352,35 @@
         {
           "name": "SparkLend WETH",
           "value": "A · 89.8/100",
-          "description": "Filed under SparkLend · Lending · TVL $1.44B (30-day average) · Rated 2026-10-02"
+          "description": "Filed under SparkLend · Lending · TVL $1.46B (30-day average) · Rated 2026-10-03"
         },
         {
           "name": "SparkLend USDS",
           "value": "A · 88.2/100",
-          "description": "Filed under SparkLend · Lending · TVL $1.14B (30-day average) · Rated 2026-10-02"
+          "description": "Filed under SparkLend · Lending · TVL $1.16B (30-day average) · Rated 2026-10-03"
         },
         {
           "name": "SparkLend USDT",
           "value": "A · 87.8/100",
-          "description": "Filed under SparkLend · Lending · TVL $334.3M (30-day average) · Rated 2026-10-02"
+          "description": "Filed under SparkLend · Lending · TVL $332.5M (30-day average) · Rated 2026-10-03"
         },
         {
           "name": "SparkLend DAI",
           "value": "A · 87.8/100",
-          "description": "Filed under SparkLend · Lending · TVL $303.2M (30-day average) · Rated 2026-10-02"
+          "description": "Filed under SparkLend · Lending · TVL $301.6M (30-day average) · Rated 2026-10-03"
         },
         {
           "name": "SparkLend PYUSD",
           "value": "B · 81/100",
-          "description": "Filed under SparkLend · Lending · TVL $125.6M (30-day average) · Rated 2026-10-02"
+          "description": "Filed under SparkLend · Lending · TVL $127.1M (30-day average) · Rated 2026-10-03"
         },
         {
           "name": "SparkLend USDC",
           "value": "A · 85.4/100",
-          "description": "Filed under SparkLend · Lending · TVL $32.0M (30-day average) · Rated 2026-10-02"
+          "description": "Filed under SparkLend · Lending · TVL $32.6M (30-day average) · Rated 2026-10-03"
         }
       ],
-      "updatedAt": "2026-10-02",
+      "updatedAt": "2026-10-03",
       "url": "https://app.pigi.finance/vaults",
       "note": "Counted: 6 rated of the 10 Ethereum vault(s) pigi lists under SparkLend, Spark. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
@@ -393,8 +393,8 @@
             "curator": null,
             "tier": "A",
             "score": 89.8,
-            "tvlUsd": 1441595655.3,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 1458360880.01,
+            "scoredAt": "2026-10-03",
             "url": "https://app.pigi.finance/vault/3906"
           },
           {
@@ -403,8 +403,8 @@
             "curator": null,
             "tier": "A",
             "score": 88.2,
-            "tvlUsd": 1140124660.08,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 1164683096.79,
+            "scoredAt": "2026-10-03",
             "url": "https://app.pigi.finance/vault/3901"
           },
           {
@@ -413,8 +413,8 @@
             "curator": null,
             "tier": "A",
             "score": 87.8,
-            "tvlUsd": 334314589.83,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 332470383.08,
+            "scoredAt": "2026-10-03",
             "url": "https://app.pigi.finance/vault/3902"
           },
           {
@@ -423,8 +423,8 @@
             "curator": null,
             "tier": "A",
             "score": 87.8,
-            "tvlUsd": 303170424.26,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 301605676.28,
+            "scoredAt": "2026-10-03",
             "url": "https://app.pigi.finance/vault/3903"
           },
           {
@@ -433,8 +433,8 @@
             "curator": null,
             "tier": "B",
             "score": 81,
-            "tvlUsd": 125584641.19,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 127059432.81,
+            "scoredAt": "2026-10-03",
             "url": "https://app.pigi.finance/vault/3904"
           },
           {
@@ -443,14 +443,14 @@
             "curator": null,
             "tier": "A",
             "score": 85.4,
-            "tvlUsd": 32004513.44,
-            "scoredAt": "2026-10-02",
+            "tvlUsd": 32557349.04,
+            "scoredAt": "2026-10-03",
             "url": "https://app.pigi.finance/vault/3905"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-02T21:20:59.533Z"
+      "fetchedAt": "2026-10-03T10:28:01.779Z"
     },
     "risklayer": {
       "value": "4.9/10 · medium",
@@ -566,7 +566,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-02T21:20:59.533Z"
+      "fetchedAt": "2026-10-03T10:28:01.779Z"
     }
   }
 }
