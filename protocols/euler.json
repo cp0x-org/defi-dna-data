@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:20:42.942Z",
+  "generatedAt": "2026-10-05T23:11:36.516Z",
   "protocolId": "euler",
   "metrics": {
     "incidents": {
@@ -9,37 +9,37 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-05T12:20:42.942Z"
+      "fetchedAt": "2026-10-05T23:11:36.516Z"
     },
     "tvl": {
-      "value": 53463224.758043624,
+      "value": 53329985.05917024,
       "url": "https://defillama.com/protocol/euler-v2",
       "extra": {
         "components": [
           {
             "id": "5044",
             "name": "Euler V2",
-            "tvl": 53463224.758043624
+            "tvl": 53329985.05917024
           }
         ]
       },
-      "fetchedAt": "2026-10-05T12:20:42.942Z"
+      "fetchedAt": "2026-10-05T23:11:36.516Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-05T12:20:42.942Z",
+      "fetchedAt": "2026-10-05T23:11:36.516Z",
       "note": "DeFiScan has no data for Euler."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-05T12:20:42.942Z",
+      "fetchedAt": "2026-10-05T23:11:36.516Z",
       "note": "Philidor Analytics has no data for Euler."
     },
     "pigi": {
-      "value": "13 vaults rated",
-      "summary": "pigi.finance rates individual vaults rather than protocols. It rates 13 of the 164 Ethereum vault(s) it files under Euler.",
+      "value": "19 vaults rated",
+      "summary": "pigi.finance rates individual vaults rather than protocols. It rates 19 of the 164 Ethereum vault(s) it files under Euler.",
       "details": [
         {
           "name": "EVK Vault eUSDC-70",
@@ -57,6 +57,21 @@
           "description": "Filed under Euler · Lending · TVL $4.4M (30-day average) · Rated 2026-10-05"
         },
         {
+          "name": "EVK Vault eUSDC-132",
+          "value": "D · 47/100",
+          "description": "Filed under Euler · Lending · TVL $3.2M (30-day average) · Rated 2026-10-05"
+        },
+        {
+          "name": "EVK Vault ewstETH-2",
+          "value": "D · 51/100",
+          "description": "Filed under Euler · Lending · TVL $2.8M (30-day average) · Rated 2026-10-05"
+        },
+        {
+          "name": "EVK Vault eWETH-2",
+          "value": "D · 51/100",
+          "description": "Filed under Euler · Lending · TVL $2.6M (30-day average) · Rated 2026-10-05"
+        },
+        {
           "name": "EVK Vault eUSDC-2 (Ethereum Mainnet)",
           "value": "D · 51/100",
           "description": "Filed under Euler · Lending · TVL $2.1M (30-day average) · Rated 2026-10-05"
@@ -67,37 +82,22 @@
           "description": "Filed under Euler · Lending · TVL $2.1M (30-day average) · Rated 2026-10-05"
         },
         {
+          "name": "EVK Vault eUSDC-80",
+          "value": "F · 22/100",
+          "description": "Filed under Euler · Lending · TVL $1.6M (30-day average) · Rated 2026-10-05"
+        },
+        {
           "name": "EVK Vault eUSDC-58 (Ethereum Mainnet)",
           "value": "F · 17/100",
           "description": "Filed under Euler · Lending · TVL $1.4M (30-day average) · Rated 2026-10-05"
-        },
-        {
-          "name": "EVK Vault eUSDC-95",
-          "value": "F · 17/100",
-          "description": "Filed under Euler · Lending · TVL $1.2M (30-day average) · Rated 2026-10-05"
-        },
-        {
-          "name": "EVK Vault eUSDC-69",
-          "value": "C · 58/100",
-          "description": "Filed under Euler · Lending · TVL $592K (30-day average) · Rated 2026-10-05"
-        },
-        {
-          "name": "EVK Vault eUSDC-22 (Ethereum Mainnet)",
-          "value": "D · 51/100",
-          "description": "Filed under Euler · Lending · TVL $494K (30-day average) · Rated 2026-10-05"
-        },
-        {
-          "name": "EVK Vault eUSDT-2 (Ethereum Mainnet)",
-          "value": "D · 51/100",
-          "description": "Filed under Euler · Lending · TVL $315K (30-day average) · Rated 2026-10-05"
         }
       ],
       "updatedAt": "2026-10-05",
       "url": "https://app.pigi.finance/vaults",
-      "note": "Counted: 13 rated of the 164 Ethereum vault(s) pigi lists under Euler. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
+      "note": "Counted: 19 rated of the 164 Ethereum vault(s) pigi lists under Euler. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
         "vaultsListed": 164,
-        "vaultsRated": 13,
+        "vaultsRated": 19,
         "vaults": [
           {
             "name": "EVK Vault eUSDC-70",
@@ -130,6 +130,36 @@
             "url": "https://app.pigi.finance/vault/2006"
           },
           {
+            "name": "EVK Vault eUSDC-132",
+            "version": "Euler",
+            "curator": null,
+            "tier": "D",
+            "score": 47,
+            "tvlUsd": 3178117.37,
+            "scoredAt": "2026-10-05",
+            "url": "https://app.pigi.finance/vault/30011"
+          },
+          {
+            "name": "EVK Vault ewstETH-2",
+            "version": "Euler",
+            "curator": null,
+            "tier": "D",
+            "score": 51,
+            "tvlUsd": 2842923.28,
+            "scoredAt": "2026-10-05",
+            "url": "https://app.pigi.finance/vault/30013"
+          },
+          {
+            "name": "EVK Vault eWETH-2",
+            "version": "Euler",
+            "curator": null,
+            "tier": "D",
+            "score": 51,
+            "tvlUsd": 2648187.08,
+            "scoredAt": "2026-10-05",
+            "url": "https://app.pigi.finance/vault/30015"
+          },
+          {
             "name": "EVK Vault eUSDC-2 (Ethereum Mainnet)",
             "version": "Euler",
             "curator": null,
@@ -148,6 +178,16 @@
             "tvlUsd": 2068059.89,
             "scoredAt": "2026-10-05",
             "url": "https://app.pigi.finance/vault/30000"
+          },
+          {
+            "name": "EVK Vault eUSDC-80",
+            "version": "Euler",
+            "curator": null,
+            "tier": "F",
+            "score": 22,
+            "tvlUsd": 1567664.1,
+            "scoredAt": "2026-10-05",
+            "url": "https://app.pigi.finance/vault/30001"
           },
           {
             "name": "EVK Vault eUSDC-58 (Ethereum Mainnet)",
@@ -180,6 +220,16 @@
             "url": "https://app.pigi.finance/vault/2002"
           },
           {
+            "name": "EVK Vault eWBTC-3",
+            "version": "Euler",
+            "curator": null,
+            "tier": "D",
+            "score": 51,
+            "tvlUsd": 554295.76,
+            "scoredAt": "2026-10-05",
+            "url": "https://app.pigi.finance/vault/30030"
+          },
+          {
             "name": "EVK Vault eUSDC-22 (Ethereum Mainnet)",
             "version": "Euler",
             "curator": null,
@@ -198,6 +248,16 @@
             "tvlUsd": 315496.09,
             "scoredAt": "2026-10-05",
             "url": "https://app.pigi.finance/vault/2003"
+          },
+          {
+            "name": "K3 Capital Yield Market (e1ce9a)",
+            "version": "Euler",
+            "curator": null,
+            "tier": "D",
+            "score": 51,
+            "tvlUsd": 156803.41,
+            "scoredAt": "2026-10-05",
+            "url": "https://app.pigi.finance/vault/200208"
           },
           {
             "name": "EVK Vault eUSDC-42 (Ethereum Mainnet)",
@@ -232,11 +292,11 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-05T12:20:42.942Z"
+      "fetchedAt": "2026-10-05T23:11:36.516Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-05T12:20:42.942Z",
+      "fetchedAt": "2026-10-05T23:11:36.516Z",
       "note": "Risklayer has no data for Euler."
     }
   }
