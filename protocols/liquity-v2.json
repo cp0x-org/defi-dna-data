@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T23:11:36.516Z",
+  "generatedAt": "2026-10-06T12:04:32.216Z",
   "protocolId": "liquity-v2",
   "metrics": {
     "incidents": {
@@ -9,32 +9,32 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-05T23:11:36.516Z"
+      "fetchedAt": "2026-10-06T12:04:32.216Z"
     },
     "tvl": {
-      "value": 108564983.21094206,
+      "value": 108678958.32170442,
       "url": "https://defillama.com/protocol/liquity-v2",
       "extra": {
         "components": [
           {
             "id": "5656",
             "name": "Liquity V2",
-            "tvl": 108564983.21094206
+            "tvl": 108678958.32170442
           }
         ]
       },
-      "fetchedAt": "2026-10-05T23:11:36.516Z"
+      "fetchedAt": "2026-10-06T12:04:32.216Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-05T23:11:36.516Z",
+      "fetchedAt": "2026-10-06T12:04:32.216Z",
       "note": "DeFiScan has no data for Liquity v2."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-05T23:11:36.516Z",
+      "fetchedAt": "2026-10-06T12:04:32.216Z",
       "note": "Philidor Analytics has no data for Liquity v2."
     },
     "pigi": {
@@ -44,10 +44,10 @@
         {
           "name": "Liquity V2 - ETH Stability Pool",
           "value": "B · 83.2/100",
-          "description": "Filed under Liquity V2 · Exchanging Risk · TVL $7.4M (30-day average) · Rated 2026-10-05"
+          "description": "Filed under Liquity V2 · Exchanging Risk · TVL $7.4M (30-day average) · Rated 2026-10-06"
         }
       ],
-      "updatedAt": "2026-10-05",
+      "updatedAt": "2026-10-06",
       "url": "https://app.pigi.finance/vaults",
       "note": "Counted: 1 rated of the 1 Ethereum vault(s) pigi lists under Liquity V2. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
@@ -60,18 +60,18 @@
             "curator": null,
             "tier": "B",
             "score": 83.2,
-            "tvlUsd": 7430877.066666666,
-            "scoredAt": "2026-10-05",
+            "tvlUsd": 7429492.533333333,
+            "scoredAt": "2026-10-06",
             "url": "https://app.pigi.finance/vault/42"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-05T23:11:36.516Z"
+      "fetchedAt": "2026-10-06T12:04:32.216Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-05T23:11:36.516Z",
+      "fetchedAt": "2026-10-06T12:04:32.216Z",
       "note": "Risklayer has no data for Liquity v2."
     }
   }
