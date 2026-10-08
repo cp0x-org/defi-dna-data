@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "liquity-v2",
   "metrics": {
     "incidents": {
@@ -9,32 +9,91 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 102495847.69968536,
+      "value": 100310299.90910496,
       "url": "https://defillama.com/protocol/liquity-v2",
       "extra": {
         "components": [
           {
             "id": "5656",
             "name": "Liquity V2",
-            "tvl": 102495847.69968536
+            "tvl": 100310299.90910496
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
-      "note": "DeFiScan has no data for Liquity v2."
+      "value": "0 admins · 41 contracts",
+      "summary": "Liquity V2 is an immutable borrowing protocol that lets users open collateralized debt positions (Troves) against wstETH, rETH, or WETH to mint BOLD, a USD-pegged stablecoin. All 44 smart contracts are deployed as immutable (non-upgradeable), and the protocol has no admin keys, timelocks, or governance-controlled parameters -- ownership of the BoldToken and Governance contracts is renounced to the zero address. The protocol relies on three Chainlink price feeds (ETH/USD, stETH/USD, rETH/ETH) and the wstETH and rETH token contracts for exchange rate conversions, making oracle liveness and accuracy the primary external risk factor. Total collateral held across all branches is $0.",
+      "details": [
+        {
+          "name": "Admins",
+          "value": "0"
+        },
+        {
+          "name": "Contracts",
+          "value": "41"
+        },
+        {
+          "name": "Permissioned functions",
+          "value": "115"
+        },
+        {
+          "name": "Capital at risk",
+          "value": "$0"
+        },
+        {
+          "name": "Token value at risk",
+          "value": "$0"
+        },
+        {
+          "name": "Dependencies",
+          "value": "5"
+        },
+        {
+          "name": "Verified coverage",
+          "value": "100%"
+        },
+        {
+          "name": "BorrowerOperations (wstETH branch)",
+          "value": "$105.6M reachable",
+          "description": "Immutable — Immutable protocol contract that mediates all borrower interactions for the wstETH branch. Authorized to move collateral, mint BOLD interest, manage trove ordering, and trigger branch shutdown. This is an internal contract-level access restriction, not a human-controlled permission -- no external entity can invoke these functions except through the BorrowerOperations contract logic itself."
+        },
+        {
+          "name": "TroveManager (wstETH branch)",
+          "value": "$69.7M reachable",
+          "description": "Immutable — Immutable protocol contract responsible for liquidations and redemptions in the wstETH branch. Can move collateral to the DefaultPool during redistribution liquidations, update debt accounting, set the branch shutdown flag, and remove troves from SortedTroves. All calls originate from protocol logic (liquidation and redemption transactions), not from an external admin."
+        },
+        {
+          "name": "StabilityPool (wstETH branch)",
+          "value": "$69.7M reachable",
+          "description": "Immutable — Immutable protocol contract that holds BOLD deposits used to absorb liquidations in the wstETH branch. Authorized to transfer collateral from ActivePool and trigger interest minting. These permissions exist purely for internal protocol coordination between the pool contracts."
+        },
+        {
+          "name": "DefaultPool (wstETH branch)",
+          "value": "$69.7M reachable",
+          "description": "Immutable — Immutable protocol contract that receives redistributed collateral from liquidations in the wstETH branch. Authorized to send collateral to the ActivePool. This is an internal bookkeeping contract with no external admin control."
+        },
+        {
+          "name": "ActivePool",
+          "value": "$69.7M reachable",
+          "description": "Immutable"
+        }
+      ],
+      "updatedAt": "2026-04-15",
+      "url": "https://www.defiscan.info/protocol/liquity-v2",
+      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-15; the compiled JSON was rebuilt on 2026-09-30.",
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Philidor Analytics has no data for Liquity v2."
     },
     "pigi": {
@@ -67,12 +126,45 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Risklayer has no data for Liquity v2."
+    },
+    "defiscoring": {
+      "value": "36 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "50",
+          "description": "audit_count: 2"
+        },
+        {
+          "name": "Liveness",
+          "value": "52",
+          "description": "tvl_change_7d_pct: -9.24"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/liquity-v2",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 36,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }

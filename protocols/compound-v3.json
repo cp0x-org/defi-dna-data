@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "compound-v3",
   "metrics": {
     "incidents": {
@@ -9,70 +9,82 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 1349584964.983843,
+      "value": 1330883818.6065557,
       "url": "https://defillama.com/protocol/compound-v3",
       "extra": {
         "components": [
           {
             "id": "2088",
             "name": "Compound V3",
-            "tvl": 1349584964.983843
+            "tvl": 1330883818.6065557
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 0",
-      "summary": "Compound-v3 is a lending protocol that accepts a base asset as liquidity and allows borrowing this base asset with a variety of other assets as collateral. Multiple base assets are supported such as USDC, WETH, USDT, wstETH, and USDS. Each base asset represents an isolated lending market managed by a separate instance of the protocol. Compound governance is able to update various parameters for each of these markets.",
+      "value": "1 admins · $987.0M capital at risk",
+      "summary": "Compound V3 (Comet) is a lending protocol that operates isolated markets for individual base assets (USDC, USDT, WETH), each accepting a curated set of collateral tokens. Unlike Compound V2's shared-pool model, V3 isolates risk per market: suppliers lend a single base asset and borrowers post collateral against it. All three Ethereum markets are upgradeable EIP-1967 proxies controlled by a Compound governance Timelock with a 48-hour delay, with $986.97M in total capital at risk across all admin-controlled contracts. The protocol depends on Chainlink price feeds and a ConstantPriceFeed for USDT pricing.",
       "details": [
         {
-          "name": "Chain",
-          "value": "L"
+          "name": "Admins",
+          "value": "1"
         },
         {
-          "name": "Upgradeability",
-          "value": "H"
+          "name": "Contracts",
+          "value": "40"
         },
         {
-          "name": "Autonomy",
-          "value": "H"
+          "name": "Permissioned functions",
+          "value": "82"
         },
         {
-          "name": "Exit Window",
-          "value": "H"
+          "name": "Capital at risk",
+          "value": "$987.0M"
         },
         {
-          "name": "Accessibility",
-          "value": "L"
+          "name": "Token value at risk",
+          "value": "$0"
+        },
+        {
+          "name": "Dependencies",
+          "value": "5"
+        },
+        {
+          "name": "Verified coverage",
+          "value": "100%"
+        },
+        {
+          "name": "CometProxyAdmin",
+          "value": "$987.0M reachable",
+          "description": "Immutable — Immutable proxy admin contract owned by the Governance Timelock. Can upgrade, deploy-and-upgrade, and change the admin of the three market proxy contracts (cUSDCv3, cUSDTv3, cWETHv3) via upgrade, upgradeAndCall, deployAndUpgradeTo, deployUpgradeToAndCall, and changeProxyAdmin. Controls $986.97M in direct capital across the three market contracts."
+        },
+        {
+          "name": "Compound Governance Timelock (48h)",
+          "value": "$987.0M reachable",
+          "description": "Immutable — Central admin of the protocol with a 48-hour execution delay. Controls 40 permissioned functions across 10 contracts, including all market parameter changes (interest rates, collateral factors, supply caps, reserve targets), asset listing via addAsset/updateAsset, price feed configuration, factory and extension delegate settings, governor transfer, and reserve withdrawals via withdrawReserves and…"
+        },
+        {
+          "name": "Zero Address (Renounced)",
+          "value": "$987.0M reachable",
+          "description": "Revoked — The zero address appears as pendingAdmin on the Timelock, indicating no pending admin transfer is in progress. This permission is effectively inactive."
+        },
+        {
+          "name": "CompoundGovernor",
+          "value": "$987.0M reachable",
+          "description": "governance · Upgradeable — Upgradeable on-chain governance contract (EIP-1967 proxy) that serves as the admin of the Timelock. COMP token holders submit and vote on proposals, which are then queued and executed through the Timelock with a 48-hour delay. The governor contract itself is upgradeable via a separate ProxyAdmin also owned by the Timelock, meaning governance can upgrade its own governor implementation."
         }
       ],
-      "updatedAt": "2025-03-18",
-      "url": "https://www.defiscan.info/protocols/compound-v3/ethereum",
-      "extra": {
-        "reviews": [
-          {
-            "file": "compound-v3/ethereum.md",
-            "stage": "Stage 0",
-            "risks": [
-              "L",
-              "H",
-              "H",
-              "H",
-              "L"
-            ],
-            "date": "2025-03-18",
-            "url": "https://www.defiscan.info/protocols/compound-v3/ethereum"
-          }
-        ]
-      },
+      "updatedAt": "2026-05-06",
+      "url": "https://www.defiscan.info/protocol/compound-v3",
+      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-05-06; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "philidor": {
       "value": "5 vaults rated",
@@ -81,26 +93,26 @@
         {
           "name": "Compound V3 USDC",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $381.5M · Scored 2026-10-08"
+          "description": "Version v3 · TVL $380.3M · Scored 2026-10-08"
         },
         {
           "name": "Compound V3 USDT",
-          "value": "Prime 8.36",
-          "description": "Version v3 · TVL $163.7M · Scored 2026-10-08"
+          "value": "Prime 8.34",
+          "description": "Version v3 · TVL $165.0M · Scored 2026-10-08"
         },
         {
           "name": "Compound V3 WETH",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $130.2M · Scored 2026-10-08"
+          "description": "Version v3 · TVL $127.0M · Scored 2026-10-08"
         },
         {
           "name": "Compound V3 WBTC",
-          "value": "Prime 8.92",
-          "description": "Version v3 · TVL $2.8M · Scored 2026-10-08"
+          "value": "Prime 8.93",
+          "description": "Version v3 · TVL $2.4M · Scored 2026-10-08"
         },
         {
           "name": "Compound V3 USDS",
-          "value": "Prime 8.08",
+          "value": "Prime 8.06",
           "description": "Version v3 · TVL $1.9M · Scored 2026-10-08"
         }
       ],
@@ -123,7 +135,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 381522433.26177144,
+            "tvlUsd": 380323091.5649185,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc3d688b66703497daa19211eedff47f25384cdc3"
           },
@@ -132,8 +144,8 @@
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.36,
-            "tvlUsd": 163692373.41181853,
+            "score": 8.34,
+            "tvlUsd": 165001357.10435122,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3afdc9bca9213a35503b077a6072f3d0d5ab0840"
           },
@@ -143,7 +155,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 130164697.04203366,
+            "tvlUsd": 127045798.87254907,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa17581a9e3356d9a858b789d68b4d866e593ae94"
           },
@@ -152,8 +164,8 @@
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.92,
-            "tvlUsd": 2819887.7540234975,
+            "score": 8.93,
+            "tvlUsd": 2371780.6319142957,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe85dc543813b8c2cfeaac371517b925a166a9293"
           },
@@ -162,25 +174,30 @@
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.08,
-            "tvlUsd": 1858931.2457304709,
+            "score": 8.06,
+            "tvlUsd": 1859210.325547122,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5d409e56d886231adaf00c8775665ad0f9897b56"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "pigi.finance has no data for Compound v3."
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Risklayer has no data for Compound v3."
+    },
+    "defiscoring": {
+      "status": "none",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "note": "DeFi Scoring has no data for Compound v3."
     }
   }
 }

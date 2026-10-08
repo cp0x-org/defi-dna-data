@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "uniswap-v2",
   "metrics": {
     "incidents": {
@@ -9,7 +9,7 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
       "value": 906704284.3118106,
@@ -23,56 +23,58 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 2",
-      "summary": "Uniswap v2 is a decentralized automated market maker (AMM) that builds upon the original Uniswap protocol by introducing several key features to enhance functionality and flexibility for liquidity providers (LPs) and traders. Unlike its predecessor, Uniswap v2 enables direct token-to-token swaps, eliminating the need to route trades through ETH as an intermediary. Another notable improvement is the introduction of flash swaps, which allow users to withdraw assets without upfront capital as long as the borrowed amount is returned by the end of the transaction. This feature facilitates advanced use cases like arbitrage, collateral swapping, and debt refinancing. Additionally, Uniswap v2 integr",
+      "value": "2 admins · $900.5M capital at risk",
+      "summary": "Uniswap V2 is an automated market maker (AMM) DEX that uses constant-product (x*y=k) liquidity pools for permissionless token swaps on Ethereum. All 9 protocol contracts are immutable with no upgradeability. Governance (GovernorBravo with a 48-hour Timelock) exists but controls only the protocol fee switch via FeeToSetter and FeeTo — it cannot modify the core swap or liquidity logic. Total liquidity across all pairs is $900.48M.",
       "details": [
         {
-          "name": "Chain",
-          "value": "L"
+          "name": "Admins",
+          "value": "2"
         },
         {
-          "name": "Upgradeability",
-          "value": "L"
+          "name": "Contracts",
+          "value": "12"
         },
         {
-          "name": "Autonomy",
-          "value": "L"
+          "name": "Permissioned functions",
+          "value": "2"
         },
         {
-          "name": "Exit Window",
-          "value": "L"
+          "name": "Capital at risk",
+          "value": "$900.5M"
         },
         {
-          "name": "Accessibility",
-          "value": "L"
+          "name": "Token value at risk",
+          "value": "$179.7M"
+        },
+        {
+          "name": "Dependencies",
+          "value": "0"
+        },
+        {
+          "name": "Verified coverage",
+          "value": "100%"
+        },
+        {
+          "name": "GovernorBravo Governance",
+          "value": "$0 reachable",
+          "description": "governance · Immutable — On-chain governance contract (GovernorBravoDelegator) that proposes and votes on changes to the Timelock. UNI token holders vote on proposals that, if passed, are queued in the 48-hour Timelock. In practice, the only meaningful action available is controlling the protocol fee switch — all core contracts are immutable."
+        },
+        {
+          "name": "Governance Timelock (48h)",
+          "value": "$0 reachable",
+          "description": "governance · Immutable — Timelock contract with a 48-hour minimum delay, controlled by GovernorBravo (eth:0x408E...24C3). Owns FeeToSetter and FeeTo, giving it the ability to change the protocol fee recipient address and toggle the 0.05% protocol fee on liquidity pools. Cannot modify swap logic, pool contracts, or the factory."
         }
       ],
-      "updatedAt": "2025-01-22",
-      "url": "https://www.defiscan.info/protocols/uniswap-v2/ethereum",
-      "extra": {
-        "reviews": [
-          {
-            "file": "uniswap-v2/ethereum.md",
-            "stage": "Stage 2",
-            "risks": [
-              "L",
-              "L",
-              "L",
-              "L",
-              "L"
-            ],
-            "date": "2025-01-22",
-            "url": "https://www.defiscan.info/protocols/uniswap-v2/ethereum"
-          }
-        ]
-      },
+      "updatedAt": "2026-04-16",
+      "url": "https://www.defiscan.info/protocol/uniswap-v2",
+      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-16; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "philidor": {
       "value": "9 vaults rated",
@@ -81,37 +83,37 @@
         {
           "name": "Uniswap V2 USDC/WETH",
           "value": "Prime 8.57",
-          "description": "Version v2 · TVL $20.4M · Scored 2026-10-08"
+          "description": "Version v2 · TVL $20.1M · Scored 2026-10-08"
         },
         {
           "name": "Uniswap V2 WETH/USDT",
-          "value": "Prime 8.38",
-          "description": "Version v2 · TVL $14.7M · Scored 2026-10-08"
+          "value": "Prime 8.36",
+          "description": "Version v2 · TVL $14.5M · Scored 2026-10-08"
         },
         {
           "name": "Uniswap V2 DAI/WETH",
           "value": "Prime 8.52",
-          "description": "Version v2 · TVL $9.2M · Scored 2026-10-08"
+          "description": "Version v2 · TVL $9.1M · Scored 2026-10-08"
         },
         {
           "name": "Uniswap V2 WBTC/WETH",
           "value": "Prime 8.39",
-          "description": "Version v2 · TVL $8.9M · Scored 2026-10-08"
+          "description": "Version v2 · TVL $8.8M · Scored 2026-10-08"
         },
         {
           "name": "Uniswap V2 UNI/WETH",
           "value": "Core 7.80",
-          "description": "Version v2 · TVL $4.0M · Scored 2026-10-08"
+          "description": "Version v2 · TVL $3.9M · Scored 2026-10-08"
         },
         {
           "name": "Uniswap V2 USDC/USDT",
-          "value": "Prime 8.53",
+          "value": "Prime 8.51",
           "description": "Version v2 · TVL $3.6M · Scored 2026-10-08"
         },
         {
           "name": "Uniswap V2 LINK/WETH",
           "value": "Core 7.90",
-          "description": "Version v2 · TVL $1.5M · Scored 2026-10-08"
+          "description": "Version v2 · TVL $1.4M · Scored 2026-10-08"
         },
         {
           "name": "Uniswap V2 DAI/USDC",
@@ -121,7 +123,7 @@
         {
           "name": "Uniswap V2 stETH/WETH",
           "value": "Prime 8.42",
-          "description": "Version v2 · TVL $385K · Scored 2026-10-08"
+          "description": "Version v2 · TVL $367K · Scored 2026-10-08"
         }
       ],
       "updatedAt": "2026-10-08",
@@ -143,7 +145,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.57,
-            "tvlUsd": 20385260.44235622,
+            "tvlUsd": 20109423.92270239,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
           },
@@ -152,8 +154,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.38,
-            "tvlUsd": 14685736.736931903,
+            "score": 8.36,
+            "tvlUsd": 14485564.602303037,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
           },
@@ -163,7 +165,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.52,
-            "tvlUsd": 9229333.171185678,
+            "tvlUsd": 9106042.60738336,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa478c2975ab1ea89e8196811f51a7b7ade33eb11"
           },
@@ -173,7 +175,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.39,
-            "tvlUsd": 8948424.965285491,
+            "tvlUsd": 8789709.717872612,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbb2b8038a1640196fbe3e38816f3e67cba72d940"
           },
@@ -183,7 +185,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.8,
-            "tvlUsd": 4029462.207810041,
+            "tvlUsd": 3871342.642565558,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd3d2e2692501a5c9ca623199d38826e513033a17"
           },
@@ -192,8 +194,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.53,
-            "tvlUsd": 3603368.9852528903,
+            "score": 8.51,
+            "tvlUsd": 3603116.229642869,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3041cbd36888becc7bbcbc0045e3b1f144466f5f"
           },
@@ -203,7 +205,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1480450.6039083556,
+            "tvlUsd": 1438389.0837543334,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974"
           },
@@ -213,7 +215,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.67,
-            "tvlUsd": 1089024.990327197,
+            "tvlUsd": 1089391.5127041633,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xae461ca67b15dc8dc81ce7615e0320da1a9ab8d5"
           },
@@ -223,18 +225,18 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.42,
-            "tvlUsd": 384574.23473100824,
+            "tvlUsd": 366859.52077288576,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4028daac072e492d34a3afdbef0ba7e35d8b55c4"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "pigi.finance has no data for Uniswap v2."
     },
     "risklayer": {
@@ -351,7 +353,40 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
+    },
+    "defiscoring": {
+      "value": "43 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "50",
+          "description": "audit_count: 2"
+        },
+        {
+          "name": "Liveness",
+          "value": "75",
+          "description": "tvl_change_7d_pct: 1.03"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/uniswap-v2",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 43,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }

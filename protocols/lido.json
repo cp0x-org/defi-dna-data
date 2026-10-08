@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "lido",
   "metrics": {
     "incidents": {
@@ -9,74 +9,91 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 24955124950.058556,
+      "value": 24480549138.722607,
       "url": "https://defillama.com/protocol/lido",
       "extra": {
         "components": [
           {
             "id": "182",
             "name": "Lido",
-            "tvl": 24955124950.058556
+            "tvl": 24480549138.722607
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 0",
-      "summary": "_Lido V2_ is a liquid-staking protocol. Liquid staking allows users to deposit `ETH` for staking to a set of _Node Operators_ who run validators with `ETH` staked in Lido. In exchange for depositing `ETH` users get `stETH`, _Liquid staked Ether_, a token issued by Lido which represents the staked `ETH`. This token can then be used throughout DeFi in other protocols, for example, as collateral. Lido takes a 10% fee on the yield, split between the _Lido Treasury_ and _Node Operators_.",
+      "value": "20 admins · $115.5M capital at risk",
+      "summary": "Lido is a liquid staking protocol that allows users to stake ETH and receive stETH, a rebasing liquid staking token representing their staked position. Governance operates through an Aragon-based DAO (LDO token voting) with a Dual Governance module that gives stETH holders veto power over DAO proposals via an EmergencyProtectedTimelock. The protocol manages $115.54M in capital, with oracle committees reporting validator balances and a guardian committee securing the deposit flow against front-running attacks. The Lido V3 (stVaults) upgrade adds a customizable staking layer where node operators and institutional users deploy individual StakingVaults coordinated by a central VaultHub, with pe…",
       "details": [
         {
-          "name": "Chain",
-          "value": "L"
+          "name": "Admins",
+          "value": "20"
         },
         {
-          "name": "Upgradeability",
-          "value": "H"
+          "name": "Contracts",
+          "value": "256"
         },
         {
-          "name": "Autonomy",
-          "value": "L"
+          "name": "Permissioned functions",
+          "value": "498"
         },
         {
-          "name": "Exit Window",
-          "value": "H"
+          "name": "Capital at risk",
+          "value": "$115.5M"
         },
         {
-          "name": "Accessibility",
-          "value": "L"
+          "name": "Token value at risk",
+          "value": "$26.66B"
+        },
+        {
+          "name": "Dependencies",
+          "value": "1"
+        },
+        {
+          "name": "Verified coverage",
+          "value": "100%"
+        },
+        {
+          "name": "Lido DAO Agent",
+          "value": "$115.5M reachable",
+          "description": "governance · Contract — The primary governance executor for the Lido DAO. Holds DEFAULT_ADMIN_ROLE on most protocol contracts and can upgrade proxies, manage staking modules, configure oracle parameters, and grant/revoke roles across the entire system. Controls $115.42M in direct capital exposure across 17 contracts. All actions flow through the Voting contract, which is gated by the DualGovernance module."
+        },
+        {
+          "name": "TokenManager",
+          "value": "$115.4M reachable",
+          "description": "Upgradeable — Aragon TokenManager app that manages the LDO governance token. Can mint and destroy LDO tokens, change the token controller, and enable/disable token transfers. Controls $701.56 in direct capital through the LDO token and Voting contract."
+        },
+        {
+          "name": "Lido DAO Voting",
+          "value": "$115.4M reachable",
+          "description": "Contract — Aragon Voting contract where LDO token holders create and vote on proposals. Can grant, revoke, and manage permissions on the ACL contract, controlling role assignments across the entire DAO infrastructure including the Agent, Finance, and TokenManager apps."
+        },
+        {
+          "name": "Executor",
+          "value": "$115.4M reachable",
+          "description": "Immutable — Immutable execution contract that forwards governance calls from the EmergencyProtectedTimelock to the Lido DAO Agent and DualGovernance configuration. Can configure governance parameters including submission delays, scheduling delays, and governance state transitions."
+        },
+        {
+          "name": "Finance",
+          "value": "$115.4M reachable",
+          "description": "Upgradeable — Aragon Finance app that can transfer tokens from the Lido DAO Agent treasury. Gated by ACL permissions managed through the DAO Voting contract."
         }
       ],
-      "updatedAt": "2025-06-19",
-      "url": "https://www.defiscan.info/protocols/lido-v2/ethereum",
-      "extra": {
-        "reviews": [
-          {
-            "file": "lido-v2/ethereum.md",
-            "stage": "Stage 0",
-            "risks": [
-              "L",
-              "H",
-              "L",
-              "H",
-              "L"
-            ],
-            "date": "2025-06-19",
-            "url": "https://www.defiscan.info/protocols/lido-v2/ethereum"
-          }
-        ]
-      },
+      "updatedAt": "2026-04-28",
+      "url": "https://www.defiscan.info/protocol/lido",
+      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-28; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Philidor Analytics has no data for Lido."
     },
     "pigi": {
@@ -109,7 +126,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
@@ -225,7 +242,40 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
+    },
+    "defiscoring": {
+      "value": "44 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "50",
+          "description": "audit_count: 2"
+        },
+        {
+          "name": "Liveness",
+          "value": "79",
+          "description": "tvl_change_7d_pct: -8.24"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/lido",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 44,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }

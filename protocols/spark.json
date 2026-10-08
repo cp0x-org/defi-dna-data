@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "spark",
   "metrics": {
     "incidents": {
@@ -9,80 +9,97 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 8957374245.841734,
+      "value": 8889961153.4524,
       "url": "https://defillama.com/protocol/sparklend",
       "extra": {
         "components": [
           {
             "id": "2929",
             "name": "SparkLend",
-            "tvl": 5399832324.946224
+            "tvl": 5325886738.411645
           },
           {
             "id": "6716",
             "name": "Spark Savings",
-            "tvl": 1154404307.9335096
+            "tvl": 1159630891.592132
           },
           {
             "id": "5989",
             "name": "Spark Liquidity Layer",
-            "tvl": 2403137612.9620004
+            "tvl": 2404443523.448623
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 0",
-      "summary": "Spark is a protocol within the Sky ecosystem and consists of two main products: _Savings USDS_ and _SparkLend_.",
+      "value": "10 admins · $5.67B capital at risk",
+      "summary": "Spark is a lending protocol built on an Aave V3 fork (SparkLend) with an integrated savings layer that routes deposits through the Sky (formerly MakerDAO) DAI Savings Rate (DSR) via the Pot contract. Governance decisions execute through the Sky governance stack — DSPause enforces a 24-hour delay before DSPauseProxy forwards calls to SubProxy, which holds admin rights on every SparkLend contract. An Asset Liability Management (ALM) layer controlled by three separate multisigs lets the protocol rebalance capital via arbitrary external calls. Price data comes from a mix of Chainlink, Chronicle, RedStone, and protocol-specific exchange-rate oracles for liquid staking and restaking tokens. The p…",
       "details": [
         {
-          "name": "Chain",
-          "value": "L"
+          "name": "Admins",
+          "value": "10"
         },
         {
-          "name": "Upgradeability",
-          "value": "H"
+          "name": "Contracts",
+          "value": "102"
         },
         {
-          "name": "Autonomy",
-          "value": "H"
+          "name": "Permissioned functions",
+          "value": "201"
         },
         {
-          "name": "Exit Window",
-          "value": "H"
+          "name": "Capital at risk",
+          "value": "$5.67B"
         },
         {
-          "name": "Accessibility",
-          "value": "L"
+          "name": "Token value at risk",
+          "value": "$249.4M"
+        },
+        {
+          "name": "Dependencies",
+          "value": "23"
+        },
+        {
+          "name": "Verified coverage",
+          "value": "100%"
+        },
+        {
+          "name": "DSPauseProxy (Sky Governance Executor)",
+          "value": "$5.67B reachable",
+          "description": "governance · Immutable — The execution endpoint of the Sky governance stack. DSPause plots a governance spell here after the 24-hour delay, and DSPauseProxy then delegatecalls it — effectively routing every governance action against Spark contracts. It is the root admin of SubProxy, SDAO, ESM, and StarGuard. Because every upgrade and parameter change in SparkLend ultimately resolves to this contract, it controls $5.67B i…"
+        },
+        {
+          "name": "ESM (Emergency Shutdown Module)",
+          "value": "$5.67B reachable",
+          "description": "Immutable — Sky's Emergency Shutdown Module. When enough MKR/SKY is burned into the ESM to cross a configured threshold, it can call `exec` on SubProxy to trigger Sky governance. In Spark's permission graph it appears as an admin of SubProxy, but it is only activated during a system-wide Sky emergency shutdown."
+        },
+        {
+          "name": "StarGuard (Sky Authority Registry)",
+          "value": "$5.67B reachable",
+          "description": "Immutable — Sky's authority contract registered as admin of SubProxy via the `can` access-control pattern. It whitelists which addresses may call which functions on SubProxy, and is itself administered by DSPauseProxy."
+        },
+        {
+          "name": "SubProxy (Sky Governance Relay)",
+          "value": "$5.67B reachable",
+          "description": "Immutable — Owned by DSPauseProxy and registered as the admin, owner, or `PoolAdmin`/`EmergencyAdmin` role-holder on virtually every Spark contract. Through its 116 permissioned entry points it can add/drop reserves, change interest rate strategies, upgrade ATokens via PoolConfigurator, change the price oracle, reassign access-control roles, and move treasury funds in Collector. Controls $5.67B in directly h…"
+        },
+        {
+          "name": "SparkLendFreezerMom (Emergency Freeze Contract)",
+          "value": "$5.67B reachable",
+          "description": "Immutable — An immutable protocol contract owned by the 3/5 Emergency Freezer multisig. It is registered as `EmergencyAdmin` and `RiskAdmin` on the ACLManager, letting it bypass standard governance delays to freeze or pause SparkLend markets. It is a relay — the real authority is the owner multisig."
         }
       ],
-      "updatedAt": "2025-06-05",
-      "url": "https://www.defiscan.info/protocols/spark/ethereum",
-      "extra": {
-        "reviews": [
-          {
-            "file": "spark/ethereum.md",
-            "stage": "Stage 0",
-            "risks": [
-              "L",
-              "H",
-              "H",
-              "H",
-              "L"
-            ],
-            "date": "2025-06-05",
-            "url": "https://www.defiscan.info/protocols/spark/ethereum"
-          }
-        ]
-      },
+      "updatedAt": "2026-04-23",
+      "url": "https://www.defiscan.info/protocol/spark",
+      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-23; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "philidor": {
       "value": "19 vaults rated",
@@ -91,42 +108,42 @@
         {
           "name": "USDS Savings Vault",
           "value": "Core 7.90",
-          "description": "Version v2 · TVL $4.95B · Scored 2026-10-08"
+          "description": "Version v2 · TVL $4.90B · Scored 2026-10-08"
         },
         {
           "name": "SparkLend wstETH",
-          "value": "Prime 8.73",
-          "description": "Version v1 · TVL $3.51B · Scored 2026-10-08"
+          "value": "Prime 8.72",
+          "description": "Version v1 · TVL $3.44B · Scored 2026-10-08"
         },
         {
           "name": "SparkLend WETH",
-          "value": "Prime 8.88",
+          "value": "Prime 8.87",
           "description": "Version v1 · TVL $1.63B · Scored 2026-10-08"
         },
         {
           "name": "SparkLend USDS",
-          "value": "Prime 8.52",
-          "description": "Version v1 · TVL $1.39B · Scored 2026-10-08"
+          "value": "Prime 8.60",
+          "description": "Version v1 · TVL $1.26B · Scored 2026-10-08"
         },
         {
           "name": "Spark Savings USDT",
-          "value": "Prime 7.97",
-          "description": "Version v2 · TVL $605.7M · Scored 2026-10-08"
+          "value": "Prime 8.34",
+          "description": "Version v2 · TVL $606.5M · Scored 2026-10-08"
         },
         {
           "name": "SparkLend cbBTC",
           "value": "Prime 8.89",
-          "description": "Version v1 · TVL $377.2M · Scored 2026-10-08"
+          "description": "Version v1 · TVL $373.8M · Scored 2026-10-08"
         },
         {
           "name": "SparkLend USDT",
-          "value": "Prime 8.12",
-          "description": "Version v1 · TVL $337.7M · Scored 2026-10-08"
+          "value": "Prime 8.10",
+          "description": "Version v1 · TVL $329.0M · Scored 2026-10-08"
         },
         {
           "name": "Spark Savings USDC",
           "value": "Prime 8.72",
-          "description": "Version v2 · TVL $317.7M · Scored 2026-10-08"
+          "description": "Version v2 · TVL $313.0M · Scored 2026-10-08"
         },
         {
           "name": "SparkLend DAI",
@@ -136,7 +153,7 @@
         {
           "name": "SparkLend LBTC",
           "value": "Core 7.90",
-          "description": "Version v1 · TVL $197.2M · Scored 2026-10-08"
+          "description": "Version v1 · TVL $191.7M · Scored 2026-10-08"
         }
       ],
       "updatedAt": "2026-10-08",
@@ -156,7 +173,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 4950208529.516652,
+            "tvlUsd": 4902560931.581766,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
           },
@@ -165,8 +182,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.73,
-            "tvlUsd": 3505270235.4146814,
+            "score": 8.72,
+            "tvlUsd": 3440732842.5835543,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x12b54025c112aa61face2cdb7118740875a566e9"
           },
@@ -175,8 +192,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.88,
-            "tvlUsd": 1632906859.396569,
+            "score": 8.87,
+            "tvlUsd": 1630418943.6827927,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db"
           },
@@ -185,8 +202,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.52,
-            "tvlUsd": 1390268504.9866154,
+            "score": 8.6,
+            "tvlUsd": 1262310044.945686,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
           },
@@ -195,8 +212,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 7.97,
-            "tvlUsd": 605711497.629662,
+            "score": 8.34,
+            "tvlUsd": 606458797.401586,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe2e7a17dff93280dec073c995595155283e3c372"
           },
@@ -206,7 +223,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.89,
-            "tvlUsd": 377182625.57885927,
+            "tvlUsd": 373766478.857292,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb3973d459df38ae57797811f2a1fd061da1bc123"
           },
@@ -215,8 +232,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.12,
-            "tvlUsd": 337670644.630454,
+            "score": 8.1,
+            "tvlUsd": 329012619.201363,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe7df13b8e3d6740fe17cbe928c7334243d86c92f"
           },
@@ -226,7 +243,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.72,
-            "tvlUsd": 317669120.064467,
+            "tvlUsd": 313002453.546362,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x28b3a8fb53b741a8fd78c0fb9a6b2393d896a43d"
           },
@@ -236,7 +253,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 260985237.81828892,
+            "tvlUsd": 261022306.95794126,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b"
           },
@@ -246,19 +263,9 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 197199694.71083626,
+            "tvlUsd": 191742935.6652851,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa9d4ecebd48c282a70cfd3c469d6c8f178a5738e"
-          },
-          {
-            "name": "SparkLend WBTC",
-            "version": "v1",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.84,
-            "tvlUsd": 192513597.44505692,
-            "scoredAt": "2026-10-08",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x4197ba364ae6698015ae5c1468f54087602715b2"
           },
           {
             "name": "USDC Savings Vault",
@@ -266,17 +273,27 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.48,
-            "tvlUsd": 177883473.626567,
+            "tvlUsd": 177314839.589288,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe"
+          },
+          {
+            "name": "SparkLend WBTC",
+            "version": "v1",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.84,
+            "tvlUsd": 172169610.67750204,
+            "scoredAt": "2026-10-08",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x4197ba364ae6698015ae5c1468f54087602715b2"
           },
           {
             "name": "DAI Savings Vault",
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.55,
-            "tvlUsd": 164255300.92462146,
+            "score": 8.61,
+            "tvlUsd": 164240973.71089113,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x83f20f44975d03b1b09e64809b757c47f942beea"
           },
@@ -286,7 +303,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 107605084.0915099,
+            "tvlUsd": 104611178.64952084,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
           },
@@ -296,7 +313,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.89,
-            "tvlUsd": 100000923.671607,
+            "tvlUsd": 100000186.751509,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x779224df1c756b4edd899854f32a53e8c2b2ce5d"
           },
@@ -306,7 +323,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.42,
-            "tvlUsd": 52943929.03032786,
+            "tvlUsd": 51436597.40167016,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f"
           },
@@ -315,8 +332,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 9.03,
-            "tvlUsd": 45309065.312442,
+            "score": 9.02,
+            "tvlUsd": 45511170.877165,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x377c3bd93f2a2984e1e7be6a5c22c525ed4a4815"
           },
@@ -326,7 +343,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.86,
-            "tvlUsd": 20000612.270753935,
+            "tvlUsd": 20001029.306631345,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59275fb72c8004f44ba44432e25082932fd677f1"
           },
@@ -335,15 +352,15 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.52,
-            "tvlUsd": 3312202.1556338826,
+            "score": 8.6,
+            "tvlUsd": 3312338.1467463262,
             "scoredAt": "2026-10-08",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6715bc100a183cc65502f05845b589c1919ca3d3"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "pigi": {
       "value": "6 vaults rated",
@@ -450,7 +467,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "risklayer": {
       "value": "4.9/10 · medium",
@@ -566,7 +583,40 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
+    },
+    "defiscoring": {
+      "value": "27 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "0",
+          "description": "audit_count: 0"
+        },
+        {
+          "name": "Liveness",
+          "value": "90",
+          "description": "tvl_change_7d_pct: -4.03"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/spark",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 27,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }

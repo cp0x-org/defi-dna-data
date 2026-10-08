@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "fluid",
   "metrics": {
     "incidents": {
@@ -19,37 +19,37 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 703366809.0520413,
+      "value": 701243784.508676,
       "url": "https://defillama.com/protocol/fluid-lending",
       "extra": {
         "components": [
           {
             "id": "4167",
             "name": "Fluid Lending",
-            "tvl": 485002926.7171571
+            "tvl": 484957492.83684754
           },
           {
             "id": "5317",
             "name": "Fluid DEX",
-            "tvl": 218363882.3348842
+            "tvl": 216286291.67182848
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "DeFiScan has no data for Fluid."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Philidor Analytics has no data for Fluid."
     },
     "pigi": {
@@ -112,12 +112,45 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Risklayer has no data for Fluid."
+    },
+    "defiscoring": {
+      "value": "27 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "0",
+          "description": "audit_count: 0"
+        },
+        {
+          "name": "Liveness",
+          "value": "89",
+          "description": "tvl_change_7d_pct: -4.36"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/fluid",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 27,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "curve",
   "metrics": {
     "incidents": {
@@ -28,85 +28,44 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 1346702020.1424553,
+      "value": 1337315679.802722,
       "url": "https://defillama.com/protocol/curve-dex",
       "extra": {
         "components": [
           {
             "id": "3",
             "name": "Curve DEX",
-            "tvl": 1192103609.388197
+            "tvl": 1184637501.302352
           },
           {
             "id": "2994",
             "name": "crvUSD",
-            "tvl": 154598410.7542584
+            "tvl": 152678178.50037
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 0",
-      "summary": "Curve Finance is a protocol consisting of a _Decentralized Exchange (DEX)_ focused on stablecoin and correlated-asset swaps, _Isolated Lending Markets (Llamalend)_, and a _Stablecoin (crvUSD)_.",
-      "details": [
-        {
-          "name": "Chain",
-          "value": "L"
-        },
-        {
-          "name": "Upgradeability",
-          "value": "H"
-        },
-        {
-          "name": "Autonomy",
-          "value": "L"
-        },
-        {
-          "name": "Exit Window",
-          "value": "H"
-        },
-        {
-          "name": "Accessibility",
-          "value": "M"
-        }
-      ],
-      "url": "https://www.defiscan.info/protocols/curve-finance/ethereum",
-      "extra": {
-        "reviews": [
-          {
-            "file": "curve-finance/ethereum.md",
-            "stage": "Stage 0",
-            "risks": [
-              "L",
-              "H",
-              "L",
-              "H",
-              "M"
-            ],
-            "date": null,
-            "url": "https://www.defiscan.info/protocols/curve-finance/ethereum"
-          }
-        ]
-      },
-      "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "status": "none",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "note": "DeFiScan has no data for Curve."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Philidor Analytics has no data for Curve."
     },
     "pigi": {
       "url": "https://app.pigi.finance/vaults",
       "note": "pigi lists 13 Ethereum vault(s) under Curve and has published a rating for none of them.",
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "risklayer": {
       "value": "6.7/10 · high",
@@ -222,7 +181,12 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
+    },
+    "defiscoring": {
+      "status": "none",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "note": "DeFi Scoring has no data for Curve."
     }
   }
 }

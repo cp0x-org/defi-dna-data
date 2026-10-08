@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "morpho-blue",
   "metrics": {
     "incidents": {
@@ -9,79 +9,37 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 5157915804.822155,
+      "value": 5123191693.920297,
       "url": "https://defillama.com/protocol/morpho-blue",
       "extra": {
         "components": [
           {
             "id": "4025",
             "name": "Morpho Blue",
-            "tvl": 5157915804.822155
+            "tvl": 5123191693.920297
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 1",
-      "summary": "Morpho is a lending protocol with permissionless market creation. It enables the deployment of minimal and isolated lending markets by specifying: one collateral asset, one loan asset, a Liquidation Loan To Value (LLTV), an Interest Rate Model (IRM), and an oracle. Users may lend funds directly on individual Morpho Markets or through Morpho Vaults. These vaults are created permissionlessly by third parties, or risk curators, and offer managed lending strategies by aggregating different Morpho Markets. Morpho governance operates within a very limited scope and without direct control over the Morpho protocol.",
-      "details": [
-        {
-          "name": "Chain",
-          "value": "L"
-        },
-        {
-          "name": "Upgradeability",
-          "value": "M"
-        },
-        {
-          "name": "Autonomy",
-          "value": "M"
-        },
-        {
-          "name": "Exit Window",
-          "value": "M"
-        },
-        {
-          "name": "Accessibility",
-          "value": "L"
-        }
-      ],
-      "updatedAt": "2025-05-21",
-      "url": "https://www.defiscan.info/protocols/morpho/ethereum",
-      "extra": {
-        "reviews": [
-          {
-            "file": "morpho/ethereum.md",
-            "stage": "Stage 1",
-            "risks": [
-              "L",
-              "M",
-              "M",
-              "M",
-              "L"
-            ],
-            "date": "2025-05-21",
-            "url": "https://www.defiscan.info/protocols/morpho/ethereum"
-          }
-        ]
-      },
-      "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "status": "none",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "note": "DeFiScan has no data for Morpho Blue."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Philidor Analytics has no data for Morpho Blue."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "pigi.finance has no data for Morpho Blue."
     },
     "risklayer": {
@@ -198,7 +156,40 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
+    },
+    "defiscoring": {
+      "value": "42 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "50",
+          "description": "audit_count: 2"
+        },
+        {
+          "name": "Liveness",
+          "value": "74",
+          "description": "tvl_change_7d_pct: -0.29"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/morpho-blue",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 42,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }

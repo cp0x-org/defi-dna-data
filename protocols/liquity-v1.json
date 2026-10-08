@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "liquity-v1",
   "metrics": {
     "incidents": {
@@ -9,86 +9,157 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 184949475.94169322,
+      "value": 182353909.59392008,
       "url": "https://defillama.com/protocol/liquity-v1",
       "extra": {
         "components": [
           {
             "id": "270",
             "name": "Liquity V1",
-            "tvl": 184949475.94169322
+            "tvl": 182353909.59392008
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 2",
-      "summary": "Liquity is a decentralized borrowing protocol that allows you to draw interest-free loans against Ether used as collateral. Loans are paid out in LUSD (a USD pegged stablecoin) and need to maintain a minimum collateral ratio of 110%.",
+      "value": "0 admins · 18 contracts",
+      "summary": "Liquity V1 is an immutable, governance-free borrowing protocol on Ethereum that issues LUSD stablecoins against ETH collateral at a minimum 110% collateralization ratio. All smart contracts are non-upgradeable with ownership renounced to the zero address, making the protocol fully autonomous. The system relies on Chainlink and Tellor as dual oracle sources for ETH/USD pricing, with an automatic fallback mechanism between the two. The protocol holds $0 in total value across its contracts.",
       "details": [
         {
-          "name": "Chain",
-          "value": "L"
+          "name": "Admins",
+          "value": "0"
         },
         {
-          "name": "Upgradeability",
-          "value": "L"
+          "name": "Contracts",
+          "value": "18"
         },
         {
-          "name": "Autonomy",
-          "value": "L"
+          "name": "Permissioned functions",
+          "value": "32"
         },
         {
-          "name": "Exit Window",
-          "value": "L"
+          "name": "Capital at risk",
+          "value": "$0"
         },
         {
-          "name": "Accessibility",
-          "value": "L"
+          "name": "Token value at risk",
+          "value": "$0"
+        },
+        {
+          "name": "Dependencies",
+          "value": "2"
+        },
+        {
+          "name": "Verified coverage",
+          "value": "100%"
+        },
+        {
+          "name": "eth:0x0000000000000000000000000000000000000000",
+          "value": "$209.1M reachable",
+          "description": "Revoked"
+        },
+        {
+          "name": "BorrowerOperations",
+          "value": "$209.1M reachable",
+          "description": "Immutable"
+        },
+        {
+          "name": "TroveManager",
+          "value": "$209.1M reachable",
+          "description": "Immutable"
+        },
+        {
+          "name": "StabilityPool",
+          "value": "$209.1M reachable",
+          "description": "Immutable"
         }
       ],
-      "updatedAt": "2024-10-23",
-      "url": "https://www.defiscan.info/protocols/liquity/ethereum",
+      "updatedAt": "2026-04-15",
+      "url": "https://www.defiscan.info/protocol/liquity-v1",
+      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-15; the compiled JSON was rebuilt on 2026-09-30.",
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
+    },
+    "philidor": {
+      "status": "none",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "note": "Philidor Analytics has no data for Liquity v1."
+    },
+    "pigi": {
+      "value": "1 vaults rated",
+      "summary": "pigi.finance rates individual vaults rather than protocols. It rates 1 of the 1 Ethereum vault(s) it files under Liquity v1.",
+      "details": [
+        {
+          "name": "Liquity v1 - Stability Pool",
+          "value": "B · 80.4/100",
+          "description": "Filed under Liquity v1 · Unknown Pool Type · TVL $7.6M (30-day average) · Rated 2026-10-08"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://app.pigi.finance/vaults",
+      "note": "Counted: 1 rated of the 1 Ethereum vault(s) pigi lists under Liquity v1. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
-        "reviews": [
+        "vaultsListed": 1,
+        "vaultsRated": 1,
+        "vaults": [
           {
-            "file": "liquity/ethereum.md",
-            "stage": "Stage 2",
-            "risks": [
-              "L",
-              "L",
-              "L",
-              "L",
-              "L"
-            ],
-            "date": "2024-10-23",
-            "url": "https://www.defiscan.info/protocols/liquity/ethereum"
+            "name": "Liquity v1 - Stability Pool",
+            "version": "Liquity v1",
+            "curator": null,
+            "tier": "B",
+            "score": 80.4,
+            "tvlUsd": 7568327.69,
+            "scoredAt": "2026-10-08",
+            "url": "https://app.pigi.finance/vault/3"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
-    },
-    "philidor": {
-      "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
-      "note": "Philidor Analytics has no data for Liquity v1."
-    },
-    "pigi": {
-      "url": "https://app.pigi.finance/vaults",
-      "note": "pigi lists 1 Ethereum vault(s) under Liquity v1 and has published a rating for none of them.",
-      "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Risklayer has no data for Liquity v1."
+    },
+    "defiscoring": {
+      "value": "36 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "50",
+          "description": "audit_count: 2"
+        },
+        {
+          "name": "Liveness",
+          "value": "53",
+          "description": "tvl_change_7d_pct: -8.9"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/liquity-v1",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 36,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }

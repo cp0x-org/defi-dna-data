@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:05:41.925Z",
+  "generatedAt": "2026-10-08T22:09:20.683Z",
   "protocolId": "pendle",
   "metrics": {
     "incidents": {
@@ -9,78 +9,37 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     },
     "tvl": {
-      "value": 746800208.9474125,
+      "value": 747877258.2774894,
       "url": "https://defillama.com/protocol/pendle-v2",
       "extra": {
         "components": [
           {
             "id": "382",
             "name": "Pendle V2",
-            "tvl": 746800208.9474125
+            "tvl": 747877258.2774894
           }
         ]
       },
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   },
   "feeds": {
     "defiscan": {
-      "value": "Stage 0",
-      "summary": "Pendle is a yield-trading protocol that enables users to manage and optimize their yield exposure. By tokenizing yield-bearing assets into standardized yield tokens (SY), Pendle allows these assets to be split into principal tokens (PT) and yield tokens (YT). This separation facilitates various strategies, including earning fixed yields, speculating on future yield changes, and providing liquidity to earn additional rewards. Pendle's Automated Market Maker (AMM) is specifically designed to handle the trading of these assets.",
-      "details": [
-        {
-          "name": "Chain",
-          "value": "L"
-        },
-        {
-          "name": "Upgradeability",
-          "value": "H"
-        },
-        {
-          "name": "Autonomy",
-          "value": "L"
-        },
-        {
-          "name": "Exit Window",
-          "value": "H"
-        },
-        {
-          "name": "Accessibility",
-          "value": "H"
-        }
-      ],
-      "url": "https://www.defiscan.info/protocols/pendle/ethereum",
-      "extra": {
-        "reviews": [
-          {
-            "file": "pendle/ethereum.md",
-            "stage": "Stage 0",
-            "risks": [
-              "L",
-              "H",
-              "L",
-              "H",
-              "H"
-            ],
-            "date": null,
-            "url": "https://www.defiscan.info/protocols/pendle/ethereum"
-          }
-        ]
-      },
-      "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "status": "none",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "note": "DeFiScan has no data for Pendle."
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "Philidor Analytics has no data for Pendle."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-08T12:05:41.925Z",
+      "fetchedAt": "2026-10-08T22:09:20.683Z",
       "note": "pigi.finance has no data for Pendle."
     },
     "risklayer": {
@@ -197,7 +156,40 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T12:05:41.925Z"
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
+    },
+    "defiscoring": {
+      "value": "27 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "0",
+          "description": "audit_count: 0"
+        },
+        {
+          "name": "Liveness",
+          "value": "91",
+          "description": "tvl_change_7d_pct: -3.7"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "url": "https://defiscoring.com/protocols/pendle",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 27,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }
