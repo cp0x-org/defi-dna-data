@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T22:09:20.683Z",
+  "generatedAt": "2026-10-09T11:56:52.979Z",
   "protocolId": "pendle",
   "metrics": {
     "incidents": {
@@ -9,37 +9,70 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     },
     "tvl": {
-      "value": 747877258.2774894,
+      "value": 760587129.0199947,
       "url": "https://defillama.com/protocol/pendle-v2",
       "extra": {
         "components": [
           {
             "id": "382",
             "name": "Pendle V2",
-            "tvl": 747877258.2774894
+            "tvl": 760587129.0199947
           }
         ]
       },
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "fetchedAt": "2026-10-09T11:56:52.979Z",
       "note": "DeFiScan has no data for Pendle."
+    },
+    "defiscoring": {
+      "value": "27 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "0",
+          "description": "audit_count: 0"
+        },
+        {
+          "name": "Liveness",
+          "value": "89",
+          "description": "tvl_change_7d_pct: -4.27"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-09",
+      "url": "https://defiscoring.com/protocols/pendle",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 27,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "fetchedAt": "2026-10-09T11:56:52.979Z",
       "note": "Philidor Analytics has no data for Pendle."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "fetchedAt": "2026-10-09T11:56:52.979Z",
       "note": "pigi.finance has no data for Pendle."
     },
     "risklayer": {
@@ -156,40 +189,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
-    },
-    "defiscoring": {
-      "value": "27 · red",
-      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
-      "details": [
-        {
-          "name": "Trust",
-          "value": "0",
-          "description": "audit_count: 0"
-        },
-        {
-          "name": "Liveness",
-          "value": "91",
-          "description": "tvl_change_7d_pct: -3.7"
-        },
-        {
-          "name": "Security",
-          "value": "0",
-          "description": "Source code unavailable · real: false"
-        }
-      ],
-      "updatedAt": "2026-10-08",
-      "url": "https://defiscoring.com/protocols/pendle",
-      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
-      "extra": {
-        "overallScore": 27,
-        "riskLevel": "red",
-        "text": [
-          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
-        ]
-      },
-      "status": "ok",
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     }
   }
 }

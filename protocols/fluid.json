@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T22:09:20.683Z",
+  "generatedAt": "2026-10-09T11:56:52.979Z",
   "protocolId": "fluid",
   "metrics": {
     "incidents": {
@@ -19,37 +19,70 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     },
     "tvl": {
-      "value": 701243784.508676,
+      "value": 704291562.4171581,
       "url": "https://defillama.com/protocol/fluid-lending",
       "extra": {
         "components": [
           {
             "id": "4167",
             "name": "Fluid Lending",
-            "tvl": 484957492.83684754
+            "tvl": 490014211.307994
           },
           {
             "id": "5317",
             "name": "Fluid DEX",
-            "tvl": 216286291.67182848
+            "tvl": 214277351.10916412
           }
         ]
       },
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "fetchedAt": "2026-10-09T11:56:52.979Z",
       "note": "DeFiScan has no data for Fluid."
+    },
+    "defiscoring": {
+      "value": "26 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "0",
+          "description": "audit_count: 0"
+        },
+        {
+          "name": "Liveness",
+          "value": "86",
+          "description": "tvl_change_7d_pct: -5.57"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-09",
+      "url": "https://defiscoring.com/protocols/fluid",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "overallScore": 26,
+        "riskLevel": "red",
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "fetchedAt": "2026-10-09T11:56:52.979Z",
       "note": "Philidor Analytics has no data for Fluid."
     },
     "pigi": {
@@ -59,20 +92,20 @@
         {
           "name": "Instadapp ETH v2",
           "value": "C · 55/100",
-          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $200.0M (30-day average) · Rated 2026-10-08"
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $200.3M (30-day average) · Rated 2026-10-09"
         },
         {
           "name": "Fluid Lite - USD Vault",
           "value": "F · 25/100",
-          "description": "Filed under Fluid Lite · Unknown Pool Type · TVL $43.2M (30-day average) · Rated 2026-10-08"
+          "description": "Filed under Fluid Lite · Unknown Pool Type · TVL $43.1M (30-day average) · Rated 2026-10-09"
         },
         {
           "name": "Fluid (InstaDapp) - GHO Lending",
           "value": "C · 57/100",
-          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $26.1M (30-day average) · Rated 2026-10-08"
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $26.4M (30-day average) · Rated 2026-10-09"
         }
       ],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-09",
       "url": "https://app.pigi.finance/vaults",
       "note": "Counted: 3 rated of the 7 Ethereum vault(s) pigi lists under Fluid (InstaDapp), Fluid Lite. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
@@ -85,8 +118,8 @@
             "curator": null,
             "tier": "C",
             "score": 55,
-            "tvlUsd": 199969573.47,
-            "scoredAt": "2026-10-08",
+            "tvlUsd": 200273676,
+            "scoredAt": "2026-10-09",
             "url": "https://app.pigi.finance/vault/9"
           },
           {
@@ -95,8 +128,8 @@
             "curator": null,
             "tier": "F",
             "score": 25,
-            "tvlUsd": 43161720.72,
-            "scoredAt": "2026-10-08",
+            "tvlUsd": 43145293.92,
+            "scoredAt": "2026-10-09",
             "url": "https://app.pigi.finance/vault/58"
           },
           {
@@ -105,52 +138,19 @@
             "curator": null,
             "tier": "C",
             "score": 57,
-            "tvlUsd": 26146406.89,
-            "scoredAt": "2026-10-08",
+            "tvlUsd": 26439031.86,
+            "scoredAt": "2026-10-09",
             "url": "https://app.pigi.finance/vault/7"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
+      "fetchedAt": "2026-10-09T11:56:52.979Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-08T22:09:20.683Z",
+      "fetchedAt": "2026-10-09T11:56:52.979Z",
       "note": "Risklayer has no data for Fluid."
-    },
-    "defiscoring": {
-      "value": "27 · red",
-      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
-      "details": [
-        {
-          "name": "Trust",
-          "value": "0",
-          "description": "audit_count: 0"
-        },
-        {
-          "name": "Liveness",
-          "value": "89",
-          "description": "tvl_change_7d_pct: -4.36"
-        },
-        {
-          "name": "Security",
-          "value": "0",
-          "description": "Source code unavailable · real: false"
-        }
-      ],
-      "updatedAt": "2026-10-08",
-      "url": "https://defiscoring.com/protocols/fluid",
-      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
-      "extra": {
-        "overallScore": 27,
-        "riskLevel": "red",
-        "text": [
-          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
-        ]
-      },
-      "status": "ok",
-      "fetchedAt": "2026-10-08T22:09:20.683Z"
     }
   }
 }
