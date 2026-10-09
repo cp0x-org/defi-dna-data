@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:56:52.979Z",
+  "generatedAt": "2026-10-09T21:44:21.288Z",
   "protocolId": "lido",
   "metrics": {
     "incidents": {
@@ -9,21 +9,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "tvl": {
-      "value": 24341758740.823196,
+      "value": 24054421755.313053,
       "url": "https://defillama.com/protocol/lido",
       "extra": {
         "components": [
           {
             "id": "182",
             "name": "Lido",
-            "tvl": 24341758740.823196
+            "tvl": 24054421755.313053
           }
         ]
       },
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     }
   },
   "feeds": {
@@ -89,10 +89,10 @@
       "url": "https://www.defiscan.info/protocol/lido",
       "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-28; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "defiscoring": {
-      "value": "44 · red",
+      "value": "43 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -102,8 +102,8 @@
         },
         {
           "name": "Liveness",
-          "value": "81",
-          "description": "tvl_change_7d_pct: -7.58"
+          "value": "78",
+          "description": "tvl_change_7d_pct: -8.67"
         },
         {
           "name": "Security",
@@ -115,18 +115,18 @@
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 44,
+        "overallScore": 43,
         "riskLevel": "red",
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-09T11:56:52.979Z",
+      "fetchedAt": "2026-10-09T21:44:21.288Z",
       "note": "Philidor Analytics has no data for Lido."
     },
     "pigi": {
@@ -159,7 +159,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
@@ -275,7 +275,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:56:52.979Z",
+  "generatedAt": "2026-10-09T21:44:21.288Z",
   "protocolId": "liquity-v1",
   "metrics": {
     "incidents": {
@@ -9,21 +9,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "tvl": {
-      "value": 180425917.127452,
+      "value": 178864664.2714166,
       "url": "https://defillama.com/protocol/liquity-v1",
       "extra": {
         "components": [
           {
             "id": "270",
             "name": "Liquity V1",
-            "tvl": 180425917.127452
+            "tvl": 178864664.2714166
           }
         ]
       },
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     }
   },
   "feeds": {
@@ -84,7 +84,7 @@
       "url": "https://www.defiscan.info/protocol/liquity-v1",
       "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-15; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "defiscoring": {
       "value": "37 · red",
@@ -97,8 +97,8 @@
         },
         {
           "name": "Liveness",
-          "value": "58",
-          "description": "tvl_change_7d_pct: -6.73"
+          "value": "57",
+          "description": "tvl_change_7d_pct: -7.26"
         },
         {
           "name": "Security",
@@ -117,11 +117,11 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-09T11:56:52.979Z",
+      "fetchedAt": "2026-10-09T21:44:21.288Z",
       "note": "Philidor Analytics has no data for Liquity v1."
     },
     "pigi": {
@@ -131,7 +131,7 @@
         {
           "name": "Liquity v1 - Stability Pool",
           "value": "B · 80.4/100",
-          "description": "Filed under Liquity v1 · Unknown Pool Type · TVL $7.6M (30-day average) · Rated 2026-10-09"
+          "description": "Filed under Liquity v1 · Exchanging Risk · TVL $7.6M (30-day average) · Rated 2026-10-09"
         }
       ],
       "updatedAt": "2026-10-09",
@@ -154,11 +154,11 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-09T11:56:52.979Z",
+      "fetchedAt": "2026-10-09T21:44:21.288Z",
       "note": "Risklayer has no data for Liquity v1."
     }
   }

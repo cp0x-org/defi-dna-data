@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:56:52.979Z",
+  "generatedAt": "2026-10-09T21:44:21.288Z",
   "protocolId": "uniswap-v4",
   "metrics": {
     "incidents": {
@@ -9,27 +9,27 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "tvl": {
-      "value": 764237019.9548882,
+      "value": 760661600.3571897,
       "url": "https://defillama.com/protocol/uniswap-v4",
       "extra": {
         "components": [
           {
             "id": "5690",
             "name": "Uniswap V4",
-            "tvl": 764237019.9548882
+            "tvl": 760661600.3571897
           }
         ]
       },
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-09T11:56:52.979Z",
+      "fetchedAt": "2026-10-09T21:44:21.288Z",
       "note": "DeFiScan has no data for Uniswap v4."
     },
     "defiscoring": {
@@ -44,7 +44,7 @@
         {
           "name": "Liveness",
           "value": "75",
-          "description": "tvl_change_7d_pct: 2.61"
+          "description": "tvl_change_7d_pct: 2.5"
         },
         {
           "name": "Security",
@@ -63,7 +63,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "philidor": {
       "value": "39 vaults rated",
@@ -338,7 +338,7 @@
             "version": "v4",
             "curator": null,
             "tier": "Prime",
-            "score": 8.49,
+            "score": 8.48,
             "tvlUsd": 1171377.9872113953,
             "scoredAt": "2026-10-09",
             "url": "https://analytics.philidor.io/vault/ethereum/0x56fc29b86900aa0afa6e20b020429bffba1105cfb45070492c67529b46eb48c1"
@@ -348,7 +348,7 @@
             "version": "v4",
             "curator": null,
             "tier": "Prime",
-            "score": 7.9,
+            "score": 8.43,
             "tvlUsd": 1000013.4970054623,
             "scoredAt": "2026-10-09",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdda3c47e70fb237fb50e3856169019bf26fe4c09d7b6618c4f9d6e2423903870"
@@ -526,11 +526,11 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-09T11:56:52.979Z",
+      "fetchedAt": "2026-10-09T21:44:21.288Z",
       "note": "pigi.finance has no data for Uniswap v4."
     },
     "risklayer": {
@@ -647,7 +647,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T11:56:52.979Z"
+      "fetchedAt": "2026-10-09T21:44:21.288Z"
     }
   }
 }
