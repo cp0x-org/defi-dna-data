@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T11:13:22.261Z",
+  "generatedAt": "2026-10-10T20:34:57.436Z",
   "protocolId": "balancer-v2",
   "metrics": {
     "incidents": {
@@ -37,31 +37,31 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-10T11:13:22.261Z"
+      "fetchedAt": "2026-10-10T20:34:57.436Z"
     },
     "tvl": {
-      "value": 15048879.262394523,
+      "value": 15005701.681341881,
       "url": "https://defillama.com/protocol/balancer-v2",
       "extra": {
         "components": [
           {
             "id": "2611",
             "name": "Balancer V2",
-            "tvl": 15048879.262394523
+            "tvl": 15005701.681341881
           }
         ]
       },
-      "fetchedAt": "2026-10-10T11:13:22.261Z"
+      "fetchedAt": "2026-10-10T20:34:57.436Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-10T11:13:22.261Z",
+      "fetchedAt": "2026-10-10T20:34:57.436Z",
       "note": "DeFiScan has no data for Balancer v2."
     },
     "defiscoring": {
-      "value": "39 · red",
+      "value": "38 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -71,8 +71,8 @@
         },
         {
           "name": "Liveness",
-          "value": "62",
-          "description": "tvl_change_7d_pct: -5.28"
+          "value": "61",
+          "description": "tvl_change_7d_pct: -5.47"
         },
         {
           "name": "Security",
@@ -84,28 +84,28 @@
       "url": "https://defiscoring.com/protocols/balancer-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 39,
+        "overallScore": 38,
         "riskLevel": "red",
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T11:13:22.261Z"
+      "fetchedAt": "2026-10-10T20:34:57.436Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-10T11:13:22.261Z",
+      "fetchedAt": "2026-10-10T20:34:57.436Z",
       "note": "Philidor Analytics has no data for Balancer v2."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-10T11:13:22.261Z",
+      "fetchedAt": "2026-10-10T20:34:57.436Z",
       "note": "pigi.finance has no data for Balancer v2."
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-10T11:13:22.261Z",
+      "fetchedAt": "2026-10-10T20:34:57.436Z",
       "note": "Risklayer has no data for Balancer v2."
     }
   }
