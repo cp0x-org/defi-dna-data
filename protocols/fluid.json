@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T21:44:21.288Z",
+  "generatedAt": "2026-10-10T11:13:22.261Z",
   "protocolId": "fluid",
   "metrics": {
     "incidents": {
@@ -19,32 +19,32 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "tvl": {
-      "value": 703369872.711369,
+      "value": 705229145.6263818,
       "url": "https://defillama.com/protocol/fluid-lending",
       "extra": {
         "components": [
           {
             "id": "4167",
             "name": "Fluid Lending",
-            "tvl": 490068915.7738839
+            "tvl": 492699511.3259071
           },
           {
             "id": "5317",
             "name": "Fluid DEX",
-            "tvl": 213300956.93748516
+            "tvl": 212529634.3004746
           }
         ]
       },
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "DeFiScan has no data for Fluid."
     },
     "defiscoring": {
@@ -58,8 +58,8 @@
         },
         {
           "name": "Liveness",
-          "value": "87",
-          "description": "tvl_change_7d_pct: -5.08"
+          "value": "88",
+          "description": "tvl_change_7d_pct: -4.82"
         },
         {
           "name": "Security",
@@ -67,7 +67,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "url": "https://defiscoring.com/protocols/fluid",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -78,11 +78,11 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "Philidor Analytics has no data for Fluid."
     },
     "pigi": {
@@ -92,20 +92,20 @@
         {
           "name": "Instadapp ETH v2",
           "value": "C · 55/100",
-          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $200.3M (30-day average) · Rated 2026-10-09"
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $199.9M (30-day average) · Rated 2026-10-10"
         },
         {
           "name": "Fluid Lite - USD Vault",
           "value": "F · 25/100",
-          "description": "Filed under Fluid Lite · Unknown Pool Type · TVL $43.1M (30-day average) · Rated 2026-10-09"
+          "description": "Filed under Fluid Lite · Unknown Pool Type · TVL $43.1M (30-day average) · Rated 2026-10-10"
         },
         {
           "name": "Fluid (InstaDapp) - GHO Lending",
           "value": "C · 57/100",
-          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $26.4M (30-day average) · Rated 2026-10-09"
+          "description": "Filed under Fluid (InstaDapp) · Yield Aggregation · TVL $26.7M (30-day average) · Rated 2026-10-10"
         }
       ],
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "url": "https://app.pigi.finance/vaults",
       "note": "Counted: 3 rated of the 7 Ethereum vault(s) pigi lists under Fluid (InstaDapp), Fluid Lite. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
@@ -118,8 +118,8 @@
             "curator": null,
             "tier": "C",
             "score": 55,
-            "tvlUsd": 200273676,
-            "scoredAt": "2026-10-09",
+            "tvlUsd": 199917026.5,
+            "scoredAt": "2026-10-10",
             "url": "https://app.pigi.finance/vault/9"
           },
           {
@@ -128,8 +128,8 @@
             "curator": null,
             "tier": "F",
             "score": 25,
-            "tvlUsd": 43145293.92,
-            "scoredAt": "2026-10-09",
+            "tvlUsd": 43132783.95,
+            "scoredAt": "2026-10-10",
             "url": "https://app.pigi.finance/vault/58"
           },
           {
@@ -138,18 +138,18 @@
             "curator": null,
             "tier": "C",
             "score": 57,
-            "tvlUsd": 26439031.86,
-            "scoredAt": "2026-10-09",
+            "tvlUsd": 26721475.56,
+            "scoredAt": "2026-10-10",
             "url": "https://app.pigi.finance/vault/7"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "Risklayer has no data for Fluid."
     }
   }

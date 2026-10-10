@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T21:44:21.288Z",
+  "generatedAt": "2026-10-10T11:13:22.261Z",
   "protocolId": "balancer-v3",
   "metrics": {
     "incidents": {
@@ -9,31 +9,31 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "tvl": {
-      "value": 13686824.638057146,
+      "value": 13646256.693201426,
       "url": "https://defillama.com/protocol/balancer-v3",
       "extra": {
         "components": [
           {
             "id": "5491",
             "name": "Balancer V3",
-            "tvl": 13686824.638057146
+            "tvl": 13646256.693201426
           }
         ]
       },
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "DeFiScan has no data for Balancer v3."
     },
     "defiscoring": {
-      "value": "15 · red",
+      "value": "14 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -43,8 +43,8 @@
         },
         {
           "name": "Liveness",
-          "value": "49",
-          "description": "tvl_change_7d_pct: -10.3"
+          "value": "48",
+          "description": "tvl_change_7d_pct: -10.9"
         },
         {
           "name": "Security",
@@ -52,32 +52,32 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "url": "https://defiscoring.com/protocols/balancer-v3",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 15,
+        "overallScore": 14,
         "riskLevel": "red",
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "Philidor Analytics has no data for Balancer v3."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "pigi.finance has no data for Balancer v3."
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "Risklayer has no data for Balancer v3."
     }
   }

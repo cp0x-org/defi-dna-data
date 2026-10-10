@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T21:44:21.288Z",
+  "generatedAt": "2026-10-10T11:13:22.261Z",
   "protocolId": "lido",
   "metrics": {
     "incidents": {
@@ -9,21 +9,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "tvl": {
-      "value": 24054421755.313053,
+      "value": 24222025315.873707,
       "url": "https://defillama.com/protocol/lido",
       "extra": {
         "components": [
           {
             "id": "182",
             "name": "Lido",
-            "tvl": 24054421755.313053
+            "tvl": 24222025315.873707
           }
         ]
       },
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     }
   },
   "feeds": {
@@ -89,7 +89,7 @@
       "url": "https://www.defiscan.info/protocol/lido",
       "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-28; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "defiscoring": {
       "value": "43 · red",
@@ -103,7 +103,7 @@
         {
           "name": "Liveness",
           "value": "78",
-          "description": "tvl_change_7d_pct: -8.67"
+          "description": "tvl_change_7d_pct: -8.61"
         },
         {
           "name": "Security",
@@ -111,7 +111,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -122,11 +122,11 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-09T21:44:21.288Z",
+      "fetchedAt": "2026-10-10T11:13:22.261Z",
       "note": "Philidor Analytics has no data for Lido."
     },
     "pigi": {
@@ -135,11 +135,11 @@
       "details": [
         {
           "name": "Lido - stETH",
-          "value": "A · 85.7/100",
-          "description": "Filed under Lido · LST · TVL $25.47B (30-day average) · Rated 2026-10-09"
+          "value": "A · 86.11/100",
+          "description": "Filed under Lido · LST · TVL $25.48B (30-day average) · Rated 2026-10-10"
         }
       ],
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "url": "https://app.pigi.finance/vaults",
       "note": "Counted: 1 rated of the 1 Ethereum vault(s) pigi lists under Lido. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
@@ -151,15 +151,15 @@
             "version": "Lido",
             "curator": null,
             "tier": "A",
-            "score": 85.7,
-            "tvlUsd": 25470818616.59,
-            "scoredAt": "2026-10-09",
+            "score": 86.11,
+            "tvlUsd": 25482489546.17,
+            "scoredAt": "2026-10-10",
             "url": "https://app.pigi.finance/vault/13"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
@@ -275,7 +275,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-09T21:44:21.288Z"
+      "fetchedAt": "2026-10-10T11:13:22.261Z"
     }
   }
 }
