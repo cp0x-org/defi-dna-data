@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:34:57.436Z",
+  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "morpho-blue",
   "metrics": {
     "incidents": {
@@ -9,31 +9,31 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "tvl": {
-      "value": 5158457755.212914,
+      "value": 5160778408.93936,
       "url": "https://defillama.com/protocol/morpho-blue",
       "extra": {
         "components": [
           {
             "id": "4025",
             "name": "Morpho Blue",
-            "tvl": 5158457755.212914
+            "tvl": 5160778408.93936
           }
         ]
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "DeFiScan has no data for Morpho Blue."
     },
     "defiscoring": {
-      "value": "42 · red",
+      "value": "41 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -43,8 +43,8 @@
         },
         {
           "name": "Liveness",
-          "value": "74",
-          "description": "tvl_change_7d_pct: -0.38"
+          "value": "71",
+          "description": "tvl_change_7d_pct: -1.63"
         },
         {
           "name": "Security",
@@ -52,27 +52,27 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-11",
       "url": "https://defiscoring.com/protocols/morpho-blue",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 42,
+        "overallScore": 41,
         "riskLevel": "red",
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "Philidor Analytics has no data for Morpho Blue."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "pigi.finance has no data for Morpho Blue."
     },
     "risklayer": {
@@ -189,7 +189,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     }
   }
 }

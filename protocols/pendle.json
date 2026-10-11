@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:34:57.436Z",
+  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "pendle",
   "metrics": {
     "incidents": {
@@ -9,27 +9,27 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "tvl": {
-      "value": 767941646.1463312,
+      "value": 769585802.2715011,
       "url": "https://defillama.com/protocol/pendle-v2",
       "extra": {
         "components": [
           {
             "id": "382",
             "name": "Pendle V2",
-            "tvl": 767941646.1463312
+            "tvl": 769585802.2715011
           }
         ]
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "DeFiScan has no data for Pendle."
     },
     "defiscoring": {
@@ -43,8 +43,8 @@
         },
         {
           "name": "Liveness",
-          "value": "91",
-          "description": "tvl_change_7d_pct: -3.64"
+          "value": "90",
+          "description": "tvl_change_7d_pct: -4"
         },
         {
           "name": "Security",
@@ -52,7 +52,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-11",
       "url": "https://defiscoring.com/protocols/pendle",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -63,16 +63,16 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "Philidor Analytics has no data for Pendle."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "pigi.finance has no data for Pendle."
     },
     "risklayer": {
@@ -189,7 +189,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     }
   }
 }

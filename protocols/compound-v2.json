@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:34:57.436Z",
+  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "compound-v2",
   "metrics": {
     "incidents": {
@@ -19,31 +19,31 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "tvl": {
-      "value": 106927995.89182821,
+      "value": 107139542.41703466,
       "url": "https://defillama.com/protocol/compound-v2",
       "extra": {
         "components": [
           {
             "id": "114",
             "name": "Compound V2",
-            "tvl": 106927995.89182821
+            "tvl": 107139542.41703466
           }
         ]
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "DeFiScan has no data for Compound v2."
     },
     "defiscoring": {
-      "value": "40 · red",
+      "value": "39 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -53,8 +53,8 @@
         },
         {
           "name": "Liveness",
-          "value": "65",
-          "description": "tvl_change_7d_pct: -3.95"
+          "value": "62",
+          "description": "tvl_change_7d_pct: -5.27"
         },
         {
           "name": "Security",
@@ -62,27 +62,27 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-11",
       "url": "https://defiscoring.com/protocols/compound-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 40,
+        "overallScore": 39,
         "riskLevel": "red",
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "Philidor Analytics has no data for Compound v2."
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "pigi.finance has no data for Compound v2."
     },
     "risklayer": {
@@ -199,7 +199,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     }
   }
 }

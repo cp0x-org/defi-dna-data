@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:34:57.436Z",
+  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "euler",
   "metrics": {
     "incidents": {
@@ -9,31 +9,31 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "tvl": {
-      "value": 52826797.63236977,
+      "value": 52896240.93767944,
       "url": "https://defillama.com/protocol/euler-v2",
       "extra": {
         "components": [
           {
             "id": "5044",
             "name": "Euler V2",
-            "tvl": 52826797.63236977
+            "tvl": 52896240.93767944
           }
         ]
       },
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     }
   },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "DeFiScan has no data for Euler."
     },
     "defiscoring": {
-      "value": "20 · red",
+      "value": "19 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -43,8 +43,8 @@
         },
         {
           "name": "Liveness",
-          "value": "67",
-          "description": "tvl_change_7d_pct: -13.18"
+          "value": "62",
+          "description": "tvl_change_7d_pct: -15.06"
         },
         {
           "name": "Security",
@@ -52,22 +52,22 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-11",
       "url": "https://defiscoring.com/protocols/euler",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 20,
+        "overallScore": 19,
         "riskLevel": "red",
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "Philidor Analytics has no data for Euler."
     },
     "pigi": {
@@ -77,55 +77,55 @@
         {
           "name": "EVK Vault eUSDC-47 (Ethereum Mainnet)",
           "value": "F · 17/100",
-          "description": "Filed under Euler · Lending · TVL $4.4M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $4.5M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault eUSDC-132",
           "value": "D · 47/100",
-          "description": "Filed under Euler · Lending · TVL $3.0M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $3.0M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault ewstETH-2",
           "value": "D · 51/100",
-          "description": "Filed under Euler · Lending · TVL $2.9M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $2.9M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault eWETH-2",
           "value": "D · 51/100",
-          "description": "Filed under Euler · Lending · TVL $2.7M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $2.7M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault eUSDC-2 (Ethereum Mainnet)",
           "value": "D · 51/100",
-          "description": "Filed under Euler · Lending · TVL $2.1M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $2.1M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault eUSDC-70",
           "value": "F · 22/100",
-          "description": "Filed under Euler · Lending · TVL $1.5M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $1.5M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault eUSDC-58 (Ethereum Mainnet)",
           "value": "F · 17/100",
-          "description": "Filed under Euler · Lending · TVL $1.4M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $1.4M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault eUSDC-95",
           "value": "F · 17/100",
-          "description": "Filed under Euler · Lending · TVL $1.2M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $1.2M (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault ePYUSD-6",
           "value": "F · 22/100",
-          "description": "Filed under Euler · Lending · TVL $1.0M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $932K (30-day average) · Rated 2026-10-11"
         },
         {
           "name": "EVK Vault eRLUSD-7",
           "value": "F · 22/100",
-          "description": "Filed under Euler · Lending · TVL $1.0M (30-day average) · Rated 2026-10-10"
+          "description": "Filed under Euler · Lending · TVL $879K (30-day average) · Rated 2026-10-11"
         }
       ],
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-11",
       "url": "https://app.pigi.finance/vaults",
       "note": "Counted: 19 rated of the 164 Ethereum vault(s) pigi lists under Euler. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
       "extra": {
@@ -138,8 +138,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 4448121.29,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 4455434.42,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2006"
           },
           {
@@ -148,8 +148,8 @@
             "curator": null,
             "tier": "D",
             "score": 47,
-            "tvlUsd": 3025156.09,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 3003154.63,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/30011"
           },
           {
@@ -158,8 +158,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 2857850.57,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 2859177.72,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/30013"
           },
           {
@@ -168,8 +168,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 2654452.88,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 2650960.01,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/30015"
           },
           {
@@ -178,8 +178,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 2133959.85,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 2138418.84,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2009"
           },
           {
@@ -188,8 +188,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 1519500.52,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 1494878.43,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2013"
           },
           {
@@ -198,8 +198,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 1442358.88,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 1443240.35,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2015"
           },
           {
@@ -208,8 +208,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 1198792.75,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 1198786.06,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/5058"
           },
           {
@@ -218,8 +218,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 1028131.63,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 931655.36,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/30000"
           },
           {
@@ -228,8 +228,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 1009181.4,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 878780.01,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/30002"
           },
           {
@@ -238,8 +238,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 782991.55,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 703400.02,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/30001"
           },
           {
@@ -248,8 +248,8 @@
             "curator": null,
             "tier": "C",
             "score": 58,
-            "tvlUsd": 633670.03,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 642138.92,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2002"
           },
           {
@@ -258,8 +258,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 555992.12,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 556765.39,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/30030"
           },
           {
@@ -268,8 +268,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 490303.76,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 489508.08,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2017"
           },
           {
@@ -278,8 +278,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 317227.34,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 318160.9,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2003"
           },
           {
@@ -288,8 +288,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 153532.46,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 152789.28,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/200208"
           },
           {
@@ -298,8 +298,8 @@
             "curator": null,
             "tier": "D",
             "score": 58,
-            "tvlUsd": 135373.51,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 135261.05,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2016"
           },
           {
@@ -308,8 +308,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 43674.25,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 43657.03,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2010"
           },
           {
@@ -318,18 +318,18 @@
             "curator": null,
             "tier": "C",
             "score": 57.4,
-            "tvlUsd": 39720.47,
-            "scoredAt": "2026-10-10",
+            "tvlUsd": 37869.28,
+            "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/2004"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-10T20:34:57.436Z"
+      "fetchedAt": "2026-10-11T11:26:53.885Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-10T20:34:57.436Z",
+      "fetchedAt": "2026-10-11T11:26:53.885Z",
       "note": "Risklayer has no data for Euler."
     }
   }
