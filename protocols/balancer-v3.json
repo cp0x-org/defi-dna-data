@@ -1,36 +1,10 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "balancer-v3",
-  "metrics": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 13675541.760631312,
-      "url": "https://defillama.com/protocol/balancer-v3",
-      "extra": {
-        "components": [
-          {
-            "id": "5491",
-            "name": "Balancer V3",
-            "tvl": 13675541.760631312
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for Balancer v3."
+      "note": "DeFiScan has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "14 · red",
@@ -56,29 +30,37 @@
       "url": "https://defiscoring.com/protocols/balancer-v3",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 14,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "14"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Balancer v3."
+      "note": "Philidor Analytics has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "pigi.finance has no data for Balancer v3."
+      "note": "pigi.finance has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Risklayer has no data for Balancer v3."
+      "note": "Risklayer has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

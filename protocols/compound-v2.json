@@ -1,46 +1,10 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "compound-v2",
-  "metrics": {
-    "incidents": {
-      "value": 1,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2021-09-29",
-            "name": "Compound V2",
-            "amountUsd": 147000000,
-            "classification": "Token & Share Accounting",
-            "technique": "Arithmetic Error",
-            "returnedFunds": null,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 107139542.41703466,
-      "url": "https://defillama.com/protocol/compound-v2",
-      "extra": {
-        "components": [
-          {
-            "id": "114",
-            "name": "Compound V2",
-            "tvl": 107139542.41703466
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for Compound v2."
+      "note": "DeFiScan has no data for Compound v2.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "39 · red",
@@ -66,24 +30,32 @@
       "url": "https://defiscoring.com/protocols/compound-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 39,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "39"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Compound v2."
+      "note": "Philidor Analytics has no data for Compound v2.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "pigi.finance has no data for Compound v2."
+      "note": "pigi.finance has no data for Compound v2.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "value": "5.9/10 · high",
@@ -119,11 +91,25 @@
       "url": "https://risklayer.online/protocol/compound.finance",
       "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
       "extra": {
-        "domain": "compound.finance",
-        "riskLevel": "high",
-        "overallScore": 5.9,
-        "analysisStatus": "completed",
-        "keyFindings": [
+        "facts": [
+          {
+            "name": "Analyzed domain",
+            "value": "compound.finance"
+          },
+          {
+            "name": "Risk level",
+            "value": "high"
+          },
+          {
+            "name": "Overall score",
+            "value": "5.9"
+          },
+          {
+            "name": "Analysis status",
+            "value": "completed"
+          }
+        ],
+        "findings": [
           {
             "title": "September 2021 COMP Distribution Bug (~$147M)",
             "severity": "critical",
@@ -199,7 +185,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

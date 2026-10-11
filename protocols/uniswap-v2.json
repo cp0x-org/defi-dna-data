@@ -1,31 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "uniswap-v2",
-  "metrics": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 855392411.0570388,
-      "url": "https://defillama.com/protocol/uniswap-v2",
-      "extra": {
-        "components": [
-          {
-            "id": "2197",
-            "name": "Uniswap V2",
-            "tvl": 855392411.0570388
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "value": "2 admins · $900.5M capital at risk",
@@ -74,7 +48,7 @@
       "url": "https://www.defiscan.info/protocol/uniswap-v2",
       "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-16; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "39 · red",
@@ -100,14 +74,22 @@
       "url": "https://defiscoring.com/protocols/uniswap-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 39,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "39"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "value": "9 vaults rated",
@@ -116,12 +98,12 @@
         {
           "name": "Uniswap V2 USDC/WETH",
           "value": "Prime 8.57",
-          "description": "Version v2 · TVL $20.3M · Scored 2026-10-11"
+          "description": "Version v2 · TVL $20.4M · Scored 2026-10-11"
         },
         {
           "name": "Uniswap V2 WETH/USDT",
           "value": "Prime 8.38",
-          "description": "Version v2 · TVL $14.6M · Scored 2026-10-11"
+          "description": "Version v2 · TVL $14.7M · Scored 2026-10-11"
         },
         {
           "name": "Uniswap V2 DAI/WETH",
@@ -131,12 +113,12 @@
         {
           "name": "Uniswap V2 WBTC/WETH",
           "value": "Prime 8.39",
-          "description": "Version v2 · TVL $8.9M · Scored 2026-10-11"
+          "description": "Version v2 · TVL $9.0M · Scored 2026-10-11"
         },
         {
           "name": "Uniswap V2 UNI/WETH",
           "value": "Core 7.80",
-          "description": "Version v2 · TVL $4.0M · Scored 2026-10-11"
+          "description": "Version v2 · TVL $4.1M · Scored 2026-10-11"
         },
         {
           "name": "Uniswap V2 USDC/USDT",
@@ -163,14 +145,32 @@
       "url": "https://analytics.philidor.io/protocols/uniswap",
       "note": "Counted: 9 of the 9 live vault(s) Philidor lists for uniswap under version v2. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
-        "philidorId": "uniswap",
-        "versions": [
-          "v2"
+        "facts": [
+          {
+            "name": "Philidor protocol",
+            "value": "uniswap"
+          },
+          {
+            "name": "Versions",
+            "value": "v2"
+          },
+          {
+            "name": "Vaults listed",
+            "value": "9"
+          },
+          {
+            "name": "Vaults live",
+            "value": "9"
+          },
+          {
+            "name": "Vaults shut down",
+            "value": "0"
+          },
+          {
+            "name": "Vaults rated",
+            "value": "9"
+          }
         ],
-        "vaultsListed": 9,
-        "vaultsLive": 9,
-        "vaultsShutdown": 0,
-        "vaultsRated": 9,
         "vaults": [
           {
             "name": "Uniswap V2 USDC/WETH",
@@ -178,7 +178,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.57,
-            "tvlUsd": 20253679.369252156,
+            "tvlUsd": 20395055,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
           },
@@ -188,7 +188,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.38,
-            "tvlUsd": 14586288.238786152,
+            "tvlUsd": 14687911,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
           },
@@ -198,7 +198,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.52,
-            "tvlUsd": 9172539.399691643,
+            "tvlUsd": 9231219,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa478c2975ab1ea89e8196811f51a7b7ade33eb11"
           },
@@ -208,7 +208,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.39,
-            "tvlUsd": 8917395.828512946,
+            "tvlUsd": 9029208,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbb2b8038a1640196fbe3e38816f3e67cba72d940"
           },
@@ -218,7 +218,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.8,
-            "tvlUsd": 3960831.813894786,
+            "tvlUsd": 4052824,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd3d2e2692501a5c9ca623199d38826e513033a17"
           },
@@ -228,7 +228,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.53,
-            "tvlUsd": 3603227.2868102626,
+            "tvlUsd": 3602839,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3041cbd36888becc7bbcbc0045e3b1f144466f5f"
           },
@@ -238,7 +238,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1464825.131035854,
+            "tvlUsd": 1494072,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974"
           },
@@ -248,7 +248,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.67,
-            "tvlUsd": 1089074.7358819197,
+            "tvlUsd": 1089245,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0xae461ca67b15dc8dc81ce7615e0320da1a9ab8d5"
           },
@@ -258,19 +258,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.42,
-            "tvlUsd": 373423.55921840144,
+            "tvlUsd": 373424,
             "scoredAt": "2026-10-11",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4028daac072e492d34a3afdbef0ba7e35d8b55c4"
           }
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "pigi.finance has no data for Uniswap v2."
+      "note": "pigi.finance has no data for Uniswap v2.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "value": "4.3/10 · medium",
@@ -306,11 +306,25 @@
       "url": "https://risklayer.online/protocol/uniswap.org",
       "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
       "extra": {
-        "domain": "uniswap.org",
-        "riskLevel": "medium",
-        "overallScore": 4.3,
-        "analysisStatus": "completed",
-        "keyFindings": [
+        "facts": [
+          {
+            "name": "Analyzed domain",
+            "value": "uniswap.org"
+          },
+          {
+            "name": "Risk level",
+            "value": "medium"
+          },
+          {
+            "name": "Overall score",
+            "value": "4.3"
+          },
+          {
+            "name": "Analysis status",
+            "value": "completed"
+          }
+        ],
+        "findings": [
           {
             "title": "EOA controls Arbitrum v4 PoolManager ownership",
             "severity": "critical",
@@ -386,7 +400,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

@@ -1,36 +1,10 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "pendle",
-  "metrics": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 769585802.2715011,
-      "url": "https://defillama.com/protocol/pendle-v2",
-      "extra": {
-        "components": [
-          {
-            "id": "382",
-            "name": "Pendle V2",
-            "tvl": 769585802.2715011
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for Pendle."
+      "note": "DeFiScan has no data for Pendle.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "27 · red",
@@ -56,24 +30,32 @@
       "url": "https://defiscoring.com/protocols/pendle",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 27,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "27"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Pendle."
+      "note": "Philidor Analytics has no data for Pendle.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "pigi.finance has no data for Pendle."
+      "note": "pigi.finance has no data for Pendle.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "value": "5.7/10 · high",
@@ -109,11 +91,25 @@
       "url": "https://risklayer.online/protocol/pendle.finance",
       "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
       "extra": {
-        "domain": "pendle.finance",
-        "riskLevel": "high",
-        "overallScore": 5.7,
-        "analysisStatus": "completed",
-        "keyFindings": [
+        "facts": [
+          {
+            "name": "Analyzed domain",
+            "value": "pendle.finance"
+          },
+          {
+            "name": "Risk level",
+            "value": "high"
+          },
+          {
+            "name": "Overall score",
+            "value": "5.7"
+          },
+          {
+            "name": "Analysis status",
+            "value": "completed"
+          }
+        ],
+        "findings": [
           {
             "title": "18 Unverified Contracts Across Core Infrastructure",
             "severity": "critical",
@@ -189,7 +185,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

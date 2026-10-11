@@ -1,31 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "lido",
-  "metrics": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 24319277050.64885,
-      "url": "https://defillama.com/protocol/lido",
-      "extra": {
-        "components": [
-          {
-            "id": "182",
-            "name": "Lido",
-            "tvl": 24319277050.64885
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "value": "20 admins · $115.5M capital at risk",
@@ -89,7 +63,7 @@
       "url": "https://www.defiscan.info/protocol/lido",
       "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-28; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "43 · red",
@@ -115,36 +89,52 @@
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 43,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "43"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Lido."
+      "note": "Philidor Analytics has no data for Lido.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "1 vaults rated",
-      "summary": "pigi.finance rates individual vaults rather than protocols. It rates 1 of the 1 Ethereum vault(s) it files under Lido.",
+      "value": "B 83.64/100",
+      "summary": "Lido",
       "details": [
         {
-          "name": "Lido - stETH",
-          "value": "A · 86.11/100",
-          "description": "Filed under Lido · LST · TVL $25.51B (30-day average) · Rated 2026-10-11"
+          "name": "Node rating",
+          "value": "82/100",
+          "description": "pigi’s own rating of lido-protocol itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-09-14, methodology 1.14.0. Weight in the score: 0.6."
+        },
+        {
+          "name": "Vault score, TVL-weighted",
+          "value": "86.11",
+          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($25.51B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 0, F 0."
+        },
+        {
+          "name": "Weights",
+          "value": "node 0.6 · vaults 0.4",
+          "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
       "updatedAt": "2026-10-11",
-      "url": "https://app.pigi.finance/vaults",
-      "note": "Counted: 1 rated of the 1 Ethereum vault(s) pigi lists under Lido. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
+      "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
+      "note": "Headline: lido-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
-        "vaultsListed": 1,
-        "vaultsRated": 1,
         "vaults": [
           {
             "name": "Lido - stETH",
@@ -152,14 +142,17 @@
             "curator": null,
             "tier": "A",
             "score": 86.11,
-            "tvlUsd": 25506746517.49,
+            "tvlUsd": 25506746517,
             "scoredAt": "2026-10-11",
             "url": "https://app.pigi.finance/vault/13"
           }
+        ],
+        "text": [
+          "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
@@ -195,11 +188,25 @@
       "url": "https://risklayer.online/protocol/lido.fi",
       "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
       "extra": {
-        "domain": "lido.fi",
-        "riskLevel": "medium",
-        "overallScore": 4.2,
-        "analysisStatus": "completed",
-        "keyFindings": [
+        "facts": [
+          {
+            "name": "Analyzed domain",
+            "value": "lido.fi"
+          },
+          {
+            "name": "Risk level",
+            "value": "medium"
+          },
+          {
+            "name": "Overall score",
+            "value": "4.2"
+          },
+          {
+            "name": "Analysis status",
+            "value": "completed"
+          }
+        ],
+        "findings": [
           {
             "title": "Aragon Agent (0x3e40D73E) Unverified on Etherscan",
             "severity": "critical",
@@ -275,7 +282,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

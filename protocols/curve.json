@@ -1,76 +1,25 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "curve",
-  "metrics": {
-    "incidents": {
-      "value": 2,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2023-07-30",
-            "name": "Curve DEX",
-            "amountUsd": 61700000,
-            "classification": "Reentrancy",
-            "technique": "Vyper Compiler Bug",
-            "returnedFunds": null,
-            "source": null
-          },
-          {
-            "date": "2022-08-09",
-            "name": "Curve DEX",
-            "amountUsd": 575000,
-            "classification": "Frontend & Infrastructure",
-            "technique": "DNS Hijack",
-            "returnedFunds": 575000,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 1324965558.4048848,
-      "url": "https://defillama.com/protocol/curve-dex",
-      "extra": {
-        "components": [
-          {
-            "id": "3",
-            "name": "Curve DEX",
-            "tvl": 1175515581.3376036
-          },
-          {
-            "id": "2994",
-            "name": "crvUSD",
-            "tvl": 149449977.06728128
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for Curve."
+      "note": "DeFiScan has no data for Curve.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFi Scoring has no data for Curve."
+      "note": "DeFi Scoring has no data for Curve.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Curve."
+      "note": "Philidor Analytics has no data for Curve.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "url": "https://app.pigi.finance/vaults",
-      "note": "pigi lists 13 Ethereum vault(s) under Curve and has published a rating for none of them.",
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "note": "pigi.finance has no data for Curve.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "value": "6.7/10 · high",
@@ -106,11 +55,25 @@
       "url": "https://risklayer.online/protocol/curve.fi",
       "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
       "extra": {
-        "domain": "curve.fi",
-        "riskLevel": "high",
-        "overallScore": 6.7,
-        "analysisStatus": "completed",
-        "keyFindings": [
+        "facts": [
+          {
+            "name": "Analyzed domain",
+            "value": "curve.fi"
+          },
+          {
+            "name": "Risk level",
+            "value": "high"
+          },
+          {
+            "name": "Overall score",
+            "value": "6.7"
+          },
+          {
+            "name": "Analysis status",
+            "value": "completed"
+          }
+        ],
+        "findings": [
           {
             "title": "AddressProvider Registry Controlled by Single EOA Admin",
             "severity": "critical",
@@ -186,7 +149,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

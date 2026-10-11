@@ -1,31 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "liquity-v1",
-  "metrics": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 179917905.2583426,
-      "url": "https://defillama.com/protocol/liquity-v1",
-      "extra": {
-        "components": [
-          {
-            "id": "270",
-            "name": "Liquity V1",
-            "tvl": 179917905.2583426
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "value": "0 admins · 18 contracts",
@@ -84,7 +58,7 @@
       "url": "https://www.defiscan.info/protocol/liquity-v1",
       "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-15; the compiled JSON was rebuilt on 2026-09-30.",
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "36 · red",
@@ -110,36 +84,52 @@
       "url": "https://defiscoring.com/protocols/liquity-v1",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 36,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "36"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Liquity v1."
+      "note": "Philidor Analytics has no data for Liquity v1.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "1 vaults rated",
-      "summary": "pigi.finance rates individual vaults rather than protocols. It rates 1 of the 1 Ethereum vault(s) it files under Liquity v1.",
+      "value": "B 78.96/100",
+      "summary": "Liquity V1 — ownerless LUSD CDP system (Ethereum, since 2021-04-05)",
       "details": [
         {
-          "name": "Liquity v1 - Stability Pool",
-          "value": "B · 80.4/100",
-          "description": "Filed under Liquity v1 · Exchanging Risk · TVL $7.6M (30-day average) · Rated 2026-10-11"
+          "name": "Node rating",
+          "value": "78/100",
+          "description": "pigi’s own rating of liquity-v1-protocol itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-10-08, methodology 1.15.0. Weight in the score: 0.6."
+        },
+        {
+          "name": "Vault score, TVL-weighted",
+          "value": "80.4",
+          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v1-protocol, weighted by their 30-day average TVL ($7.6M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
+        },
+        {
+          "name": "Weights",
+          "value": "node 0.6 · vaults 0.4",
+          "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-11",
-      "url": "https://app.pigi.finance/vaults",
-      "note": "Counted: 1 rated of the 1 Ethereum vault(s) pigi lists under Liquity v1. Bands run A (safest) to F and scores 0–100, higher = safer. No vault stands in for the protocol and nothing is averaged — pigi publishes no protocol-level rating.",
+      "updatedAt": "2026-10-08",
+      "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
+      "note": "Headline: liquity-v1-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
-        "vaultsListed": 1,
-        "vaultsRated": 1,
         "vaults": [
           {
             "name": "Liquity v1 - Stability Pool",
@@ -147,19 +137,22 @@
             "curator": null,
             "tier": "B",
             "score": 80.4,
-            "tvlUsd": 7568159.64,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 7568160,
+            "scoredAt": "2026-10-08",
             "url": "https://app.pigi.finance/vault/3"
           }
+        ],
+        "text": [
+          "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Risklayer has no data for Liquity v1."
+      "note": "Risklayer has no data for Liquity v1.",
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

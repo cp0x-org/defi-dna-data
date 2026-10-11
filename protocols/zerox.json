@@ -1,57 +1,30 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "zerox",
-  "metrics": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": null,
-      "url": "https://defillama.com/protocol/0x",
-      "note": "DefiLlama publishes no Ethereum TVL for 0x / Matcha.",
-      "extra": {
-        "components": [
-          {
-            "id": "2116",
-            "name": "0x",
-            "tvl": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for 0x / Matcha."
+      "note": "DeFiScan has no data for 0x / Matcha.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFi Scoring has no data for 0x / Matcha."
+      "note": "DeFi Scoring has no data for 0x / Matcha.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for 0x / Matcha."
+      "note": "Philidor Analytics has no data for 0x / Matcha.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "pigi.finance has no data for 0x / Matcha."
+      "note": "pigi.finance has no data for 0x / Matcha.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Risklayer has no data for 0x / Matcha."
+      "note": "Risklayer has no data for 0x / Matcha.",
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

@@ -1,61 +1,25 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "rocketpool",
-  "metrics": {
-    "incidents": {
-      "value": 1,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2023-03-30",
-            "name": "Rocket Pool",
-            "amountUsd": 3800000,
-            "classification": "Social Engineering",
-            "technique": "Phishing",
-            "returnedFunds": null,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 1304531996.623952,
-      "url": "https://defillama.com/protocol/rocket-pool",
-      "extra": {
-        "components": [
-          {
-            "id": "900",
-            "name": "Rocket Pool",
-            "tvl": 1304531996.623952
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for Rocket Pool."
+      "note": "DeFiScan has no data for Rocket Pool.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFi Scoring has no data for Rocket Pool."
+      "note": "DeFi Scoring has no data for Rocket Pool.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Rocket Pool."
+      "note": "Philidor Analytics has no data for Rocket Pool.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "pigi.finance has no data for Rocket Pool."
+      "note": "pigi.finance has no data for Rocket Pool.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "value": "4.8/10 · medium",
@@ -91,11 +55,25 @@
       "url": "https://risklayer.online/protocol/rocketpool.net",
       "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
       "extra": {
-        "domain": "rocketpool.net",
-        "riskLevel": "medium",
-        "overallScore": 4.8,
-        "analysisStatus": "completed",
-        "keyFindings": [
+        "facts": [
+          {
+            "name": "Analyzed domain",
+            "value": "rocketpool.net"
+          },
+          {
+            "name": "Risk level",
+            "value": "medium"
+          },
+          {
+            "name": "Overall score",
+            "value": "4.8"
+          },
+          {
+            "name": "Analysis status",
+            "value": "completed"
+          }
+        ],
+        "findings": [
           {
             "title": "Ethereum Beacon Chain Is a Non-Substitutable Foundation",
             "severity": "critical",
@@ -171,7 +149,7 @@
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

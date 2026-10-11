@@ -1,0 +1,813 @@
+{
+  "aave-v3": {
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2026-03-12",
+            "name": "Aave V3",
+            "amountUsd": 862000,
+            "classification": "Oracle Manipulation",
+            "technique": "Oracle Misconfiguration",
+            "returnedFunds": 862000,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 14506191117,
+      "url": "https://defillama.com/protocol/aave-v3",
+      "extra": {
+        "components": [
+          {
+            "id": "1599",
+            "name": "Aave V3",
+            "tvl": 14506191117
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "aave-v4": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 445197193,
+      "url": "https://defillama.com/protocol/aave-v4",
+      "extra": {
+        "components": [
+          {
+            "id": "7594",
+            "name": "Aave V4",
+            "tvl": 445197193
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "balancer-v2": {
+    "incidents": {
+      "value": 3,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2025-11-03",
+            "name": "Balancer V2",
+            "amountUsd": 128000000,
+            "classification": "Token & Share Accounting",
+            "technique": "Rounding Error",
+            "returnedFunds": null,
+            "source": null
+          },
+          {
+            "date": "2023-09-19",
+            "name": "Balancer V2",
+            "amountUsd": 238000,
+            "classification": "Frontend & Infrastructure",
+            "technique": "Frontend Compromise",
+            "returnedFunds": null,
+            "source": null
+          },
+          {
+            "date": "2023-08-27",
+            "name": "Balancer V2",
+            "amountUsd": 800000,
+            "classification": "Oracle Manipulation",
+            "technique": "Spot Price Manipulation",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 14765415,
+      "url": "https://defillama.com/protocol/balancer-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "2611",
+            "name": "Balancer V2",
+            "tvl": 14765415
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "balancer-v3": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 13884855,
+      "url": "https://defillama.com/protocol/balancer-v3",
+      "extra": {
+        "components": [
+          {
+            "id": "5491",
+            "name": "Balancer V3",
+            "tvl": 13884855
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "compound-v2": {
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2021-09-29",
+            "name": "Compound V2",
+            "amountUsd": 147000000,
+            "classification": "Token & Share Accounting",
+            "technique": "Arithmetic Error",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 107301593,
+      "url": "https://defillama.com/protocol/compound-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "114",
+            "name": "Compound V2",
+            "tvl": 107301593
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "cowswap": {
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2023-02-07",
+            "name": "CoWSwap",
+            "amountUsd": 180000,
+            "classification": "Access Control",
+            "technique": "Arbitrary External Call",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": null,
+      "url": "https://defillama.com/protocol/cowswap",
+      "note": "DefiLlama publishes no Ethereum TVL for CoW Swap.",
+      "extra": {
+        "components": [
+          {
+            "id": "2643",
+            "name": "CoWSwap",
+            "tvl": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "compound-v3": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 1332330600,
+      "url": "https://defillama.com/protocol/compound-v3",
+      "extra": {
+        "components": [
+          {
+            "id": "2088",
+            "name": "Compound V3",
+            "tvl": 1332330600
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "curve": {
+    "incidents": {
+      "value": 2,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2023-07-30",
+            "name": "Curve DEX",
+            "amountUsd": 61700000,
+            "classification": "Reentrancy",
+            "technique": "Vyper Compiler Bug",
+            "returnedFunds": null,
+            "source": null
+          },
+          {
+            "date": "2022-08-09",
+            "name": "Curve DEX",
+            "amountUsd": 575000,
+            "classification": "Frontend & Infrastructure",
+            "technique": "DNS Hijack",
+            "returnedFunds": 575000,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 1322971682,
+      "url": "https://defillama.com/protocol/curve-dex",
+      "extra": {
+        "components": [
+          {
+            "id": "3",
+            "name": "Curve DEX",
+            "tvl": 1173393343
+          },
+          {
+            "id": "2994",
+            "name": "crvUSD",
+            "tvl": 149578339
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "euler": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 52957428,
+      "url": "https://defillama.com/protocol/euler-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "5044",
+            "name": "Euler V2",
+            "tvl": 52957428
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "fluid": {
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2026-05-31",
+            "name": "Fluid Lending",
+            "amountUsd": 215000,
+            "classification": "Frontend & Infrastructure",
+            "technique": "Key Leaked via Infrastructure",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 698523070,
+      "url": "https://defillama.com/protocol/fluid-lending",
+      "extra": {
+        "components": [
+          {
+            "id": "4167",
+            "name": "Fluid Lending",
+            "tvl": 485508588
+          },
+          {
+            "id": "5317",
+            "name": "Fluid DEX",
+            "tvl": 213014482
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "gearbox": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 21557531,
+      "url": "https://defillama.com/protocol/gearbox",
+      "extra": {
+        "components": [
+          {
+            "id": "1108",
+            "name": "Gearbox",
+            "tvl": 21557531
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "lido": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 24262662066,
+      "url": "https://defillama.com/protocol/lido",
+      "extra": {
+        "components": [
+          {
+            "id": "182",
+            "name": "Lido",
+            "tvl": 24262662066
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "liquity-v1": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 179904181,
+      "url": "https://defillama.com/protocol/liquity-v1",
+      "extra": {
+        "components": [
+          {
+            "id": "270",
+            "name": "Liquity V1",
+            "tvl": 179904181
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "liquity-v2": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 98795412,
+      "url": "https://defillama.com/protocol/liquity-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "5656",
+            "name": "Liquity V2",
+            "tvl": 98795412
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "mellow": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 281842082,
+      "url": "https://defillama.com/protocol/mellow-core",
+      "extra": {
+        "components": [
+          {
+            "id": "7330",
+            "name": "Mellow Core",
+            "tvl": 256834402
+          },
+          {
+            "id": "4756",
+            "name": "Mellow Restaking",
+            "tvl": 24916911
+          },
+          {
+            "id": "2613",
+            "name": "Mellow Yield",
+            "tvl": 90769
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "morpho-blue": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 5164125678,
+      "url": "https://defillama.com/protocol/morpho-blue",
+      "extra": {
+        "components": [
+          {
+            "id": "4025",
+            "name": "Morpho Blue",
+            "tvl": 5164125678
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "morpho-vaults": {
+    "incidents": {
+      "value": null,
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": null,
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "oneinch": {
+    "incidents": {
+      "value": 2,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2025-03-07",
+            "name": "1inch Swap",
+            "amountUsd": 5000000,
+            "classification": "Access Control",
+            "technique": "Arbitrary External Call",
+            "returnedFunds": null,
+            "source": null
+          },
+          {
+            "date": "2024-10-31",
+            "name": "1inch Swap",
+            "amountUsd": 723000,
+            "classification": "Frontend & Infrastructure",
+            "technique": "Supply Chain Attack",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 2996424,
+      "url": "https://defillama.com/protocol/1inch-swap",
+      "extra": {
+        "components": [
+          {
+            "id": "189",
+            "name": "1inch Swap",
+            "tvl": 2996424
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "pendle": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 770754021,
+      "url": "https://defillama.com/protocol/pendle-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "382",
+            "name": "Pendle V2",
+            "tvl": 770754021
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "rocketpool": {
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2023-03-30",
+            "name": "Rocket Pool",
+            "amountUsd": 3800000,
+            "classification": "Social Engineering",
+            "technique": "Phishing",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 1307504213,
+      "url": "https://defillama.com/protocol/rocket-pool",
+      "extra": {
+        "components": [
+          {
+            "id": "900",
+            "name": "Rocket Pool",
+            "tvl": 1307504213
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "spark": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 8671988336,
+      "url": "https://defillama.com/protocol/sparklend",
+      "extra": {
+        "components": [
+          {
+            "id": "2929",
+            "name": "SparkLend",
+            "tvl": 5139901133
+          },
+          {
+            "id": "6716",
+            "name": "Spark Savings",
+            "tvl": 1272735414
+          },
+          {
+            "id": "5989",
+            "name": "Spark Liquidity Layer",
+            "tvl": 2259351789
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "uniswap-v2": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 855392411,
+      "url": "https://defillama.com/protocol/uniswap-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "2197",
+            "name": "Uniswap V2",
+            "tvl": 855392411
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "uniswap-v3": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 901957148,
+      "url": "https://defillama.com/protocol/uniswap-v3",
+      "extra": {
+        "components": [
+          {
+            "id": "2198",
+            "name": "Uniswap V3",
+            "tvl": 901957148
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "uniswap-v4": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 772054285,
+      "url": "https://defillama.com/protocol/uniswap-v4",
+      "extra": {
+        "components": [
+          {
+            "id": "5690",
+            "name": "Uniswap V4",
+            "tvl": 772054285
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "yearn": {
+    "incidents": {
+      "value": 3,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2025-12-16",
+            "name": "Yearn Finance",
+            "amountUsd": 300000,
+            "classification": "Token & Share Accounting",
+            "technique": "Donation Attack",
+            "returnedFunds": null,
+            "source": null
+          },
+          {
+            "date": "2023-04-13",
+            "name": "Yearn Finance",
+            "amountUsd": 11539000,
+            "classification": "Oracle Manipulation",
+            "technique": "Oracle Misconfiguration",
+            "returnedFunds": null,
+            "source": null
+          },
+          {
+            "date": "2021-02-05",
+            "name": "Yearn Finance",
+            "amountUsd": 11000000,
+            "classification": "Oracle Manipulation",
+            "technique": "Spot Price Manipulation",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": 179198992,
+      "url": "https://defillama.com/protocol/yearn-finance",
+      "extra": {
+        "components": [
+          {
+            "id": "113",
+            "name": "Yearn Finance",
+            "tvl": 179198992
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  },
+  "zerox": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    },
+    "tvl": {
+      "value": null,
+      "url": "https://defillama.com/protocol/0x",
+      "note": "DefiLlama publishes no Ethereum TVL for 0x / Matcha.",
+      "extra": {
+        "components": [
+          {
+            "id": "2116",
+            "name": "0x",
+            "tvl": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-11T16:59:48.502Z"
+    }
+  }
+}

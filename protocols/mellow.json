@@ -1,46 +1,10 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "mellow",
-  "metrics": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": 281809407.3999653,
-      "url": "https://defillama.com/protocol/mellow-core",
-      "extra": {
-        "components": [
-          {
-            "id": "7330",
-            "name": "Mellow Core",
-            "tvl": 256842793.77653062
-          },
-          {
-            "id": "4756",
-            "name": "Mellow Restaking",
-            "tvl": 24875749.801945075
-          },
-          {
-            "id": "2613",
-            "name": "Mellow Yield",
-            "tvl": 90863.82148956612
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for Mellow."
+      "note": "DeFiScan has no data for Mellow.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "16 · red",
@@ -66,30 +30,37 @@
       "url": "https://defiscoring.com/protocols/mellow",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 16,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "16"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for Mellow."
+      "note": "Philidor Analytics has no data for Mellow.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "url": "https://app.pigi.finance/vaults",
-      "note": "pigi lists 7 Ethereum vault(s) under Mellow and has published a rating for none of them.",
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "note": "pigi.finance has no data for Mellow.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Risklayer has no data for Mellow."
+      "note": "Risklayer has no data for Mellow.",
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

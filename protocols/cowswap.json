@@ -1,47 +1,10 @@
 {
-  "generatedAt": "2026-10-11T11:26:53.885Z",
   "protocolId": "cowswap",
-  "metrics": {
-    "incidents": {
-      "value": 1,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2023-02-07",
-            "name": "CoWSwap",
-            "amountUsd": 180000,
-            "classification": "Access Control",
-            "technique": "Arbitrary External Call",
-            "returnedFunds": null,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    },
-    "tvl": {
-      "value": null,
-      "url": "https://defillama.com/protocol/cowswap",
-      "note": "DefiLlama publishes no Ethereum TVL for CoW Swap.",
-      "extra": {
-        "components": [
-          {
-            "id": "2643",
-            "name": "CoWSwap",
-            "tvl": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
-    }
-  },
   "feeds": {
     "defiscan": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "DeFiScan has no data for CoW Swap."
+      "note": "DeFiScan has no data for CoW Swap.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
       "value": "15 · red",
@@ -66,29 +29,37 @@
       "url": "https://defiscoring.com/protocols/cowswap",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
-        "overallScore": 15,
-        "riskLevel": "red",
+        "facts": [
+          {
+            "name": "Score",
+            "value": "15"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
         "text": [
           "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
         ]
       },
       "status": "ok",
-      "fetchedAt": "2026-10-11T11:26:53.885Z"
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Philidor Analytics has no data for CoW Swap."
+      "note": "Philidor Analytics has no data for CoW Swap.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "pigi.finance has no data for CoW Swap."
+      "note": "pigi.finance has no data for CoW Swap.",
+      "since": "2026-10-11T16:59:48.502Z"
     },
     "risklayer": {
       "status": "none",
-      "fetchedAt": "2026-10-11T11:26:53.885Z",
-      "note": "Risklayer has no data for CoW Swap."
+      "note": "Risklayer has no data for CoW Swap.",
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }
