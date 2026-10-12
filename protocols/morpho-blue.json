@@ -17,8 +17,8 @@
         },
         {
           "name": "Liveness",
-          "value": "72",
-          "description": "tvl_change_7d_pct: -1.1"
+          "value": "73",
+          "description": "tvl_change_7d_pct: -0.62"
         },
         {
           "name": "Security",
@@ -26,7 +26,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-11",
+      "updatedAt": "2026-10-12",
       "url": "https://defiscoring.com/protocols/morpho-blue",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -45,7 +45,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-11T20:58:50.861Z"
+      "since": "2026-10-12T09:18:37.756Z"
     },
     "philidor": {
       "status": "none",
@@ -53,7 +53,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "B 72.61/100",
+      "value": "B 72.64/100",
       "summary": "Morpho Blue — Ethereum (primitive only)",
       "details": [
         {
@@ -63,8 +63,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "43.53",
-          "description": "The mean of pigi’s latest scores of the 109 rated Ethereum vault(s) that deposit into morpho-blue-ethereum, weighted by their 30-day average TVL ($2.61B in all). Weight in the score: 0.4. Vaults by band: A 0, B 35, C 29, D 6, F 39."
+          "value": "43.59",
+          "description": "The mean of pigi’s latest scores of the 109 rated Ethereum vault(s) that deposit into morpho-blue-ethereum, weighted by their 30-day average TVL ($2.62B in all). Weight in the score: 0.4. Vaults by band: A 0, B 34, C 30, D 6, F 39."
         },
         {
           "name": "Weights",
@@ -72,7 +72,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-11",
+      "updatedAt": "2026-10-12",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: morpho-blue-ethereum. Vault score counts Ethereum vaults only. Top 100 vaults by TVL shown, 9 more at pigi.",
       "extra": {
@@ -83,8 +83,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 410387981,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 412582507,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50006"
           },
           {
@@ -93,8 +93,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 408718682,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 409777635,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50004"
           },
           {
@@ -103,8 +103,8 @@
             "curator": null,
             "tier": "F",
             "score": 33,
-            "tvlUsd": 203211155,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 203915455,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50007"
           },
           {
@@ -113,8 +113,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.5,
-            "tvlUsd": 143661408,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 143891308,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50008"
           },
           {
@@ -123,8 +123,8 @@
             "curator": null,
             "tier": "B",
             "score": 81,
-            "tvlUsd": 114870461,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 115347629,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50009"
           },
           {
@@ -133,8 +133,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.4,
-            "tvlUsd": 101318007,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 101982879,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/46"
           },
           {
@@ -143,8 +143,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 85393623,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 85170075,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1009"
           },
           {
@@ -153,8 +153,8 @@
             "curator": null,
             "tier": "B",
             "score": 75.8,
-            "tvlUsd": 66465723,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 66572411,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50012"
           },
           {
@@ -163,8 +163,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 66208640,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 66127013,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1023"
           },
           {
@@ -173,8 +173,8 @@
             "curator": null,
             "tier": "D",
             "score": 41.25,
-            "tvlUsd": 63358613,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 63326559,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50013"
           },
           {
@@ -183,8 +183,8 @@
             "curator": null,
             "tier": "B",
             "score": 74.2,
-            "tvlUsd": 62125156,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 62024329,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50011"
           },
           {
@@ -193,8 +193,8 @@
             "curator": null,
             "tier": "F",
             "score": 33,
-            "tvlUsd": 52980920,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 54105618,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50103"
           },
           {
@@ -203,8 +203,8 @@
             "curator": null,
             "tier": "B",
             "score": 74.6,
-            "tvlUsd": 50953544,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 52496543,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50019"
           },
           {
@@ -213,8 +213,8 @@
             "curator": null,
             "tier": "D",
             "score": 41.25,
-            "tvlUsd": 44712585,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 44724356,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50014"
           },
           {
@@ -223,8 +223,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 43911476,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 44130974,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50015"
           },
           {
@@ -233,8 +233,8 @@
             "curator": null,
             "tier": "B",
             "score": 76.2,
-            "tvlUsd": 38012289,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 38255383,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50016"
           },
           {
@@ -243,8 +243,8 @@
             "curator": null,
             "tier": "B",
             "score": 78,
-            "tvlUsd": 28858869,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 28689129,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20000"
           },
           {
@@ -253,8 +253,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 26516733,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 26358742,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50022"
           },
           {
@@ -263,8 +263,8 @@
             "curator": null,
             "tier": "B",
             "score": 76.8,
-            "tvlUsd": 24914158,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 25193770,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50092"
           },
           {
@@ -273,19 +273,9 @@
             "curator": null,
             "tier": "B",
             "score": 73.8,
-            "tvlUsd": 23717903,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 23524341,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1003"
-          },
-          {
-            "name": "Gauntlet USDC Frontier (Ethereum Mainnet · Morpho V2)",
-            "version": "Morpho v2",
-            "curator": null,
-            "tier": "F",
-            "score": 17,
-            "tvlUsd": 23556497,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/50023"
           },
           {
             "name": "Steakhouse Prime ETH (Ethereum Mainnet)",
@@ -293,8 +283,8 @@
             "curator": null,
             "tier": "B",
             "score": 76.2,
-            "tvlUsd": 23251759,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 23419325,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50090"
           },
           {
@@ -303,9 +293,19 @@
             "curator": null,
             "tier": "B",
             "score": 73.6,
-            "tvlUsd": 22899645,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 23209383,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50099"
+          },
+          {
+            "name": "Gauntlet USDC Frontier (Ethereum Mainnet · Morpho V2)",
+            "version": "Morpho v2",
+            "curator": null,
+            "tier": "F",
+            "score": 17,
+            "tvlUsd": 23119142,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/50023"
           },
           {
             "name": "Smokehouse USDT",
@@ -313,8 +313,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 22544142,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 22488524,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1026"
           },
           {
@@ -323,8 +323,8 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 20450456,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 20495184,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50094"
           },
           {
@@ -333,8 +333,8 @@
             "curator": null,
             "tier": "C",
             "score": 62,
-            "tvlUsd": 19804921,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 19786556,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/9601"
           },
           {
@@ -343,8 +343,8 @@
             "curator": null,
             "tier": "B",
             "score": 71.6,
-            "tvlUsd": 17545680,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 17487826,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20003"
           },
           {
@@ -352,9 +352,9 @@
             "version": "Morpho",
             "curator": null,
             "tier": "B",
-            "score": 73.4,
-            "tvlUsd": 16710030,
-            "scoredAt": "2026-10-11",
+            "score": 75.8,
+            "tvlUsd": 16585760,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1027"
           },
           {
@@ -363,8 +363,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 16304809,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 16564057,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50078"
           },
           {
@@ -373,8 +373,8 @@
             "curator": null,
             "tier": "D",
             "score": 41.25,
-            "tvlUsd": 16250950,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 16208620,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50025"
           },
           {
@@ -383,8 +383,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 15485381,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 15389828,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50095"
           },
           {
@@ -393,8 +393,8 @@
             "curator": null,
             "tier": "B",
             "score": 73.2,
-            "tvlUsd": 15287541,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 15224031,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50024"
           },
           {
@@ -403,8 +403,8 @@
             "curator": null,
             "tier": "B",
             "score": 76.2,
-            "tvlUsd": 14915170,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 14961039,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50096"
           },
           {
@@ -413,8 +413,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.6,
-            "tvlUsd": 13941701,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 14630626,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50052"
           },
           {
@@ -423,8 +423,8 @@
             "curator": null,
             "tier": "C",
             "score": 62,
-            "tvlUsd": 13556348,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 13565994,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50098"
           },
           {
@@ -433,8 +433,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 13385421,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 13359798,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1020"
           },
           {
@@ -443,8 +443,8 @@
             "curator": null,
             "tier": "F",
             "score": 33,
-            "tvlUsd": 12488622,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 12497168,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50100"
           },
           {
@@ -453,8 +453,8 @@
             "curator": null,
             "tier": "B",
             "score": 73,
-            "tvlUsd": 12168470,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 12082358,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1019"
           },
           {
@@ -463,19 +463,9 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 10577935,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 10572658,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1025"
-          },
-          {
-            "name": "sky.money USDC Risk Capital",
-            "version": "Morpho v2",
-            "curator": null,
-            "tier": "B",
-            "score": 70.2,
-            "tvlUsd": 10287688,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/50101"
           },
           {
             "name": "Yearn OG USDC (Ethereum Mainnet · ymvOG-USDC)",
@@ -483,18 +473,38 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 10231883,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 10259961,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1015"
+          },
+          {
+            "name": "sky.money USDC Risk Capital",
+            "version": "Morpho v2",
+            "curator": null,
+            "tier": "B",
+            "score": 70.2,
+            "tvlUsd": 10187858,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/50101"
+          },
+          {
+            "name": "Spark Blue Chip USDC Vault (0x56a76b…)",
+            "version": "Morpho",
+            "curator": null,
+            "tier": "B",
+            "score": 78,
+            "tvlUsd": 10138365,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/1040"
           },
           {
             "name": "KPK USDC Yield (Ethereum Mainnet)",
             "version": "Morpho v2",
             "curator": null,
             "tier": "B",
-            "score": 72,
-            "tvlUsd": 9926203,
-            "scoredAt": "2026-10-11",
+            "score": 74,
+            "tvlUsd": 9958919,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50105"
           },
           {
@@ -503,19 +513,9 @@
             "curator": null,
             "tier": "D",
             "score": 41.25,
-            "tvlUsd": 9785969,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 9785185,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50107"
-          },
-          {
-            "name": "Spark Blue Chip USDC Vault (0x56a76b…)",
-            "version": "Morpho",
-            "curator": null,
-            "tier": "B",
-            "score": 74.6,
-            "tvlUsd": 9693584,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/1040"
           },
           {
             "name": "SwissBorg Morpho USDC",
@@ -523,8 +523,8 @@
             "curator": null,
             "tier": "B",
             "score": 73.4,
-            "tvlUsd": 9211335,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 9187550,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1042"
           },
           {
@@ -533,8 +533,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 8834453,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 8945548,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50108"
           },
           {
@@ -543,8 +543,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 8768229,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 8799910,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1033"
           },
           {
@@ -552,20 +552,10 @@
             "version": "Morpho",
             "curator": null,
             "tier": "B",
-            "score": 73,
-            "tvlUsd": 8358949,
-            "scoredAt": "2026-10-11",
+            "score": 71,
+            "tvlUsd": 8353835,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20004"
-          },
-          {
-            "name": "Re Ecosystem Vault",
-            "version": "Morpho v2",
-            "curator": null,
-            "tier": "D",
-            "score": 41.25,
-            "tvlUsd": 7328706,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/50106"
           },
           {
             "name": "Yearn v3 ysUSDC (0x0e29)",
@@ -573,9 +563,19 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 7291401,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 7342714,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/9606"
+          },
+          {
+            "name": "Re Ecosystem Vault",
+            "version": "Morpho v2",
+            "curator": null,
+            "tier": "D",
+            "score": 41.25,
+            "tvlUsd": 7315459,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/50106"
           },
           {
             "name": "Uniswap USDT",
@@ -583,8 +583,8 @@
             "curator": null,
             "tier": "C",
             "score": 64.8,
-            "tvlUsd": 6692293,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 6762685,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50104"
           },
           {
@@ -593,8 +593,8 @@
             "curator": null,
             "tier": "B",
             "score": 72.4,
-            "tvlUsd": 6609401,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 6571630,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1037"
           },
           {
@@ -603,8 +603,8 @@
             "curator": null,
             "tier": "C",
             "score": 61.6,
-            "tvlUsd": 6337864,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 6085203,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50112"
           },
           {
@@ -613,8 +613,8 @@
             "curator": null,
             "tier": "C",
             "score": 67.8,
-            "tvlUsd": 5928598,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 5902261,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1014"
           },
           {
@@ -623,8 +623,8 @@
             "curator": null,
             "tier": "C",
             "score": 62,
-            "tvlUsd": 5750504,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 5749412,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/9605"
           },
           {
@@ -633,8 +633,8 @@
             "curator": null,
             "tier": "C",
             "score": 68,
-            "tvlUsd": 5438165,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 5408329,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50048"
           },
           {
@@ -642,9 +642,9 @@
             "version": "Morpho",
             "curator": null,
             "tier": "B",
-            "score": 73.6,
-            "tvlUsd": 4886635,
-            "scoredAt": "2026-10-11",
+            "score": 71.6,
+            "tvlUsd": 4886415,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/11"
           },
           {
@@ -653,8 +653,8 @@
             "curator": null,
             "tier": "F",
             "score": 37,
-            "tvlUsd": 4592369,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 4587783,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50050"
           },
           {
@@ -663,19 +663,9 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 4025880,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 4032023,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50058"
-          },
-          {
-            "name": "Gauntlet USDT Prime (gtUSDT)",
-            "version": "Morpho",
-            "curator": null,
-            "tier": "C",
-            "score": 64.2,
-            "tvlUsd": 3834412,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/1031"
           },
           {
             "name": "Gauntlet USDC Core (Ethereum Mainnet)",
@@ -683,9 +673,19 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 3748309,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 3740072,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1030"
+          },
+          {
+            "name": "Gauntlet USDT Prime (gtUSDT)",
+            "version": "Morpho",
+            "curator": null,
+            "tier": "C",
+            "score": 64.2,
+            "tvlUsd": 3707790,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/1031"
           },
           {
             "name": "OUSD Vault V1",
@@ -693,8 +693,8 @@
             "curator": null,
             "tier": "B",
             "score": 72.2,
-            "tvlUsd": 3282067,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 3316825,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/200076"
           },
           {
@@ -703,8 +703,8 @@
             "curator": null,
             "tier": "C",
             "score": 68,
-            "tvlUsd": 3263548,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 3267476,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1007"
           },
           {
@@ -713,8 +713,8 @@
             "curator": null,
             "tier": "C",
             "score": 66,
-            "tvlUsd": 3052657,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 3136605,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/200065"
           },
           {
@@ -722,9 +722,9 @@
             "version": "Morpho",
             "curator": null,
             "tier": "B",
-            "score": 70.2,
-            "tvlUsd": 3052447,
-            "scoredAt": "2026-10-11",
+            "score": 72.2,
+            "tvlUsd": 3052542,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1021"
           },
           {
@@ -733,8 +733,8 @@
             "curator": null,
             "tier": "C",
             "score": 66.8,
-            "tvlUsd": 2754896,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2750430,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50061"
           },
           {
@@ -743,8 +743,8 @@
             "curator": null,
             "tier": "B",
             "score": 71.4,
-            "tvlUsd": 2646325,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2569039,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1010"
           },
           {
@@ -753,8 +753,8 @@
             "curator": null,
             "tier": "C",
             "score": 57.6,
-            "tvlUsd": 2532513,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2514297,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50000"
           },
           {
@@ -763,8 +763,8 @@
             "curator": null,
             "tier": "C",
             "score": 67.1,
-            "tvlUsd": 2510871,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2511470,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20007"
           },
           {
@@ -773,8 +773,8 @@
             "curator": null,
             "tier": "B",
             "score": 71,
-            "tvlUsd": 2496363,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2487587,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20008"
           },
           {
@@ -783,19 +783,9 @@
             "curator": null,
             "tier": "B",
             "score": 72,
-            "tvlUsd": 2469851,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2467550,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50063"
-          },
-          {
-            "name": "Yearn OG WETH",
-            "version": "Morpho",
-            "curator": null,
-            "tier": "C",
-            "score": 64.8,
-            "tvlUsd": 2402129,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/20015"
           },
           {
             "name": "Yearn v3 ysUSDC (0x0741)",
@@ -803,8 +793,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 2392199,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2392416,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/9608"
           },
           {
@@ -812,10 +802,20 @@
             "version": "Morpho",
             "curator": null,
             "tier": "B",
-            "score": 73,
-            "tvlUsd": 2373095,
-            "scoredAt": "2026-10-11",
+            "score": 71,
+            "tvlUsd": 2372327,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20010"
+          },
+          {
+            "name": "Yearn OG WETH",
+            "version": "Morpho",
+            "curator": null,
+            "tier": "C",
+            "score": 64.8,
+            "tvlUsd": 2359073,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/20015"
           },
           {
             "name": "Steakhouse High Yield USDT",
@@ -823,8 +823,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 2080338,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2059176,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50064"
           },
           {
@@ -833,8 +833,8 @@
             "curator": null,
             "tier": "C",
             "score": 68.8,
-            "tvlUsd": 2039118,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2033009,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20006"
           },
           {
@@ -843,8 +843,8 @@
             "curator": null,
             "tier": "B",
             "score": 71.6,
-            "tvlUsd": 2032614,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2027338,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1004"
           },
           {
@@ -853,8 +853,8 @@
             "curator": null,
             "tier": "C",
             "score": 67.2,
-            "tvlUsd": 2008046,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 2008237,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50110"
           },
           {
@@ -863,8 +863,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 1850159,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1853349,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1012"
           },
           {
@@ -873,8 +873,8 @@
             "curator": null,
             "tier": "C",
             "score": 62,
-            "tvlUsd": 1667824,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1659638,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50079"
           },
           {
@@ -883,8 +883,8 @@
             "curator": null,
             "tier": "D",
             "score": 41.25,
-            "tvlUsd": 1652965,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1640762,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1011"
           },
           {
@@ -893,8 +893,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 1627444,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1615557,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1034"
           },
           {
@@ -903,19 +903,19 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 1485819,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1479127,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50001"
           },
           {
-            "name": "Api3 Core USDC",
+            "name": "Clearstar USDC Core",
             "version": "Morpho v2",
             "curator": null,
-            "tier": "C",
-            "score": 65.2,
-            "tvlUsd": 1333844,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/50060"
+            "tier": "F",
+            "score": 17,
+            "tvlUsd": 1327279,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/50082"
           },
           {
             "name": "Cronos USDC",
@@ -923,9 +923,19 @@
             "curator": null,
             "tier": "B",
             "score": 76.8,
-            "tvlUsd": 1308303,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1308982,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1008"
+          },
+          {
+            "name": "Api3 Core USDC",
+            "version": "Morpho v2",
+            "curator": null,
+            "tier": "C",
+            "score": 65.2,
+            "tvlUsd": 1296140,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/50060"
           },
           {
             "name": "Clearstar USDC Reactor (Ethereum Mainnet)",
@@ -933,8 +943,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 1298839,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1291167,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1038"
           },
           {
@@ -943,39 +953,19 @@
             "curator": null,
             "tier": "C",
             "score": 68.8,
-            "tvlUsd": 1290800,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1287652,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50071"
-          },
-          {
-            "name": "Clearstar USDC Core",
-            "version": "Morpho v2",
-            "curator": null,
-            "tier": "F",
-            "score": 17,
-            "tvlUsd": 1287760,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/50082"
           },
           {
             "name": "Gauntlet EURC Core",
             "version": "Morpho",
             "curator": null,
             "tier": "C",
-            "score": 62,
-            "tvlUsd": 1212288,
-            "scoredAt": "2026-10-11",
+            "score": 65.5,
+            "tvlUsd": 1209946,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20012"
-          },
-          {
-            "name": "KPK USDC Prime Core",
-            "version": "Morpho v2",
-            "curator": null,
-            "tier": "C",
-            "score": 63.6,
-            "tvlUsd": 1156356,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/50070"
           },
           {
             "name": "KPK USDT Prime",
@@ -983,18 +973,28 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 1155541,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1153246,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50066"
+          },
+          {
+            "name": "KPK USDC Prime Core",
+            "version": "Morpho v2",
+            "curator": null,
+            "tier": "C",
+            "score": 63.6,
+            "tvlUsd": 1122810,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/50070"
           },
           {
             "name": "Steakhouse Ethena USDtb",
             "version": "Morpho",
             "curator": null,
             "tier": "C",
-            "score": 60.8,
-            "tvlUsd": 1122033,
-            "scoredAt": "2026-10-11",
+            "score": 63.6,
+            "tvlUsd": 1095578,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/5295"
           },
           {
@@ -1003,9 +1003,19 @@
             "curator": null,
             "tier": "C",
             "score": 63,
-            "tvlUsd": 1121207,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1080685,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/20011"
+          },
+          {
+            "name": "sky.money USDS Risk Capital",
+            "version": "Morpho v2",
+            "curator": null,
+            "tier": "C",
+            "score": 69.8,
+            "tvlUsd": 1029011,
+            "scoredAt": "2026-10-12",
+            "url": "https://app.pigi.finance/vault/50076"
           },
           {
             "name": "Lulo USDC",
@@ -1013,19 +1023,9 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 1072163,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 1024222,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1001"
-          },
-          {
-            "name": "sky.money USDS Risk Capital",
-            "version": "Morpho v2",
-            "curator": null,
-            "tier": "B",
-            "score": 69.8,
-            "tvlUsd": 1030114,
-            "scoredAt": "2026-10-11",
-            "url": "https://app.pigi.finance/vault/50076"
           },
           {
             "name": "Saturn USDC",
@@ -1033,8 +1033,8 @@
             "curator": null,
             "tier": "F",
             "score": 37,
-            "tvlUsd": 903354,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 888557,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50077"
           },
           {
@@ -1043,8 +1043,8 @@
             "curator": null,
             "tier": "C",
             "score": 71.6,
-            "tvlUsd": 830348,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 848958,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50083"
           },
           {
@@ -1053,8 +1053,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 807825,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 818581,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50087"
           },
           {
@@ -1063,8 +1063,8 @@
             "curator": null,
             "tier": "C",
             "score": 66.7,
-            "tvlUsd": 698558,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 700741,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/50081"
           },
           {
@@ -1073,8 +1073,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 668125,
-            "scoredAt": "2026-10-11",
+            "tvlUsd": 661989,
+            "scoredAt": "2026-10-12",
             "url": "https://app.pigi.finance/vault/1024"
           }
         ],
@@ -1083,7 +1083,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-11T16:59:48.502Z"
+      "since": "2026-10-12T09:18:37.756Z"
     },
     "risklayer": {
       "value": "4.8/10 · medium",
