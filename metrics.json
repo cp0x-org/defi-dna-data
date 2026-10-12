@@ -1,4 +1,64 @@
 {
+  "aave-v3": {
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2026-03-12",
+            "name": "Aave V3",
+            "amountUsd": 862000,
+            "classification": "Oracle Manipulation",
+            "technique": "Oracle Misconfiguration",
+            "returnedFunds": 862000,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
+    },
+    "tvl": {
+      "value": 14436887510,
+      "url": "https://defillama.com/protocol/aave-v3",
+      "extra": {
+        "components": [
+          {
+            "id": "1599",
+            "name": "Aave V3",
+            "tvl": 14436887510
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
+    }
+  },
+  "aave-v4": {
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
+    },
+    "tvl": {
+      "value": 444162201,
+      "url": "https://defillama.com/protocol/aave-v4",
+      "extra": {
+        "components": [
+          {
+            "id": "7594",
+            "name": "Aave V4",
+            "tvl": 444162201
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
+    }
+  },
   "balancer-v2": {
     "incidents": {
       "value": 3,
@@ -35,81 +95,21 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 14755670,
+      "value": 14405077,
       "url": "https://defillama.com/protocol/balancer-v2",
       "extra": {
         "components": [
           {
             "id": "2611",
             "name": "Balancer V2",
-            "tvl": 14755670
+            "tvl": 14405077
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
-    }
-  },
-  "aave-v4": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
-    },
-    "tvl": {
-      "value": 448296268,
-      "url": "https://defillama.com/protocol/aave-v4",
-      "extra": {
-        "components": [
-          {
-            "id": "7594",
-            "name": "Aave V4",
-            "tvl": 448296268
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
-    }
-  },
-  "aave-v3": {
-    "incidents": {
-      "value": 1,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2026-03-12",
-            "name": "Aave V3",
-            "amountUsd": 862000,
-            "classification": "Oracle Manipulation",
-            "technique": "Oracle Misconfiguration",
-            "returnedFunds": 862000,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
-    },
-    "tvl": {
-      "value": 14672266019,
-      "url": "https://defillama.com/protocol/aave-v3",
-      "extra": {
-        "components": [
-          {
-            "id": "1599",
-            "name": "Aave V3",
-            "tvl": 14672266019
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "balancer-v3": {
@@ -120,21 +120,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 13970883,
+      "value": 13936953,
       "url": "https://defillama.com/protocol/balancer-v3",
       "extra": {
         "components": [
           {
             "id": "5491",
             "name": "Balancer V3",
-            "tvl": 13970883
+            "tvl": 13936953
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "compound-v3": {
@@ -145,57 +145,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 1336433783,
+      "value": 1323120968,
       "url": "https://defillama.com/protocol/compound-v3",
       "extra": {
         "components": [
           {
             "id": "2088",
             "name": "Compound V3",
-            "tvl": 1336433783
+            "tvl": 1323120968
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
-    }
-  },
-  "cowswap": {
-    "incidents": {
-      "value": 1,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2023-02-07",
-            "name": "CoWSwap",
-            "amountUsd": 180000,
-            "classification": "Access Control",
-            "technique": "Arbitrary External Call",
-            "returnedFunds": null,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
-    },
-    "tvl": {
-      "value": null,
-      "url": "https://defillama.com/protocol/cowswap",
-      "note": "DefiLlama publishes no Ethereum TVL for CoW Swap.",
-      "extra": {
-        "components": [
-          {
-            "id": "2643",
-            "name": "CoWSwap",
-            "tvl": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "compound-v2": {
@@ -216,21 +180,57 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 107792174,
+      "value": 106868869,
       "url": "https://defillama.com/protocol/compound-v2",
       "extra": {
         "components": [
           {
             "id": "114",
             "name": "Compound V2",
-            "tvl": 107792174
+            "tvl": 106868869
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
+    }
+  },
+  "cowswap": {
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2023-02-07",
+            "name": "CoWSwap",
+            "amountUsd": 180000,
+            "classification": "Access Control",
+            "technique": "Arbitrary External Call",
+            "returnedFunds": null,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
+    },
+    "tvl": {
+      "value": null,
+      "url": "https://defillama.com/protocol/cowswap",
+      "note": "DefiLlama publishes no Ethereum TVL for CoW Swap.",
+      "extra": {
+        "components": [
+          {
+            "id": "2643",
+            "name": "CoWSwap",
+            "tvl": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "curve": {
@@ -260,26 +260,26 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 1319581321,
+      "value": 1311535711,
       "url": "https://defillama.com/protocol/curve-dex",
       "extra": {
         "components": [
           {
             "id": "3",
             "name": "Curve DEX",
-            "tvl": 1177056660
+            "tvl": 1170264045
           },
           {
             "id": "2994",
             "name": "crvUSD",
-            "tvl": 142524661
+            "tvl": 141271666
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "euler": {
@@ -290,21 +290,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 52820094,
+      "value": 52688799,
       "url": "https://defillama.com/protocol/euler-v2",
       "extra": {
         "components": [
           {
             "id": "5044",
             "name": "Euler V2",
-            "tvl": 52820094
+            "tvl": 52688799
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "fluid": {
@@ -325,26 +325,26 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 700574329,
+      "value": 701074063,
       "url": "https://defillama.com/protocol/fluid-lending",
       "extra": {
         "components": [
           {
             "id": "4167",
             "name": "Fluid Lending",
-            "tvl": 487909780
+            "tvl": 489134059
           },
           {
             "id": "5317",
             "name": "Fluid DEX",
-            "tvl": 212664549
+            "tvl": 211940004
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "gearbox": {
@@ -355,21 +355,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 21765715,
+      "value": 21544757,
       "url": "https://defillama.com/protocol/gearbox",
       "extra": {
         "components": [
           {
             "id": "1108",
             "name": "Gearbox",
-            "tvl": 21765715
+            "tvl": 21544757
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "lido": {
@@ -380,21 +380,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 24509031235,
+      "value": 24157456694,
       "url": "https://defillama.com/protocol/lido",
       "extra": {
         "components": [
           {
             "id": "182",
             "name": "Lido",
-            "tvl": 24509031235
+            "tvl": 24157456694
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "liquity-v1": {
@@ -405,21 +405,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 181982162,
+      "value": 179482710,
       "url": "https://defillama.com/protocol/liquity-v1",
       "extra": {
         "components": [
           {
             "id": "270",
             "name": "Liquity V1",
-            "tvl": 181982162
+            "tvl": 179482710
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "liquity-v2": {
@@ -430,21 +430,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 100380334,
+      "value": 98892437,
       "url": "https://defillama.com/protocol/liquity-v2",
       "extra": {
         "components": [
           {
             "id": "5656",
             "name": "Liquity V2",
-            "tvl": 100380334
+            "tvl": 98892437
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "mellow": {
@@ -455,31 +455,31 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 286873625,
+      "value": 283756105,
       "url": "https://defillama.com/protocol/mellow-core",
       "extra": {
         "components": [
           {
             "id": "7330",
             "name": "Mellow Core",
-            "tvl": 261715922
+            "tvl": 258937126
           },
           {
             "id": "4756",
             "name": "Mellow Restaking",
-            "tvl": 25066511
+            "tvl": 24728433
           },
           {
             "id": "2613",
             "name": "Mellow Yield",
-            "tvl": 91192
+            "tvl": 90546
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "morpho-blue": {
@@ -490,31 +490,31 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 5163363516,
+      "value": 5157455428,
       "url": "https://defillama.com/protocol/morpho-blue",
       "extra": {
         "components": [
           {
             "id": "4025",
             "name": "Morpho Blue",
-            "tvl": 5163363516
+            "tvl": 5157455428
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "morpho-vaults": {
     "incidents": {
       "value": null,
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
       "value": null,
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "oneinch": {
@@ -544,21 +544,21 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 3020255,
+      "value": 3006989,
       "url": "https://defillama.com/protocol/1inch-swap",
       "extra": {
         "components": [
           {
             "id": "189",
             "name": "1inch Swap",
-            "tvl": 3020255
+            "tvl": 3006989
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "pendle": {
@@ -569,21 +569,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 776221975,
+      "value": 776547718,
       "url": "https://defillama.com/protocol/pendle-v2",
       "extra": {
         "components": [
           {
             "id": "382",
             "name": "Pendle V2",
-            "tvl": 776221975
+            "tvl": 776547718
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "rocketpool": {
@@ -604,21 +604,21 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 1319549870,
+      "value": 1301027532,
       "url": "https://defillama.com/protocol/rocket-pool",
       "extra": {
         "components": [
           {
             "id": "900",
             "name": "Rocket Pool",
-            "tvl": 1319549870
+            "tvl": 1301027532
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "spark": {
@@ -629,31 +629,31 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 8860400301,
+      "value": 8842095968,
       "url": "https://defillama.com/protocol/sparklend",
       "extra": {
         "components": [
           {
             "id": "2929",
             "name": "SparkLend",
-            "tvl": 5246431501
+            "tvl": 5216093368
           },
           {
             "id": "6716",
             "name": "Spark Savings",
-            "tvl": 1258973212
+            "tvl": 1266239087
           },
           {
             "id": "5989",
             "name": "Spark Liquidity Layer",
-            "tvl": 2354995588
+            "tvl": 2359763513
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "uniswap-v2": {
@@ -664,7 +664,7 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
       "value": 825235643,
@@ -678,7 +678,7 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "uniswap-v3": {
@@ -689,21 +689,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 904151393,
+      "value": 896404556,
       "url": "https://defillama.com/protocol/uniswap-v3",
       "extra": {
         "components": [
           {
             "id": "2198",
             "name": "Uniswap V3",
-            "tvl": 904151393
+            "tvl": 896404556
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "uniswap-v4": {
@@ -714,21 +714,21 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 703165854,
+      "value": 700761712,
       "url": "https://defillama.com/protocol/uniswap-v4",
       "extra": {
         "components": [
           {
             "id": "5690",
             "name": "Uniswap V4",
-            "tvl": 703165854
+            "tvl": 700761712
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "yearn": {
@@ -767,21 +767,21 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
-      "value": 179052642,
+      "value": 179365778,
       "url": "https://defillama.com/protocol/yearn-finance",
       "extra": {
         "components": [
           {
             "id": "113",
             "name": "Yearn Finance",
-            "tvl": 179052642
+            "tvl": 179365778
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   },
   "zerox": {
@@ -792,7 +792,7 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     },
     "tvl": {
       "value": null,
@@ -807,7 +807,7 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-12T15:09:12.309Z"
+      "fetchedAt": "2026-10-12T23:38:41.446Z"
     }
   }
 }
