@@ -1,100 +1,119 @@
 {
-  "generatedAt": "2026-10-12T13:14:39.496Z",
+  "generatedAt": "2026-10-12T15:09:12.309Z",
   "sources": {
     "defiscan": {
-      "lastRunAt": "2026-10-12T13:14:39.496Z",
-      "lastOkAt": "2026-10-12T13:14:39.496Z"
+      "lastRunAt": "2026-10-12T15:09:12.309Z",
+      "lastOkAt": "2026-10-12T15:09:12.309Z"
     },
     "defiscoring": {
-      "lastRunAt": "2026-10-12T13:14:39.496Z",
-      "lastOkAt": "2026-10-12T13:14:39.496Z"
+      "lastRunAt": "2026-10-12T15:09:12.309Z",
+      "lastOkAt": "2026-10-12T15:09:12.309Z"
     },
     "philidor": {
-      "lastRunAt": "2026-10-12T13:14:39.496Z",
-      "lastOkAt": "2026-10-12T13:14:39.496Z"
+      "lastRunAt": "2026-10-12T15:09:12.309Z",
+      "lastOkAt": "2026-10-12T15:09:12.309Z"
     },
     "pigi": {
-      "lastRunAt": "2026-10-12T13:14:39.496Z",
-      "lastOkAt": "2026-10-12T13:14:39.496Z"
+      "lastRunAt": "2026-10-12T15:09:12.309Z",
+      "lastOkAt": "2026-10-12T15:09:12.309Z"
     },
     "risklayer": {
-      "lastRunAt": "2026-10-12T13:14:39.496Z",
-      "lastOkAt": "2026-10-12T13:14:39.496Z"
+      "lastRunAt": "2026-10-12T15:09:12.309Z",
+      "lastOkAt": "2026-10-12T15:09:12.309Z"
     },
     "incidents": {
-      "lastRunAt": "2026-10-12T13:14:39.496Z",
-      "lastOkAt": "2026-10-12T13:14:39.496Z"
+      "lastRunAt": "2026-10-12T15:09:12.309Z",
+      "lastOkAt": "2026-10-12T15:09:12.309Z"
     },
     "tvl": {
-      "lastRunAt": "2026-10-12T13:14:39.496Z",
-      "lastOkAt": "2026-10-12T13:14:39.496Z"
+      "lastRunAt": "2026-10-12T15:09:12.309Z",
+      "lastOkAt": "2026-10-12T15:09:12.309Z"
     }
   },
   "rows": [
     {
       "id": "aave-v3",
-      "tvl": 14724192188,
+      "tvl": 14672266019,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
         "philidor": true,
         "pigi": true,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "neutral",
+        "risklayer": "neutral"
       }
     },
     {
       "id": "aave-v4",
-      "tvl": 449818908,
+      "tvl": 448296268,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": true,
         "pigi": false,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative"
       }
     },
     {
       "id": "balancer-v2",
-      "tvl": 14760950,
+      "tvl": 14755670,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": false,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative"
       }
     },
     {
       "id": "balancer-v3",
-      "tvl": 13847355,
+      "tvl": 13970883,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": false,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative"
       }
     },
     {
       "id": "compound-v3",
-      "tvl": 1343258044,
+      "tvl": 1336433783,
       "feeds": {
         "defiscan": true,
         "defiscoring": false,
         "philidor": true,
         "pigi": false,
         "risklayer": false
-      }
+      },
+      "readings": {}
     },
     {
       "id": "compound-v2",
-      "tvl": 108147964,
+      "tvl": 107792174,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": false,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "risklayer": "negative"
       }
     },
     {
@@ -106,105 +125,143 @@
         "philidor": false,
         "pigi": false,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative"
       }
     },
     {
       "id": "curve",
-      "tvl": 1322742735,
+      "tvl": 1319581321,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
         "pigi": false,
         "risklayer": true
+      },
+      "readings": {
+        "risklayer": "negative"
       }
     },
     {
       "id": "euler",
-      "tvl": 52859159,
+      "tvl": 52820094,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": true,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "neutral"
       }
     },
     {
       "id": "fluid",
-      "tvl": 701952774,
+      "tvl": 700574329,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": true,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "negative"
       }
     },
     {
       "id": "gearbox",
-      "tvl": 21888036,
+      "tvl": 21765715,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": false,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative"
       }
     },
     {
       "id": "lido",
-      "tvl": 24612561688,
+      "tvl": 24509031235,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
         "philidor": false,
         "pigi": true,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "positive",
+        "risklayer": "neutral"
       }
     },
     {
       "id": "liquity-v1",
-      "tvl": 183763886,
+      "tvl": 181982162,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
         "philidor": false,
         "pigi": true,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "positive"
       }
     },
     {
       "id": "liquity-v2",
-      "tvl": 100735501,
+      "tvl": 100380334,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
         "philidor": false,
         "pigi": true,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "positive"
       }
     },
     {
       "id": "mellow",
-      "tvl": 289335875,
+      "tvl": 286873625,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": false,
         "risklayer": false
+      },
+      "readings": {
+        "defiscoring": "negative"
       }
     },
     {
       "id": "morpho-blue",
-      "tvl": 5195651814,
+      "tvl": 5163363516,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": true,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "positive",
+        "risklayer": "neutral"
       }
     },
     {
@@ -216,50 +273,67 @@
         "philidor": true,
         "pigi": true,
         "risklayer": true
+      },
+      "readings": {
+        "pigi": "neutral",
+        "risklayer": "neutral"
       }
     },
     {
       "id": "oneinch",
-      "tvl": 3037324,
+      "tvl": 3020255,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
         "pigi": false,
         "risklayer": false
-      }
+      },
+      "readings": {}
     },
     {
       "id": "pendle",
-      "tvl": 774533081,
+      "tvl": 776221975,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
         "pigi": false,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "risklayer": "negative"
       }
     },
     {
       "id": "rocketpool",
-      "tvl": 1332469124,
+      "tvl": 1319549870,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
         "pigi": false,
         "risklayer": true
+      },
+      "readings": {
+        "risklayer": "neutral"
       }
     },
     {
       "id": "spark",
-      "tvl": 8889694839,
+      "tvl": 8860400301,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
         "philidor": true,
         "pigi": true,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "positive",
+        "risklayer": "neutral"
       }
     },
     {
@@ -271,39 +345,55 @@
         "philidor": true,
         "pigi": false,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "risklayer": "neutral"
       }
     },
     {
       "id": "uniswap-v3",
-      "tvl": 907504409,
+      "tvl": 904151393,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
         "philidor": true,
         "pigi": true,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "pigi": "positive",
+        "risklayer": "neutral"
       }
     },
     {
       "id": "uniswap-v4",
-      "tvl": 705669717,
+      "tvl": 703165854,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
         "philidor": true,
         "pigi": false,
         "risklayer": true
+      },
+      "readings": {
+        "defiscoring": "negative",
+        "risklayer": "neutral"
       }
     },
     {
       "id": "yearn",
-      "tvl": 179937686,
+      "tvl": 179052642,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
         "philidor": true,
         "pigi": true,
         "risklayer": false
+      },
+      "readings": {
+        "pigi": "negative"
       }
     },
     {
@@ -315,7 +405,8 @@
         "philidor": false,
         "pigi": false,
         "risklayer": false
-      }
+      },
+      "readings": {}
     }
   ]
 }
