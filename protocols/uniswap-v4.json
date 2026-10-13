@@ -17,8 +17,8 @@
         },
         {
           "name": "Liveness",
-          "value": "68",
-          "description": "tvl_change_7d_pct: -2.76"
+          "value": "67",
+          "description": "tvl_change_7d_pct: -3.29"
         },
         {
           "name": "Security",
@@ -45,7 +45,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-13T12:45:48.803Z"
+      "since": "2026-10-13T18:57:14.298Z"
     },
     "philidor": {
       "value": "39 vaults rated",
@@ -529,9 +529,87 @@
       "since": "2026-10-13T12:45:48.803Z"
     },
     "pigi": {
-      "status": "none",
-      "note": "pigi.finance has no data for Uniswap v4.",
-      "since": "2026-10-11T16:59:48.502Z"
+      "value": "B 80.02/100",
+      "summary": "Uniswap v4 — the Ethereum PoolManager singleton; hookless pools only",
+      "details": [
+        {
+          "name": "Node rating",
+          "value": "81/100",
+          "description": "pigi’s own rating of uniswap-v4 itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-10-13, methodology 1.15.0. Weight in the score: 0.6."
+        },
+        {
+          "name": "Vault score, TVL-weighted",
+          "value": "78.55",
+          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into uniswap-v4, weighted by their 30-day average TVL ($238.9M in all). Weight in the score: 0.4. Vaults by band: A 0, B 5, C 0, D 0, F 0."
+        },
+        {
+          "name": "Weights",
+          "value": "node 0.6 · vaults 0.4",
+          "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
+        }
+      ],
+      "updatedAt": "2026-10-13",
+      "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
+      "note": "Headline: uniswap-v4. Vault score counts Ethereum vaults only.",
+      "extra": {
+        "vaults": [
+          {
+            "name": "PYUSD/USDS 0.0005% v4",
+            "version": "Uniswap v4",
+            "curator": null,
+            "tier": "B",
+            "score": 83.3,
+            "tvlUsd": 100119198,
+            "scoredAt": "2026-10-13",
+            "url": "https://app.pigi.finance/vault/120000"
+          },
+          {
+            "name": "USDT/USDS 0.0005% v4",
+            "version": "Uniswap v4",
+            "curator": null,
+            "tier": "B",
+            "score": 76.5,
+            "tvlUsd": 50085024,
+            "scoredAt": "2026-10-13",
+            "url": "https://app.pigi.finance/vault/120001"
+          },
+          {
+            "name": "ETH/USDC 0.3% v4",
+            "version": "Uniswap v4",
+            "curator": null,
+            "tier": "B",
+            "score": 74.63,
+            "tvlUsd": 36750466,
+            "scoredAt": "2026-10-13",
+            "url": "https://app.pigi.finance/vault/120002"
+          },
+          {
+            "name": "ETH/USDT 0.3% v4",
+            "version": "Uniswap v4",
+            "curator": null,
+            "tier": "B",
+            "score": 74.13,
+            "tvlUsd": 29271223,
+            "scoredAt": "2026-10-13",
+            "url": "https://app.pigi.finance/vault/120003"
+          },
+          {
+            "name": "RLUSD/USDS 0.0005% v4",
+            "version": "Uniswap v4",
+            "curator": null,
+            "tier": "B",
+            "score": 74.2,
+            "tvlUsd": 22666328,
+            "scoredAt": "2026-10-13",
+            "url": "https://app.pigi.finance/vault/120004"
+          }
+        ],
+        "text": [
+          "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-13T18:57:14.298Z"
     },
     "risklayer": {
       "value": "4.3/10 · medium",
