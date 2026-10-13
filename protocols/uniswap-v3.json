@@ -66,7 +66,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "38 · red",
+      "value": "39 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -76,8 +76,8 @@
         },
         {
           "name": "Liveness",
-          "value": "61",
-          "description": "tvl_change_7d_pct: -5.55"
+          "value": "62",
+          "description": "tvl_change_7d_pct: -5.04"
         },
         {
           "name": "Security",
@@ -85,14 +85,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
       "url": "https://defiscoring.com/protocols/uniswap-v3",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "38"
+            "value": "39"
           },
           {
             "name": "Band",
@@ -104,66 +104,66 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-12T23:38:41.446Z"
+      "since": "2026-10-13T12:45:48.803Z"
     },
     "philidor": {
-      "value": "68 vaults rated",
-      "summary": "Philidor scores individual vaults rather than protocols. It rates 68 live Ethereum vault(s) of uniswap (version v3).",
+      "value": "69 vaults rated",
+      "summary": "Philidor scores individual vaults rather than protocols. It rates 69 live Ethereum vault(s) of uniswap (version v3).",
       "details": [
         {
           "name": "Uniswap V3 USDC/WETH 0.05%",
           "value": "Prime 8.72",
-          "description": "Version v3 · TVL $393.7M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $397.5M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 USDC/WETH 0.3%",
           "value": "Prime 8.72",
-          "description": "Version v3 · TVL $327.2M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $330.4M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 WETH/USDT 0.3%",
           "value": "Prime 8.53",
-          "description": "Version v3 · TVL $284.0M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $287.4M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 WBTC/WETH 0.3%",
           "value": "Prime 8.54",
-          "description": "Version v3 · TVL $206.3M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $210.2M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 WBTC/USDC 0.3%",
           "value": "Prime 8.69",
-          "description": "Version v3 · TVL $141.3M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $142.9M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 WBTC/WETH 0.05%",
           "value": "Prime 8.54",
-          "description": "Version v3 · TVL $118.0M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $120.2M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 WETH/USDT 0.05%",
           "value": "Prime 8.53",
-          "description": "Version v3 · TVL $75.7M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $92.4M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 LINK/WETH 0.3%",
           "value": "Core 7.90",
-          "description": "Version v3 · TVL $60.3M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $61.2M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 WBTC/USDT 0.3%",
           "value": "Prime 8.50",
-          "description": "Version v3 · TVL $57.4M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $57.9M · Scored 2026-10-13"
         },
         {
           "name": "Uniswap V3 DAI/WETH 0.3%",
           "value": "Prime 8.66",
-          "description": "Version v3 · TVL $49.5M · Scored 2026-10-12"
+          "description": "Version v3 · TVL $49.9M · Scored 2026-10-13"
         }
       ],
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
       "url": "https://analytics.philidor.io/protocols/uniswap",
-      "note": "Counted: 68 of the 68 live vault(s) Philidor lists for uniswap under version v3. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
+      "note": "Counted: 69 of the 69 live vault(s) Philidor lists for uniswap under version v3. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
         "facts": [
           {
@@ -176,11 +176,11 @@
           },
           {
             "name": "Vaults listed",
-            "value": "68"
+            "value": "69"
           },
           {
             "name": "Vaults live",
-            "value": "68"
+            "value": "69"
           },
           {
             "name": "Vaults shut down",
@@ -188,7 +188,7 @@
           },
           {
             "name": "Vaults rated",
-            "value": "68"
+            "value": "69"
           }
         ],
         "vaults": [
@@ -198,8 +198,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.72,
-            "tvlUsd": 393718096,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 397537098,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"
           },
           {
@@ -208,8 +208,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.72,
-            "tvlUsd": 327171620,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 330419846,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8"
           },
           {
@@ -218,8 +218,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.53,
-            "tvlUsd": 283964516,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 287369700,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4e68ccd3e89f51c3074ca5072bbac773960dfa36"
           },
           {
@@ -228,8 +228,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.54,
-            "tvlUsd": 206339483,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 210162193,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xcbcdf9626bc03e24f779434178a73a0b4bad62ed"
           },
           {
@@ -238,8 +238,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.69,
-            "tvlUsd": 141329311,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 142859725,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x99ac8ca7087fa4a2a1fb6357269965a2014abc35"
           },
           {
@@ -248,8 +248,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.54,
-            "tvlUsd": 118011934,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 120195912,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
           },
           {
@@ -258,8 +258,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.53,
-            "tvlUsd": 75666741,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 92386362,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x11b815efb8f581194ae79006d24e0d814b7697f6"
           },
           {
@@ -268,8 +268,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 60305670,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 61171739,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa6cc3c2531fdaa6ae1a3ca84c2855806728693e8"
           },
           {
@@ -278,8 +278,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.5,
-            "tvlUsd": 57429708,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 57867570,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9db9e0e53058c89e5b94e29621a205198648425b"
           },
           {
@@ -288,8 +288,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.66,
-            "tvlUsd": 49474091,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 49870027,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8"
           },
           {
@@ -298,19 +298,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.68,
-            "tvlUsd": 44358787,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 44358957,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3416cf6c708da44db2624d63ea0aaef7113527c6"
-          },
-          {
-            "name": "Uniswap V3 WBTC/USDT 0.05%",
-            "version": "v3",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.5,
-            "tvlUsd": 40420129,
-            "scoredAt": "2026-10-12",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2"
           },
           {
             "name": "Uniswap V3 UNI/WETH 0.3%",
@@ -318,18 +308,28 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 39609330,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 40406844,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x1d42064fc4beb5f8aaf85f4617ae8b3b5b8bd801"
+          },
+          {
+            "name": "Uniswap V3 WBTC/USDT 0.05%",
+            "version": "v3",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.5,
+            "tvlUsd": 40269584,
+            "scoredAt": "2026-10-13",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2"
           },
           {
             "name": "Uniswap V3 AUSD/USDC 0.01%",
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.58,
-            "tvlUsd": 34158311,
-            "scoredAt": "2026-10-12",
+            "score": 8.6,
+            "tvlUsd": 34159116,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbafead7c60ea473758ed6c6021505e8bbd7e8e5d"
           },
           {
@@ -339,7 +339,7 @@
             "tier": "Core",
             "score": 7.9,
             "tvlUsd": 20103583,
-            "scoredAt": "2026-10-12",
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4a25dbdf9629b1782c3e2c7de3bdce41f1c7f801"
           },
           {
@@ -348,8 +348,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.66,
-            "tvlUsd": 16573063,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 16717408,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x60594a405d53811d3bc4766596efd80fd545a270"
           },
           {
@@ -358,8 +358,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 13945158,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 14070446,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3"
           },
           {
@@ -368,8 +368,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.72,
-            "tvlUsd": 13701374,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 14022098,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe0554a476a092703abdb3ef35c80e0d76d32939f"
           },
           {
@@ -378,19 +378,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.53,
-            "tvlUsd": 11400666,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 11913224,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b"
-          },
-          {
-            "name": "Uniswap V3 USDC/WETH 1%",
-            "version": "v3",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.72,
-            "tvlUsd": 10402022,
-            "scoredAt": "2026-10-12",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x7bea39867e4169dbe237d55c8242a8f2fcdcc387"
           },
           {
             "name": "Uniswap V3 WBTC/cbBTC 0.01%",
@@ -398,9 +388,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.56,
-            "tvlUsd": 10393984,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 10570194,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe8f7c89c5efa061e340f2d2f206ec78fd8f7e124"
+          },
+          {
+            "name": "Uniswap V3 USDC/WETH 1%",
+            "version": "v3",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.72,
+            "tvlUsd": 10564427,
+            "scoredAt": "2026-10-13",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x7bea39867e4169dbe237d55c8242a8f2fcdcc387"
           },
           {
             "name": "Uniswap V3 wstETH/WETH 0.01%",
@@ -408,8 +408,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.57,
-            "tvlUsd": 9750889,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 9940198,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa"
           },
           {
@@ -418,8 +418,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.68,
-            "tvlUsd": 8575633,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 8575652,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x7858e59e0c01ea06df3af3d20ac7b0003275d4bf"
           },
           {
@@ -428,8 +428,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.69,
-            "tvlUsd": 7982974,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 8199599,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9a772018fbd77fcd2d25657e5c547baff3fd7d16"
           },
           {
@@ -438,8 +438,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 5297091,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 5344696,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x202a6012894ae5c288ea824cbc8a9bfb26a49b93"
           },
           {
@@ -448,8 +448,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 5000922,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 5248890,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x73a38006d23517a1d383c88929b2014f8835b38b"
           },
           {
@@ -458,8 +458,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 4927526,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 4953927,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x360b9726186c0f62cc719450685ce70280774dc8"
           },
           {
@@ -468,8 +468,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 4784748,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 4865492,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5738df8073ad05d0c0fcf60e358033268ebf16cc"
           },
           {
@@ -478,8 +478,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.81,
-            "tvlUsd": 4300908,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 4300956,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6c6bc977e13df9b0de53b251522280bb72383700"
           },
           {
@@ -488,8 +488,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 3985358,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 4050776,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3470447f3cecffac709d3e783a307790b0208d60"
           },
           {
@@ -498,8 +498,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.81,
-            "tvlUsd": 3913330,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 3912339,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5777d92f208679db4b9778590fa3cab3ac9e2168"
           },
           {
@@ -508,8 +508,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.53,
-            "tvlUsd": 3618773,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 3680919,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc5af84701f98fa483ece78af83f11b6c38aca71d"
           },
           {
@@ -518,8 +518,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.59,
-            "tvlUsd": 3570592,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 3571188,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbb5b761415a58d944fcb81313b204f895637d20c"
           },
           {
@@ -528,8 +528,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.56,
-            "tvlUsd": 3141686,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 3144753,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc63b0708e2f7e69cb8a1df0e1389a98c35a76d52"
           },
           {
@@ -538,8 +538,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 2780503,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2817766,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd0fc8ba7e267f2bc56044a7715a489d851dc6d78"
           },
           {
@@ -549,7 +549,7 @@
             "tier": "Core",
             "score": 7.9,
             "tvlUsd": 2779556,
-            "scoredAt": "2026-10-12",
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9dbe5dffaeb4ac2e0ac14f8b4e08b3bc55de5232"
           },
           {
@@ -558,8 +558,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.47,
-            "tvlUsd": 2765582,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2765586,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe6d7ebb9f1a9519dc06d557e03c522d53520e76a"
           },
           {
@@ -568,8 +568,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.47,
-            "tvlUsd": 2750882,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2764925,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xfad57d2039c21811c8f2b5d5b65308aa99d31559"
           },
           {
@@ -578,9 +578,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.71,
-            "tvlUsd": 2666498,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2666542,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xcc6d2f26d363836f85a42d249e145ec0320d3e55"
+          },
+          {
+            "name": "Uniswap V3 LBTC/cbBTC 0.01%",
+            "version": "v3",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.43,
+            "tvlUsd": 2497103,
+            "scoredAt": "2026-10-13",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xbb0e3525d6d5e1a7ecc627a82a44019b48cf84b3"
           },
           {
             "name": "Uniswap V3 WBTC/WETH 0.01%",
@@ -588,8 +598,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.54,
-            "tvlUsd": 2369934,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2425940,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe6ff8b9a37b0fab776134636d9981aa778c4e718"
           },
           {
@@ -598,8 +608,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 2211379,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2211428,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x31d0e24bdb9359a09d810623112e257dabf0e974"
           },
           {
@@ -608,8 +618,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.62,
-            "tvlUsd": 2193903,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2192961,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x48da0965ab2d2cbf1c17c09cfb5cbe67ad5b1406"
           },
           {
@@ -618,8 +628,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 2164978,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2188202,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdbac78be00503d10ae0074e5e5873a61fc56647c"
           },
           {
@@ -628,8 +638,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.55,
-            "tvlUsd": 2107549,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2123195,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x840deeef2f115cf50da625f7368c24af6fe74410"
           },
           {
@@ -638,8 +648,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.49,
-            "tvlUsd": 1969311,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1969350,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4e665157291dbcb25152ebb01061e4012f58add2"
           },
           {
@@ -648,8 +658,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1943769,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1952665,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x36c060cc4b088c830a561e959a679a58205d3f56"
           },
           {
@@ -658,8 +668,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1940756,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1902286,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x04708077eca6bb527a5bbbd6358ffb043a9c1c14"
           },
           {
@@ -668,8 +678,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1741822,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1741789,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47"
           },
           {
@@ -678,8 +688,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.54,
-            "tvlUsd": 1664945,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1677486,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6ab3bba2f41e7eaa262fa5a1a9b3932fa161526f"
           },
           {
@@ -688,8 +698,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.62,
-            "tvlUsd": 1411532,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1411524,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6f48eca74b38d2936b02ab603ff4e36a6c0e3a77"
           },
           {
@@ -698,19 +708,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.57,
-            "tvlUsd": 1154532,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1159740,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x553e9c493678d8606d6a5ba284643db2110df823"
-          },
-          {
-            "name": "Uniswap V3 rETH/WETH 0.05%",
-            "version": "v3",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.57,
-            "tvlUsd": 977351,
-            "scoredAt": "2026-10-12",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xa4e0faa58465a2d369aa21b3e42d43374c6f9613"
           },
           {
             "name": "Uniswap V3 WETH/cbBTC 0.3%",
@@ -718,19 +718,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.59,
-            "tvlUsd": 966200,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 990912,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x15aa01580ae866f9ff4dbe45e06e307941d90c7b"
           },
           {
-            "name": "Uniswap V3 LUSD/USDC 0.05%",
+            "name": "Uniswap V3 rETH/WETH 0.05%",
             "version": "v3",
             "curator": null,
             "tier": "Prime",
-            "score": 8.76,
-            "tvlUsd": 927461,
-            "scoredAt": "2026-10-12",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x4e0924d3a751be199c426d52fb1f2337fa96f736"
+            "score": 8.57,
+            "tvlUsd": 980501,
+            "scoredAt": "2026-10-13",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xa4e0faa58465a2d369aa21b3e42d43374c6f9613"
           },
           {
             "name": "Uniswap V3 WBTC/LBTC 0.01%",
@@ -738,9 +738,19 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 918843,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 933908,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0b599ebf4e05af48b56d38e2dde520570c366460"
+          },
+          {
+            "name": "Uniswap V3 LUSD/USDC 0.05%",
+            "version": "v3",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.76,
+            "tvlUsd": 927615,
+            "scoredAt": "2026-10-13",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x4e0924d3a751be199c426d52fb1f2337fa96f736"
           },
           {
             "name": "Uniswap V3 USDC/cbBTC 0.3%",
@@ -748,19 +758,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.74,
-            "tvlUsd": 905260,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 911581,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4548280ac92507c9092a511c7396cbea78fa9e49"
-          },
-          {
-            "name": "Uniswap V3 WBTC/USDC 1%",
-            "version": "v3",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.69,
-            "tvlUsd": 864302,
-            "scoredAt": "2026-10-12",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xcbfb0745b8489973bf7b334d54fdbd573df7ef3c"
           },
           {
             "name": "Uniswap V3 UNI/WBTC 0.3%",
@@ -768,9 +768,19 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 840465,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 897168,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x8f0cb37cdff37e004e0088f563e5fe39e05ccc5b"
+          },
+          {
+            "name": "Uniswap V3 WBTC/USDC 1%",
+            "version": "v3",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.69,
+            "tvlUsd": 873552,
+            "scoredAt": "2026-10-13",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xcbfb0745b8489973bf7b334d54fdbd573df7ef3c"
           },
           {
             "name": "Uniswap V3 WBTC/DAI 0.3%",
@@ -778,8 +788,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.63,
-            "tvlUsd": 802465,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 802160,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x391e8501b626c623d39474afca6f9e46c2686649"
           },
           {
@@ -789,7 +799,7 @@
             "tier": "Prime",
             "score": 8.57,
             "tvlUsd": 649890,
-            "scoredAt": "2026-10-12",
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x63818bbdd21e69be108a23ac1e84cbf66399bd7d"
           },
           {
@@ -798,8 +808,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 612039,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 620083,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5d4f3c6fa16908609bac31ff148bd002aa6b8c83"
           },
           {
@@ -808,8 +818,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 599046,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 606289,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59354356ec5d56306791873f567d61ebf11dfbd5"
           },
           {
@@ -818,8 +828,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.47,
-            "tvlUsd": 573773,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 581888,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x97944213d2caeea773da1c9b11b0525f25b749cc"
           },
           {
@@ -828,8 +838,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 573116,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 573395,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x867b321132b18b5bf3775c0d9040d1872979422e"
           },
           {
@@ -838,8 +848,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.51,
-            "tvlUsd": 541795,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 541780,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x97e7d56a0408570ba1a7852de36350f7713906ec"
           },
           {
@@ -849,7 +859,7 @@
             "tier": "Prime",
             "score": 8.55,
             "tvlUsd": 538498,
-            "scoredAt": "2026-10-12",
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbea615376d1184f3670a341b70f6f45d9d0fbaad"
           },
           {
@@ -858,8 +868,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.56,
-            "tvlUsd": 517930,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 515927,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0da6253560822973185297d5f32ff8fa38243afe"
           },
           {
@@ -868,17 +878,17 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 511711,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 511733,
+            "scoredAt": "2026-10-13",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc2a856c3aff2110c1171b8f942256d40e980c726"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-10-12T23:38:41.446Z"
+      "since": "2026-10-13T12:45:48.803Z"
     },
     "pigi": {
-      "value": "A 86.58/100",
+      "value": "A 86.81/100",
       "summary": "Uniswap v3 — immutable AMM core; same factory address on every chain",
       "details": [
         {
@@ -888,8 +898,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "78.46",
-          "description": "The mean of pigi’s latest scores of the 47 rated Ethereum vault(s) that deposit into uniswap-v3, weighted by their 30-day average TVL ($464.8M in all). Weight in the score: 0.4. Vaults by band: A 0, B 29, C 18, D 0, F 0."
+          "value": "79.03",
+          "description": "The mean of pigi’s latest scores of the 47 rated Ethereum vault(s) that deposit into uniswap-v3, weighted by their 30-day average TVL ($464.8M in all). Weight in the score: 0.4. Vaults by band: A 0, B 28, C 19, D 0, F 0."
         },
         {
           "name": "Weights",
@@ -897,7 +907,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: uniswap-v3. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -908,8 +918,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.94,
-            "tvlUsd": 107874922,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 107311177,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6299"
           },
           {
@@ -918,8 +928,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.94,
-            "tvlUsd": 100459089,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 99748431,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6339"
           },
           {
@@ -927,9 +937,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 79.73,
-            "tvlUsd": 40401364,
-            "scoredAt": "2026-10-12",
+            "score": 82.73,
+            "tvlUsd": 41141083,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6341"
           },
           {
@@ -938,8 +948,8 @@
             "curator": null,
             "tier": "B",
             "score": 79.9,
-            "tvlUsd": 34564049,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 34580191,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6042"
           },
           {
@@ -948,8 +958,8 @@
             "curator": null,
             "tier": "B",
             "score": 80.3,
-            "tvlUsd": 34298481,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 34129554,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6159"
           },
           {
@@ -958,8 +968,8 @@
             "curator": null,
             "tier": "B",
             "score": 81.44,
-            "tvlUsd": 26364034,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 26848511,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6304"
           },
           {
@@ -967,9 +977,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 75.94,
-            "tvlUsd": 25700703,
-            "scoredAt": "2026-10-12",
+            "score": 78.94,
+            "tvlUsd": 25650484,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6357"
           },
           {
@@ -977,9 +987,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 78.44,
-            "tvlUsd": 21324525,
-            "scoredAt": "2026-10-12",
+            "score": 81.44,
+            "tvlUsd": 21377529,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6354"
           },
           {
@@ -988,8 +998,8 @@
             "curator": null,
             "tier": "B",
             "score": 77.54,
-            "tvlUsd": 20091578,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 20091723,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6060"
           },
           {
@@ -998,8 +1008,8 @@
             "curator": null,
             "tier": "B",
             "score": 77.94,
-            "tvlUsd": 9416209,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 9440534,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6256"
           },
           {
@@ -1008,8 +1018,8 @@
             "curator": null,
             "tier": "B",
             "score": 77.94,
-            "tvlUsd": 6097876,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 6256398,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6417"
           },
           {
@@ -1017,9 +1027,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 75.37,
-            "tvlUsd": 3829831,
-            "scoredAt": "2026-10-12",
+            "score": 72.87,
+            "tvlUsd": 3826340,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6391"
           },
           {
@@ -1028,18 +1038,18 @@
             "curator": null,
             "tier": "B",
             "score": 73.23,
-            "tvlUsd": 3724178,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 3798901,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6317"
           },
           {
             "name": "DAI/WETH 0.3%",
             "version": "Uniswap",
             "curator": null,
-            "tier": "B",
+            "tier": "C",
             "score": 69.87,
-            "tvlUsd": 3613485,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 3611117,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6388"
           },
           {
@@ -1048,8 +1058,8 @@
             "curator": null,
             "tier": "B",
             "score": 70.3,
-            "tvlUsd": 2759107,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2730058,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6350"
           },
           {
@@ -1058,8 +1068,8 @@
             "curator": null,
             "tier": "B",
             "score": 74.4,
-            "tvlUsd": 2571042,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2560712,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6175"
           },
           {
@@ -1068,8 +1078,8 @@
             "curator": null,
             "tier": "B",
             "score": 72.37,
-            "tvlUsd": 2413226,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 2458451,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6277"
           },
           {
@@ -1077,9 +1087,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 75,
-            "tvlUsd": 2367751,
-            "scoredAt": "2026-10-12",
+            "score": 77,
+            "tvlUsd": 2371767,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6199"
           },
           {
@@ -1088,8 +1098,8 @@
             "curator": null,
             "tier": "B",
             "score": 73.5,
-            "tvlUsd": 1855952,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1855843,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6064"
           },
           {
@@ -1098,8 +1108,8 @@
             "curator": null,
             "tier": "C",
             "score": 61.87,
-            "tvlUsd": 1743948,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1687889,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6398"
           },
           {
@@ -1108,8 +1118,8 @@
             "curator": null,
             "tier": "B",
             "score": 77.1,
-            "tvlUsd": 1430563,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1431979,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6074"
           },
           {
@@ -1117,9 +1127,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 76.4,
-            "tvlUsd": 1416340,
-            "scoredAt": "2026-10-12",
+            "score": 78.8,
+            "tvlUsd": 1416379,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6027"
           },
           {
@@ -1128,8 +1138,8 @@
             "curator": null,
             "tier": "B",
             "score": 75.1,
-            "tvlUsd": 1316321,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1314018,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6059"
           },
           {
@@ -1137,9 +1147,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "C",
-            "score": 69.37,
-            "tvlUsd": 1125969,
-            "scoredAt": "2026-10-12",
+            "score": 66.87,
+            "tvlUsd": 1125945,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6311"
           },
           {
@@ -1148,8 +1158,8 @@
             "curator": null,
             "tier": "C",
             "score": 69.37,
-            "tvlUsd": 1096012,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 1097847,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6242"
           },
           {
@@ -1157,9 +1167,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 72.37,
-            "tvlUsd": 963930,
-            "scoredAt": "2026-10-12",
+            "score": 75.37,
+            "tvlUsd": 972705,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6431"
           },
           {
@@ -1167,9 +1177,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "C",
-            "score": 68.87,
-            "tvlUsd": 850482,
-            "scoredAt": "2026-10-12",
+            "score": 66.37,
+            "tvlUsd": 850124,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6329"
           },
           {
@@ -1177,9 +1187,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "B",
-            "score": 72.3,
-            "tvlUsd": 604662,
-            "scoredAt": "2026-10-12",
+            "score": 74.7,
+            "tvlUsd": 600771,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6104"
           },
           {
@@ -1188,8 +1198,8 @@
             "curator": null,
             "tier": "C",
             "score": 65.87,
-            "tvlUsd": 559920,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 572314,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6365"
           },
           {
@@ -1198,8 +1208,8 @@
             "curator": null,
             "tier": "B",
             "score": 72.3,
-            "tvlUsd": 515217,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 514515,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6093"
           },
           {
@@ -1208,8 +1218,8 @@
             "curator": null,
             "tier": "C",
             "score": 63.37,
-            "tvlUsd": 428665,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 422741,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6355"
           },
           {
@@ -1217,9 +1227,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "C",
-            "score": 68.87,
-            "tvlUsd": 379468,
-            "scoredAt": "2026-10-12",
+            "score": 66.37,
+            "tvlUsd": 379211,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6390"
           },
           {
@@ -1227,9 +1237,9 @@
             "version": "Uniswap",
             "curator": null,
             "tier": "C",
-            "score": 65.87,
-            "tvlUsd": 302980,
-            "scoredAt": "2026-10-12",
+            "score": 68.87,
+            "tvlUsd": 303184,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6310"
           },
           {
@@ -1238,19 +1248,9 @@
             "curator": null,
             "tier": "C",
             "score": 75,
-            "tvlUsd": 287944,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 287949,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6024"
-          },
-          {
-            "name": "USDC/CRV 1%",
-            "version": "Uniswap",
-            "curator": null,
-            "tier": "C",
-            "score": 58.37,
-            "tvlUsd": 262901,
-            "scoredAt": "2026-10-12",
-            "url": "https://app.pigi.finance/vault/6348"
           },
           {
             "name": "XAUt/USDC 0.3%",
@@ -1258,9 +1258,19 @@
             "curator": null,
             "tier": "C",
             "score": 63.37,
-            "tvlUsd": 261984,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 261406,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6335"
+          },
+          {
+            "name": "USDC/CRV 1%",
+            "version": "Uniswap",
+            "curator": null,
+            "tier": "C",
+            "score": 58.37,
+            "tvlUsd": 253015,
+            "scoredAt": "2026-10-13",
+            "url": "https://app.pigi.finance/vault/6348"
           },
           {
             "name": "PYUSD/USDC 0.01%",
@@ -1268,8 +1278,8 @@
             "curator": null,
             "tier": "B",
             "score": 74.3,
-            "tvlUsd": 190302,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 190317,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6017"
           },
           {
@@ -1278,8 +1288,8 @@
             "curator": null,
             "tier": "C",
             "score": 63.37,
-            "tvlUsd": 185702,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 183810,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6413"
           },
           {
@@ -1288,8 +1298,8 @@
             "curator": null,
             "tier": "C",
             "score": 68.87,
-            "tvlUsd": 164720,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 167413,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6292"
           },
           {
@@ -1298,8 +1308,8 @@
             "curator": null,
             "tier": "C",
             "score": 68.87,
-            "tvlUsd": 154959,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 158684,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6326"
           },
           {
@@ -1308,8 +1318,8 @@
             "curator": null,
             "tier": "C",
             "score": 66.37,
-            "tvlUsd": 139066,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 138690,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6298"
           },
           {
@@ -1318,9 +1328,19 @@
             "curator": null,
             "tier": "B",
             "score": 74.3,
-            "tvlUsd": 131086,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 131091,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6095"
+          },
+          {
+            "name": "AUSD/USDT 0.01%",
+            "version": "Uniswap",
+            "curator": null,
+            "tier": "B",
+            "score": 76.7,
+            "tvlUsd": 125057,
+            "scoredAt": "2026-10-13",
+            "url": "https://app.pigi.finance/vault/6111"
           },
           {
             "name": "LINK/USDT 0.3%",
@@ -1328,19 +1348,9 @@
             "curator": null,
             "tier": "C",
             "score": 66.37,
-            "tvlUsd": 125230,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 124782,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6369"
-          },
-          {
-            "name": "AUSD/USDT 0.01%",
-            "version": "Uniswap",
-            "curator": null,
-            "tier": "B",
-            "score": 74.3,
-            "tvlUsd": 125053,
-            "scoredAt": "2026-10-12",
-            "url": "https://app.pigi.finance/vault/6111"
           },
           {
             "name": "ENS/USDT 0.3%",
@@ -1348,8 +1358,8 @@
             "curator": null,
             "tier": "C",
             "score": 68.87,
-            "tvlUsd": 122384,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 122439,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6247"
           },
           {
@@ -1358,8 +1368,8 @@
             "curator": null,
             "tier": "C",
             "score": 68.87,
-            "tvlUsd": 113048,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 113202,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6358"
           },
           {
@@ -1368,8 +1378,8 @@
             "curator": null,
             "tier": "B",
             "score": 76.7,
-            "tvlUsd": 45627,
-            "scoredAt": "2026-10-12",
+            "tvlUsd": 45635,
+            "scoredAt": "2026-10-13",
             "url": "https://app.pigi.finance/vault/6168"
           }
         ],
@@ -1378,7 +1388,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-12T09:18:37.756Z"
+      "since": "2026-10-13T12:45:48.803Z"
     },
     "risklayer": {
       "value": "4.3/10 · medium",
