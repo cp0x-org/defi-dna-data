@@ -66,7 +66,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "37 · red",
+      "value": "40 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -76,8 +76,8 @@
         },
         {
           "name": "Liveness",
-          "value": "55",
-          "description": "tvl_change_7d_pct: -7.86"
+          "value": "67",
+          "description": "tvl_change_7d_pct: -3.33"
         },
         {
           "name": "Security",
@@ -85,14 +85,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "url": "https://defiscoring.com/protocols/liquity-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "37"
+            "value": "40"
           },
           {
             "name": "Band",
@@ -104,7 +104,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-13T18:57:14.298Z"
+      "since": "2026-10-14T10:17:55.248Z"
     },
     "philidor": {
       "status": "none",
@@ -131,7 +131,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v2-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -142,8 +142,8 @@
             "curator": null,
             "tier": "B",
             "score": 83.2,
-            "tvlUsd": 7566218,
-            "scoredAt": "2026-10-13",
+            "tvlUsd": 7565038,
+            "scoredAt": "2026-10-14",
             "url": "https://app.pigi.finance/vault/42"
           }
         ],
@@ -152,7 +152,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-13T12:45:48.803Z"
+      "since": "2026-10-14T10:17:55.248Z"
     },
     "risklayer": {
       "status": "none",

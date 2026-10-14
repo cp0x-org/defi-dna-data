@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-10-13T21:52:46.955Z",
+  "generatedAt": "2026-10-14T10:17:55.248Z",
   "sources": {
     "defiscan": {
-      "lastRunAt": "2026-10-13T21:52:46.955Z",
-      "lastOkAt": "2026-10-13T21:52:46.955Z"
+      "lastRunAt": "2026-10-14T10:17:55.248Z",
+      "lastOkAt": "2026-10-14T10:17:55.248Z"
     },
     "defiscoring": {
-      "lastRunAt": "2026-10-13T21:52:46.955Z",
-      "lastOkAt": "2026-10-13T21:52:46.955Z"
+      "lastRunAt": "2026-10-14T10:17:55.248Z",
+      "lastOkAt": "2026-10-14T10:17:55.248Z"
     },
     "philidor": {
-      "lastRunAt": "2026-10-13T21:52:46.955Z",
-      "lastOkAt": "2026-10-13T21:52:46.955Z"
+      "lastRunAt": "2026-10-14T10:17:55.248Z",
+      "lastOkAt": "2026-10-14T10:17:55.248Z"
     },
     "pigi": {
-      "lastRunAt": "2026-10-13T21:52:46.955Z",
-      "lastOkAt": "2026-10-13T21:52:46.955Z"
+      "lastRunAt": "2026-10-14T10:17:55.248Z",
+      "lastOkAt": "2026-10-14T10:17:55.248Z"
     },
     "risklayer": {
-      "lastRunAt": "2026-10-13T21:52:46.955Z",
-      "lastOkAt": "2026-10-13T21:52:46.955Z"
+      "lastRunAt": "2026-10-14T10:17:55.248Z",
+      "lastOkAt": "2026-10-14T10:17:55.248Z"
     },
     "incidents": {
-      "lastRunAt": "2026-10-13T21:52:46.955Z",
-      "lastOkAt": "2026-10-13T21:52:46.955Z"
+      "lastRunAt": "2026-10-14T10:17:55.248Z",
+      "lastOkAt": "2026-10-14T10:17:55.248Z"
     },
     "tvl": {
-      "lastRunAt": "2026-10-13T21:52:46.955Z",
-      "lastOkAt": "2026-10-13T21:52:46.955Z"
+      "lastRunAt": "2026-10-14T10:17:55.248Z",
+      "lastOkAt": "2026-10-14T10:17:55.248Z"
     }
   },
   "rows": [
     {
       "id": "aave-v3",
-      "tvl": 14602636240,
+      "tvl": 14561615859,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
@@ -49,7 +49,7 @@
     },
     {
       "id": "aave-v4",
-      "tvl": 448577656,
+      "tvl": 452188957,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -64,7 +64,7 @@
     },
     {
       "id": "balancer-v2",
-      "tvl": 14719610,
+      "tvl": 14394007,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -78,7 +78,7 @@
     },
     {
       "id": "balancer-v3",
-      "tvl": 13996008,
+      "tvl": 13852322,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -92,7 +92,7 @@
     },
     {
       "id": "compound-v3",
-      "tvl": 1324440942,
+      "tvl": 1330873140,
       "feeds": {
         "defiscan": true,
         "defiscoring": false,
@@ -104,7 +104,7 @@
     },
     {
       "id": "compound-v2",
-      "tvl": 108894022,
+      "tvl": 108972545,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -133,7 +133,7 @@
     },
     {
       "id": "curve",
-      "tvl": 1310801199,
+      "tvl": 1313105428,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
@@ -147,7 +147,7 @@
     },
     {
       "id": "euler",
-      "tvl": 52841781,
+      "tvl": 52947640,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -162,7 +162,7 @@
     },
     {
       "id": "fluid",
-      "tvl": 702225728,
+      "tvl": 704651040,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -177,7 +177,7 @@
     },
     {
       "id": "gearbox",
-      "tvl": 21672769,
+      "tvl": 21805458,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -186,12 +186,12 @@
         "risklayer": false
       },
       "readings": {
-        "defiscoring": "negative"
+        "defiscoring": "neutral"
       }
     },
     {
       "id": "lido",
-      "tvl": 24305907884,
+      "tvl": 24291502000,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
@@ -207,7 +207,7 @@
     },
     {
       "id": "liquity-v1",
-      "tvl": 180727246,
+      "tvl": 180262690,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
@@ -222,7 +222,7 @@
     },
     {
       "id": "liquity-v2",
-      "tvl": 99450151,
+      "tvl": 99347845,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
@@ -237,7 +237,7 @@
     },
     {
       "id": "mellow",
-      "tvl": 285320549,
+      "tvl": 284871511,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -251,7 +251,7 @@
     },
     {
       "id": "morpho-blue",
-      "tvl": 5139411374,
+      "tvl": 5151345485,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -282,7 +282,7 @@
     },
     {
       "id": "oneinch",
-      "tvl": 3011983,
+      "tvl": 3025196,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
@@ -294,7 +294,7 @@
     },
     {
       "id": "pendle",
-      "tvl": 784651296,
+      "tvl": 784285269,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -309,7 +309,7 @@
     },
     {
       "id": "rocketpool",
-      "tvl": 1310048884,
+      "tvl": 1305186156,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
@@ -323,7 +323,7 @@
     },
     {
       "id": "spark",
-      "tvl": 8872328471,
+      "tvl": 8853802604,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
@@ -339,7 +339,7 @@
     },
     {
       "id": "uniswap-v2",
-      "tvl": 829042954,
+      "tvl": 837978418,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
@@ -354,7 +354,7 @@
     },
     {
       "id": "uniswap-v3",
-      "tvl": 900722102,
+      "tvl": 907960154,
       "feeds": {
         "defiscan": true,
         "defiscoring": true,
@@ -370,7 +370,7 @@
     },
     {
       "id": "uniswap-v4",
-      "tvl": 700323544,
+      "tvl": 768109313,
       "feeds": {
         "defiscan": false,
         "defiscoring": true,
@@ -386,7 +386,7 @@
     },
     {
       "id": "yearn",
-      "tvl": 178247257,
+      "tvl": 179713397,
       "feeds": {
         "defiscan": false,
         "defiscoring": false,
