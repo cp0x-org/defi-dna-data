@@ -7,7 +7,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "19 · red",
+      "value": "21 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -17,8 +17,8 @@
         },
         {
           "name": "Liveness",
-          "value": "63",
-          "description": "tvl_change_7d_pct: -4.75"
+          "value": "71",
+          "description": "tvl_change_7d_pct: -1.57"
         },
         {
           "name": "Security",
@@ -33,7 +33,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "19"
+            "value": "21"
           },
           {
             "name": "Band",
@@ -45,7 +45,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T10:00:52.763Z"
+      "since": "2026-10-15T20:22:38.297Z"
     },
     "philidor": {
       "status": "none",
@@ -61,6 +61,11 @@
       "status": "none",
       "note": "Risklayer has no data for Balancer v3.",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "credora": {
+      "status": "none",
+      "note": "Credora has no data for Balancer v3.",
+      "since": "2026-10-15T20:22:38.297Z"
     }
   }
 }

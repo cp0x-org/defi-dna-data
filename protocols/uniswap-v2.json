@@ -51,7 +51,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "37 · red",
+      "value": "38 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -61,8 +61,8 @@
         },
         {
           "name": "Liveness",
-          "value": "58",
-          "description": "tvl_change_7d_pct: -6.64"
+          "value": "59",
+          "description": "tvl_change_7d_pct: -6.58"
         },
         {
           "name": "Security",
@@ -77,7 +77,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "37"
+            "value": "38"
           },
           {
             "name": "Band",
@@ -89,7 +89,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T10:00:52.763Z"
+      "since": "2026-10-15T20:22:38.297Z"
     },
     "philidor": {
       "value": "8 vaults rated",
@@ -97,32 +97,32 @@
       "details": [
         {
           "name": "Uniswap V2 USDC/WETH",
-          "value": "Prime 8.47",
-          "description": "Version v2 · TVL $19.7M · Scored 2026-10-15"
+          "value": "Prime 8.57",
+          "description": "Version v2 · TVL $20.0M · Scored 2026-10-15"
         },
         {
           "name": "Uniswap V2 WETH/USDT",
-          "value": "Prime 7.90",
-          "description": "Version v2 · TVL $14.2M · Scored 2026-10-15"
+          "value": "Prime 8.38",
+          "description": "Version v2 · TVL $14.4M · Scored 2026-10-15"
         },
         {
           "name": "Uniswap V2 DAI/WETH",
-          "value": "Prime 8.42",
-          "description": "Version v2 · TVL $8.9M · Scored 2026-10-15"
+          "value": "Prime 8.52",
+          "description": "Version v2 · TVL $9.1M · Scored 2026-10-15"
         },
         {
           "name": "Uniswap V2 WBTC/WETH",
-          "value": "Prime 7.90",
-          "description": "Version v2 · TVL $8.6M · Scored 2026-10-15"
+          "value": "Prime 8.39",
+          "description": "Version v2 · TVL $8.8M · Scored 2026-10-15"
         },
         {
           "name": "Uniswap V2 UNI/WETH",
-          "value": "Core 7.66",
-          "description": "Version v2 · TVL $3.7M · Scored 2026-10-15"
+          "value": "Core 7.80",
+          "description": "Version v2 · TVL $3.9M · Scored 2026-10-15"
         },
         {
           "name": "Uniswap V2 USDC/USDT",
-          "value": "Prime 8.53",
+          "value": "Prime 8.51",
           "description": "Version v2 · TVL $3.6M · Scored 2026-10-15"
         },
         {
@@ -132,7 +132,7 @@
         },
         {
           "name": "Uniswap V2 DAI/USDC",
-          "value": "Prime 8.67",
+          "value": "Prime 8.64",
           "description": "Version v2 · TVL $1.1M · Scored 2026-10-15"
         }
       ],
@@ -172,8 +172,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.47,
-            "tvlUsd": 19686845,
+            "score": 8.57,
+            "tvlUsd": 20023298,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
           },
@@ -182,8 +182,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 7.9,
-            "tvlUsd": 14208503,
+            "score": 8.38,
+            "tvlUsd": 14439257,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
           },
@@ -192,8 +192,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.42,
-            "tvlUsd": 8926275,
+            "score": 8.52,
+            "tvlUsd": 9075775,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa478c2975ab1ea89e8196811f51a7b7ade33eb11"
           },
@@ -202,8 +202,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 7.9,
-            "tvlUsd": 8601041,
+            "score": 8.39,
+            "tvlUsd": 8799578,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbb2b8038a1640196fbe3e38816f3e67cba72d940"
           },
@@ -212,8 +212,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Core",
-            "score": 7.66,
-            "tvlUsd": 3698477,
+            "score": 7.8,
+            "tvlUsd": 3889772,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd3d2e2692501a5c9ca623199d38826e513033a17"
           },
@@ -222,8 +222,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.53,
-            "tvlUsd": 3603127,
+            "score": 8.51,
+            "tvlUsd": 3603358,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3041cbd36888becc7bbcbc0045e3b1f144466f5f"
           },
@@ -233,7 +233,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1381054,
+            "tvlUsd": 1424212,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974"
           },
@@ -242,15 +242,15 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.67,
-            "tvlUsd": 1089308,
+            "score": 8.64,
+            "tvlUsd": 1089287,
             "scoredAt": "2026-10-15",
             "url": "https://analytics.philidor.io/vault/ethereum/0xae461ca67b15dc8dc81ce7615e0320da1a9ab8d5"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T10:00:52.763Z"
+      "since": "2026-10-15T20:22:38.297Z"
     },
     "pigi": {
       "status": "none",
@@ -386,6 +386,11 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "credora": {
+      "status": "none",
+      "note": "Credora has no data for Uniswap v2.",
+      "since": "2026-10-15T20:22:38.297Z"
     }
   }
 }

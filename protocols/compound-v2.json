@@ -7,7 +7,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "42 · red",
+      "value": "43 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -17,8 +17,8 @@
         },
         {
           "name": "Liveness",
-          "value": "73",
-          "description": "tvl_change_7d_pct: -0.66"
+          "value": "75",
+          "description": "tvl_change_7d_pct: 1.54"
         },
         {
           "name": "Security",
@@ -33,7 +33,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "42"
+            "value": "43"
           },
           {
             "name": "Band",
@@ -45,7 +45,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T10:00:52.763Z"
+      "since": "2026-10-15T20:22:38.297Z"
     },
     "philidor": {
       "status": "none",
@@ -186,6 +186,11 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "credora": {
+      "status": "none",
+      "note": "Credora has no data for Compound v2.",
+      "since": "2026-10-15T20:22:38.297Z"
     }
   }
 }
