@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-10-15T20:22:38.297Z",
+  "generatedAt": "2026-10-16T09:54:15.185Z",
   "sources": {
     "credora": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     },
     "defiscan": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     },
     "defiscoring": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     },
     "philidor": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     },
     "pigi": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     },
     "risklayer": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     },
     "incidents": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     },
     "tvl": {
-      "lastRunAt": "2026-10-15T20:22:38.297Z",
-      "lastOkAt": "2026-10-15T20:22:38.297Z"
+      "lastRunAt": "2026-10-16T09:54:15.185Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z"
     }
   },
   "rows": [
     {
       "id": "aave-v3",
-      "tvl": 14245968947,
+      "tvl": 14262206830,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -54,7 +54,7 @@
     },
     {
       "id": "aave-v4",
-      "tvl": 446980539,
+      "tvl": 443154595,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -70,7 +70,7 @@
     },
     {
       "id": "balancer-v2",
-      "tvl": 14281437,
+      "tvl": 14364976,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -85,7 +85,7 @@
     },
     {
       "id": "balancer-v3",
-      "tvl": 13419929,
+      "tvl": 13441311,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -100,7 +100,7 @@
     },
     {
       "id": "compound-v3",
-      "tvl": 1300306839,
+      "tvl": 1305047435,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -113,7 +113,7 @@
     },
     {
       "id": "compound-v2",
-      "tvl": 107267055,
+      "tvl": 106770072,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -144,7 +144,7 @@
     },
     {
       "id": "curve",
-      "tvl": 1292645144,
+      "tvl": 1293208201,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -159,7 +159,7 @@
     },
     {
       "id": "euler",
-      "tvl": 52995449,
+      "tvl": 53058561,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -175,7 +175,7 @@
     },
     {
       "id": "fluid",
-      "tvl": 667177654,
+      "tvl": 665963277,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -191,7 +191,7 @@
     },
     {
       "id": "gearbox",
-      "tvl": 21466385,
+      "tvl": 21057943,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -201,12 +201,12 @@
         "risklayer": false
       },
       "readings": {
-        "defiscoring": "neutral"
+        "defiscoring": "negative"
       }
     },
     {
       "id": "lido",
-      "tvl": 23583124456,
+      "tvl": 23770717290,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -223,7 +223,7 @@
     },
     {
       "id": "liquity-v1",
-      "tvl": 176187178,
+      "tvl": 175883895,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -239,7 +239,7 @@
     },
     {
       "id": "liquity-v2",
-      "tvl": 96777776,
+      "tvl": 97016025,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -255,7 +255,7 @@
     },
     {
       "id": "mellow",
-      "tvl": 287482061,
+      "tvl": 288184317,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -270,7 +270,7 @@
     },
     {
       "id": "morpho-blue",
-      "tvl": 5036120644,
+      "tvl": 5030259777,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -303,7 +303,7 @@
     },
     {
       "id": "oneinch",
-      "tvl": 2955340,
+      "tvl": 2960093,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -316,7 +316,7 @@
     },
     {
       "id": "pendle",
-      "tvl": 792990195,
+      "tvl": 787138236,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -332,7 +332,7 @@
     },
     {
       "id": "rocketpool",
-      "tvl": 1277246673,
+      "tvl": 1280416685,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -347,7 +347,7 @@
     },
     {
       "id": "spark",
-      "tvl": 8795604441,
+      "tvl": 8626488453,
       "feeds": {
         "credora": true,
         "defiscan": true,
@@ -364,7 +364,7 @@
     },
     {
       "id": "uniswap-v2",
-      "tvl": 844469650,
+      "tvl": 816769251,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -380,7 +380,7 @@
     },
     {
       "id": "uniswap-v3",
-      "tvl": 890555838,
+      "tvl": 889591216,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -397,7 +397,7 @@
     },
     {
       "id": "uniswap-v4",
-      "tvl": 777594492,
+      "tvl": 789103636,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -414,7 +414,7 @@
     },
     {
       "id": "yearn",
-      "tvl": 135222318,
+      "tvl": 134734951,
       "feeds": {
         "credora": false,
         "defiscan": false,

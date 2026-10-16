@@ -1,6 +1,11 @@
 {
   "protocolId": "liquity-v2",
   "feeds": {
+    "credora": {
+      "status": "none",
+      "note": "Credora has no data for Liquity v2.",
+      "since": "2026-10-15T20:22:38.297Z"
+    },
     "defiscan": {
       "value": "0 admins · 41 contracts",
       "summary": "Liquity V2 is an immutable borrowing protocol that lets users open collateralized debt positions (Troves) against wstETH, rETH, or WETH to mint BOLD, a USD-pegged stablecoin. All 44 smart contracts are deployed as immutable (non-upgradeable), and the protocol has no admin keys, timelocks, or governance-controlled parameters -- ownership of the BoldToken and Governance contracts is renounced to the zero address. The protocol relies on three Chainlink price feeds (ETH/USD, stETH/USD, rETH/ETH) and the wstETH and rETH token contracts for exchange rate conversions, making oracle liveness and accuracy the primary external risk factor. Total collateral held across all branches is $0.",
@@ -66,7 +71,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "41 · red",
+      "value": "42 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -76,8 +81,8 @@
         },
         {
           "name": "Liveness",
-          "value": "71",
-          "description": "tvl_change_7d_pct: -1.48"
+          "value": "72",
+          "description": "tvl_change_7d_pct: -1.3"
         },
         {
           "name": "Security",
@@ -85,14 +90,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-16",
       "url": "https://defiscoring.com/protocols/liquity-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "41"
+            "value": "42"
           },
           {
             "name": "Band",
@@ -104,7 +109,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T20:22:38.297Z"
+      "since": "2026-10-16T09:54:15.185Z"
     },
     "philidor": {
       "status": "none",
@@ -112,7 +117,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "B 83.08/100",
+      "value": "B 81.32/100",
       "summary": "Liquity V2 — immutable BOLD CDP system (Ethereum; current deployment 2025-05-19)",
       "details": [
         {
@@ -122,7 +127,7 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "83.2",
+          "value": "78.8",
           "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v2-protocol, weighted by their 30-day average TVL ($7.6M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
         },
         {
@@ -131,7 +136,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-16",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v2-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -141,9 +146,9 @@
             "version": "Liquity V2",
             "curator": null,
             "tier": "B",
-            "score": 83.2,
-            "tvlUsd": 7587836,
-            "scoredAt": "2026-10-15",
+            "score": 78.8,
+            "tvlUsd": 7567098,
+            "scoredAt": "2026-10-16",
             "url": "https://app.pigi.finance/vault/42"
           }
         ],
@@ -152,17 +157,12 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T10:00:52.763Z"
+      "since": "2026-10-16T09:54:15.185Z"
     },
     "risklayer": {
       "status": "none",
       "note": "Risklayer has no data for Liquity v2.",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "credora": {
-      "status": "none",
-      "note": "Credora has no data for Liquity v2.",
-      "since": "2026-10-15T20:22:38.297Z"
     }
   }
 }

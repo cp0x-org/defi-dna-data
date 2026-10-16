@@ -1,6 +1,11 @@
 {
   "protocolId": "rocketpool",
   "feeds": {
+    "credora": {
+      "status": "none",
+      "note": "Credora has no data for Rocket Pool.",
+      "since": "2026-10-15T20:22:38.297Z"
+    },
     "defiscan": {
       "status": "none",
       "note": "DeFiScan has no data for Rocket Pool.",
@@ -150,11 +155,6 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "credora": {
-      "status": "none",
-      "note": "Credora has no data for Rocket Pool.",
-      "since": "2026-10-15T20:22:38.297Z"
     }
   }
 }

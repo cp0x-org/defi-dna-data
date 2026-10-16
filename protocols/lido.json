@@ -1,6 +1,11 @@
 {
   "protocolId": "lido",
   "feeds": {
+    "credora": {
+      "status": "none",
+      "note": "Credora has no data for Lido.",
+      "since": "2026-10-15T20:22:38.297Z"
+    },
     "defiscan": {
       "value": "20 admins · $115.5M capital at risk",
       "summary": "Lido is a liquid staking protocol that allows users to stake ETH and receive stETH, a rebasing liquid staking token representing their staked position. Governance operates through an Aragon-based DAO (LDO token voting) with a Dual Governance module that gives stETH holders veto power over DAO proposals via an EmergencyProtectedTimelock. The protocol manages $115.54M in capital, with oracle committees reporting validator balances and a guardian committee securing the deposit flow against front-running attacks. The Lido V3 (stVaults) upgrade adds a customizable staking layer where node operators and institutional users deploy individual StakingVaults coordinated by a central VaultHub, with pe…",
@@ -76,8 +81,8 @@
         },
         {
           "name": "Liveness",
-          "value": "95",
-          "description": "tvl_change_7d_pct: -1.93"
+          "value": "96",
+          "description": "tvl_change_7d_pct: -1.68"
         },
         {
           "name": "Security",
@@ -85,7 +90,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-16",
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -104,7 +109,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T20:22:38.297Z"
+      "since": "2026-10-16T09:54:15.185Z"
     },
     "philidor": {
       "status": "none",
@@ -112,7 +117,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "B 83.48/100",
+      "value": "B 83.22/100",
       "summary": "Lido",
       "details": [
         {
@@ -122,8 +127,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "85.7",
-          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($25.47B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 0, F 0."
+          "value": "85.04",
+          "description": "The mean of pigi’s latest scores of the 4 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($25.91B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 1, F 2."
         },
         {
           "name": "Weights",
@@ -131,7 +136,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-16",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: lido-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -141,10 +146,40 @@
             "version": "Lido",
             "curator": null,
             "tier": "A",
-            "score": 85.7,
-            "tvlUsd": 25469048438,
-            "scoredAt": "2026-10-15",
+            "score": 86.11,
+            "tvlUsd": 25479913750,
+            "scoredAt": "2026-10-16",
             "url": "https://app.pigi.finance/vault/13"
+          },
+          {
+            "name": "Mellow stRATEGY",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "F",
+            "score": 22,
+            "tvlUsd": 217614852,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100010"
+          },
+          {
+            "name": "Lido Earn ETH",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "F",
+            "score": 22,
+            "tvlUsd": 214687831,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100009"
+          },
+          {
+            "name": "Theoriq AlphaVault ETH",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "D",
+            "score": 47.8,
+            "tvlUsd": 221244,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100016"
           }
         ],
         "text": [
@@ -152,7 +187,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T10:00:52.763Z"
+      "since": "2026-10-16T09:54:15.185Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
@@ -283,11 +318,6 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "credora": {
-      "status": "none",
-      "note": "Credora has no data for Lido.",
-      "since": "2026-10-15T20:22:38.297Z"
     }
   }
 }

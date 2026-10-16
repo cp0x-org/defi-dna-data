@@ -1,13 +1,18 @@
 {
   "protocolId": "mellow",
   "feeds": {
+    "credora": {
+      "status": "none",
+      "note": "Credora has no data for Mellow.",
+      "since": "2026-10-15T20:22:38.297Z"
+    },
     "defiscan": {
       "status": "none",
       "note": "DeFiScan has no data for Mellow.",
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "20 · red",
+      "value": "21 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -17,8 +22,8 @@
         },
         {
           "name": "Liveness",
-          "value": "65",
-          "description": "tvl_change_7d_pct: -4.14"
+          "value": "71",
+          "description": "tvl_change_7d_pct: -1.44"
         },
         {
           "name": "Security",
@@ -26,14 +31,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-16",
       "url": "https://defiscoring.com/protocols/mellow",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "20"
+            "value": "21"
           },
           {
             "name": "Band",
@@ -45,7 +50,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-15T20:22:38.297Z"
+      "since": "2026-10-16T09:54:15.185Z"
     },
     "philidor": {
       "status": "none",
@@ -61,11 +66,6 @@
       "status": "none",
       "note": "Risklayer has no data for Mellow.",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "credora": {
-      "status": "none",
-      "note": "Credora has no data for Mellow.",
-      "since": "2026-10-15T20:22:38.297Z"
     }
   }
 }
