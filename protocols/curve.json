@@ -22,9 +22,31 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "status": "none",
-      "note": "pigi.finance has no data for Curve.",
-      "since": "2026-10-11T16:59:48.502Z"
+      "value": "C 59/100",
+      "summary": "Curve Finance — DEX, crvUSD and LlamaLend under the Curve DAO (immutable markets, DAO + Emergency DAO admin)",
+      "details": [
+        {
+          "name": "Node rating",
+          "value": "59/100",
+          "description": "pigi’s own rating of curve itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-10-16, methodology 1.15.0. Weight in the score: 1."
+        },
+        {
+          "name": "Weights",
+          "value": "node 1 · vaults 0",
+          "description": "pigi’s fixed formula: score = 1 × node rating + 0 × vault score. With no rated vault the node rating stands alone. No rated vault deposits into this protocol; the score is the protocol rating alone (applied.k1 = 1)."
+        }
+      ],
+      "updatedAt": "2026-10-16",
+      "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
+      "note": "Headline: curve. Vault score counts Ethereum vaults only.",
+      "extra": {
+        "vaults": [],
+        "text": [
+          "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-16T19:58:49.416Z"
     },
     "risklayer": {
       "value": "6.7/10 · high",

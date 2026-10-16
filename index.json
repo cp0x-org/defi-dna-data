@@ -1,43 +1,44 @@
 {
-  "generatedAt": "2026-10-16T09:54:15.185Z",
+  "generatedAt": "2026-10-16T19:58:49.416Z",
   "sources": {
     "credora": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T19:58:49.416Z"
     },
     "defiscan": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T19:58:49.416Z"
     },
     "defiscoring": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T19:58:49.416Z"
     },
     "philidor": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T19:58:49.416Z"
     },
     "pigi": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T19:58:49.416Z"
     },
     "risklayer": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T09:54:15.185Z",
+      "note": "12 of 26 protocols could not be read."
     },
     "incidents": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T19:58:49.416Z"
     },
     "tvl": {
-      "lastRunAt": "2026-10-16T09:54:15.185Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z"
+      "lastRunAt": "2026-10-16T19:58:49.416Z",
+      "lastOkAt": "2026-10-16T19:58:49.416Z"
     }
   },
   "rows": [
     {
       "id": "aave-v3",
-      "tvl": 14262206830,
+      "tvl": 13993406154,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -54,7 +55,7 @@
     },
     {
       "id": "aave-v4",
-      "tvl": 443154595,
+      "tvl": 438889023,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -70,7 +71,7 @@
     },
     {
       "id": "balancer-v2",
-      "tvl": 14364976,
+      "tvl": 14209623,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -85,7 +86,7 @@
     },
     {
       "id": "balancer-v3",
-      "tvl": 13441311,
+      "tvl": 13252595,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -100,7 +101,7 @@
     },
     {
       "id": "compound-v3",
-      "tvl": 1305047435,
+      "tvl": 1289510320,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -113,7 +114,7 @@
     },
     {
       "id": "compound-v2",
-      "tvl": 106770072,
+      "tvl": 105922746,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -144,22 +145,23 @@
     },
     {
       "id": "curve",
-      "tvl": 1293208201,
+      "tvl": 1284945425,
       "feeds": {
         "credora": false,
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
-        "pigi": false,
+        "pigi": true,
         "risklayer": true
       },
       "readings": {
+        "pigi": "neutral",
         "risklayer": "negative"
       }
     },
     {
       "id": "euler",
-      "tvl": 53058561,
+      "tvl": 52761140,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -175,7 +177,7 @@
     },
     {
       "id": "fluid",
-      "tvl": 665963277,
+      "tvl": 656868322,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -191,22 +193,23 @@
     },
     {
       "id": "gearbox",
-      "tvl": 21057943,
+      "tvl": 20822663,
       "feeds": {
         "credora": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": false,
+        "pigi": true,
         "risklayer": false
       },
       "readings": {
-        "defiscoring": "negative"
+        "defiscoring": "negative",
+        "pigi": "negative"
       }
     },
     {
       "id": "lido",
-      "tvl": 23770717290,
+      "tvl": 23452967849,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -223,7 +226,7 @@
     },
     {
       "id": "liquity-v1",
-      "tvl": 175883895,
+      "tvl": 173041974,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -239,7 +242,7 @@
     },
     {
       "id": "liquity-v2",
-      "tvl": 97016025,
+      "tvl": 95522485,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -255,22 +258,23 @@
     },
     {
       "id": "mellow",
-      "tvl": 288184317,
+      "tvl": 283661566,
       "feeds": {
         "credora": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": false,
+        "pigi": true,
         "risklayer": false
       },
       "readings": {
-        "defiscoring": "negative"
+        "defiscoring": "negative",
+        "pigi": "negative"
       }
     },
     {
       "id": "morpho-blue",
-      "tvl": 5030259777,
+      "tvl": 5019890554,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -303,7 +307,7 @@
     },
     {
       "id": "oneinch",
-      "tvl": 2960093,
+      "tvl": 2909026,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -316,7 +320,7 @@
     },
     {
       "id": "pendle",
-      "tvl": 787138236,
+      "tvl": 791724671,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -332,7 +336,7 @@
     },
     {
       "id": "rocketpool",
-      "tvl": 1280416685,
+      "tvl": 1259664087,
       "feeds": {
         "credora": false,
         "defiscan": false,
@@ -347,7 +351,7 @@
     },
     {
       "id": "spark",
-      "tvl": 8626488453,
+      "tvl": 8695785575,
       "feeds": {
         "credora": true,
         "defiscan": true,
@@ -380,7 +384,7 @@
     },
     {
       "id": "uniswap-v3",
-      "tvl": 889591216,
+      "tvl": 884282012,
       "feeds": {
         "credora": false,
         "defiscan": true,
@@ -414,7 +418,7 @@
     },
     {
       "id": "yearn",
-      "tvl": 134734951,
+      "tvl": 134001554,
       "feeds": {
         "credora": false,
         "defiscan": false,

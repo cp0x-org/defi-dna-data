@@ -22,8 +22,8 @@
         },
         {
           "name": "Liveness",
-          "value": "71",
-          "description": "tvl_change_7d_pct: -1.44"
+          "value": "69",
+          "description": "tvl_change_7d_pct: -2.5"
         },
         {
           "name": "Security",
@@ -50,7 +50,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-16T09:54:15.185Z"
+      "since": "2026-10-16T19:58:49.416Z"
     },
     "philidor": {
       "status": "none",
@@ -58,9 +58,97 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "status": "none",
-      "note": "pigi.finance has no data for Mellow.",
-      "since": "2026-10-11T16:59:48.502Z"
+      "value": "F 37.22/100",
+      "summary": "Mellow Core — flexible-vaults framework: upgradeable per-vault proxies, Merkle-gated curator, report-priced shares",
+      "details": [
+        {
+          "name": "Node rating",
+          "value": "47/100",
+          "description": "pigi’s own rating of mellow-core itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-10-15, methodology 1.15.0. Weight in the score: 0.6."
+        },
+        {
+          "name": "Vault score, TVL-weighted",
+          "value": "22.54",
+          "description": "The mean of pigi’s latest scores of the 6 rated Ethereum vault(s) that deposit into mellow-core, weighted by their 30-day average TVL ($533.0M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 0, D 1, F 5."
+        },
+        {
+          "name": "Weights",
+          "value": "node 0.6 · vaults 0.4",
+          "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
+        }
+      ],
+      "updatedAt": "2026-10-16",
+      "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
+      "note": "Headline: mellow-core. Vault score counts Ethereum vaults only.",
+      "extra": {
+        "vaults": [
+          {
+            "name": "Mellow stRATEGY",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "F",
+            "score": 22,
+            "tvlUsd": 217614852,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100010"
+          },
+          {
+            "name": "Lido Earn ETH",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "F",
+            "score": 22,
+            "tvlUsd": 214687831,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100009"
+          },
+          {
+            "name": "Lido Earn USD",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "F",
+            "score": 22,
+            "tvlUsd": 50452291,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100011"
+          },
+          {
+            "name": "Experimental earnUSD",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "F",
+            "score": 30,
+            "tvlUsd": 35312406,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100012"
+          },
+          {
+            "name": "Conservative earnUSD",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "F",
+            "score": 22,
+            "tvlUsd": 14754055,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100013"
+          },
+          {
+            "name": "Theoriq AlphaVault ETH",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "D",
+            "score": 47.8,
+            "tvlUsd": 221244,
+            "scoredAt": "2026-10-16",
+            "url": "https://app.pigi.finance/vault/100016"
+          }
+        ],
+        "text": [
+          "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-16T19:58:49.416Z"
     },
     "risklayer": {
       "status": "none",
