@@ -191,6 +191,61 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defipunkd": {
+      "value": "Control: orange · Ability to exit: tentative orange (3/3 models submitted) · Autonomy: tentative orange · Open Access: green · Verifiability: green",
+      "summary": "Pendle V2 splits yield-bearing assets into PT/YT via SY wrappers and trades them on a time-decay AMM. The Router V3 and PendleMarketV3 contracts are immutable; SY adapters and several factories are upgradable via a TransparentUpgradeableProxy ProxyAdmin owned by a 3-of-5 Safe with no timelock. Boros is a separate, smaller IRS module on Arbitrum with its own permissioned admin/risk surface.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "orange",
+          "description": "3-of-5 multisig controls upgrades, no timelock — Assessed by 3 models — Choosing orange because the green steel-man only holds for the immutable parts of the address surface — the upgradable surface (V2 ProxyAdmin reaching SY/factory implementations, MarketFactoryV3.setTreasuryAndFeeReserve at maxReserveFeePercent=100) puts T1 and T2 on the uncontested fast path of a 3-of-5 multisig with zero timelock, which exceeds both the orange-vs-green threshold (T2 reachable with delay <7 days) and the T1-with-Security-Council-7-day path that would otherwise allow green; the multisig is, however, larger than the red 2-of-3 / single-EOA threshold, so red does not fit either."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "tentative orange (3/3 models submitted)",
+          "description": "Exit-like functions and direct access paths are visible, but pause guards, role holders, queue caps, and claim-finalized semantics were not reconstructed. — Exit-like functions and direct access paths are visible, but pause guards, role holders, queue caps, and claim-finalized semantics were not reconstructed."
+        },
+        {
+          "name": "Autonomy",
+          "value": "tentative orange",
+          "description": "Boros oracle/bot risk; V2 per-market isolated — Assessed by 6 models — Choosing orange because Module V2 holds about $1.602b, approximately 99.3% of Pendle+Boros TVS (grade: orange due per-market external yield-asset dependencies), while Module Boros holds about $10.98m, approximately 0.7% (grade: red/unknown due off-chain oracle and margin/liquidation coupling without verified fallback); weighted overall is orange because the worst dependency is real but currently small relative to total TVS."
+        },
+        {
+          "name": "Open Access",
+          "value": "green",
+          "description": "Permissionless contracts, no KYC, multi-path access — Assessed by 3 models — Choosing green because the operative grade inputs are contract admission and independent reachability: official docs/Terms/SDK evidence show direct non-UI access, and no contract-level whitelist/KYC/operator admission gate was found in the representative fetched surfaces; ToS/sanctions restrictions are reported as context."
+        },
+        {
+          "name": "Verifiability",
+          "value": "green",
+          "description": "Verified source + multiple top-firm audits — Assessed by 4 models — Choosing green because the conditions for green (verified bytecode on the user-facing core, a public source repo, and ≥1 recognized-firm audit covering currently-deployed contracts) all hold and the orange steel-man reduces to uneven verification across peripheral contracts and a per-component diff that was not run this round — neither downgrades the verifiability posture for the deployed core."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/pendle",
+      "note": "DeFiPunk’d files Pendle as Pendle (\"pendle\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "bronze · AI consensus on at least one dimension"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "mixed"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://immunefi.com/bug-bounty/pendle/information/"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.pendle.finance/"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

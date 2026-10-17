@@ -142,6 +142,65 @@
       "status": "none",
       "note": "Risklayer has no data for Liquity v1.",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defipunkd": {
+      "value": "Control: tentative green · Ability to exit: tentative green · Autonomy: tentative green · Open Access: tentative green · Verifiability: tentative green",
+      "summary": "Liquity V1 is an immutable, ETH-collateralized CDP protocol on Ethereum. Users open Troves by depositing ETH and minting LUSD (a USD-pegged stablecoin) at a 110% minimum collateral ratio with a one-time borrowing fee; LUSD holders can redeem 1 LUSD for $1 of ETH at any time, and Stability Pool depositors absorb liquidations in exchange for ETH gains. Core contracts have owner()=0x0 (renounced) — no admin, no governance, no upgrade path.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "tentative green",
+          "description": "Fully immutable, no admin keys or upgrades — Assessed by 3 models — Choosing green because on-chain reads at block 25052268–25053830 show owner()==address(0) on all five inspected core contracts (BorrowerOperations, TroveManager, StabilityPool, ActivePool, PriceFeed), and their verified ABIs contain no proxy upgrade hooks, no pause, no parameter setters, and no governor wiring — so the highest tier reachable on any control path is 'no path exists,' which clears the rubric's 'T1 reachable only via immutable contracts' green criterion. The orange steel-man (oracle dependency) is a verifiability concern, not a control concern, since Liquity itself cannot rotate the oracle."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "tentative green",
+          "description": "Immutable contracts, no admin pause possible — Assessed by 3 models — Choosing green because all exit functions (closeTrove, withdrawColl, repayLUSD, withdrawFromSP) are public, have no access restrictions, cannot be paused by any party, execute immediately on-chain, and require no frontend. The contracts are immutable (owner renounced to 0x0), have no pause guards, and the codebase explicitly documents the absence of admin control. This is a reference implementation of fully permissionless exit."
+        },
+        {
+          "name": "Autonomy",
+          "value": "tentative green",
+          "description": "Immutable, dual-oracle fallback, zero admin keys — Assessed by 3 models — Choosing green because the steel-man for green is supported by direct on-chain reads (owner=0x0 on all three core contracts, PriceFeed status=0 with non-zero priceAggregator and non-zero tellorCaller, on-chain constants TIMEOUT/MAX_PRICE_DEVIATION/MAX_PRICE_DIFFERENCE_BETWEEN_ORACLES), while the red steel-man requires a simultaneous compromise of two independent oracle providers AND a price-manipulation that lands within 5% of the malicious feed — a multi-failure correlated scenario, not a single-dependency failure. Module weighting: Liquity V1 ships a single core module (Trove + Stability Pool) holding 100% of TVS (~$53M coll / 28.6M LUSD debt at block 25052269); there are no separate sub-modules or product lines, so weighted overall = green. Impacted TVS under any single-dependency failure: <1%, bounded by the on-chain deviation/timeout caps and the lastGoodPrice fallback."
+        },
+        {
+          "name": "Open Access",
+          "value": "tentative green",
+          "description": "Permissionless immutable contracts, no operator gates — Assessed by 3 models — Choosing green because every checklist item that bears on the grade resolves cleanly toward permissionless: BorrowerOperations and TroveManager have owner()=0x0 with no whitelist modifiers (A1), all user actions are directly callable without operator approval (A2), the LUSD token has no blacklist function (A4), and the official frontend page itself enumerates ~9 legally independent third-party frontends plus a published SDK (A3b), so the orange 'operational capture' steel-man fails on its facts and the red 'contract-level censorship' steel-man has no ABI surface to support it."
+        },
+        {
+          "name": "Verifiability",
+          "value": "tentative green",
+          "description": "Verified source, immutable, multiple top audits — Assessed by 3 models — Choosing green because all three rubric conditions are satisfied: (a) deployed bytecode is verified on Etherscan for both BorrowerOperations and TroveManager (ABI source 'etherscan'), (b) a public source repo (github.com/liquity/dev) corresponds to the deployed system, and (c) ≥1 audit from a recognized firm (Trail of Bits, twice; Coinspect) covered the deployed contracts. The 'orange (audit staleness)' steel-man is structurally defused because owner() returns 0x0 on the inspected contracts and the protocol is immutable — there is no governance / admin path by which the deployed code could have drifted from the audited code, so the >6-month-staleness clause does not apply. The missing pinned commit-SHA / bytecode-match is a scope limit of this run, not a verifiability gap of the protocol, and is recorded in unknowns[]."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/liquity-v1",
+      "note": "DeFiPunk’d files Liquity v1 as Liquity V1 (\"liquity-v1\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "silver · Weak AI consensus on all dimensions"
+          },
+          {
+            "name": "Category",
+            "value": "CDP"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "immutable"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://immunefi.com/bounty/liquity/"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.liquity.org/"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

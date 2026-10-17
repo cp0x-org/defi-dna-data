@@ -1219,6 +1219,69 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defipunkd": {
+      "value": "Control: tentative orange · Ability to exit: tentative green · Autonomy: tentative red (2/3 models submitted) · Open Access: tentative orange (2/3 models submitted) · Verifiability: tentative green",
+      "summary": "Morpho Blue is an immutable, permissionless lending primitive that allows anyone to create isolated lending markets. Users supply or borrow assets in markets defined by a loan token, collateral token, oracle, interest rate model (IRM), and liquidation loan-to-value (LLTV). The core contract has no pause mechanism, no upgrade path, and minimal governance powers limited to enabling new IRMs/LLTVs and setting protocol fees up to 25%.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "tentative orange",
+          "description": "5/9 multisig controls fees, no timelock — Assessed by 3 models — Choosing orange because the 5/9 multisig directly controls T2 functions (fee switch, fee recipient, IRM/LLTV whitelisting) with zero on-chain timelock delay. While the immutable core means T1 is genuinely unreachable (no upgrade, no pause, no fund access), the multisig fails the Security Council standard (signer identities not publicly verified in fetched evidence) and sits on a T2 path with 0-second delay. Per the rubric, 'a multisig failing one or more Security Council criteria sits on a T1/T2 path' maps to orange. The green case is strong — the on-chain fee cap at 25% and absence of any fund-critical function make the blast radius genuinely limited — but the zero timelock and unverified signer independence prevent green."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "tentative green",
+          "description": "Permissionless immutable exits, no admin pause — Assessed by 3 models — Choosing green because Morpho Blue is an immutable contract with no pause guards on any exit function (withdraw, withdrawCollateral, repay), no upgrade mechanism that could introduce pause controls, and limited governance powers that explicitly cannot block user exits. The only constraint on withdrawal is market liquidity (totalBorrowAssets <= totalSupplyAssets), which is an economic rather than admin control. The 5-of-9 multisig owner can enable new IRMs/LLTVs and set fees up to 25%, but cannot pause markets or prevent users from withdrawing. This is the strongest exit guarantee possible in DeFi lending."
+        },
+        {
+          "name": "Autonomy",
+          "value": "tentative red (2/3 models submitted)",
+          "description": "Per-market oracle loss risk — Red: unmitigated per-market oracle/IRM/token failures can lose principal; impacted TVS up to ~100% of an affected market/vault"
+        },
+        {
+          "name": "Open Access",
+          "value": "tentative orange (2/3 models submitted)",
+          "description": "Open contracts, filtered UI — Core contracts admit users directly, but official metadata contains country-based market blacklists."
+        },
+        {
+          "name": "Verifiability",
+          "value": "tentative green",
+          "description": "Immutable, verified, multi-audited by top firms — Assessed by 3 models — Choosing green because the core Morpho Blue singleton (the primary fund-custody contract) is verified on Etherscan without proxy wrapping, tied to a public GitHub repo at a pinned v1.0.0 tag, immutable by design, and covered by audits from Spearbit, OpenZeppelin, and Certora at the time of deployment. The Vault V2 layer (MetaMorpho) received six separate 2025 audits from recognized firms. The missing bytecode diff is recorded in unknowns[] as a scope limit per rubric, not a downgrade signal, because the core contract's immutability makes post-audit drift structurally impossible, and the peripheral vault contracts have recent, thorough audit coverage."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/morpho-blue",
+      "note": "DeFiPunk’d files Morpho Blue as Morpho Blue (\"morpho-blue\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "bronze · AI consensus on at least one dimension"
+          },
+          {
+            "name": "Category",
+            "value": "Lending"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "immutable"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://immunefi.com/bounty/morpho/"
+          },
+          {
+            "name": "Governance forum",
+            "value": "https://forum.morpho.org/"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.morpho.org"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

@@ -155,6 +155,69 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defipunkd": {
+      "value": "Control: orange · Ability to exit: green · Autonomy: orange · Open Access: green · Verifiability: green",
+      "summary": "Rocket Pool lets users stake ETH and receive rETH, a transferable receipt whose ETH exchange rate incorporates validator rewards. Permissionless node operators bond ETH and RPL while pooled liquid-staker ETH supplies the remainder of validator deposits.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "orange",
+          "description": "oDAO controls T1 upgrades behind 7-day delay — Assessed by 9 models — Choosing orange because the evidence shows a delayed T1 upgrade path, but the controlling actor for contract-code upgrades is the oDAO committee and this run did not verify that it satisfies the Security Council standard or that T1 upgrades are executed through broad token governance."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "green",
+          "description": "Permissionless rETH burn, liquidity-gated only — Assessed by 6 models — Choosing green because the rETH burn() function in deployed bytecode has no pause guard, no role gate, and no admin signature requirement (only collateral availability and an anti-MEV per-user deposit delay); when collateral is insufficient, holders still have unconditional access via permissionless secondary markets (Uniswap V3, Balancer, CowSwap). The buffer-limit concern is a liquidity story, not a permission story, and the rubric grades the permission side here."
+        },
+        {
+          "name": "Autonomy",
+          "value": "orange",
+          "description": "oDAO committee sets rETH exchange rate — Assessed by 6 models — Choosing orange because the protocol has one material external dependency that cross-cuts every rETH holder — the oDAO balance/price oracle — and a failure of that committee can materially change expected performance (rETH price degradation, mis-priced burns) even though it cannot directly drain principal (validator deposits are on-chain ETH with the canonical Beacon Chain Deposit Contract). Saturn 1's on-chain constraints on oDAO submissions and oDAO penalty cap are a real A6 mitigation but they bound rather than eliminate the dependency, which matches the orange anchor ('failure can materially change expected performance but cannot cause loss of principal'). Impacted TVS under a successful oDAO mis-report is bounded by the sanity band — qualitatively a small fraction of the ~$900M rETH supply rather than the full TVS, but not de minimis."
+        },
+        {
+          "name": "Open Access",
+          "value": "green",
+          "description": "Permissionless contracts, independent DEX and CLI paths — Assessed by 6 models — Choosing green because (a) the on-chain rETH and deposit contracts impose no whitelist/KYC/operator-approval on entry or exit, (b) the team's own October 2025 update lists CowSwap as a launched integration distinct from the official UI, and (c) third-party AMM routing (Uniswap V3, Balancer V2) is documented and live. The frontend ToS posture on rocketpool.net could not be quoted verbatim this run, but per the rubric ToS posture on one client cannot move the grade when contracts are permissionless and an independent A3b path exists."
+        },
+        {
+          "name": "Verifiability",
+          "value": "green",
+          "description": "Verified source, public repo, multiple audits — Assessed by 8 models — Choosing green because every core deployed contract examined on-chain this run is verified on Etherscan (RocketStorage, rETH, RocketDAOProtocol, legacy RPL), the public github.com/rocket-pool/rocketpool repository contains source matching the verified Etherscan source, and the most recent in-scope work (Saturn 1, live February 2026) was reviewed by at least two recognized firms (Sigma Prime and Spearbit/Cantina) prior to mainnet deployment, with an active Immunefi bounty in place. The remaining caveats — no bytecode-diff run by this analyst, Bailsec not yet on the recognized-firm list — belong in unknowns, not the grade."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/rocket-pool",
+      "note": "DeFiPunk’d files Rocket Pool as Rocket Pool (\"rocket-pool\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "gold · Strong AI consensus on all dimensions"
+          },
+          {
+            "name": "Category",
+            "value": "Liquid Staking"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "mixed"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://immunefi.com/bug-bounty/rocketpool/information/"
+          },
+          {
+            "name": "Governance forum",
+            "value": "https://dao.rocketpool.net"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.rocketpool.net"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

@@ -745,6 +745,69 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defipunkd": {
+      "value": "Control: tentative green · Ability to exit: tentative green · Autonomy: tentative green · Open Access: tentative green · Verifiability: tentative green",
+      "summary": "Uniswap v4 is a non-custodial automated market maker where users swap tokens and provide liquidity to pools. Its singleton PoolManager holds pool state and uses flash accounting so swaps, liquidity changes, settlement, and token-taking are balanced within an unlock flow. Liquidity positions are commonly managed through the v4 PositionManager ERC721 periphery, while pool creators can attach hooks that customize pool behavior.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "tentative green",
+          "description": "Bounded fee governance — Assessed by 5 models — Choosing green because the highest evidenced power over the assessed v4 core is bounded T2 protocol-fee control through UNI governance and a 172800 second timelock after voting delay and voting period, while no T1 upgrade, pause, drain, or withdrawal-freeze path was found on the immutable PoolManager/PositionManager/Universal Router contracts."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "tentative green",
+          "description": "No pause, fully permissionless exit — Assessed by 5 models — Choosing green because the core PoolManager has no pause, no admin-gated exit functions, and no upgrade path. The owner's powers are limited to protocol fee configuration and cannot block any user exit. The PositionManager is confirmed ownerless and non-upgradeable by OpenZeppelin's audit. All exit functions (modifyLiquidity, take, burn, settle, swap) are permissionless. While hooks on individual pools could theoretically restrict exits, hooks are an opt-in per-pool feature chosen at pool creation — the core protocol exit path itself has no restrictions."
+        },
+        {
+          "name": "Autonomy",
+          "value": "tentative green",
+          "description": "No external dependencies in core — Assessed by 5 models — Choosing green because the Uniswap V4 PoolManager core contract makes zero external calls to oracles, bridges, or third-party contracts in its base operation. The only external interaction surface is hooks, which are optional per-pool plugins that users explicitly opt into when choosing which pool to LP in or swap through — a vanilla pool with no hook has literally zero external dependency. The hook architecture is scoped by address-encoded permission bits that are immutable after deployment. The governance-mutable surface is limited to setProtocolFeeController (currently null, gated by 2-day timelocked DAO governance with 40M UNI quorum), which can only affect fee rates, not introduce oracles or bridges. The PositionManager and Universal Router are non-upgradeable and ownerless. Module weighting: the PoolManager singleton holds ~100% of protocol TVS (all liquidity lives in it); there is no separate sub-module with independent TVS. Impacted TVS under any single external dependency failure: effectively 0% for the core; per-pool hook risk is bounded to that individual pool's liquidity and is user-opted."
+        },
+        {
+          "name": "Open Access",
+          "value": "tentative green",
+          "description": "Permissionless contracts, multiple access paths — Assessed by 5 models — Choosing green because the PoolManager contract's ABI shows zero admission gates on user-facing functions (A1), no off-chain operator is needed for admission (A2), and the frontend's A3-active enforcement is limited to the industry baseline — OFAC geo-blocking and TRM Labs sanctions wallet screening — while abundant A3b-ii paths exist (verified contract Write tabs on block explorers, SDK, aggregators, third-party frontends). The ToS clauses are standard A3-passive boilerplate. The steelman for orange is weaker because the screening does not exceed what Uniswap, Aave, Curve, and other major DeFi frontends all apply, and permissionless contract access via block explorers is readily available."
+        },
+        {
+          "name": "Verifiability",
+          "value": "tentative green",
+          "description": "Verified & heavily audited — Assessed by 5 models — Choosing green because the core PoolManager (where user funds reside) is verified and non-proxied, all key contracts are verified on Etherscan across chains, the public repos correspond to verified source per official docs, and the audit coverage from recognized firms (nine audits, six firms) far exceeds the threshold for green. The PositionDescriptor proxy gap is minor — it is a metadata/display contract, not a funds-holding contract — and the missing commit SHA is a scope limit recorded in unknowns[], not an evidence gap."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/uniswap-v4",
+      "note": "DeFiPunk’d files Uniswap v4 as Uniswap V4 (\"uniswap-v4\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "silver · Weak AI consensus on all dimensions"
+          },
+          {
+            "name": "Category",
+            "value": "Dexs"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "immutable"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://blog.uniswap.org/v4-bug-bounty"
+          },
+          {
+            "name": "Governance forum",
+            "value": "https://gov.uniswap.org/"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.uniswap.org/contracts/v4/overview"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

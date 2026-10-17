@@ -124,6 +124,61 @@
       "status": "none",
       "note": "Risklayer has no data for Fluid.",
       "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defipunkd": {
+      "value": "Control: unknown · Ability to exit: unknown · Autonomy: unknown · Open Access: unknown · Verifiability: tentative green",
+      "summary": "Fluid DEX is a decentralized exchange built by Instadapp (rebranded from Instadapp in late 2024) on top of the Fluid Liquidity Layer — a unified liquidity primitive shared across lending, vaulting, and DEX protocols. Users swap tokens through DEX pools (type T1) deployed via CREATE opcode and identified by integer dexId; a DexLite variant offers a simplified single-contract swap interface. The protocol's key innovation is that vault collateral and debt positions simultaneously serve as DEX liquidity, maximising capital efficiency across all three protocol types.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "unknown",
+          "description": "Not yet assessed — Who holds admin privileges, how contracts can be upgraded, and how quickly. No automated heuristic grades this at Phase 0; a real assessment arrives when onchain discovery reads roles, owners, and timelocks."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "unknown",
+          "description": "Not yet assessed — Whether users can exit on their own terms if the team disappears or acts adversarially. Requires per-protocol review; not available at Phase 0."
+        },
+        {
+          "name": "Autonomy",
+          "value": "unknown",
+          "description": "No Phase-0 autonomy signal — Neither the category heuristic nor the forkedFrom signal fires for this protocol. A real autonomy graph (oracles, bridges, fallbacks, governance-mutable dependencies) arrives with Phase-2 onchain discovery."
+        },
+        {
+          "name": "Open Access",
+          "value": "unknown",
+          "description": "Not yet assessed — Whether the protocol depends on privileged operators, whitelists, geo-restrictions, or off-chain infrastructure. This is not a signal DeFiLlama carries in a usable form; crawler-based detection lands in a later phase."
+        },
+        {
+          "name": "Verifiability",
+          "value": "tentative green",
+          "description": "Open source + 8 audits — Protocol publishes a GitHub repository and has at least one audit on record. This is a coarse Phase-0 signal only: auditor reputation, scope, and post-audit review coverage are not yet weighted."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/fluid-dex",
+      "note": "DeFiPunk’d files Fluid as Fluid DEX (\"fluid-dex\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "none · Fewer than three models have agreed on any slice yet"
+          },
+          {
+            "name": "Category",
+            "value": "Dexs"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "mixed"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.fluid.instadapp.io"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }
