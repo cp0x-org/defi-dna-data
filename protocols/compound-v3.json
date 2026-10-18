@@ -6,6 +6,11 @@
       "note": "Credora has no data for Compound v3.",
       "since": "2026-10-15T20:22:38.297Z"
     },
+    "defipunkd": {
+      "status": "none",
+      "note": "DeFiPunk’d has no data for Compound v3.",
+      "since": "2026-10-17T20:20:41.256Z"
+    },
     "defiscan": {
       "value": "1 admins · $987.0M capital at risk",
       "summary": "Compound V3 (Comet) is a lending protocol that operates isolated markets for individual base assets (USDC, USDT, WETH), each accepting a curated set of collateral tokens. Unlike Compound V2's shared-pool model, V3 isolates risk per market: suppliers lend a single base asset and borrowers post collateral against it. All three Ethereum markets are upgradeable EIP-1967 proxies controlled by a Compound governance Timelock with a 48-hour delay, with $986.97M in total capital at risk across all admin-controlled contracts. The protocol depends on Chainlink price feeds and a ConstantPriceFeed for USDT pricing.",
@@ -77,30 +82,30 @@
         {
           "name": "Compound V3 USDC",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $381.3M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $382.2M · Scored 2026-10-18"
         },
         {
           "name": "Compound V3 USDT",
           "value": "Prime 8.33",
-          "description": "Version v3 · TVL $160.4M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $160.5M · Scored 2026-10-18"
         },
         {
           "name": "Compound V3 WETH",
           "value": "Prime 8.46",
-          "description": "Version v3 · TVL $122.1M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $122.4M · Scored 2026-10-18"
         },
         {
           "name": "Compound V3 USDS",
           "value": "Core 7.90",
-          "description": "Version v3 · TVL $1.7M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $1.8M · Scored 2026-10-18"
         },
         {
           "name": "Compound V3 WBTC",
           "value": "Prime 8.92",
-          "description": "Version v3 · TVL $1.1M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $1.1M · Scored 2026-10-18"
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://analytics.philidor.io/protocols/compound",
       "note": "Counted: 5 of the 5 live vault(s) Philidor lists for compound under version v3. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
@@ -137,8 +142,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 381284869,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 382190198,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc3d688b66703497daa19211eedff47f25384cdc3"
           },
           {
@@ -147,8 +152,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.33,
-            "tvlUsd": 160438635,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 160450281,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3afdc9bca9213a35503b077a6072f3d0d5ab0840"
           },
           {
@@ -157,8 +162,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.46,
-            "tvlUsd": 122084511,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 122391433,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa17581a9e3356d9a858b789d68b4d866e593ae94"
           },
           {
@@ -167,8 +172,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1744113,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1780395,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5d409e56d886231adaf00c8775665ad0f9897b56"
           },
           {
@@ -177,14 +182,14 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.92,
-            "tvlUsd": 1082257,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1084672,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe85dc543813b8c2cfeaac371517b925a166a9293"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "pigi": {
       "status": "none",
@@ -195,11 +200,6 @@
       "status": "none",
       "note": "Risklayer has no data for Compound v3.",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defipunkd": {
-      "status": "none",
-      "note": "DeFiPunk’d has no data for Compound v3.",
-      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

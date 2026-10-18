@@ -6,6 +6,69 @@
       "note": "Credora has no data for Lido.",
       "since": "2026-10-15T20:22:38.297Z"
     },
+    "defipunkd": {
+      "value": "Control: tentative orange · Ability to exit: tentative orange · Autonomy: tentative orange · Open Access: tentative green · Verifiability: tentative green",
+      "summary": "Lido is a liquid staking protocol on Ethereum where users deposit ETH and receive stETH, a rebasing ERC-20 token representing their staked position plus accrued rewards. Deposited ETH is pooled and delegated to a DAO-curated set of professional node operators via the StakingRouter, with validators never having direct custody of user funds. stETH holders can redeem ETH natively through the WithdrawalQueueERC721 or trade on secondary markets. Governance is conducted by LDO token holders via Aragon on-chain voting, with a Dual Governance mechanism allowing stETH holders to veto or delay DAO proposals through an escrow-based signaling system.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "tentative orange",
+          "description": "Short timelock with insider emergency override — Assessed by 4 models — Choosing orange because the DG Emergency Committee (4/7 activation, active until ~July 2026) can collapse DualGovernance, creating an uncontested path of only 5 days (Aragon Voting alone) — below the 7-day green threshold. The normal 9-day path would merit green, and the temporary nature of the Emergency Committee is a meaningful mitigant, but grading on the fast path per the rubric requires acknowledging the sub-7-day route that currently exists. Additionally, the 5% LDO quorum is low by DAO standards. The DG Emergency path is further constrained: it requires 4/7 activation first, then 5/7 execution — a meaningful barrier in practice, but not a hard time-delay in the smart-contract sense."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "tentative orange",
+          "description": "Finalized claims safe; new requests pausable indefinitely by governance — Assessed by 4 models — Choosing orange because: claims of already-finalized exits are not pause-gated (ruling out red), but two distinct pause vectors remain: (1) the 3/6 GateSeal Committee can unilaterally pause new request placement and finalization for 11 days — above the ≤7-day green threshold — and (2) governance (Lido DAO Aragon vote) can in theory pause indefinitely by assigning PAUSE_ROLE and calling pauseFor(PAUSE_INFINITELY), satisfying the orange condition 'claims-of-finalized are exempt but new-request placement can be paused indefinitely by governance.' Dual Governance and the auto-resume design of PausableUntil are meaningful mitigants but do not bring this to green because the GateSeal itself exceeds the 7-day cap and indefinite DAO governance pause remains theoretically reachable."
+        },
+        {
+          "name": "Autonomy",
+          "value": "tentative orange",
+          "description": "Oracle committee governs rebase reports — Assessed by 4 models — Choosing orange because the primary unmitigated risk is oracle committee failure (liveness or limited collusion), which cannot cause principal theft under current sanity limits but can materially degrade yield accrual and delay withdrawals over multiple reporting cycles — the ZK second opinion oracle that would close this gap is not yet activated on mainnet (confirmed April 2026 governance forum post). Additionally, wstETH on BNB Chain via Wormhole+Axelar represents a non-canonical bridge trust assumption for a small fraction of TVL. These factors fit Stage 1: external dependency failures are bounded and recoverable (no principal loss) but the full mitigation stack is incomplete. The green steel-man is close — Dual Governance is live, sanity checks are strict, and oracle resilience was demonstrated in practice — but the absent ZK second opinion means the protocol has not yet achieved the 'all critical dependencies have documented active fallbacks' bar for green."
+        },
+        {
+          "name": "Open Access",
+          "value": "tentative green",
+          "description": "No user allowlists or geofences — Assessed by 4 models — Choosing green because the evidence supports permissionless contract-level admission for the core user flows and documents independent/direct contract access, while the only verified access restriction is passive ToS language and no A3-active frontend enforcement was observed in the fetched official interface."
+        },
+        {
+          "name": "Verifiability",
+          "value": "tentative green",
+          "description": "Verified source + multiple recent audits — Assessed by 4 models — Choosing green because: (1) proxy and implementation contracts are source-verified on Etherscan — the 'Similar Match' on the stETH Aragon AppProxyUpgradeable proxy is explicitly permitted under V1 rules, and all implementation contracts (stETH impl, WithdrawalQueueERC721 impl, wstETH) are independently verified; (2) the public repo lidofinance/core exists and its contract source corresponds to explorer-visible source; (3) the audit portfolio is exceptionally broad and recent — Certora, MixBytes, Consensys Diligence, and Composable Security all completed V3 or ongoing-system audits in Nov-Dec 2025, within the 6-month freshness window. The orange steelman (6-month boundary for V2.1) is weaker because there have been multiple targeted re-audits and deployment validations through mid-2025 for the live contracts, and the green conditions are all satisfied."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/lido",
+      "note": "DeFiPunk’d files Lido as Lido (\"lido\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "silver · Weak AI consensus on all dimensions"
+          },
+          {
+            "name": "Category",
+            "value": "Liquid Staking"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "upgradeable"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://immunefi.com/bounty/lido/"
+          },
+          {
+            "name": "Governance forum",
+            "value": "https://research.lido.fi/"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.lido.fi/"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
+    },
     "defiscan": {
       "value": "20 admins · $115.5M capital at risk",
       "summary": "Lido is a liquid staking protocol that allows users to stake ETH and receive stETH, a rebasing liquid staking token representing their staked position. Governance operates through an Aragon-based DAO (LDO token voting) with a Dual Governance module that gives stETH holders veto power over DAO proposals via an EmergencyProtectedTimelock. The protocol manages $115.54M in capital, with oracle committees reporting validator balances and a guardian committee securing the deposit flow against front-running attacks. The Lido V3 (stVaults) upgrade adds a customizable staking layer where node operators and institutional users deploy individual StakingVaults coordinated by a central VaultHub, with pe…",
@@ -71,7 +134,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "47 · red",
+      "value": "46 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -81,8 +144,8 @@
         },
         {
           "name": "Liveness",
-          "value": "90",
-          "description": "tvl_change_7d_pct: -3.91"
+          "value": "87",
+          "description": "tvl_change_7d_pct: -5.07"
         },
         {
           "name": "Security",
@@ -90,14 +153,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "47"
+            "value": "46"
           },
           {
             "name": "Band",
@@ -109,7 +172,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T19:27:34.798Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "philidor": {
       "status": "none",
@@ -117,7 +180,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "B 83.22/100",
+      "value": "B 83.05/100",
       "summary": "Lido",
       "details": [
         {
@@ -127,8 +190,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "85.04",
-          "description": "The mean of pigi’s latest scores of the 4 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($25.92B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 1, F 2."
+          "value": "84.63",
+          "description": "The mean of pigi’s latest scores of the 4 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($25.90B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 1, F 2."
         },
         {
           "name": "Weights",
@@ -136,7 +199,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: lido-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -146,9 +209,9 @@
             "version": "Lido",
             "curator": null,
             "tier": "A",
-            "score": 86.11,
-            "tvlUsd": 25481735673,
-            "scoredAt": "2026-10-17",
+            "score": 85.7,
+            "tvlUsd": 25462832445,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/13"
           },
           {
@@ -157,8 +220,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 217965866,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 218152470,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -167,8 +230,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 215153378,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 215321641,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -177,8 +240,8 @@
             "curator": null,
             "tier": "D",
             "score": 45.8,
-            "tvlUsd": 221027,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 220643,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100016"
           }
         ],
@@ -187,7 +250,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T09:27:28.140Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
@@ -318,69 +381,6 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defipunkd": {
-      "value": "Control: tentative orange · Ability to exit: tentative orange · Autonomy: tentative orange · Open Access: tentative green · Verifiability: tentative green",
-      "summary": "Lido is a liquid staking protocol on Ethereum where users deposit ETH and receive stETH, a rebasing ERC-20 token representing their staked position plus accrued rewards. Deposited ETH is pooled and delegated to a DAO-curated set of professional node operators via the StakingRouter, with validators never having direct custody of user funds. stETH holders can redeem ETH natively through the WithdrawalQueueERC721 or trade on secondary markets. Governance is conducted by LDO token holders via Aragon on-chain voting, with a Dual Governance mechanism allowing stETH holders to veto or delay DAO proposals through an escrow-based signaling system.",
-      "details": [
-        {
-          "name": "Control",
-          "value": "tentative orange",
-          "description": "Short timelock with insider emergency override — Assessed by 4 models — Choosing orange because the DG Emergency Committee (4/7 activation, active until ~July 2026) can collapse DualGovernance, creating an uncontested path of only 5 days (Aragon Voting alone) — below the 7-day green threshold. The normal 9-day path would merit green, and the temporary nature of the Emergency Committee is a meaningful mitigant, but grading on the fast path per the rubric requires acknowledging the sub-7-day route that currently exists. Additionally, the 5% LDO quorum is low by DAO standards. The DG Emergency path is further constrained: it requires 4/7 activation first, then 5/7 execution — a meaningful barrier in practice, but not a hard time-delay in the smart-contract sense."
-        },
-        {
-          "name": "Ability to exit",
-          "value": "tentative orange",
-          "description": "Finalized claims safe; new requests pausable indefinitely by governance — Assessed by 4 models — Choosing orange because: claims of already-finalized exits are not pause-gated (ruling out red), but two distinct pause vectors remain: (1) the 3/6 GateSeal Committee can unilaterally pause new request placement and finalization for 11 days — above the ≤7-day green threshold — and (2) governance (Lido DAO Aragon vote) can in theory pause indefinitely by assigning PAUSE_ROLE and calling pauseFor(PAUSE_INFINITELY), satisfying the orange condition 'claims-of-finalized are exempt but new-request placement can be paused indefinitely by governance.' Dual Governance and the auto-resume design of PausableUntil are meaningful mitigants but do not bring this to green because the GateSeal itself exceeds the 7-day cap and indefinite DAO governance pause remains theoretically reachable."
-        },
-        {
-          "name": "Autonomy",
-          "value": "tentative orange",
-          "description": "Oracle committee governs rebase reports — Assessed by 4 models — Choosing orange because the primary unmitigated risk is oracle committee failure (liveness or limited collusion), which cannot cause principal theft under current sanity limits but can materially degrade yield accrual and delay withdrawals over multiple reporting cycles — the ZK second opinion oracle that would close this gap is not yet activated on mainnet (confirmed April 2026 governance forum post). Additionally, wstETH on BNB Chain via Wormhole+Axelar represents a non-canonical bridge trust assumption for a small fraction of TVL. These factors fit Stage 1: external dependency failures are bounded and recoverable (no principal loss) but the full mitigation stack is incomplete. The green steel-man is close — Dual Governance is live, sanity checks are strict, and oracle resilience was demonstrated in practice — but the absent ZK second opinion means the protocol has not yet achieved the 'all critical dependencies have documented active fallbacks' bar for green."
-        },
-        {
-          "name": "Open Access",
-          "value": "tentative green",
-          "description": "No user allowlists or geofences — Assessed by 4 models — Choosing green because the evidence supports permissionless contract-level admission for the core user flows and documents independent/direct contract access, while the only verified access restriction is passive ToS language and no A3-active frontend enforcement was observed in the fetched official interface."
-        },
-        {
-          "name": "Verifiability",
-          "value": "tentative green",
-          "description": "Verified source + multiple recent audits — Assessed by 4 models — Choosing green because: (1) proxy and implementation contracts are source-verified on Etherscan — the 'Similar Match' on the stETH Aragon AppProxyUpgradeable proxy is explicitly permitted under V1 rules, and all implementation contracts (stETH impl, WithdrawalQueueERC721 impl, wstETH) are independently verified; (2) the public repo lidofinance/core exists and its contract source corresponds to explorer-visible source; (3) the audit portfolio is exceptionally broad and recent — Certora, MixBytes, Consensys Diligence, and Composable Security all completed V3 or ongoing-system audits in Nov-Dec 2025, within the 6-month freshness window. The orange steelman (6-month boundary for V2.1) is weaker because there have been multiple targeted re-audits and deployment validations through mid-2025 for the live contracts, and the green conditions are all satisfied."
-        }
-      ],
-      "url": "https://defipunkd.com/protocol/lido",
-      "note": "DeFiPunk’d files Lido as Lido (\"lido\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Tier",
-            "value": "silver · Weak AI consensus on all dimensions"
-          },
-          {
-            "name": "Category",
-            "value": "Liquid Staking"
-          },
-          {
-            "name": "Upgradeability",
-            "value": "upgradeable"
-          },
-          {
-            "name": "Bug bounty",
-            "value": "https://immunefi.com/bounty/lido/"
-          },
-          {
-            "name": "Governance forum",
-            "value": "https://research.lido.fi/"
-          },
-          {
-            "name": "Docs",
-            "value": "https://docs.lido.fi/"
-          }
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

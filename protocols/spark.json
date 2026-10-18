@@ -127,6 +127,69 @@
       "status": "ok",
       "since": "2026-10-15T20:22:38.297Z"
     },
+    "defipunkd": {
+      "value": "Control: tentative orange (2/3 models submitted) · Ability to exit: tentative red · Autonomy: tentative red · Open Access: tentative orange (2/3 models submitted) · Verifiability: tentative green",
+      "summary": "SparkLend is a decentralized non-custodial lending protocol forked from Aave V3. Users supply assets to liquidity pools to earn interest or borrow against collateral. SparkLend benefits from direct stablecoin liquidity provided by the Sky Protocol (formerly MakerDAO), enabling large-scale DAI/USDS borrowing at governance-set rates. Governed by Sky Governance with emergency controls delegated to a 3-of-5 multisig via the SparkLendFreezerMom contract.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "tentative orange (2/3 models submitted)",
+          "description": "Control path unresolved — Ethereum SparkLend is upgradeable through Sky's Pause Proxy, but the live governance delay, multisigs, emergency roles, and xDai admin path were not fully resolved."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "tentative red",
+          "description": "Multisig can pause withdrawals indefinitely — Assessed by 3 models — Choosing red because the 3-of-5 freezer multisig holds permanent ward authorization to call pauseAllMarkets(true) without a time limit. The GitHub documentation explicitly states the FreezerMom contract allows 'bypass[ing] the 2-day GSM window' but nowhere specifies a maximum pause duration. The contract code shows pauseMarket and pauseAllMarkets accept a boolean parameter with no timestamp check or auto-expiry logic. While governance CAN reverse a pause through an executive vote (subject to the 30-hour GSM delay per the April 2024 governance decision), the multisig itself can maintain the pause indefinitely without governance action. This means a 3-of-5 actor set can unilaterally block all user exits for an unlimited period, which falls squarely into the red category under the rubric: 'ANY actor can pause CLAIMS of finalized exits indefinitely.'"
+        },
+        {
+          "name": "Autonomy",
+          "value": "tentative red",
+          "description": "Oracle failure risks ~100% TVS unmitigated — Assessed by 2 models — Choosing red because the strongest red case directly matches the deployed oracle architecture: both the large Ethereum module and the active Gnosis module rely on external, mutable price sources, the live fallback only handles missing or nonpositive prices, and a positive misprice can affect borrowing and liquidation solvency. Module weighting: Ethereum Pool holds ~95%+ of identifiable TVS and is red, with more than $1.4B visible in only spwstETH, spDAI, and spWETH cash balances; Gnosis Pool is ~<5%/not fully measured and is also red; weighted overall = red because the worst unmitigated oracle dependency can affect essentially all collateralized SparkLend TVS."
+        },
+        {
+          "name": "Open Access",
+          "value": "tentative orange (2/3 models submitted)",
+          "description": "Open onchain access — Core SparkLend actions are open onchain; official frontend restrictions found were passive legal terms"
+        },
+        {
+          "name": "Verifiability",
+          "value": "tentative green",
+          "description": "Verified source, audited, zero post-audit drift — Assessed by 3 models — Choosing green because (1) both the proxy contract and its current implementation are verified on Etherscan (the proxy page resolves and displays the implementation ABI, per evidence from the Etherscan search result), (2) a public source repo with a pinned release commit exists at sparkdotfi/sparklend-v1-core, (3) ChainSecurity — a recognized firm — conducted a deployment verification confirming bytecode-repo correspondence at the April 2023 launch, and (4) the Aave v3 codebase underlying SparkLend was audited by Trail of Bits, OpenZeppelin, PeckShield, SigmaPrime, and Certora. The orange steel-man (post-audit implementation upgrade) is noted in unknowns but is insufficient to downgrade without evidence of material drift from a fund-custody-critical change, given the extensive layered audit coverage and the stable nature of the Aave v3 core."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/sparklend",
+      "note": "DeFiPunk’d files Spark as SparkLend (\"sparklend\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "bronze · AI consensus on at least one dimension"
+          },
+          {
+            "name": "Category",
+            "value": "Lending"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "upgradeable"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://immunefi.com/bug-bounty/sparklend/information/"
+          },
+          {
+            "name": "Governance forum",
+            "value": "https://forum.makerdao.com/c/spark/"
+          },
+          {
+            "name": "Docs",
+            "value": "https://docs.spark.fi/"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
+    },
     "defiscan": {
       "value": "10 admins · $5.67B capital at risk",
       "summary": "Spark is a lending protocol built on an Aave V3 fork (SparkLend) with an integrated savings layer that routes deposits through the Sky (formerly MakerDAO) DAI Savings Rate (DSR) via the Pot contract. Governance decisions execute through the Sky governance stack — DSPause enforces a 24-hour delay before DSPauseProxy forwards calls to SubProxy, which holds admin rights on every SparkLend contract. An Asset Liability Management (ALM) layer controlled by three separate multisigs lets the protocol rebalance capital via arbitrary external calls. Price data comes from a mix of Chainlink, Chronicle, RedStone, and protocol-specific exchange-rate oracles for liquid staking and restaking tokens. The p…",
@@ -202,8 +265,8 @@
         },
         {
           "name": "Liveness",
-          "value": "98",
-          "description": "tvl_change_7d_pct: -0.83"
+          "value": "96",
+          "description": "tvl_change_7d_pct: -1.5"
         },
         {
           "name": "Security",
@@ -211,7 +274,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://defiscoring.com/protocols/spark",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -230,7 +293,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T19:27:34.798Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "philidor": {
       "value": "19 vaults rated",
@@ -239,55 +302,55 @@
         {
           "name": "USDS Savings Vault",
           "value": "Core 7.90",
-          "description": "Version v2 · TVL $4.96B · Scored 2026-10-17"
+          "description": "Version v2 · TVL $4.96B · Scored 2026-10-18"
         },
         {
           "name": "SparkLend wstETH",
           "value": "Prime 8.73",
-          "description": "Version v1 · TVL $3.43B · Scored 2026-10-17"
+          "description": "Version v1 · TVL $3.42B · Scored 2026-10-18"
         },
         {
           "name": "SparkLend WETH",
           "value": "Prime 8.88",
-          "description": "Version v1 · TVL $1.56B · Scored 2026-10-17"
+          "description": "Version v1 · TVL $1.56B · Scored 2026-10-18"
         },
         {
           "name": "SparkLend USDS",
           "value": "Prime 8.35",
-          "description": "Version v1 · TVL $1.31B · Scored 2026-10-17"
+          "description": "Version v1 · TVL $1.31B · Scored 2026-10-18"
         },
         {
           "name": "Spark Savings USDT",
           "value": "Core 7.90",
-          "description": "Version v2 · TVL $714.0M · Scored 2026-10-17"
+          "description": "Version v2 · TVL $714.0M · Scored 2026-10-18"
         },
         {
           "name": "SparkLend USDT",
           "value": "Prime 8.09",
-          "description": "Version v1 · TVL $320.1M · Scored 2026-10-17"
+          "description": "Version v1 · TVL $320.1M · Scored 2026-10-18"
         },
         {
           "name": "Spark Savings USDC",
           "value": "Prime 8.72",
-          "description": "Version v2 · TVL $300.5M · Scored 2026-10-17"
+          "description": "Version v2 · TVL $300.1M · Scored 2026-10-18"
         },
         {
           "name": "SparkLend DAI",
           "value": "Prime 8.88",
-          "description": "Version v1 · TVL $264.1M · Scored 2026-10-17"
+          "description": "Version v1 · TVL $264.2M · Scored 2026-10-18"
         },
         {
           "name": "SparkLend cbBTC",
           "value": "Prime 8.89",
-          "description": "Version v1 · TVL $253.8M · Scored 2026-10-17"
+          "description": "Version v1 · TVL $254.7M · Scored 2026-10-18"
         },
         {
           "name": "SparkLend WBTC",
           "value": "Prime 8.84",
-          "description": "Version v1 · TVL $185.8M · Scored 2026-10-17"
+          "description": "Version v1 · TVL $186.2M · Scored 2026-10-18"
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://analytics.philidor.io/protocols/spark",
       "note": "Counted: 19 of the 19 live vault(s) Philidor lists for spark under every version it files, with 2 shut-down vault(s) left out. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
@@ -324,8 +387,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 4958792826,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 4959150280,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
           },
           {
@@ -334,8 +397,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.73,
-            "tvlUsd": 3425361727,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 3419081991,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x12b54025c112aa61face2cdb7118740875a566e9"
           },
           {
@@ -344,8 +407,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 1562216689,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1561802857,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db"
           },
           {
@@ -354,8 +417,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.35,
-            "tvlUsd": 1309213858,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1309431801,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
           },
           {
@@ -364,8 +427,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 713957067,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 713986029,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe2e7a17dff93280dec073c995595155283e3c372"
           },
           {
@@ -374,8 +437,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.09,
-            "tvlUsd": 320080381,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 320092286,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe7df13b8e3d6740fe17cbe928c7334243d86c92f"
           },
           {
@@ -384,8 +447,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.72,
-            "tvlUsd": 300451432,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 300114619,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x28b3a8fb53b741a8fd78c0fb9a6b2393d896a43d"
           },
           {
@@ -394,8 +457,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 264148598,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 264163912,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b"
           },
           {
@@ -404,8 +467,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.89,
-            "tvlUsd": 253798595,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 254650494,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb3973d459df38ae57797811f2a1fd061da1bc123"
           },
           {
@@ -414,8 +477,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.84,
-            "tvlUsd": 185787556,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 186177541,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4197ba364ae6698015ae5c1468f54087602715b2"
           },
           {
@@ -424,8 +487,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.48,
-            "tvlUsd": 172306552,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 172246894,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe"
           },
           {
@@ -434,8 +497,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.61,
-            "tvlUsd": 164460835,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 164463757,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x83f20f44975d03b1b09e64809b757c47f942beea"
           },
           {
@@ -444,8 +507,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 156520415,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 157045780,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa9d4ecebd48c282a70cfd3c469d6c8f178a5738e"
           },
           {
@@ -454,8 +517,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 102411202,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 102283912,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
           },
           {
@@ -464,8 +527,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.89,
-            "tvlUsd": 100000847,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 100000939,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x779224df1c756b4edd899854f32a53e8c2b2ce5d"
           },
           {
@@ -474,8 +537,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.42,
-            "tvlUsd": 57305866,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 57448582,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f"
           },
           {
@@ -484,8 +547,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 9.03,
-            "tvlUsd": 50030167,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 50032951,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x377c3bd93f2a2984e1e7be6a5c22c525ed4a4815"
           },
           {
@@ -494,8 +557,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.86,
-            "tvlUsd": 30000587,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 30000253,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59275fb72c8004f44ba44432e25082932fd677f1"
           },
           {
@@ -504,17 +567,17 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.35,
-            "tvlUsd": 3315366,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 3315551,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6715bc100a183cc65502f05845b589c1919ca3d3"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "pigi": {
-      "value": "B 79.89/100",
+      "value": "B 79.9/100",
       "summary": "SparkLend — Aave v3.0.2 fork under Sky governance (Ethereum)",
       "details": [
         {
@@ -524,8 +587,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "79.73",
-          "description": "The mean of pigi’s latest scores of the 11 rated Ethereum vault(s) that deposit into sparklend, weighted by their 30-day average TVL ($4.37B in all). Weight in the score: 0.4. Vaults by band: A 4, B 2, C 3, D 0, F 2."
+          "value": "79.76",
+          "description": "The mean of pigi’s latest scores of the 11 rated Ethereum vault(s) that deposit into sparklend, weighted by their 30-day average TVL ($4.37B in all). Weight in the score: 0.4. Vaults by band: A 5, B 1, C 3, D 0, F 2."
         },
         {
           "name": "Weights",
@@ -533,7 +596,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: sparklend. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -544,8 +607,8 @@
             "curator": null,
             "tier": "A",
             "score": 89.8,
-            "tvlUsd": 1599566957,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1602884935,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3906"
           },
           {
@@ -554,18 +617,18 @@
             "curator": null,
             "tier": "A",
             "score": 86,
-            "tvlUsd": 1350495495,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1348937312,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3901"
           },
           {
             "name": "SparkLend USDT",
             "version": "SparkLend",
             "curator": null,
-            "tier": "B",
+            "tier": "A",
             "score": 89.8,
-            "tvlUsd": 324555094,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 324640727,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3902"
           },
           {
@@ -574,8 +637,8 @@
             "curator": null,
             "tier": "A",
             "score": 87.8,
-            "tvlUsd": 280135039,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 278671084,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3903"
           },
           {
@@ -584,8 +647,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 217965866,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 218152470,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -594,8 +657,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 215153378,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 215321641,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -604,8 +667,8 @@
             "curator": null,
             "tier": "C",
             "score": 55,
-            "tvlUsd": 195666041,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 195011547,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/9"
           },
           {
@@ -614,8 +677,8 @@
             "curator": null,
             "tier": "B",
             "score": 79.4,
-            "tvlUsd": 119847346,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 117752413,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3904"
           },
           {
@@ -623,9 +686,9 @@
             "version": "SparkLend",
             "curator": null,
             "tier": "A",
-            "score": 85.4,
-            "tvlUsd": 42094295,
-            "scoredAt": "2026-10-17",
+            "score": 87.8,
+            "tvlUsd": 42871089,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3905"
           },
           {
@@ -634,8 +697,8 @@
             "curator": null,
             "tier": "C",
             "score": 62,
-            "tvlUsd": 19698804,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 19650073,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/9601"
           },
           {
@@ -644,8 +707,8 @@
             "curator": null,
             "tier": "C",
             "score": 62,
-            "tvlUsd": 5736732,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 5733752,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/9605"
           }
         ],
@@ -654,7 +717,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T09:27:28.140Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "risklayer": {
       "value": "4.9/10 · medium",
@@ -785,69 +848,6 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defipunkd": {
-      "value": "Control: tentative orange (2/3 models submitted) · Ability to exit: tentative red · Autonomy: tentative red · Open Access: tentative orange (2/3 models submitted) · Verifiability: tentative green",
-      "summary": "SparkLend is a decentralized non-custodial lending protocol forked from Aave V3. Users supply assets to liquidity pools to earn interest or borrow against collateral. SparkLend benefits from direct stablecoin liquidity provided by the Sky Protocol (formerly MakerDAO), enabling large-scale DAI/USDS borrowing at governance-set rates. Governed by Sky Governance with emergency controls delegated to a 3-of-5 multisig via the SparkLendFreezerMom contract.",
-      "details": [
-        {
-          "name": "Control",
-          "value": "tentative orange (2/3 models submitted)",
-          "description": "Control path unresolved — Ethereum SparkLend is upgradeable through Sky's Pause Proxy, but the live governance delay, multisigs, emergency roles, and xDai admin path were not fully resolved."
-        },
-        {
-          "name": "Ability to exit",
-          "value": "tentative red",
-          "description": "Multisig can pause withdrawals indefinitely — Assessed by 3 models — Choosing red because the 3-of-5 freezer multisig holds permanent ward authorization to call pauseAllMarkets(true) without a time limit. The GitHub documentation explicitly states the FreezerMom contract allows 'bypass[ing] the 2-day GSM window' but nowhere specifies a maximum pause duration. The contract code shows pauseMarket and pauseAllMarkets accept a boolean parameter with no timestamp check or auto-expiry logic. While governance CAN reverse a pause through an executive vote (subject to the 30-hour GSM delay per the April 2024 governance decision), the multisig itself can maintain the pause indefinitely without governance action. This means a 3-of-5 actor set can unilaterally block all user exits for an unlimited period, which falls squarely into the red category under the rubric: 'ANY actor can pause CLAIMS of finalized exits indefinitely.'"
-        },
-        {
-          "name": "Autonomy",
-          "value": "tentative red",
-          "description": "Oracle failure risks ~100% TVS unmitigated — Assessed by 2 models — Choosing red because the strongest red case directly matches the deployed oracle architecture: both the large Ethereum module and the active Gnosis module rely on external, mutable price sources, the live fallback only handles missing or nonpositive prices, and a positive misprice can affect borrowing and liquidation solvency. Module weighting: Ethereum Pool holds ~95%+ of identifiable TVS and is red, with more than $1.4B visible in only spwstETH, spDAI, and spWETH cash balances; Gnosis Pool is ~<5%/not fully measured and is also red; weighted overall = red because the worst unmitigated oracle dependency can affect essentially all collateralized SparkLend TVS."
-        },
-        {
-          "name": "Open Access",
-          "value": "tentative orange (2/3 models submitted)",
-          "description": "Open onchain access — Core SparkLend actions are open onchain; official frontend restrictions found were passive legal terms"
-        },
-        {
-          "name": "Verifiability",
-          "value": "tentative green",
-          "description": "Verified source, audited, zero post-audit drift — Assessed by 3 models — Choosing green because (1) both the proxy contract and its current implementation are verified on Etherscan (the proxy page resolves and displays the implementation ABI, per evidence from the Etherscan search result), (2) a public source repo with a pinned release commit exists at sparkdotfi/sparklend-v1-core, (3) ChainSecurity — a recognized firm — conducted a deployment verification confirming bytecode-repo correspondence at the April 2023 launch, and (4) the Aave v3 codebase underlying SparkLend was audited by Trail of Bits, OpenZeppelin, PeckShield, SigmaPrime, and Certora. The orange steel-man (post-audit implementation upgrade) is noted in unknowns but is insufficient to downgrade without evidence of material drift from a fund-custody-critical change, given the extensive layered audit coverage and the stable nature of the Aave v3 core."
-        }
-      ],
-      "url": "https://defipunkd.com/protocol/sparklend",
-      "note": "DeFiPunk’d files Spark as SparkLend (\"sparklend\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Tier",
-            "value": "bronze · AI consensus on at least one dimension"
-          },
-          {
-            "name": "Category",
-            "value": "Lending"
-          },
-          {
-            "name": "Upgradeability",
-            "value": "upgradeable"
-          },
-          {
-            "name": "Bug bounty",
-            "value": "https://immunefi.com/bug-bounty/sparklend/information/"
-          },
-          {
-            "name": "Governance forum",
-            "value": "https://forum.makerdao.com/c/spark/"
-          },
-          {
-            "name": "Docs",
-            "value": "https://docs.spark.fi/"
-          }
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

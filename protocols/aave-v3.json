@@ -6,6 +6,69 @@
       "note": "Credora has no data for Aave v3.",
       "since": "2026-10-15T20:22:38.297Z"
     },
+    "defipunkd": {
+      "value": "Control: tentative orange · Ability to exit: tentative red · Autonomy: tentative orange · Open Access: tentative orange · Verifiability: tentative green",
+      "summary": "Aave V3 is a decentralized non-custodial lending protocol where users supply assets to earn interest and borrow assets by providing overcollateralized deposits. It operates across 20+ chains with isolated markets and risk parameters managed through on-chain AAVE token governance. The protocol uses a cross-chain governance system (Governance V3) with voting via storage proofs on multiple networks while token balances remain on Ethereum mainnet.",
+      "details": [
+        {
+          "name": "Control",
+          "value": "tentative orange",
+          "description": "T1 upgrades reachable via ~5-day fast path — Assessed by 4 models — Choosing orange because T1 fund-critical actions (Pool implementation upgrades via PoolAddressesProvider.setPoolImpl, oracle source changes) are reachable through the Short Executor path with only a 1-day (86400s) timelock delay, which is >0 but <7 days. While governance is broad and token-weighted with AAVE/stkAAVE/aAAVE, the 1-day timelock on the Short Executor is insufficient for the 7-day exit-window standard required for green on a T1 path. The guardian (5-of-9 multisig) has instant T1-scoped emergency pause power, but this is limited to pause/cancel and does not compound the timelock concern since it cannot execute upgrades. The Long Executor's 7-day timelock only covers T3 governance-internal changes, not the primary T1 upgrade path."
+        },
+        {
+          "name": "Ability to exit",
+          "value": "tentative red",
+          "description": "Exits pausable indefinitely by 5-of-9 multisig — Assessed by 3 models — Choosing red because withdraw/repay/repayWithATokens/repayWithPermit/liquidationCall all delegate to library validators that revert with Errors.ReservePaused() when the reserve's paused bit is set. The pause bit is set/cleared by PoolConfigurator.setReservePause/setPoolPause, gated by onlyEmergencyOrPoolAdmin, callable by either the EMERGENCY_ADMIN_ROLE holder (Aave Protocol Guardian Safe 0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30, verified 5-of-9 Gnosis Safe) or POOL_ADMIN_ROLE holder (Aave Governance v3 Executor Lvl1, 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A, timelocked governance). Critically, neither setPoolPause nor setReservePause take a maximum-duration parameter that bounds the paused state: MAX_GRACE_PERIOD = 4 hours caps only the post-unpause liquidation grace window, not the pause itself. There is no auto-expiry, no escape-hatch / forced-exit mechanism, and no separate already-finalized-claim path that bypasses the pause guard - withdrawal IS the exit, and it is pause-gated. The 5-of-9 emergency-admin multisig can therefore freeze user withdrawals indefinitely without a governance vote, matching the slice's red criterion 'ANY actor (including governance) can pause CLAIMS of finalized exits indefinitely'. Functions are directly callable on-chain via Etherscan Write-as-Proxy and any wallet (no frontend dependency)."
+        },
+        {
+          "name": "Autonomy",
+          "value": "tentative orange",
+          "description": "Oracle dependency with governance fast-paths — Assessed by 3 models — Choosing orange because Aave V3 Core Lending (Ethereum + L2s, ~99% of $13.6B TVS) holds the dominant share; GHO module (~$200M GHO outstanding, <2% of TVS) and Umbrella Safety Module are smaller. The core architecture is verifiable on-chain: AaveOracle (0x54586bE62E3c3580375aE3723C145253060Ca0C2) reads per-asset Chainlink/CAPO sources with a configurable fallback, gated by POOL_ADMIN/ASSET_LISTING_ADMIN roles held by Executor Lvl1 (1-day timelock via PayloadsController) and bypassable for narrow params by Risk Stewards (1-of-1 / 2-of-2 multisig with on-chain constraints). PriceOracleSentinel and CAPO caps are LIVE on-chain mitigations against external oracle anomalies. Two real 2026 incidents bound the grade: (a) March-2026 CAPO snapshot/timestamp misconfiguration caused ~$27M unfair wstETH liquidations (DAO reimbursed via treasury), (b) April-2026 Kelp DAO LayerZero bridge exploit minted unbacked rsETH that an attacker deposited as Aave V3 collateral on Ethereum + Arbitrum, leaving ~$200M of bad debt that the DAO is socializing. Aave's smart contracts functioned as designed in (b) - the loss came from an opt-in third-party LRT - but rsETH was not isolation-mode-only and the bad debt cross-cuts the WETH reserve via shortfall. Together with the 1-day-only timelock on most oracle-relevant actions (Level 1) and the Risk Steward fast-path, this fits Stage 1 / orange: external dependency failures can degrade performance and create bounded principal loss but cannot trivially drain the protocol; mitigations are partial and have been observed to fail."
+        },
+        {
+          "name": "Open Access",
+          "value": "tentative orange",
+          "description": "Contracts open; official UI screens wallets — Assessed by 3 models — Choosing orange because Aave V3 smart contracts are admission-permissionless (Pool.supply/withdraw/borrow/repay/liquidationCall/flashLoan are public virtual override with no whitelist/KYC modifier per Pool.sol @ commit 1e3d70c4151a94166ebc59e2eaa4aff6e6ba6978), but the official frontend app.aave.com applies A3-active enforcement via TRM Labs API integration which screens connected wallets and rejects flagged ones (publicly confirmed by Aave Labs in the 2022 dusted-wallets incident: 'We integrated TRM's API on the Aave IPFS frontend'), and the ToS at aave.com/legal/app/terms-of-service explicitly reserves the right to restrict access on the basis of Restricted Jurisdictions (Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela, etc.) and to act when users attempt circumvention through VPNs or proxies. Independent A3b-ii paths exist (cp0x pi-aave-interface live at aave.cp0x.com under MIT license, direct contract calls via Etherscan, CLI/SDK), but they are operated by third parties or require technical capability and are not officially documented by Aave on its public landing pages. Per the rubric, A3-active screening on the official frontend without clearly-documented non-technical alternatives places this slice at orange, not green. Red is not appropriate because there is no contract-level whitelist, no on-chain blocklist updated by a single party, and no operator approval gating admission."
+        },
+        {
+          "name": "Verifiability",
+          "value": "tentative green",
+          "description": "Verified source + 5 auditors pre-deployment — Assessed by 3 models — All three core Aave V3 contracts on Ethereum mainnet (Pool proxy 0x87870Bca..., PoolConfigurator proxy 0x64b761D8..., PoolAddressesProvider 0x2f39d218...) show 'Source Code Verified - Exact Match' on Etherscan. Both proxy AND current implementation contracts are independently verified: Pool implementation 0x8147b99d... ('PoolInstance', Solidity 0.8.27) and PoolConfigurator implementation 0x6fDdde45... ('PoolConfiguratorInstance', Solidity 0.8.27). The deployed implementations correspond to the public aave-dao/aave-v3-origin repo at tag v3.6.0 (commit 5a230ec82fcb10afc7fe7cffa8978752fb17aa2b): contract names match exactly, the v3.6.0 PoolInstance.sol declares POOL_REVISION=10 and PoolConfiguratorInstance.sol declares CONFIGURATOR_REVISION=7. The current v3.6 release was audited by five recognized firms (Certora, MixBytes, Pashov, Blackthorn, Savant) in Nov 2025, ~2 months before the on-chain upgrade (Jan 16, 2026), well within the 6-month freshness window. Earlier versions (V3 genesis, V3.0.1, V3.0.2, V3.1, V3.2, V3.3, V3.4, V3.5) were each independently re-audited by recognized firms (OpenZeppelin, Trail of Bits, ABDK, Sigma Prime, Peckshield, Certora, MixBytes, ChainSecurity, Sherlock), so post-audit drift is continuously addressed. Choosing green because all V1-V6 conditions hold with direct on-chain and repo evidence."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/aave-v3",
+      "note": "DeFiPunk’d files Aave v3 as Aave V3 (\"aave-v3\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier",
+            "value": "silver · Weak AI consensus on all dimensions"
+          },
+          {
+            "name": "Category",
+            "value": "Lending"
+          },
+          {
+            "name": "Upgradeability",
+            "value": "upgradeable"
+          },
+          {
+            "name": "Bug bounty",
+            "value": "https://audits.sherlock.xyz/bug-bounties/300"
+          },
+          {
+            "name": "Governance forum",
+            "value": "https://governance.aave.com"
+          },
+          {
+            "name": "Docs",
+            "value": "https://aave.com/docs"
+          }
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
+    },
     "defiscan": {
       "value": "33 admins · $49.0M capital at risk",
       "summary": "Aave V3 is a multi-pool overcollateralised lending market on Ethereum with four parallel deployments — Main, Lido, Prime/EtherFi, and Horizon RWA — each with its own Pool/PoolConfigurator/ACLManager triplet and a shared Aave Governance V3 root. Borrowers deposit collateral (ATokens) against which they take variable-rate debt (VariableDebtTokens), with valuations driven by Chainlink primary feeds and Aave-deployed CAPO adapters that bound liquid-staking and yield-bearing collateral ratios. The protocol is upgradeable: all pool implementations sit behind InitializableImmutableAdminUpgradeabilityProxies whose immutable admin is the PoolAddressesProvider, itself controlled by the on-chain gover…",
@@ -81,8 +144,8 @@
         },
         {
           "name": "Liveness",
-          "value": "67",
-          "description": "tvl_change_7d_pct: -3.07"
+          "value": "65",
+          "description": "tvl_change_7d_pct: -4.13"
         },
         {
           "name": "Security",
@@ -90,7 +153,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://defiscoring.com/protocols/aave-v3",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -109,7 +172,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T19:27:34.798Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "philidor": {
       "value": "44 vaults rated",
@@ -118,55 +181,55 @@
         {
           "name": "Aave Ethereum WETH",
           "value": "Prime 8.88",
-          "description": "Version v3 · TVL $5.26B · Scored 2026-10-17"
+          "description": "Version v3 · TVL $5.28B · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum weETH",
           "value": "Core 7.90",
-          "description": "Version v3 · TVL $3.68B · Scored 2026-10-17"
+          "description": "Version v3 · TVL $3.69B · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum USDT",
           "value": "Prime 8.81",
-          "description": "Version v3 · TVL $2.89B · Scored 2026-10-17"
+          "description": "Version v3 · TVL $2.88B · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum WBTC",
           "value": "Prime 8.84",
-          "description": "Version v3 · TVL $2.77B · Scored 2026-10-17"
+          "description": "Version v3 · TVL $2.77B · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum USDC",
           "value": "Prime 9.03",
-          "description": "Version v3 · TVL $2.38B · Scored 2026-10-17"
+          "description": "Version v3 · TVL $2.38B · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum wstETH",
           "value": "Prime 8.88",
-          "description": "Version v3 · TVL $2.33B · Scored 2026-10-17"
+          "description": "Version v3 · TVL $2.34B · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum cbBTC",
           "value": "Prime 8.90",
-          "description": "Version v3 · TVL $1.41B · Scored 2026-10-17"
+          "description": "Version v3 · TVL $1.41B · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum osETH",
           "value": "Core 7.90",
-          "description": "Version v3 · TVL $310.4M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $311.5M · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum USDe",
           "value": "Core 7.90",
-          "description": "Version v3 · TVL $258.4M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $258.3M · Scored 2026-10-18"
         },
         {
           "name": "Aave Ethereum LBTC",
           "value": "Core 7.90",
-          "description": "Version v3 · TVL $219.6M · Scored 2026-10-17"
+          "description": "Version v3 · TVL $220.1M · Scored 2026-10-18"
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://analytics.philidor.io/protocols/aave",
       "note": "Counted: 44 of the 44 live vault(s) Philidor lists for aave under version v3, v3-lido, v3-horizon, with 10 shut-down vault(s) left out. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
@@ -203,8 +266,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 5260363273,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 5280428162,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8"
           },
           {
@@ -213,8 +276,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 3676672965,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 3688767150,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbdfa7b7893081b35fb54027489e2bc7a38275129"
           },
           {
@@ -223,8 +286,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.81,
-            "tvlUsd": 2885031651,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2883621978,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x23878914efe38d27c4d67ab83ed1b93a74d4086a"
           },
           {
@@ -233,8 +296,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.84,
-            "tvlUsd": 2765537559,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2768545107,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5ee5bf7ae06d1be5997a1a72006fe6c607ec6de8"
           },
           {
@@ -243,8 +306,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 9.03,
-            "tvlUsd": 2384350823,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2384677311,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c"
           },
           {
@@ -253,8 +316,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 2333310972,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2341329924,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0b925ed163218f6662a35e0f0371ac234f9e9371"
           },
           {
@@ -263,8 +326,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.9,
-            "tvlUsd": 1410773601,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1414438447,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5c647ce0ae10658ec44fa4e11a51c96e94efd1dd"
           },
           {
@@ -273,8 +336,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 310443521,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 311463399,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x927709711794f3de5ddbf1d176bee2d55ba13c21"
           },
           {
@@ -283,8 +346,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 258364277,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 258265286,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4f5923fc5fd4a93352581b38b7cd26943012decf"
           },
           {
@@ -293,19 +356,9 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 219557235,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 220130902,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x65906988adee75306021c417a1a3458040239602"
-          },
-          {
-            "name": "Aave EthereumHorizon RLUSD",
-            "version": "v3-horizon",
-            "curator": null,
-            "tier": "Core",
-            "score": 7.7,
-            "tvlUsd": 161855931,
-            "scoredAt": "2026-10-17",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xe3190143eb552456f88464662f0c0c4ac67a77eb"
           },
           {
             "name": "Aave EthereumLido wstETH",
@@ -313,9 +366,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.59,
-            "tvlUsd": 161437876,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 161919875,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc035a7cf15375ce2706766804551791ad035e0c2"
+          },
+          {
+            "name": "Aave EthereumHorizon RLUSD",
+            "version": "v3-horizon",
+            "curator": null,
+            "tier": "Core",
+            "score": 7.7,
+            "tvlUsd": 161860801,
+            "scoredAt": "2026-10-18",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xe3190143eb552456f88464662f0c0c4ac67a77eb"
           },
           {
             "name": "Aave Ethereum tBTC",
@@ -323,8 +386,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 143665506,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 144604732,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x10ac93971cdb1f5c778144084242374473c350da"
           },
           {
@@ -333,8 +396,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.81,
-            "tvlUsd": 135186946,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 135193876,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x00907f9921424583e7ffbfedf84f92b7b2be4977"
           },
           {
@@ -343,8 +406,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.97,
-            "tvlUsd": 129158963,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 128723341,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x018008bfb33d285247a21d44e50697654f754e63"
           },
           {
@@ -353,8 +416,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 126596362,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 126434681,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4579a27af00a62c0eb156349f31b345c08386419"
           },
           {
@@ -363,8 +426,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 125654603,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 124992341,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa700b4eb416be35b2911fd5dee80678ff64ff6c9"
           },
           {
@@ -373,8 +436,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 114700967,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 114708523,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x24ab03a9a5bc2c49e5523e8d915a3536ac38b91d"
           },
           {
@@ -383,8 +446,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 97119499,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 96068494,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xcc9ee9483f662091a1de4795249e24ac0ac2630f"
           },
           {
@@ -393,8 +456,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 90801269,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 89990453,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5e8c8a7243651db1384c0ddfdbe39761e8e7e51a"
           },
           {
@@ -403,8 +466,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.8,
-            "tvlUsd": 60094909,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 60096082,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x946281a2d0dd6e650d08f74833323d66ae4c8b12"
           },
           {
@@ -413,8 +476,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 58346347,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 58030258,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x8a2b6f94ff3a89a03e8c02ee92b55af90c9454a2"
           },
           {
@@ -424,7 +487,7 @@
             "tier": "Core",
             "score": 7.5,
             "tvlUsd": 56512053,
-            "scoredAt": "2026-10-17",
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x08b798c40b9ab931356d9ab4235f548325c4cb80"
           },
           {
@@ -433,8 +496,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 54165412,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 54176702,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x18efe565a5373f430e2f809b97de30335b3ad96a"
           },
           {
@@ -444,7 +507,7 @@
             "tier": "Core",
             "score": 7.78,
             "tvlUsd": 51866592,
-            "scoredAt": "2026-10-17",
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb0ec6c4482ac1ef77be239c0ac833cf37a27c876"
           },
           {
@@ -453,8 +516,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 46042404,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 46192346,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xce8c60fd8390efcc3fc66a3f0bd64beb969e750e"
           },
           {
@@ -463,8 +526,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.74,
-            "tvlUsd": 46018769,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 46182110,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xfa1fdbbd71b0aa16162d76914d69cd8cb3ef92da"
           },
           {
@@ -473,8 +536,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.9,
-            "tvlUsd": 44141819,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 44138776,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xaa6e91c82942aeae040303bf96c15a6dbcb82ca0"
           },
           {
@@ -484,7 +547,7 @@
             "tier": "Core",
             "score": 7.55,
             "tvlUsd": 30672383,
-            "scoredAt": "2026-10-17",
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x49d3cde03813ee32dfd47f6aa3957d5f9cbab985"
           },
           {
@@ -493,8 +556,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.86,
-            "tvlUsd": 15319711,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 15369601,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x977b6fc5de62598b08c85ac8cf2b745874e8b78c"
           },
           {
@@ -503,8 +566,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.8,
-            "tvlUsd": 12679830,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 12680191,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xec4ef66d4fceeba34abb4de69db391bc5476ccc8"
           },
           {
@@ -513,8 +576,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 10796572,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 10797176,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x01e69a58ca3ddc695820ce6f66fbdf3fa55d0545"
           },
           {
@@ -524,7 +587,7 @@
             "tier": "Core",
             "score": 7.76,
             "tvlUsd": 10720932,
-            "scoredAt": "2026-10-17",
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4e58a2e433a739726134c83d2f07b2562e8dfdb3"
           },
           {
@@ -533,8 +596,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.9,
-            "tvlUsd": 7882515,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 7983059,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0c0d01abf3e6adfca0989ebba9d6e85dd58eab1e"
           },
           {
@@ -543,8 +606,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 6135852,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 6151715,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5fefd7069a7d91d01f269dade14526ccf3487810"
           },
           {
@@ -553,8 +616,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.89,
-            "tvlUsd": 5525861,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 5526182,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x2a1fbcb52ed4d9b23dad17e1e8aed4bb0e6079b8"
           },
           {
@@ -563,8 +626,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.14,
-            "tvlUsd": 4958521,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 4958074,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x32a6268f9ba3642dda7892add74f1d34469a4259"
           },
           {
@@ -573,8 +636,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 4177072,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 4175786,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x7c0477d085ecb607cf8429f3ec91ae5e1e460f4f"
           },
           {
@@ -583,8 +646,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.86,
-            "tvlUsd": 3076233,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 3076534,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xfa82580c16a31d0c1bc632a36f82e83efef3eec0"
           },
           {
@@ -593,8 +656,8 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.01,
-            "tvlUsd": 2873935,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2786930,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x68215b6533c47ff9f7125ac95adf00fe4a62f79e"
           },
           {
@@ -603,8 +666,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1271769,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1275053,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x12b70410d60f926558245f769059ea3fc7a7353e"
           },
           {
@@ -614,7 +677,7 @@
             "tier": "Core",
             "score": 7.73,
             "tvlUsd": 1250000,
-            "scoredAt": "2026-10-17",
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe1cfd16b8e4b1c86bb5b7a104cfefbc7b09326dd"
           },
           {
@@ -623,8 +686,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 869161,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 871992,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x481a2acf3a72ffdc602a9541896ca1db87f86cf7"
           },
           {
@@ -633,14 +696,14 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 280241,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 280934,
+            "scoredAt": "2026-10-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9a44fd41566876a39655f74971a3a6ea0a17a454"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "pigi": {
       "value": "C 67.38/100",
@@ -654,7 +717,7 @@
         {
           "name": "Vault score, TVL-weighted",
           "value": "75.44",
-          "description": "The mean of pigi’s latest scores of the 29 rated Ethereum vault(s) that deposit into aave-v3-ethereum, weighted by their 30-day average TVL ($22.85B in all). Weight in the score: 0.4. Vaults by band: A 0, B 21, C 2, D 1, F 5."
+          "description": "The mean of pigi’s latest scores of the 29 rated Ethereum vault(s) that deposit into aave-v3-ethereum, weighted by their 30-day average TVL ($22.83B in all). Weight in the score: 0.4. Vaults by band: A 0, B 21, C 2, D 1, F 5."
         },
         {
           "name": "Weights",
@@ -662,18 +725,18 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: aave-v3-ethereum. Also rated, shown separately: aave-v3-ethereum-lido, aave-v3-ethereum-horizon. Vault score counts Ethereum vaults only.",
       "extra": {
         "facts": [
           {
             "name": "Aave v3 — Ethereum Prime (Lido) instance (pool rev 11)",
-            "value": "C 69.95/100 · 2026-10-17"
+            "value": "C 69.95/100 · 2026-10-18"
           },
           {
             "name": "Aave Horizon — Ethereum RWA instance (Aave v3.3 fork, pool rev 7)",
-            "value": "C 61.36/100 · 2026-10-17"
+            "value": "C 61.36/100 · 2026-10-18"
           }
         ],
         "vaults": [
@@ -683,8 +746,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 5569504982,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 5572365600,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3251"
           },
           {
@@ -693,8 +756,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 3933869464,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 3937108517,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3262"
           },
           {
@@ -703,8 +766,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 2873657613,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2878348694,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3275"
           },
           {
@@ -713,8 +776,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 2859997290,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2850464333,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3254"
           },
           {
@@ -723,8 +786,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 2240388587,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2242016149,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3276"
           },
           {
@@ -733,8 +796,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 2089573560,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2080405900,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3252"
           },
           {
@@ -743,8 +806,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 1477566464,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1477751048,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3267"
           },
           {
@@ -753,8 +816,8 @@
             "curator": null,
             "tier": "B",
             "score": 72.6,
-            "tvlUsd": 487314916,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 476914525,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3264"
           },
           {
@@ -763,8 +826,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 217965866,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 218152470,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -773,8 +836,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 215153378,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 215321641,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -783,8 +846,8 @@
             "curator": null,
             "tier": "C",
             "score": 55,
-            "tvlUsd": 195666041,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 195011547,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/9"
           },
           {
@@ -793,8 +856,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 144059142,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 144448129,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3280"
           },
           {
@@ -803,8 +866,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 130066821,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 130009217,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3284"
           },
           {
@@ -813,8 +876,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 107951479,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 107770880,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3255"
           },
           {
@@ -823,8 +886,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 102886839,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 102703369,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3277"
           },
           {
@@ -833,8 +896,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 50953597,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 51454236,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100011"
           },
           {
@@ -843,8 +906,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 45448838,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 45397662,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3287"
           },
           {
@@ -853,8 +916,8 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 35699059,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 36091208,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100012"
           },
           {
@@ -863,8 +926,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 16854217,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 16838960,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3253"
           },
           {
@@ -873,8 +936,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 14861177,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 14957623,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100013"
           },
           {
@@ -883,8 +946,8 @@
             "curator": null,
             "tier": "B",
             "score": 73,
-            "tvlUsd": 13708678,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 13632051,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3270"
           },
           {
@@ -893,8 +956,8 @@
             "curator": null,
             "tier": "B",
             "score": 70.6,
-            "tvlUsd": 8368309,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 8230936,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3293"
           },
           {
@@ -902,9 +965,9 @@
             "version": "Aave",
             "curator": null,
             "tier": "B",
-            "score": 75,
-            "tvlUsd": 7791272,
-            "scoredAt": "2026-10-17",
+            "score": 77,
+            "tvlUsd": 7794405,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3261"
           },
           {
@@ -913,8 +976,8 @@
             "curator": null,
             "tier": "B",
             "score": 74.2,
-            "tvlUsd": 3615396,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 3563570,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3283"
           },
           {
@@ -923,8 +986,8 @@
             "curator": null,
             "tier": "B",
             "score": 77,
-            "tvlUsd": 2910527,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 2913062,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3278"
           },
           {
@@ -933,8 +996,8 @@
             "curator": null,
             "tier": "B",
             "score": 73,
-            "tvlUsd": 1889387,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 1888760,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3289"
           },
           {
@@ -942,9 +1005,9 @@
             "version": "Aave",
             "curator": null,
             "tier": "C",
-            "score": 65.2,
-            "tvlUsd": 659696,
-            "scoredAt": "2026-10-17",
+            "score": 62.7,
+            "tvlUsd": 658684,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3281"
           },
           {
@@ -953,8 +1016,8 @@
             "curator": null,
             "tier": "B",
             "score": 74.7,
-            "tvlUsd": 307243,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 308377,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/3279"
           },
           {
@@ -963,8 +1026,8 @@
             "curator": null,
             "tier": "D",
             "score": 45.8,
-            "tvlUsd": 221027,
-            "scoredAt": "2026-10-17",
+            "tvlUsd": 220643,
+            "scoredAt": "2026-10-18",
             "url": "https://app.pigi.finance/vault/100016"
           }
         ],
@@ -973,7 +1036,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T09:27:28.140Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "risklayer": {
       "value": "4.8/10 · medium",
@@ -1104,69 +1167,6 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defipunkd": {
-      "value": "Control: tentative orange · Ability to exit: tentative red · Autonomy: tentative orange · Open Access: tentative orange · Verifiability: tentative green",
-      "summary": "Aave V3 is a decentralized non-custodial lending protocol where users supply assets to earn interest and borrow assets by providing overcollateralized deposits. It operates across 20+ chains with isolated markets and risk parameters managed through on-chain AAVE token governance. The protocol uses a cross-chain governance system (Governance V3) with voting via storage proofs on multiple networks while token balances remain on Ethereum mainnet.",
-      "details": [
-        {
-          "name": "Control",
-          "value": "tentative orange",
-          "description": "T1 upgrades reachable via ~5-day fast path — Assessed by 4 models — Choosing orange because T1 fund-critical actions (Pool implementation upgrades via PoolAddressesProvider.setPoolImpl, oracle source changes) are reachable through the Short Executor path with only a 1-day (86400s) timelock delay, which is >0 but <7 days. While governance is broad and token-weighted with AAVE/stkAAVE/aAAVE, the 1-day timelock on the Short Executor is insufficient for the 7-day exit-window standard required for green on a T1 path. The guardian (5-of-9 multisig) has instant T1-scoped emergency pause power, but this is limited to pause/cancel and does not compound the timelock concern since it cannot execute upgrades. The Long Executor's 7-day timelock only covers T3 governance-internal changes, not the primary T1 upgrade path."
-        },
-        {
-          "name": "Ability to exit",
-          "value": "tentative red",
-          "description": "Exits pausable indefinitely by 5-of-9 multisig — Assessed by 3 models — Choosing red because withdraw/repay/repayWithATokens/repayWithPermit/liquidationCall all delegate to library validators that revert with Errors.ReservePaused() when the reserve's paused bit is set. The pause bit is set/cleared by PoolConfigurator.setReservePause/setPoolPause, gated by onlyEmergencyOrPoolAdmin, callable by either the EMERGENCY_ADMIN_ROLE holder (Aave Protocol Guardian Safe 0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30, verified 5-of-9 Gnosis Safe) or POOL_ADMIN_ROLE holder (Aave Governance v3 Executor Lvl1, 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A, timelocked governance). Critically, neither setPoolPause nor setReservePause take a maximum-duration parameter that bounds the paused state: MAX_GRACE_PERIOD = 4 hours caps only the post-unpause liquidation grace window, not the pause itself. There is no auto-expiry, no escape-hatch / forced-exit mechanism, and no separate already-finalized-claim path that bypasses the pause guard - withdrawal IS the exit, and it is pause-gated. The 5-of-9 emergency-admin multisig can therefore freeze user withdrawals indefinitely without a governance vote, matching the slice's red criterion 'ANY actor (including governance) can pause CLAIMS of finalized exits indefinitely'. Functions are directly callable on-chain via Etherscan Write-as-Proxy and any wallet (no frontend dependency)."
-        },
-        {
-          "name": "Autonomy",
-          "value": "tentative orange",
-          "description": "Oracle dependency with governance fast-paths — Assessed by 3 models — Choosing orange because Aave V3 Core Lending (Ethereum + L2s, ~99% of $13.6B TVS) holds the dominant share; GHO module (~$200M GHO outstanding, <2% of TVS) and Umbrella Safety Module are smaller. The core architecture is verifiable on-chain: AaveOracle (0x54586bE62E3c3580375aE3723C145253060Ca0C2) reads per-asset Chainlink/CAPO sources with a configurable fallback, gated by POOL_ADMIN/ASSET_LISTING_ADMIN roles held by Executor Lvl1 (1-day timelock via PayloadsController) and bypassable for narrow params by Risk Stewards (1-of-1 / 2-of-2 multisig with on-chain constraints). PriceOracleSentinel and CAPO caps are LIVE on-chain mitigations against external oracle anomalies. Two real 2026 incidents bound the grade: (a) March-2026 CAPO snapshot/timestamp misconfiguration caused ~$27M unfair wstETH liquidations (DAO reimbursed via treasury), (b) April-2026 Kelp DAO LayerZero bridge exploit minted unbacked rsETH that an attacker deposited as Aave V3 collateral on Ethereum + Arbitrum, leaving ~$200M of bad debt that the DAO is socializing. Aave's smart contracts functioned as designed in (b) - the loss came from an opt-in third-party LRT - but rsETH was not isolation-mode-only and the bad debt cross-cuts the WETH reserve via shortfall. Together with the 1-day-only timelock on most oracle-relevant actions (Level 1) and the Risk Steward fast-path, this fits Stage 1 / orange: external dependency failures can degrade performance and create bounded principal loss but cannot trivially drain the protocol; mitigations are partial and have been observed to fail."
-        },
-        {
-          "name": "Open Access",
-          "value": "tentative orange",
-          "description": "Contracts open; official UI screens wallets — Assessed by 3 models — Choosing orange because Aave V3 smart contracts are admission-permissionless (Pool.supply/withdraw/borrow/repay/liquidationCall/flashLoan are public virtual override with no whitelist/KYC modifier per Pool.sol @ commit 1e3d70c4151a94166ebc59e2eaa4aff6e6ba6978), but the official frontend app.aave.com applies A3-active enforcement via TRM Labs API integration which screens connected wallets and rejects flagged ones (publicly confirmed by Aave Labs in the 2022 dusted-wallets incident: 'We integrated TRM's API on the Aave IPFS frontend'), and the ToS at aave.com/legal/app/terms-of-service explicitly reserves the right to restrict access on the basis of Restricted Jurisdictions (Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela, etc.) and to act when users attempt circumvention through VPNs or proxies. Independent A3b-ii paths exist (cp0x pi-aave-interface live at aave.cp0x.com under MIT license, direct contract calls via Etherscan, CLI/SDK), but they are operated by third parties or require technical capability and are not officially documented by Aave on its public landing pages. Per the rubric, A3-active screening on the official frontend without clearly-documented non-technical alternatives places this slice at orange, not green. Red is not appropriate because there is no contract-level whitelist, no on-chain blocklist updated by a single party, and no operator approval gating admission."
-        },
-        {
-          "name": "Verifiability",
-          "value": "tentative green",
-          "description": "Verified source + 5 auditors pre-deployment — Assessed by 3 models — All three core Aave V3 contracts on Ethereum mainnet (Pool proxy 0x87870Bca..., PoolConfigurator proxy 0x64b761D8..., PoolAddressesProvider 0x2f39d218...) show 'Source Code Verified - Exact Match' on Etherscan. Both proxy AND current implementation contracts are independently verified: Pool implementation 0x8147b99d... ('PoolInstance', Solidity 0.8.27) and PoolConfigurator implementation 0x6fDdde45... ('PoolConfiguratorInstance', Solidity 0.8.27). The deployed implementations correspond to the public aave-dao/aave-v3-origin repo at tag v3.6.0 (commit 5a230ec82fcb10afc7fe7cffa8978752fb17aa2b): contract names match exactly, the v3.6.0 PoolInstance.sol declares POOL_REVISION=10 and PoolConfiguratorInstance.sol declares CONFIGURATOR_REVISION=7. The current v3.6 release was audited by five recognized firms (Certora, MixBytes, Pashov, Blackthorn, Savant) in Nov 2025, ~2 months before the on-chain upgrade (Jan 16, 2026), well within the 6-month freshness window. Earlier versions (V3 genesis, V3.0.1, V3.0.2, V3.1, V3.2, V3.3, V3.4, V3.5) were each independently re-audited by recognized firms (OpenZeppelin, Trail of Bits, ABDK, Sigma Prime, Peckshield, Certora, MixBytes, ChainSecurity, Sherlock), so post-audit drift is continuously addressed. Choosing green because all V1-V6 conditions hold with direct on-chain and repo evidence."
-        }
-      ],
-      "url": "https://defipunkd.com/protocol/aave-v3",
-      "note": "DeFiPunk’d files Aave v3 as Aave V3 (\"aave-v3\"). Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Tier",
-            "value": "silver · Weak AI consensus on all dimensions"
-          },
-          {
-            "name": "Category",
-            "value": "Lending"
-          },
-          {
-            "name": "Upgradeability",
-            "value": "upgradeable"
-          },
-          {
-            "name": "Bug bounty",
-            "value": "https://audits.sherlock.xyz/bug-bounties/300"
-          },
-          {
-            "name": "Governance forum",
-            "value": "https://governance.aave.com"
-          },
-          {
-            "name": "Docs",
-            "value": "https://aave.com/docs"
-          }
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

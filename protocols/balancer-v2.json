@@ -6,13 +6,18 @@
       "note": "Credora has no data for Balancer v2.",
       "since": "2026-10-15T20:22:38.297Z"
     },
+    "defipunkd": {
+      "status": "none",
+      "note": "DeFiPunk’d has no data for Balancer v2.",
+      "since": "2026-10-17T20:20:41.256Z"
+    },
     "defiscan": {
       "status": "none",
       "note": "DeFiScan has no data for Balancer v2.",
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "37 · red",
+      "value": "40 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -22,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "58",
-          "description": "tvl_change_7d_pct: -6.74"
+          "value": "66",
+          "description": "tvl_change_7d_pct: -3.68"
         },
         {
           "name": "Security",
@@ -31,14 +36,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-17",
+      "updatedAt": "2026-10-18",
       "url": "https://defiscoring.com/protocols/balancer-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "37"
+            "value": "40"
           },
           {
             "name": "Band",
@@ -50,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T19:27:34.798Z"
+      "since": "2026-10-18T09:41:07.762Z"
     },
     "philidor": {
       "status": "none",
@@ -66,11 +71,6 @@
       "status": "none",
       "note": "Risklayer has no data for Balancer v2.",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defipunkd": {
-      "status": "none",
-      "note": "DeFiPunk’d has no data for Balancer v2.",
-      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }

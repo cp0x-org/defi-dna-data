@@ -6,125 +6,6 @@
       "note": "Credora has no data for Fluid.",
       "since": "2026-10-15T20:22:38.297Z"
     },
-    "defiscan": {
-      "status": "none",
-      "note": "DeFiScan has no data for Fluid.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defiscoring": {
-      "value": "27 · red",
-      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
-      "details": [
-        {
-          "name": "Trust",
-          "value": "0",
-          "description": "audit_count: 0"
-        },
-        {
-          "name": "Liveness",
-          "value": "90",
-          "description": "tvl_change_7d_pct: -3.98"
-        },
-        {
-          "name": "Security",
-          "value": "0",
-          "description": "Source code unavailable · real: false"
-        }
-      ],
-      "updatedAt": "2026-10-17",
-      "url": "https://defiscoring.com/protocols/fluid",
-      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Score",
-            "value": "27"
-          },
-          {
-            "name": "Band",
-            "value": "red"
-          }
-        ],
-        "text": [
-          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-17T19:27:34.798Z"
-    },
-    "philidor": {
-      "status": "none",
-      "note": "Philidor Analytics has no data for Fluid.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
-    "pigi": {
-      "value": "D 50.14/100",
-      "summary": "Fluid (Instadapp) — unified liquidity layer / lending / DEX / vaults ($1.01B, Ethereum-led)",
-      "details": [
-        {
-          "name": "Node rating",
-          "value": "50/100",
-          "description": "pigi’s own rating of fluid itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-09-14, methodology 1.14.0. Weight in the score: 0.6."
-        },
-        {
-          "name": "Vault score, TVL-weighted",
-          "value": "50.35",
-          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into fluid, weighted by their 30-day average TVL ($265.7M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 0, F 1."
-        },
-        {
-          "name": "Weights",
-          "value": "node 0.6 · vaults 0.4",
-          "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
-        }
-      ],
-      "updatedAt": "2026-10-17",
-      "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
-      "note": "Headline: fluid. Vault score counts Ethereum vaults only.",
-      "extra": {
-        "vaults": [
-          {
-            "name": "Instadapp ETH v2",
-            "version": "Fluid (InstaDapp)",
-            "curator": null,
-            "tier": "C",
-            "score": 55,
-            "tvlUsd": 195666041,
-            "scoredAt": "2026-10-17",
-            "url": "https://app.pigi.finance/vault/9"
-          },
-          {
-            "name": "Fluid Lite - USD Vault",
-            "version": "Fluid Lite",
-            "curator": null,
-            "tier": "F",
-            "score": 25,
-            "tvlUsd": 43010534,
-            "scoredAt": "2026-10-17",
-            "url": "https://app.pigi.finance/vault/58"
-          },
-          {
-            "name": "Fluid (InstaDapp) - GHO Lending",
-            "version": "Fluid (InstaDapp)",
-            "curator": null,
-            "tier": "C",
-            "score": 57,
-            "tvlUsd": 27041788,
-            "scoredAt": "2026-10-17",
-            "url": "https://app.pigi.finance/vault/7"
-          }
-        ],
-        "text": [
-          "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-17T09:27:28.140Z"
-    },
-    "risklayer": {
-      "status": "none",
-      "note": "Risklayer has no data for Fluid.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
     "defipunkd": {
       "value": "Control: unknown · Ability to exit: unknown · Autonomy: unknown · Open Access: unknown · Verifiability: tentative green",
       "summary": "Fluid DEX is a decentralized exchange built by Instadapp (rebranded from Instadapp in late 2024) on top of the Fluid Liquidity Layer — a unified liquidity primitive shared across lending, vaulting, and DEX protocols. Users swap tokens through DEX pools (type T1) deployed via CREATE opcode and identified by integer dexId; a DexLite variant offers a simplified single-contract swap interface. The protocol's key innovation is that vault collateral and debt positions simultaneously serve as DEX liquidity, maximising capital efficiency across all three protocol types.",
@@ -179,6 +60,125 @@
       },
       "status": "ok",
       "since": "2026-10-17T20:20:41.256Z"
+    },
+    "defiscan": {
+      "status": "none",
+      "note": "DeFiScan has no data for Fluid.",
+      "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defiscoring": {
+      "value": "28 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "0",
+          "description": "audit_count: 0"
+        },
+        {
+          "name": "Liveness",
+          "value": "92",
+          "description": "tvl_change_7d_pct: -3.15"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-18",
+      "url": "https://defiscoring.com/protocols/fluid",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Score",
+            "value": "28"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-18T09:41:07.762Z"
+    },
+    "philidor": {
+      "status": "none",
+      "note": "Philidor Analytics has no data for Fluid.",
+      "since": "2026-10-11T16:59:48.502Z"
+    },
+    "pigi": {
+      "value": "D 50.14/100",
+      "summary": "Fluid (Instadapp) — unified liquidity layer / lending / DEX / vaults ($1.01B, Ethereum-led)",
+      "details": [
+        {
+          "name": "Node rating",
+          "value": "50/100",
+          "description": "pigi’s own rating of fluid itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-09-14, methodology 1.14.0. Weight in the score: 0.6."
+        },
+        {
+          "name": "Vault score, TVL-weighted",
+          "value": "50.34",
+          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into fluid, weighted by their 30-day average TVL ($264.9M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 0, F 1."
+        },
+        {
+          "name": "Weights",
+          "value": "node 0.6 · vaults 0.4",
+          "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
+        }
+      ],
+      "updatedAt": "2026-10-18",
+      "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
+      "note": "Headline: fluid. Vault score counts Ethereum vaults only.",
+      "extra": {
+        "vaults": [
+          {
+            "name": "Instadapp ETH v2",
+            "version": "Fluid (InstaDapp)",
+            "curator": null,
+            "tier": "C",
+            "score": 55,
+            "tvlUsd": 195011547,
+            "scoredAt": "2026-10-18",
+            "url": "https://app.pigi.finance/vault/9"
+          },
+          {
+            "name": "Fluid Lite - USD Vault",
+            "version": "Fluid Lite",
+            "curator": null,
+            "tier": "F",
+            "score": 25,
+            "tvlUsd": 42917276,
+            "scoredAt": "2026-10-18",
+            "url": "https://app.pigi.finance/vault/58"
+          },
+          {
+            "name": "Fluid (InstaDapp) - GHO Lending",
+            "version": "Fluid (InstaDapp)",
+            "curator": null,
+            "tier": "C",
+            "score": 57,
+            "tvlUsd": 26959654,
+            "scoredAt": "2026-10-18",
+            "url": "https://app.pigi.finance/vault/7"
+          }
+        ],
+        "text": [
+          "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-18T09:41:07.762Z"
+    },
+    "risklayer": {
+      "status": "none",
+      "note": "Risklayer has no data for Fluid.",
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

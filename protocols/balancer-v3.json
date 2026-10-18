@@ -6,67 +6,6 @@
       "note": "Credora has no data for Balancer v3.",
       "since": "2026-10-15T20:22:38.297Z"
     },
-    "defiscan": {
-      "status": "none",
-      "note": "DeFiScan has no data for Balancer v3.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defiscoring": {
-      "value": "20 · red",
-      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
-      "details": [
-        {
-          "name": "Trust",
-          "value": "0",
-          "description": "audit_count: 0"
-        },
-        {
-          "name": "Liveness",
-          "value": "65",
-          "description": "tvl_change_7d_pct: -3.85"
-        },
-        {
-          "name": "Security",
-          "value": "0",
-          "description": "Source code unavailable · real: false"
-        }
-      ],
-      "updatedAt": "2026-10-17",
-      "url": "https://defiscoring.com/protocols/balancer-v3",
-      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Score",
-            "value": "20"
-          },
-          {
-            "name": "Band",
-            "value": "red"
-          }
-        ],
-        "text": [
-          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-17T19:27:34.798Z"
-    },
-    "philidor": {
-      "status": "none",
-      "note": "Philidor Analytics has no data for Balancer v3.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
-    "pigi": {
-      "status": "none",
-      "note": "pigi.finance has no data for Balancer v3.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
-    "risklayer": {
-      "status": "none",
-      "note": "Risklayer has no data for Balancer v3.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
     "defipunkd": {
       "value": "Control: tentative orange (2/3 models submitted) · Ability to exit: tentative orange · Autonomy: tentative red (2/3 models submitted) · Open Access: tentative unknown (2/3 models submitted) · Verifiability: tentative orange",
       "summary": "Balancer V3 is a programmable AMM protocol that allows users to swap tokens and provide liquidity across weighted, stable, and custom pool types on Ethereum and multiple EVM chains. Liquidity providers deposit assets into pools governed by configurable invariants (e.g. constant-product weighted pools, StableSwap), receiving fungible BPT receipts in return. V3 introduces a unified Vault architecture with hooks for custom pool behavior, a Contract Registry for trusted router/factory enumeration, and yield-bearing liquidity support via ERC4626 wrappers. Governance is conducted through a Balancer DAO (6-of-11 multisig) acting through an Authorizer contract that controls all permissioned protoco…",
@@ -129,6 +68,67 @@
       },
       "status": "ok",
       "since": "2026-10-17T20:20:41.256Z"
+    },
+    "defiscan": {
+      "status": "none",
+      "note": "DeFiScan has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
+    },
+    "defiscoring": {
+      "value": "19 · red",
+      "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
+      "details": [
+        {
+          "name": "Trust",
+          "value": "0",
+          "description": "audit_count: 0"
+        },
+        {
+          "name": "Liveness",
+          "value": "64",
+          "description": "tvl_change_7d_pct: -4.21"
+        },
+        {
+          "name": "Security",
+          "value": "0",
+          "description": "Source code unavailable · real: false"
+        }
+      ],
+      "updatedAt": "2026-10-18",
+      "url": "https://defiscoring.com/protocols/balancer-v3",
+      "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Score",
+            "value": "19"
+          },
+          {
+            "name": "Band",
+            "value": "red"
+          }
+        ],
+        "text": [
+          "Not financial advice. DeFi Scoring outputs are research opinions, not audits and not investment guidance. See https://defiscoring.com/disclaimer/."
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-18T09:41:07.762Z"
+    },
+    "philidor": {
+      "status": "none",
+      "note": "Philidor Analytics has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
+    },
+    "pigi": {
+      "status": "none",
+      "note": "pigi.finance has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
+    },
+    "risklayer": {
+      "status": "none",
+      "note": "Risklayer has no data for Balancer v3.",
+      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

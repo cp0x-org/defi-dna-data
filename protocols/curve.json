@@ -6,6 +6,122 @@
       "note": "Credora has no data for Curve.",
       "since": "2026-10-15T20:22:38.297Z"
     },
+    "defipunkd": {
+      "value": "Curve DEX — Control: tentative green, Ability to exit: tentative green, Autonomy: tentative green, Open Access: tentative green, Verifiability: tentative green · crvUSD — Control: tentative orange (3/3 models submitted), Ability to exit: tentative unknown (3/3 models submitted), Autonomy: tentative orange, Open Access: tentative unknown (2/3 models submitted), Verifiability: tentative green",
+      "summary": "Curve DEX is an automated market maker (AMM) for stablecoin and pegged-asset swaps on Ethereum and 28 other chains, where users swap tokens or provide liquidity to earn trading fees and CRV emissions. Stableswap pools (3pool, FRAX/USDC, etc.) use a hybrid constant-sum/constant-product invariant for low-slippage stablecoin trades; Cryptoswap and Tricrypto pools use a dynamic-peg invariant with internal EMA price tracking for volatile-asset pairs; Stableswap-NG adds optional per-pool rate oracles for rate-bearing tokens (wstETH, sDAI, cbETH) and dynamic fees. Pools are immutable and deployed permissionlessly via blueprint factories. Note: the Curve Finance umbrella also includes crvUSD (the L…",
+      "details": [
+        {
+          "name": "Curve DEX · Control",
+          "value": "tentative green",
+          "description": "Immutable pools, DAO-gated via 7-day vote — Assessed by 3 models — Choosing green because T1 fund-critical powers are unreachable via the immutable pool architecture, and the highest reachable tier (T2 parameter adjustments) requires clearing a 7-day token-weighted governance vote, providing sufficient exit notice for users."
+        },
+        {
+          "name": "Curve DEX · Ability to exit",
+          "value": "tentative green",
+          "description": "Permissionless exits, no admin pause possible — Assessed by 3 models — Choosing green because Curve's architecture treats liquidity withdrawal as a fundamental, non-pauseable primitive, and users have direct, permissionless access to execute these functions on-chain without any frontend or admin intervention requirement."
+        },
+        {
+          "name": "Curve DEX · Autonomy",
+          "value": "tentative green",
+          "description": "Immutable core pools minimal external dependencies — Assessed by 3 models — Choosing green because the steel-man case for green is supported by Curve's own resource docs (Stableswap and Cryptoswap explicitly disclaim external price oracles), confirmed pool immutability from the MixBytes Stableswap-NG audit ('pools' contracts do not allow upgrades'), and per-pool isolation that matches the autonomy-slice guardrail carving out underlying-asset risk in opt-in isolated markets. The orange and red steel-mans rely on the rate-oracle pattern in Stableswap-NG and legacy lending pools, but both are precisely the per-market opt-in risk the rubric guardrail says does NOT make autonomy red on its own — a wstETH rate-oracle failure impacts only LPs of pools containing wstETH, not 3pool or Tricrypto LPs, and these pools collectively are a minority of TVS. No system-wide external dependency was identified across A1–A9: no oracle aggregator, no off-chain reporter committee feeding the AMMs, no bridge carrying material DEX TVL as a load-bearing dependency, no keeper liveness requirement for AMM solvency, and immutable pools that prevent governance from silently swapping a dependency in. Worst-case impacted TVS from any single external-dependency failure is <5% of total Curve DEX TVL, capped at the affected pool's individual TVL."
+        },
+        {
+          "name": "Curve DEX · Open Access",
+          "value": "tentative green",
+          "description": "No on-chain gate, multiple execution paths — Assessed by 3 models — Choosing green because Curve's user-facing contracts admit and exit users unconditionally on immutable Vyper code (A1: no whitelist / KYC / role gate; verified by source-grep across curve-contract, curve-stablecoin, factory deployments). No operator approval is required to admit a user action (A2: empty). The official curve.finance frontend has only A3-passive ToS clauses (jurisdictional self-certification, VPN prohibition, sanctions attestation) — the rubric explicitly states A3-passive boilerplate is compatible with green; no A3-active enforcement (geo-block, wallet screening, KYC wall, jurisdictional rendering banner) was verified per the evidentiary floor (a)-(d). Multiple independent A3b-ii paths exist (Etherscan write tab on every contract, curve-js SDK, third-party aggregators 1inch / Paraswap / CowSwap operating under separate legal entities, DAO Aragon Voting UI), reinforcing the green grade. No on-chain sanctions blocklist on CRV / crvUSD / pool / market contracts (A4 negative). The protocol meets the green criteria as defined: 'no contract-level whitelist/KYC on user entry/exit; no operator approval required to admit a user action; AND no A3-active restrictions on the official frontend' — all three conditions satisfied."
+        },
+        {
+          "name": "Curve DEX · Verifiability",
+          "value": "tentative green",
+          "description": "Verified Vyper bytecode, multi-firm audits — Assessed by 3 models — Choosing green because the deployed fund-holding contracts are verified Vyper sources on Etherscan (V1/V6 satisfied, no proxy/implementation gap on cores), the public curvefi/* monorepos contain matching source code at pinned head SHAs (V2 satisfied modulo per-deployment commit pinning), and recognized firms (Trail of Bits, ChainSecurity, MixBytes, Quantstamp, Statemind) audited each major component including the most recent crvUSD/Lending lines — published at docs.curve.finance/user/security/audits (V3/V4 satisfied). Post-audit drift on immutable cores is structurally close to zero (V5 satisfied). The empty protocol.audit_links in the snapshot input is a metadata-pinning gap (audits are discoverable from the official docs and the curvefi GitHub org), not a verifiability gap on the protocol side."
+        },
+        {
+          "name": "crvUSD · Control",
+          "value": "tentative orange (3/3 models submitted)",
+          "description": "7-day DAO vote; pause-only multisig — crvUSD is governed by Curve DAO (veCRV Aragon voting) with a 7-day vote period before execution; Emergency DAO 5-of-9 multisig is limited to pause-only (set_killed)."
+        },
+        {
+          "name": "crvUSD · Ability to exit",
+          "value": "tentative unknown (3/3 models submitted)",
+          "description": "Pause scope undetermined — Exit functions exist but pause scope and duration limits cannot be determined from available evidence"
+        },
+        {
+          "name": "crvUSD · Autonomy",
+          "value": "tentative orange",
+          "description": "Single-source Curve EMA oracles, no fallback — Assessed by 2 models — Choosing orange because the protocol's oracle architecture cross-cuts multiple mint markets via shared Curve TriCrypto-NG EMA reads with no Chainlink or other second-opinion feed (A1/A6 unmitigated by anything beyond EMA smoothing), which is meaningfully more dependency surface than a green Stage-2-equivalent protocol, but per-market oracle immutability (A9), absence of bridge/committee dependencies (A2/A3), continuous permissionless soft-liquidation (A8), and per-market opt-in isolation for LST/Ethena exposure (A4) bound the blast radius and prevent the protocol-wide silent-rug pattern that would justify red; both modules (crvUSD mint ~50% TVS and Curve Lending ~50% TVS — share-figures qualitative, see unknowns) reuse the same architecture and grade equivalently, so the weighted overall is orange."
+        },
+        {
+          "name": "crvUSD · Open Access",
+          "value": "tentative unknown (2/3 models submitted)",
+          "description": "Frontend rules unverified — On-chain entry appears permissionless; frontend ToS/enforcement unverified"
+        },
+        {
+          "name": "crvUSD · Verifiability",
+          "value": "tentative green",
+          "description": "Open source + 14 audits — Protocol publishes a GitHub repository and has at least one audit on record. This is a coarse Phase-0 signal only: auditor reputation, scope, and post-audit review coverage are not yet weighted."
+        }
+      ],
+      "url": "https://defipunkd.com/protocol/curve-dex",
+      "note": "DeFiPunk’d files Curve as Curve DEX (\"curve-dex\") and crvUSD (\"crvusd\"); each is graded separately and every one is shown. Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Tier (Curve DEX)",
+            "value": "silver · Weak AI consensus on all dimensions"
+          },
+          {
+            "name": "Category (Curve DEX)",
+            "value": "Dexs"
+          },
+          {
+            "name": "Upgradeability (Curve DEX)",
+            "value": "mixed"
+          },
+          {
+            "name": "Bug bounty (Curve DEX)",
+            "value": "https://immunefi.com/bug-bounty/curve/"
+          },
+          {
+            "name": "Governance forum (Curve DEX)",
+            "value": "https://gov.curve.finance/"
+          },
+          {
+            "name": "Docs (Curve DEX)",
+            "value": "https://docs.curve.finance/"
+          },
+          {
+            "name": "Tier (crvUSD)",
+            "value": "wood · At least one model submission, no quorum yet"
+          },
+          {
+            "name": "Category (crvUSD)",
+            "value": "CDP"
+          },
+          {
+            "name": "Upgradeability (crvUSD)",
+            "value": "mixed"
+          },
+          {
+            "name": "Bug bounty (crvUSD)",
+            "value": "https://docs.curve.finance/security/security/"
+          },
+          {
+            "name": "Governance forum (crvUSD)",
+            "value": "https://gov.curve.fi"
+          },
+          {
+            "name": "Docs (crvUSD)",
+            "value": "https://docs.curve.finance/crvUSD/"
+          }
+        ],
+        "text": [
+          "Curve DEX: https://defipunkd.com/protocol/curve-dex",
+          "crvUSD: https://defipunkd.com/protocol/crvusd"
+        ]
+      },
+      "status": "ok",
+      "since": "2026-10-17T20:20:41.256Z"
+    },
     "defiscan": {
       "status": "none",
       "note": "DeFiScan has no data for Curve.",
@@ -177,122 +293,6 @@
       },
       "status": "ok",
       "since": "2026-10-11T16:59:48.502Z"
-    },
-    "defipunkd": {
-      "value": "Curve DEX — Control: tentative green, Ability to exit: tentative green, Autonomy: tentative green, Open Access: tentative green, Verifiability: tentative green · crvUSD — Control: tentative orange (3/3 models submitted), Ability to exit: tentative unknown (3/3 models submitted), Autonomy: tentative orange, Open Access: tentative unknown (2/3 models submitted), Verifiability: tentative green",
-      "summary": "Curve DEX is an automated market maker (AMM) for stablecoin and pegged-asset swaps on Ethereum and 28 other chains, where users swap tokens or provide liquidity to earn trading fees and CRV emissions. Stableswap pools (3pool, FRAX/USDC, etc.) use a hybrid constant-sum/constant-product invariant for low-slippage stablecoin trades; Cryptoswap and Tricrypto pools use a dynamic-peg invariant with internal EMA price tracking for volatile-asset pairs; Stableswap-NG adds optional per-pool rate oracles for rate-bearing tokens (wstETH, sDAI, cbETH) and dynamic fees. Pools are immutable and deployed permissionlessly via blueprint factories. Note: the Curve Finance umbrella also includes crvUSD (the L…",
-      "details": [
-        {
-          "name": "Curve DEX · Control",
-          "value": "tentative green",
-          "description": "Immutable pools, DAO-gated via 7-day vote — Assessed by 3 models — Choosing green because T1 fund-critical powers are unreachable via the immutable pool architecture, and the highest reachable tier (T2 parameter adjustments) requires clearing a 7-day token-weighted governance vote, providing sufficient exit notice for users."
-        },
-        {
-          "name": "Curve DEX · Ability to exit",
-          "value": "tentative green",
-          "description": "Permissionless exits, no admin pause possible — Assessed by 3 models — Choosing green because Curve's architecture treats liquidity withdrawal as a fundamental, non-pauseable primitive, and users have direct, permissionless access to execute these functions on-chain without any frontend or admin intervention requirement."
-        },
-        {
-          "name": "Curve DEX · Autonomy",
-          "value": "tentative green",
-          "description": "Immutable core pools minimal external dependencies — Assessed by 3 models — Choosing green because the steel-man case for green is supported by Curve's own resource docs (Stableswap and Cryptoswap explicitly disclaim external price oracles), confirmed pool immutability from the MixBytes Stableswap-NG audit ('pools' contracts do not allow upgrades'), and per-pool isolation that matches the autonomy-slice guardrail carving out underlying-asset risk in opt-in isolated markets. The orange and red steel-mans rely on the rate-oracle pattern in Stableswap-NG and legacy lending pools, but both are precisely the per-market opt-in risk the rubric guardrail says does NOT make autonomy red on its own — a wstETH rate-oracle failure impacts only LPs of pools containing wstETH, not 3pool or Tricrypto LPs, and these pools collectively are a minority of TVS. No system-wide external dependency was identified across A1–A9: no oracle aggregator, no off-chain reporter committee feeding the AMMs, no bridge carrying material DEX TVL as a load-bearing dependency, no keeper liveness requirement for AMM solvency, and immutable pools that prevent governance from silently swapping a dependency in. Worst-case impacted TVS from any single external-dependency failure is <5% of total Curve DEX TVL, capped at the affected pool's individual TVL."
-        },
-        {
-          "name": "Curve DEX · Open Access",
-          "value": "tentative green",
-          "description": "No on-chain gate, multiple execution paths — Assessed by 3 models — Choosing green because Curve's user-facing contracts admit and exit users unconditionally on immutable Vyper code (A1: no whitelist / KYC / role gate; verified by source-grep across curve-contract, curve-stablecoin, factory deployments). No operator approval is required to admit a user action (A2: empty). The official curve.finance frontend has only A3-passive ToS clauses (jurisdictional self-certification, VPN prohibition, sanctions attestation) — the rubric explicitly states A3-passive boilerplate is compatible with green; no A3-active enforcement (geo-block, wallet screening, KYC wall, jurisdictional rendering banner) was verified per the evidentiary floor (a)-(d). Multiple independent A3b-ii paths exist (Etherscan write tab on every contract, curve-js SDK, third-party aggregators 1inch / Paraswap / CowSwap operating under separate legal entities, DAO Aragon Voting UI), reinforcing the green grade. No on-chain sanctions blocklist on CRV / crvUSD / pool / market contracts (A4 negative). The protocol meets the green criteria as defined: 'no contract-level whitelist/KYC on user entry/exit; no operator approval required to admit a user action; AND no A3-active restrictions on the official frontend' — all three conditions satisfied."
-        },
-        {
-          "name": "Curve DEX · Verifiability",
-          "value": "tentative green",
-          "description": "Verified Vyper bytecode, multi-firm audits — Assessed by 3 models — Choosing green because the deployed fund-holding contracts are verified Vyper sources on Etherscan (V1/V6 satisfied, no proxy/implementation gap on cores), the public curvefi/* monorepos contain matching source code at pinned head SHAs (V2 satisfied modulo per-deployment commit pinning), and recognized firms (Trail of Bits, ChainSecurity, MixBytes, Quantstamp, Statemind) audited each major component including the most recent crvUSD/Lending lines — published at docs.curve.finance/user/security/audits (V3/V4 satisfied). Post-audit drift on immutable cores is structurally close to zero (V5 satisfied). The empty protocol.audit_links in the snapshot input is a metadata-pinning gap (audits are discoverable from the official docs and the curvefi GitHub org), not a verifiability gap on the protocol side."
-        },
-        {
-          "name": "crvUSD · Control",
-          "value": "tentative orange (3/3 models submitted)",
-          "description": "7-day DAO vote; pause-only multisig — crvUSD is governed by Curve DAO (veCRV Aragon voting) with a 7-day vote period before execution; Emergency DAO 5-of-9 multisig is limited to pause-only (set_killed)."
-        },
-        {
-          "name": "crvUSD · Ability to exit",
-          "value": "tentative unknown (3/3 models submitted)",
-          "description": "Pause scope undetermined — Exit functions exist but pause scope and duration limits cannot be determined from available evidence"
-        },
-        {
-          "name": "crvUSD · Autonomy",
-          "value": "tentative orange",
-          "description": "Single-source Curve EMA oracles, no fallback — Assessed by 2 models — Choosing orange because the protocol's oracle architecture cross-cuts multiple mint markets via shared Curve TriCrypto-NG EMA reads with no Chainlink or other second-opinion feed (A1/A6 unmitigated by anything beyond EMA smoothing), which is meaningfully more dependency surface than a green Stage-2-equivalent protocol, but per-market oracle immutability (A9), absence of bridge/committee dependencies (A2/A3), continuous permissionless soft-liquidation (A8), and per-market opt-in isolation for LST/Ethena exposure (A4) bound the blast radius and prevent the protocol-wide silent-rug pattern that would justify red; both modules (crvUSD mint ~50% TVS and Curve Lending ~50% TVS — share-figures qualitative, see unknowns) reuse the same architecture and grade equivalently, so the weighted overall is orange."
-        },
-        {
-          "name": "crvUSD · Open Access",
-          "value": "tentative unknown (2/3 models submitted)",
-          "description": "Frontend rules unverified — On-chain entry appears permissionless; frontend ToS/enforcement unverified"
-        },
-        {
-          "name": "crvUSD · Verifiability",
-          "value": "tentative green",
-          "description": "Open source + 14 audits — Protocol publishes a GitHub repository and has at least one audit on record. This is a coarse Phase-0 signal only: auditor reputation, scope, and post-audit review coverage are not yet weighted."
-        }
-      ],
-      "url": "https://defipunkd.com/protocol/curve-dex",
-      "note": "DeFiPunk’d files Curve as Curve DEX (\"curve-dex\") and crvUSD (\"crvusd\"); each is graded separately and every one is shown. Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Tier (Curve DEX)",
-            "value": "silver · Weak AI consensus on all dimensions"
-          },
-          {
-            "name": "Category (Curve DEX)",
-            "value": "Dexs"
-          },
-          {
-            "name": "Upgradeability (Curve DEX)",
-            "value": "mixed"
-          },
-          {
-            "name": "Bug bounty (Curve DEX)",
-            "value": "https://immunefi.com/bug-bounty/curve/"
-          },
-          {
-            "name": "Governance forum (Curve DEX)",
-            "value": "https://gov.curve.finance/"
-          },
-          {
-            "name": "Docs (Curve DEX)",
-            "value": "https://docs.curve.finance/"
-          },
-          {
-            "name": "Tier (crvUSD)",
-            "value": "wood · At least one model submission, no quorum yet"
-          },
-          {
-            "name": "Category (crvUSD)",
-            "value": "CDP"
-          },
-          {
-            "name": "Upgradeability (crvUSD)",
-            "value": "mixed"
-          },
-          {
-            "name": "Bug bounty (crvUSD)",
-            "value": "https://docs.curve.finance/security/security/"
-          },
-          {
-            "name": "Governance forum (crvUSD)",
-            "value": "https://gov.curve.fi"
-          },
-          {
-            "name": "Docs (crvUSD)",
-            "value": "https://docs.curve.finance/crvUSD/"
-          }
-        ],
-        "text": [
-          "Curve DEX: https://defipunkd.com/protocol/curve-dex",
-          "crvUSD: https://defipunkd.com/protocol/crvusd"
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
     }
   }
 }
