@@ -1,43 +1,10 @@
 {
   "aave-v3": {
-    "incidents": {
-      "value": 1,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2026-03-12",
-            "name": "Aave V3",
-            "amountUsd": 862000,
-            "classification": "Oracle Manipulation",
-            "technique": "Oracle Misconfiguration",
-            "returnedFunds": 862000,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": 13744960445,
-      "url": "https://defillama.com/protocol/aave-v3",
-      "extra": {
-        "components": [
-          {
-            "id": "1599",
-            "name": "Aave V3",
-            "tvl": 13744960445
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
     "governance": {
       "value": 86400,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0xdAbad81aF85554E9ae636395611C58F7eC1aAEc5",
-      "note": "The headline is the delay the Payloads Controller of Aave Governance V3 enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the Payloads Controller of Aave Governance V3 enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -97,10 +64,89 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "incidents": {
+      "value": 1,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": [
+          {
+            "date": "2026-03-12",
+            "name": "Aave V3",
+            "amountUsd": 862000,
+            "classification": "Oracle Manipulation",
+            "technique": "Oracle Misconfiguration",
+            "returnedFunds": 862000,
+            "source": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "tvl": {
+      "value": 14217265627,
+      "url": "https://defillama.com/protocol/aave-v3",
+      "extra": {
+        "components": [
+          {
+            "id": "1599",
+            "name": "Aave V3",
+            "tvl": 14217265627
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "balancer-v2": {
+    "governance": {
+      "value": null,
+      "updatedAt": "2026-10-19T10:52:35.000Z",
+      "url": "https://etherscan.io/address/0x10A19e7eE7d7F8a52822f6817de8ea18204F2e4f",
+      "note": "None of the contracts read for Balancer DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
+      "extra": {
+        "facts": [
+          {
+            "name": "DAO multisig",
+            "value": "6 of 11 signers",
+            "description": "getThreshold() + getOwners() on DAO multisig 0x10A19e7eE7d7F8a52822f6817de8ea18204F2e4f"
+          },
+          {
+            "name": "Emergency subDAO",
+            "value": "3 of 7 signers",
+            "description": "getThreshold() + getOwners() on Emergency subDAO 0xA29F61256e948F3FB707b4b3B138C5cCb9EF9888"
+          },
+          {
+            "name": "Treasury",
+            "value": "5 of 7 signers",
+            "description": "getThreshold() + getOwners() on Treasury 0x0EFcCBb9E2C09Ea29551879bd9Da32362b32fc89"
+          }
+        ],
+        "multisigs": [
+          {
+            "name": "DAO multisig",
+            "address": "0x10A19e7eE7d7F8a52822f6817de8ea18204F2e4f",
+            "threshold": 6,
+            "signers": 11
+          },
+          {
+            "name": "Emergency subDAO",
+            "address": "0xA29F61256e948F3FB707b4b3B138C5cCb9EF9888",
+            "threshold": 3,
+            "signers": 7
+          },
+          {
+            "name": "Treasury",
+            "address": "0x0EFcCBb9E2C09Ea29551879bd9Da32362b32fc89",
+            "threshold": 5,
+            "signers": 7
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 3,
       "url": "https://defillama.com/hacks",
@@ -136,98 +182,29 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 13727174,
+      "value": 14154752,
       "url": "https://defillama.com/protocol/balancer-v2",
       "extra": {
         "components": [
           {
             "id": "2611",
             "name": "Balancer V2",
-            "tvl": 13727174
+            "tvl": 14154752
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
-      "url": "https://etherscan.io/address/0x10A19e7eE7d7F8a52822f6817de8ea18204F2e4f",
-      "note": "None of the contracts read for Balancer DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
-      "extra": {
-        "facts": [
-          {
-            "name": "DAO multisig",
-            "value": "6 of 11 signers",
-            "description": "getThreshold() + getOwners() on DAO multisig 0x10A19e7eE7d7F8a52822f6817de8ea18204F2e4f"
-          },
-          {
-            "name": "Emergency subDAO",
-            "value": "3 of 7 signers",
-            "description": "getThreshold() + getOwners() on Emergency subDAO 0xA29F61256e948F3FB707b4b3B138C5cCb9EF9888"
-          },
-          {
-            "name": "Treasury",
-            "value": "5 of 7 signers",
-            "description": "getThreshold() + getOwners() on Treasury 0x0EFcCBb9E2C09Ea29551879bd9Da32362b32fc89"
-          }
-        ],
-        "multisigs": [
-          {
-            "name": "DAO multisig",
-            "address": "0x10A19e7eE7d7F8a52822f6817de8ea18204F2e4f",
-            "threshold": 6,
-            "signers": 11
-          },
-          {
-            "name": "Emergency subDAO",
-            "address": "0xA29F61256e948F3FB707b4b3B138C5cCb9EF9888",
-            "threshold": 3,
-            "signers": 7
-          },
-          {
-            "name": "Treasury",
-            "address": "0x0EFcCBb9E2C09Ea29551879bd9Da32362b32fc89",
-            "threshold": 5,
-            "signers": 7
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "aave-v4": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": 431587366,
-      "url": "https://defillama.com/protocol/aave-v4",
-      "extra": {
-        "components": [
-          {
-            "id": "7594",
-            "name": "Aave V4",
-            "tvl": 431587366
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
     "governance": {
       "value": 86400,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0xdAbad81aF85554E9ae636395611C58F7eC1aAEc5",
-      "note": "The headline is the delay the Payloads Controller of Aave Governance V3 enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the Payloads Controller of Aave Governance V3 enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -287,10 +264,8 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "balancer-v3": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -298,27 +273,29 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 12842007,
-      "url": "https://defillama.com/protocol/balancer-v3",
+      "value": 441383660,
+      "url": "https://defillama.com/protocol/aave-v4",
       "extra": {
         "components": [
           {
-            "id": "5491",
-            "name": "Balancer V3",
-            "tvl": 12842007
+            "id": "7594",
+            "name": "Aave V4",
+            "tvl": 441383660
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "balancer-v3": {
     "governance": {
       "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x10A19e7eE7d7F8a52822f6817de8ea18204F2e4f",
-      "note": "None of the contracts read for Balancer DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
+      "note": "None of the contracts read for Balancer DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -358,10 +335,8 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "compound-v3": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -369,27 +344,29 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 1268543030,
-      "url": "https://defillama.com/protocol/compound-v3",
+      "value": 13236426,
+      "url": "https://defillama.com/protocol/balancer-v3",
       "extra": {
         "components": [
           {
-            "id": "2088",
-            "name": "Compound V3",
-            "tvl": 1268543030
+            "id": "5491",
+            "name": "Balancer V3",
+            "tvl": 13236426
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "compound-v3": {
     "governance": {
       "value": 172800,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x6d903f6003cca6255D85CcA4D3B5E5146dC33925",
-      "note": "The headline is the delay the Timelock of Compound governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the Timelock of Compound governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -437,10 +414,87 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "tvl": {
+      "value": 1306743410,
+      "url": "https://defillama.com/protocol/compound-v3",
+      "extra": {
+        "components": [
+          {
+            "id": "2088",
+            "name": "Compound V3",
+            "tvl": 1306743410
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "compound-v2": {
+    "governance": {
+      "value": 172800,
+      "updatedAt": "2026-10-19T10:52:35.000Z",
+      "url": "https://etherscan.io/address/0x6d903f6003cca6255D85CcA4D3B5E5146dC33925",
+      "note": "The headline is the delay the Timelock of Compound governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Timelock delay",
+            "value": "172800 s (2 days)",
+            "description": "delay() on Timelock 0x6d903f6003cca6255D85CcA4D3B5E5146dC33925"
+          },
+          {
+            "name": "Timelock admin",
+            "value": "0x309a862bbc1a00e45506cb8a802d1ff10004c8c0 (contract)",
+            "description": "admin() on Timelock 0x6d903f6003cca6255D85CcA4D3B5E5146dC33925 · then eth_getCode, getThreshold() and getOwners() on the address returned"
+          },
+          {
+            "name": "Governor voting delay",
+            "value": "13140 blocks",
+            "description": "votingDelay() on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
+          },
+          {
+            "name": "Governor voting period",
+            "value": "19710 blocks",
+            "description": "votingPeriod() on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
+          },
+          {
+            "name": "Governor proposal threshold",
+            "value": "25,000 COMP",
+            "description": "proposalThreshold() on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
+          },
+          {
+            "name": "Governor quorum",
+            "value": "400,000 COMP",
+            "description": "quorum(uint256) on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
+          },
+          {
+            "name": "Community multisig",
+            "value": "5 of 9 signers",
+            "description": "getThreshold() + getOwners() on Community multisig 0xbbf3f1421D886E9b2c5D716B5192aC998af2012c"
+          }
+        ],
+        "multisigs": [
+          {
+            "name": "Community multisig",
+            "address": "0xbbf3f1421D886E9b2c5D716B5192aC998af2012c",
+            "threshold": 5,
+            "signers": 9
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 1,
       "url": "https://defillama.com/hacks",
@@ -458,117 +512,29 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 102526015,
+      "value": 105871031,
       "url": "https://defillama.com/protocol/compound-v2",
       "extra": {
         "components": [
           {
             "id": "114",
             "name": "Compound V2",
-            "tvl": 102526015
+            "tvl": 105871031
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": 172800,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
-      "url": "https://etherscan.io/address/0x6d903f6003cca6255D85CcA4D3B5E5146dC33925",
-      "note": "The headline is the delay the Timelock of Compound governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Timelock delay",
-            "value": "172800 s (2 days)",
-            "description": "delay() on Timelock 0x6d903f6003cca6255D85CcA4D3B5E5146dC33925"
-          },
-          {
-            "name": "Timelock admin",
-            "value": "0x309a862bbc1a00e45506cb8a802d1ff10004c8c0 (contract)",
-            "description": "admin() on Timelock 0x6d903f6003cca6255D85CcA4D3B5E5146dC33925 · then eth_getCode, getThreshold() and getOwners() on the address returned"
-          },
-          {
-            "name": "Governor voting delay",
-            "value": "13140 blocks",
-            "description": "votingDelay() on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
-          },
-          {
-            "name": "Governor voting period",
-            "value": "19710 blocks",
-            "description": "votingPeriod() on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
-          },
-          {
-            "name": "Governor proposal threshold",
-            "value": "25,000 COMP",
-            "description": "proposalThreshold() on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
-          },
-          {
-            "name": "Governor quorum",
-            "value": "400,000 COMP",
-            "description": "quorum(uint256) on Governor 0x309a862bbC1A00e45506cB8A802D1ff10004c8C0"
-          },
-          {
-            "name": "Community multisig",
-            "value": "5 of 9 signers",
-            "description": "getThreshold() + getOwners() on Community multisig 0xbbf3f1421D886E9b2c5D716B5192aC998af2012c"
-          }
-        ],
-        "multisigs": [
-          {
-            "name": "Community multisig",
-            "address": "0xbbf3f1421D886E9b2c5D716B5192aC998af2012c",
-            "threshold": 5,
-            "signers": 9
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "cowswap": {
-    "incidents": {
-      "value": 1,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": [
-          {
-            "date": "2023-02-07",
-            "name": "CoWSwap",
-            "amountUsd": 180000,
-            "classification": "Access Control",
-            "technique": "Arbitrary External Call",
-            "returnedFunds": null,
-            "source": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": null,
-      "url": "https://defillama.com/protocol/cowswap",
-      "note": "DefiLlama publishes no Ethereum TVL for CoW Swap.",
-      "extra": {
-        "components": [
-          {
-            "id": "2643",
-            "name": "CoWSwap",
-            "tvl": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
     "governance": {
       "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x2c4c28DDBdAc9C5E7055b4C863b72eA0149D8aFE",
-      "note": "None of the contracts read for CoW DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
+      "note": "None of the contracts read for CoW DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -586,62 +552,49 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "curve": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
-      "value": 2,
+      "value": 1,
       "url": "https://defillama.com/hacks",
       "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
       "extra": {
         "incidents": [
           {
-            "date": "2023-07-30",
-            "name": "Curve DEX",
-            "amountUsd": 61700000,
-            "classification": "Reentrancy",
-            "technique": "Vyper Compiler Bug",
+            "date": "2023-02-07",
+            "name": "CoWSwap",
+            "amountUsd": 180000,
+            "classification": "Access Control",
+            "technique": "Arbitrary External Call",
             "returnedFunds": null,
-            "source": null
-          },
-          {
-            "date": "2022-08-09",
-            "name": "Curve DEX",
-            "amountUsd": 575000,
-            "classification": "Frontend & Infrastructure",
-            "technique": "DNS Hijack",
-            "returnedFunds": 575000,
             "source": null
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 1260554538,
-      "url": "https://defillama.com/protocol/curve-dex",
+      "value": null,
+      "url": "https://defillama.com/protocol/cowswap",
+      "note": "DefiLlama publishes no Ethereum TVL for CoW Swap.",
       "extra": {
         "components": [
           {
-            "id": "3",
-            "name": "Curve DEX",
-            "tvl": 1127365036
-          },
-          {
-            "id": "2994",
-            "name": "crvUSD",
-            "tvl": 133189502
+            "id": "2643",
+            "name": "CoWSwap",
+            "tvl": null
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "curve": {
     "governance": {
       "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0xE478de485ad2fe566d49342Cbd03E49ed7DB3356",
-      "note": "None of the contracts read for Curve DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
+      "note": "None of the contracts read for Curve DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -689,38 +642,62 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "euler": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
-      "value": 0,
+      "value": 2,
       "url": "https://defillama.com/hacks",
       "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
       "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": 52538536,
-      "url": "https://defillama.com/protocol/euler-v2",
-      "extra": {
-        "components": [
+        "incidents": [
           {
-            "id": "5044",
-            "name": "Euler V2",
-            "tvl": 52538536
+            "date": "2023-07-30",
+            "name": "Curve DEX",
+            "amountUsd": 61700000,
+            "classification": "Reentrancy",
+            "technique": "Vyper Compiler Bug",
+            "returnedFunds": null,
+            "source": null
+          },
+          {
+            "date": "2022-08-09",
+            "name": "Curve DEX",
+            "amountUsd": 575000,
+            "classification": "Frontend & Infrastructure",
+            "technique": "DNS Hijack",
+            "returnedFunds": 575000,
+            "source": null
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
+    "tvl": {
+      "value": 1279482823,
+      "url": "https://defillama.com/protocol/curve-dex",
+      "extra": {
+        "components": [
+          {
+            "id": "3",
+            "name": "Curve DEX",
+            "tvl": 1142072693
+          },
+          {
+            "id": "2994",
+            "name": "crvUSD",
+            "tvl": 137410130
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "euler": {
     "governance": {
       "value": 345600,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0xfb034c1C6c7F42171b2d1Cb8486E0f43ED07A968",
-      "note": "The headline is the delay the eVaultFactory timelock of Euler DAO enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the eVaultFactory timelock of Euler DAO enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -754,10 +731,54 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "tvl": {
+      "value": 52758408,
+      "url": "https://defillama.com/protocol/euler-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "5044",
+            "name": "Euler V2",
+            "tvl": 52758408
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "fluid": {
+    "governance": {
+      "value": 86400,
+      "updatedAt": "2026-10-19T10:52:35.000Z",
+      "url": "https://etherscan.io/address/0x2386DC45AdDed673317eF068992F19421B481F4c",
+      "note": "The headline is the delay the InstaTimelock of Fluid governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
+      "extra": {
+        "facts": [
+          {
+            "name": "InstaTimelock delay",
+            "value": "86400 s (1 day)",
+            "description": "delay() on InstaTimelock 0x2386DC45AdDed673317eF068992F19421B481F4c"
+          },
+          {
+            "name": "InstaTimelock admin",
+            "value": "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b (contract)",
+            "description": "admin() on InstaTimelock 0x2386DC45AdDed673317eF068992F19421B481F4c · then eth_getCode, getThreshold() and getOwners() on the address returned"
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 1,
       "url": "https://defillama.com/hacks",
@@ -775,78 +796,34 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 650231367,
+      "value": 664413691,
       "url": "https://defillama.com/protocol/fluid-lending",
       "extra": {
         "components": [
           {
             "id": "4167",
             "name": "Fluid Lending",
-            "tvl": 465814303
+            "tvl": 476010083
           },
           {
             "id": "5317",
             "name": "Fluid DEX",
-            "tvl": 184417064
+            "tvl": 188403608
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": 86400,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
-      "url": "https://etherscan.io/address/0x2386DC45AdDed673317eF068992F19421B481F4c",
-      "note": "The headline is the delay the InstaTimelock of Fluid governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
-      "extra": {
-        "facts": [
-          {
-            "name": "InstaTimelock delay",
-            "value": "86400 s (1 day)",
-            "description": "delay() on InstaTimelock 0x2386DC45AdDed673317eF068992F19421B481F4c"
-          },
-          {
-            "name": "InstaTimelock admin",
-            "value": "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b (contract)",
-            "description": "admin() on InstaTimelock 0x2386DC45AdDed673317eF068992F19421B481F4c · then eth_getCode, getThreshold() and getOwners() on the address returned"
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "gearbox": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": 20329718,
-      "url": "https://defillama.com/protocol/gearbox",
-      "extra": {
-        "components": [
-          {
-            "id": "1108",
-            "name": "Gearbox",
-            "tvl": 20329718
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
     "governance": {
       "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x523dA3a8961E4dD4f6206DBf7E6c749f51796bb3",
-      "note": "None of the contracts read for Gearbox DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
+      "note": "None of the contracts read for Gearbox DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -856,10 +833,8 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "lido": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -867,27 +842,29 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 22703660292,
-      "url": "https://defillama.com/protocol/lido",
+      "value": 20995132,
+      "url": "https://defillama.com/protocol/gearbox",
       "extra": {
         "components": [
           {
-            "id": "182",
-            "name": "Lido",
-            "tvl": 22703660292
+            "id": "1108",
+            "name": "Gearbox",
+            "tvl": 20995132
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "lido": {
     "governance": {
       "value": 345600,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0xCE0425301C85c5Ea2A0873A2dEe44d78E02D2316",
-      "note": "The headline is the sum of the delays the Emergency Protected Timelock of Lido DAO enforces one after the other (After-submit delay, After-schedule delay) before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the sum of the delays the Emergency Protected Timelock of Lido DAO enforces one after the other (After-submit delay, After-schedule delay) before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -962,10 +939,8 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "liquity-v1": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -973,28 +948,57 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 167374404,
+      "value": 23647369654,
+      "url": "https://defillama.com/protocol/lido",
+      "extra": {
+        "components": [
+          {
+            "id": "182",
+            "name": "Lido",
+            "tvl": 23647369654
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "liquity-v1": {
+    "governance": {
+      "value": null,
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "tvl": {
+      "value": 174305461,
       "url": "https://defillama.com/protocol/liquity-v1",
       "extra": {
         "components": [
           {
             "id": "270",
             "name": "Liquity V1",
-            "tvl": 167374404
+            "tvl": 174305461
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": null,
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "liquity-v2": {
+    "governance": {
+      "value": null,
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -1002,28 +1006,28 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 93351188,
+      "value": 96929656,
       "url": "https://defillama.com/protocol/liquity-v2",
       "extra": {
         "components": [
           {
             "id": "5656",
             "name": "Liquity V2",
-            "tvl": 93351188
+            "tvl": 96929656
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": null,
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "mellow": {
+    "governance": {
+      "value": null,
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -1031,66 +1035,39 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 274446814,
+      "value": 283628497,
       "url": "https://defillama.com/protocol/mellow-core",
       "extra": {
         "components": [
           {
             "id": "7330",
             "name": "Mellow Core",
-            "tvl": 251128364
+            "tvl": 259429052
           },
           {
             "id": "4756",
             "name": "Mellow Restaking",
-            "tvl": 23230740
+            "tvl": 24109941
           },
           {
             "id": "2613",
             "name": "Mellow Yield",
-            "tvl": 87710
+            "tvl": 89504
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": null,
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "morpho-blue": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": 4966969614,
-      "url": "https://defillama.com/protocol/morpho-blue",
-      "extra": {
-        "components": [
-          {
-            "id": "4025",
-            "name": "Morpho Blue",
-            "tvl": 4966969614
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
     "governance": {
       "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
-      "note": "None of the contracts read for Morpho DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
+      "note": "None of the contracts read for Morpho DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -1108,24 +1085,71 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "tvl": {
+      "value": 5065479929,
+      "url": "https://defillama.com/protocol/morpho-blue",
+      "extra": {
+        "components": [
+          {
+            "id": "4025",
+            "name": "Morpho Blue",
+            "tvl": 5065479929
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "morpho-vaults": {
+    "governance": {
+      "value": null,
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": null,
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
       "value": null,
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": null,
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "oneinch": {
+    "governance": {
+      "value": null,
+      "updatedAt": "2026-10-19T10:52:35.000Z",
+      "url": "https://etherscan.io/address/0x111111125421cA6dc452d289314280a0f8842A65",
+      "note": "None of the contracts read for 1inch is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Aggregation Router V6 owner",
+            "value": "0x9f8102b1bb05785bad2874f2c7b1aaea4c6d976a (Safe, 3 of 5 signers)",
+            "description": "owner() on Aggregation Router V6 0x111111125421cA6dc452d289314280a0f8842A65 · then eth_getCode, getThreshold() and getOwners() on the address returned"
+          }
+        ],
+        "multisigs": [
+          {
+            "name": "Aggregation Router V6 owner",
+            "address": "0x9f8102b1bb05785bad2874f2c7b1aaea4c6d976a",
+            "threshold": 3,
+            "signers": 5
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 2,
       "url": "https://defillama.com/hacks",
@@ -1152,76 +1176,29 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 2846838,
+      "value": 2941418,
       "url": "https://defillama.com/protocol/1inch-swap",
       "extra": {
         "components": [
           {
             "id": "189",
             "name": "1inch Swap",
-            "tvl": 2846838
+            "tvl": 2941418
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
-      "url": "https://etherscan.io/address/0x111111125421cA6dc452d289314280a0f8842A65",
-      "note": "None of the contracts read for 1inch is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Aggregation Router V6 owner",
-            "value": "0x9f8102b1bb05785bad2874f2c7b1aaea4c6d976a (Safe, 3 of 5 signers)",
-            "description": "owner() on Aggregation Router V6 0x111111125421cA6dc452d289314280a0f8842A65 · then eth_getCode, getThreshold() and getOwners() on the address returned"
-          }
-        ],
-        "multisigs": [
-          {
-            "name": "Aggregation Router V6 owner",
-            "address": "0x9f8102b1bb05785bad2874f2c7b1aaea4c6d976a",
-            "threshold": 3,
-            "signers": 5
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "pendle": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": 796148861,
-      "url": "https://defillama.com/protocol/pendle-v2",
-      "extra": {
-        "components": [
-          {
-            "id": "382",
-            "name": "Pendle V2",
-            "tvl": 796148861
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
     "governance": {
       "value": 172800,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x68d8D192dF476bC01895E16b0ED3945673d777AC",
-      "note": "The headline is the delay the Timelock controller of Pendle governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the Timelock controller of Pendle governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -1255,48 +1232,38 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "rocketpool": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
-      "value": 1,
+      "value": 0,
       "url": "https://defillama.com/hacks",
       "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
       "extra": {
-        "incidents": [
-          {
-            "date": "2023-03-30",
-            "name": "Rocket Pool",
-            "amountUsd": 3800000,
-            "classification": "Social Engineering",
-            "technique": "Phishing",
-            "returnedFunds": null,
-            "source": null
-          }
-        ]
+        "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 1201736604,
-      "url": "https://defillama.com/protocol/rocket-pool",
+      "value": 797553719,
+      "url": "https://defillama.com/protocol/pendle-v2",
       "extra": {
         "components": [
           {
-            "id": "900",
-            "name": "Rocket Pool",
-            "tvl": 1201736604
+            "id": "382",
+            "name": "Pendle V2",
+            "tvl": 797553719
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "rocketpool": {
     "governance": {
       "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x1d8f8f00cfa6758d7bE78336684788Fb0ee0Fa46",
-      "note": "None of the contracts read for Rocket Pool DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
+      "note": "None of the contracts read for Rocket Pool DAO is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -1316,48 +1283,48 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "spark": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
-      "value": 0,
+      "value": 1,
       "url": "https://defillama.com/hacks",
       "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
       "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": 8452368772,
-      "url": "https://defillama.com/protocol/sparklend",
-      "extra": {
-        "components": [
+        "incidents": [
           {
-            "id": "2929",
-            "name": "SparkLend",
-            "tvl": 4926197704
-          },
-          {
-            "id": "6716",
-            "name": "Spark Savings",
-            "tvl": 1220405211
-          },
-          {
-            "id": "5989",
-            "name": "Spark Liquidity Layer",
-            "tvl": 2305765857
+            "date": "2023-03-30",
+            "name": "Rocket Pool",
+            "amountUsd": 3800000,
+            "classification": "Social Engineering",
+            "technique": "Phishing",
+            "returnedFunds": null,
+            "source": null
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
+    "tvl": {
+      "value": 1250895192,
+      "url": "https://defillama.com/protocol/rocket-pool",
+      "extra": {
+        "components": [
+          {
+            "id": "900",
+            "name": "Rocket Pool",
+            "tvl": 1250895192
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "spark": {
     "governance": {
       "value": 172800,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0xbE286431454714F511008713973d3B053A2d38f3",
-      "note": "The headline is the delay the Sky governance pause (MCD_PAUSE) of Sky governance (Spark spells) enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the Sky governance pause (MCD_PAUSE) of Sky governance (Spark spells) enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -1402,10 +1369,8 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "uniswap-v2": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -1413,27 +1378,39 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 804785656,
-      "url": "https://defillama.com/protocol/uniswap-v2",
+      "value": 8611387221,
+      "url": "https://defillama.com/protocol/sparklend",
       "extra": {
         "components": [
           {
-            "id": "2197",
-            "name": "Uniswap V2",
-            "tvl": 804785656
+            "id": "2929",
+            "name": "SparkLend",
+            "tvl": 5096903752
+          },
+          {
+            "id": "6716",
+            "name": "Spark Savings",
+            "tvl": 1215774180
+          },
+          {
+            "id": "5989",
+            "name": "Spark Liquidity Layer",
+            "tvl": 2298709289
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "uniswap-v2": {
     "governance": {
       "value": 172800,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x1a9C8182C09F50C8318d769245beA52c32BE35BC",
-      "note": "The headline is the delay the Timelock of Uniswap governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the Timelock of Uniswap governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -1468,10 +1445,8 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "uniswap-v3": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -1479,7 +1454,73 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "tvl": {
+      "value": 813471268,
+      "url": "https://defillama.com/protocol/uniswap-v2",
+      "extra": {
+        "components": [
+          {
+            "id": "2197",
+            "name": "Uniswap V2",
+            "tvl": 813471268
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "uniswap-v3": {
+    "governance": {
+      "value": 172800,
+      "updatedAt": "2026-10-19T10:52:35.000Z",
+      "url": "https://etherscan.io/address/0x1a9C8182C09F50C8318d769245beA52c32BE35BC",
+      "note": "The headline is the delay the Timelock of Uniswap governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
+      "extra": {
+        "facts": [
+          {
+            "name": "Timelock delay",
+            "value": "172800 s (2 days)",
+            "description": "delay() on Timelock 0x1a9C8182C09F50C8318d769245beA52c32BE35BC"
+          },
+          {
+            "name": "Timelock admin",
+            "value": "0x408ed6354d4973f66138c91495f2f2fcbd8724c3 (contract)",
+            "description": "admin() on Timelock 0x1a9C8182C09F50C8318d769245beA52c32BE35BC · then eth_getCode, getThreshold() and getOwners() on the address returned"
+          },
+          {
+            "name": "Governor Bravo voting delay",
+            "value": "13140 blocks",
+            "description": "votingDelay() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
+          },
+          {
+            "name": "Governor Bravo voting period",
+            "value": "40320 blocks",
+            "description": "votingPeriod() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
+          },
+          {
+            "name": "Governor Bravo proposal threshold",
+            "value": "1,000,000 UNI",
+            "description": "proposalThreshold() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
+          },
+          {
+            "name": "Governor Bravo quorum",
+            "value": "40,000,000 UNI",
+            "description": "quorumVotes() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
       "value": 875889967,
@@ -1493,13 +1534,15 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    }
+  },
+  "uniswap-v4": {
     "governance": {
       "value": 172800,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x1a9C8182C09F50C8318d769245beA52c32BE35BC",
-      "note": "The headline is the delay the Timelock of Uniswap governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
+      "note": "The headline is the delay the Timelock of Uniswap governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -1534,10 +1577,8 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    }
-  },
-  "uniswap-v4": {
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 0,
       "url": "https://defillama.com/hacks",
@@ -1545,7 +1586,7 @@
       "extra": {
         "incidents": []
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
       "value": 782595939,
@@ -1559,51 +1600,45 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": 172800,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
-      "url": "https://etherscan.io/address/0x1a9C8182C09F50C8318d769245beA52c32BE35BC",
-      "note": "The headline is the delay the Timelock of Uniswap governance enforces before a scheduled action executes, in seconds. Read from Ethereum mainnet at block 26222450.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Timelock delay",
-            "value": "172800 s (2 days)",
-            "description": "delay() on Timelock 0x1a9C8182C09F50C8318d769245beA52c32BE35BC"
-          },
-          {
-            "name": "Timelock admin",
-            "value": "0x408ed6354d4973f66138c91495f2f2fcbd8724c3 (contract)",
-            "description": "admin() on Timelock 0x1a9C8182C09F50C8318d769245beA52c32BE35BC · then eth_getCode, getThreshold() and getOwners() on the address returned"
-          },
-          {
-            "name": "Governor Bravo voting delay",
-            "value": "13140 blocks",
-            "description": "votingDelay() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
-          },
-          {
-            "name": "Governor Bravo voting period",
-            "value": "40320 blocks",
-            "description": "votingPeriod() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
-          },
-          {
-            "name": "Governor Bravo proposal threshold",
-            "value": "1,000,000 UNI",
-            "description": "proposalThreshold() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
-          },
-          {
-            "name": "Governor Bravo quorum",
-            "value": "40,000,000 UNI",
-            "description": "quorumVotes() on Governor Bravo 0x408ED6354d4973f66138C91495F2f2FCbd8724C3"
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "yearn": {
+    "governance": {
+      "value": null,
+      "updatedAt": "2026-10-19T10:52:35.000Z",
+      "url": "https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52",
+      "note": "None of the contracts read for Yearn governance is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
+      "extra": {
+        "facts": [
+          {
+            "name": "yChad multisig",
+            "value": "6 of 9 signers",
+            "description": "getThreshold() + getOwners() on yChad multisig 0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52"
+          },
+          {
+            "name": "Brain multisig",
+            "value": "3 of 6 signers",
+            "description": "getThreshold() + getOwners() on Brain multisig 0x16388463d60FFE0661Cf7F1f31a7D658aC790ff7"
+          }
+        ],
+        "multisigs": [
+          {
+            "name": "yChad multisig",
+            "address": "0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52",
+            "threshold": 6,
+            "signers": 9
+          },
+          {
+            "name": "Brain multisig",
+            "address": "0x16388463d60FFE0661Cf7F1f31a7D658aC790ff7",
+            "threshold": 3,
+            "signers": 6
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
     "incidents": {
       "value": 3,
       "url": "https://defillama.com/hacks",
@@ -1639,88 +1674,29 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     },
     "tvl": {
-      "value": 133472395,
+      "value": 135016284,
       "url": "https://defillama.com/protocol/yearn-finance",
       "extra": {
         "components": [
           {
             "id": "113",
             "name": "Yearn Finance",
-            "tvl": 133472395
+            "tvl": 135016284
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "governance": {
-      "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
-      "url": "https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52",
-      "note": "None of the contracts read for Yearn governance is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
-      "extra": {
-        "facts": [
-          {
-            "name": "yChad multisig",
-            "value": "6 of 9 signers",
-            "description": "getThreshold() + getOwners() on yChad multisig 0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52"
-          },
-          {
-            "name": "Brain multisig",
-            "value": "3 of 6 signers",
-            "description": "getThreshold() + getOwners() on Brain multisig 0x16388463d60FFE0661Cf7F1f31a7D658aC790ff7"
-          }
-        ],
-        "multisigs": [
-          {
-            "name": "yChad multisig",
-            "address": "0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52",
-            "threshold": 6,
-            "signers": 9
-          },
-          {
-            "name": "Brain multisig",
-            "address": "0x16388463d60FFE0661Cf7F1f31a7D658aC790ff7",
-            "threshold": 3,
-            "signers": 6
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   },
   "zerox": {
-    "incidents": {
-      "value": 0,
-      "url": "https://defillama.com/hacks",
-      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
-      "extra": {
-        "incidents": []
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
-    "tvl": {
-      "value": null,
-      "url": "https://defillama.com/protocol/0x",
-      "note": "DefiLlama publishes no Ethereum TVL for 0x / Matcha.",
-      "extra": {
-        "components": [
-          {
-            "id": "2116",
-            "name": "0x",
-            "tvl": null
-          }
-        ]
-      },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
-    },
     "governance": {
       "value": null,
-      "updatedAt": "2026-10-18T22:30:47.000Z",
+      "updatedAt": "2026-10-19T10:52:35.000Z",
       "url": "https://etherscan.io/address/0x00000000000004533Fe15556B1E086BB1A72cEae",
-      "note": "None of the contracts read for 0x Settler is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26222450.",
+      "note": "None of the contracts read for 0x Settler is a timelock, so the headline stays empty; the facts list what they report. Read from Ethereum mainnet at block 26226145.",
       "extra": {
         "facts": [
           {
@@ -1738,7 +1714,31 @@
           }
         ]
       },
-      "fetchedAt": "2026-10-18T22:30:04.829Z"
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "incidents": {
+      "value": 0,
+      "url": "https://defillama.com/hacks",
+      "note": "Absence from DefiLlama’s registry is not proof that nothing happened.",
+      "extra": {
+        "incidents": []
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
+    },
+    "tvl": {
+      "value": null,
+      "url": "https://defillama.com/protocol/0x",
+      "note": "DefiLlama publishes no Ethereum TVL for 0x / Matcha.",
+      "extra": {
+        "components": [
+          {
+            "id": "2116",
+            "name": "0x",
+            "tvl": null
+          }
+        ]
+      },
+      "fetchedAt": "2026-10-19T10:51:44.898Z"
     }
   }
 }
