@@ -17,7 +17,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "49 · red",
+      "value": "50 · yellow",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -27,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "96",
-          "description": "tvl_change_7d_pct: -1.53"
+          "value": "100",
+          "description": "tvl_change_7d_pct: 0.99"
         },
         {
           "name": "Security",
@@ -43,11 +43,11 @@
         "facts": [
           {
             "name": "Score",
-            "value": "49"
+            "value": "50"
           },
           {
             "name": "Band",
-            "value": "red"
+            "value": "yellow"
           }
         ],
         "text": [
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-20T10:08:29.120Z"
+      "since": "2026-10-20T20:39:47.976Z"
     },
     "philidor": {
       "status": "none",
