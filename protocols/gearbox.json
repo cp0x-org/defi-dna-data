@@ -17,7 +17,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "50 · yellow",
+      "value": "49 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -27,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "100",
-          "description": "tvl_change_7d_pct: 1.48"
+          "value": "96",
+          "description": "tvl_change_7d_pct: -1.53"
         },
         {
           "name": "Security",
@@ -36,18 +36,18 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-19",
+      "updatedAt": "2026-10-20",
       "url": "https://defiscoring.com/protocols/gearbox",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "50"
+            "value": "49"
           },
           {
             "name": "Band",
-            "value": "yellow"
+            "value": "red"
           }
         ],
         "text": [
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-19T21:34:36.175Z"
+      "since": "2026-10-20T10:08:29.120Z"
     },
     "philidor": {
       "status": "none",
