@@ -134,7 +134,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "48 · red",
+      "value": "49 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -144,8 +144,8 @@
         },
         {
           "name": "Liveness",
-          "value": "93",
-          "description": "tvl_change_7d_pct: -2.71"
+          "value": "97",
+          "description": "tvl_change_7d_pct: -1.09"
         },
         {
           "name": "Security",
@@ -153,14 +153,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-22",
+      "updatedAt": "2026-10-23",
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "48"
+            "value": "49"
           },
           {
             "name": "Band",
@@ -172,7 +172,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-22T20:35:18.401Z"
+      "since": "2026-10-23T10:10:07.455Z"
     },
     "philidor": {
       "status": "none",
@@ -191,7 +191,7 @@
         {
           "name": "Vault score, TVL-weighted",
           "value": "84.63",
-          "description": "The mean of pigi’s latest scores of the 4 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($25.57B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 1, F 2."
+          "description": "The mean of pigi’s latest scores of the 4 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($25.44B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 1, F 2."
         },
         {
           "name": "Weights",
@@ -199,7 +199,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-22",
+      "updatedAt": "2026-10-23",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: lido-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -210,8 +210,8 @@
             "curator": null,
             "tier": "A",
             "score": 85.7,
-            "tvlUsd": 25137573096,
-            "scoredAt": "2026-10-22",
+            "tvlUsd": 25008598437,
+            "scoredAt": "2026-10-23",
             "url": "https://app.pigi.finance/vault/13"
           },
           {
@@ -220,8 +220,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 216587991,
-            "scoredAt": "2026-10-22",
+            "tvlUsd": 215762108,
+            "scoredAt": "2026-10-23",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -230,8 +230,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 213924012,
-            "scoredAt": "2026-10-22",
+            "tvlUsd": 213161217,
+            "scoredAt": "2026-10-23",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -240,8 +240,8 @@
             "curator": null,
             "tier": "D",
             "score": 45.8,
-            "tvlUsd": 216269,
-            "scoredAt": "2026-10-22",
+            "tvlUsd": 214723,
+            "scoredAt": "2026-10-23",
             "url": "https://app.pigi.finance/vault/100016"
           }
         ],
@@ -250,7 +250,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-22T10:17:05.458Z"
+      "since": "2026-10-23T10:10:07.455Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",
