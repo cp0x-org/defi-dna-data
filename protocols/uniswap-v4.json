@@ -75,7 +75,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "43 · red",
+      "value": "39 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -85,8 +85,8 @@
         },
         {
           "name": "Liveness",
-          "value": "75",
-          "description": "tvl_change_7d_pct: 11.38"
+          "value": "62",
+          "description": "tvl_change_7d_pct: -5.15"
         },
         {
           "name": "Security",
@@ -101,7 +101,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "43"
+            "value": "39"
           },
           {
             "name": "Band",
@@ -113,7 +113,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-25T09:52:55.050Z"
+      "since": "2026-10-25T19:42:33.196Z"
     },
     "philidor": {
       "value": "39 vaults rated",
@@ -136,7 +136,7 @@
         },
         {
           "name": "Uniswap V4 WBTC/USDT 0.3%",
-          "value": "Prime 8.50",
+          "value": "Prime 8.52",
           "description": "Version v4 · TVL $15.7M · Scored 2026-10-25"
         },
         {
@@ -236,7 +236,7 @@
             "version": "v4",
             "curator": null,
             "tier": "Prime",
-            "score": 8.5,
+            "score": 8.52,
             "tvlUsd": 15664235,
             "scoredAt": "2026-10-25",
             "url": "https://analytics.philidor.io/vault/ethereum/0x20c3a15e34e5d88aeba004b0753af69e4f6bea80eae2263f7a92e919cd33cc56"
@@ -594,7 +594,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-25T09:52:55.050Z"
+      "since": "2026-10-25T19:42:33.196Z"
     },
     "pigi": {
       "value": "B 79.14/100",
