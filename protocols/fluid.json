@@ -67,7 +67,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "29 · red",
+      "value": "30 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -77,8 +77,8 @@
         },
         {
           "name": "Liveness",
-          "value": "95",
-          "description": "tvl_change_7d_pct: -1.86"
+          "value": "99",
+          "description": "tvl_change_7d_pct: -0.25"
         },
         {
           "name": "Security",
@@ -86,14 +86,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-28",
+      "updatedAt": "2026-10-29",
       "url": "https://defiscoring.com/protocols/fluid",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "29"
+            "value": "30"
           },
           {
             "name": "Band",
@@ -105,7 +105,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-28T21:42:30.197Z"
+      "since": "2026-10-29T11:34:26.887Z"
     },
     "philidor": {
       "status": "none",
@@ -113,7 +113,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "D 50.36/100",
+      "value": "D 50.35/100",
       "summary": "Fluid (Instadapp) — unified liquidity layer / lending / DEX / vaults ($1.01B, Ethereum-led)",
       "details": [
         {
@@ -123,8 +123,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "50.9",
-          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into fluid, weighted by their 30-day average TVL ($250.3M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 0, F 1."
+          "value": "50.88",
+          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into fluid, weighted by their 30-day average TVL ($248.7M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 0, F 1."
         },
         {
           "name": "Weights",
@@ -132,7 +132,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-28",
+      "updatedAt": "2026-10-29",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: fluid. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -143,8 +143,8 @@
             "curator": null,
             "tier": "C",
             "score": 55,
-            "tvlUsd": 181996603,
-            "scoredAt": "2026-10-28",
+            "tvlUsd": 180610287,
+            "scoredAt": "2026-10-29",
             "url": "https://app.pigi.finance/vault/9"
           },
           {
@@ -153,8 +153,8 @@
             "curator": null,
             "tier": "F",
             "score": 25,
-            "tvlUsd": 42713987,
-            "scoredAt": "2026-10-28",
+            "tvlUsd": 42648821,
+            "scoredAt": "2026-10-29",
             "url": "https://app.pigi.finance/vault/58"
           },
           {
@@ -163,8 +163,8 @@
             "curator": null,
             "tier": "C",
             "score": 65,
-            "tvlUsd": 25545315,
-            "scoredAt": "2026-10-28",
+            "tvlUsd": 25406541,
+            "scoredAt": "2026-10-29",
             "url": "https://app.pigi.finance/vault/7"
           }
         ],
@@ -173,7 +173,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-28T11:23:58.933Z"
+      "since": "2026-10-29T11:34:26.887Z"
     },
     "risklayer": {
       "status": "none",
