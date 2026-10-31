@@ -134,7 +134,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "46 · red",
+      "value": "47 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -144,8 +144,8 @@
         },
         {
           "name": "Liveness",
-          "value": "87",
-          "description": "tvl_change_7d_pct: -5.18"
+          "value": "89",
+          "description": "tvl_change_7d_pct: -4.33"
         },
         {
           "name": "Security",
@@ -153,14 +153,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-30",
+      "updatedAt": "2026-10-31",
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "46"
+            "value": "47"
           },
           {
             "name": "Band",
@@ -172,7 +172,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-30T21:33:13.166Z"
+      "since": "2026-10-31T10:58:06.044Z"
     },
     "philidor": {
       "status": "none",
@@ -180,7 +180,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "B 83.04/100",
+      "value": "B 80.06/100",
       "summary": "Lido",
       "details": [
         {
@@ -190,8 +190,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "84.61",
-          "description": "The mean of pigi’s latest scores of the 4 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($24.55B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 1, F 2."
+          "value": "77.14",
+          "description": "The mean of pigi’s latest scores of the 4 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($24.38B in all). Weight in the score: 0.4. Vaults by band: A 1, B 0, C 0, D 1, F 2."
         },
         {
           "name": "Weights",
@@ -199,7 +199,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-30",
+      "updatedAt": "2026-10-31",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: lido-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -209,9 +209,9 @@
             "version": "Lido",
             "curator": null,
             "tier": "A",
-            "score": 85.7,
-            "tvlUsd": 24127896987,
-            "scoredAt": "2026-10-30",
+            "score": 78.1,
+            "tvlUsd": 23967406636,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/13"
           },
           {
@@ -220,8 +220,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 210641936,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 209543460,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -230,8 +230,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 208186065,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 207143074,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -240,8 +240,8 @@
             "curator": null,
             "tier": "D",
             "score": 43.4,
-            "tvlUsd": 204614,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 202968,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100016"
           }
         ],
@@ -250,7 +250,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-30T11:26:34.066Z"
+      "since": "2026-10-31T10:58:06.044Z"
     },
     "risklayer": {
       "value": "4.2/10 · medium",

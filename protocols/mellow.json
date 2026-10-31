@@ -17,7 +17,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "17 · red",
+      "value": "19 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -27,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "58",
-          "description": "tvl_change_7d_pct: -6.81"
+          "value": "62",
+          "description": "tvl_change_7d_pct: -5.17"
         },
         {
           "name": "Security",
@@ -36,14 +36,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-10-30",
+      "updatedAt": "2026-10-31",
       "url": "https://defiscoring.com/protocols/mellow",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "17"
+            "value": "19"
           },
           {
             "name": "Band",
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-30T21:33:13.166Z"
+      "since": "2026-10-31T10:58:06.044Z"
     },
     "philidor": {
       "status": "none",
@@ -63,7 +63,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "F 37.24/100",
+      "value": "F 37.25/100",
       "summary": "Mellow Core — flexible-vaults framework: upgradeable per-vault proxies, Merkle-gated curator, report-priced shares",
       "details": [
         {
@@ -73,8 +73,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "22.61",
-          "description": "The mean of pigi’s latest scores of the 6 rated Ethereum vault(s) that deposit into mellow-core, weighted by their 30-day average TVL ($530.9M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 0, D 1, F 5."
+          "value": "22.62",
+          "description": "The mean of pigi’s latest scores of the 6 rated Ethereum vault(s) that deposit into mellow-core, weighted by their 30-day average TVL ($529.1M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 0, D 1, F 5."
         },
         {
           "name": "Weights",
@@ -82,7 +82,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-30",
+      "updatedAt": "2026-10-31",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: mellow-core. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -93,8 +93,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 210641936,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 209543460,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -103,8 +103,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 208186065,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 207143074,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -113,8 +113,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 56255630,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 56437700,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100011"
           },
           {
@@ -123,8 +123,8 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 40051320,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 40537088,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100012"
           },
           {
@@ -133,8 +133,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 15547305,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 15261200,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100013"
           },
           {
@@ -143,8 +143,8 @@
             "curator": null,
             "tier": "D",
             "score": 43.4,
-            "tvlUsd": 204614,
-            "scoredAt": "2026-10-30",
+            "tvlUsd": 202968,
+            "scoredAt": "2026-10-31",
             "url": "https://app.pigi.finance/vault/100016"
           }
         ],
@@ -153,7 +153,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-30T11:26:34.066Z"
+      "since": "2026-10-31T10:58:06.044Z"
     },
     "risklayer": {
       "status": "none",
