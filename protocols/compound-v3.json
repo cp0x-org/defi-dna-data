@@ -76,33 +76,43 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "philidor": {
-      "value": "4 vaults rated",
-      "summary": "Philidor scores individual vaults rather than protocols. It rates 4 live Ethereum vault(s) of compound (version v3).",
+      "value": "6 vaults rated",
+      "summary": "Philidor scores individual vaults rather than protocols. It rates 6 live Ethereum vault(s) of compound (version v3).",
       "details": [
         {
           "name": "Compound V3 USDC",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $374.9M · Scored 2026-11-02"
+          "description": "Version v3 · TVL $350.9M · Scored 2026-11-16"
         },
         {
           "name": "Compound V3 USDT",
-          "value": "Core 7.50",
-          "description": "Version v3 · TVL $158.7M · Scored 2026-11-02"
+          "value": "Core 7.48",
+          "description": "Version v3 · TVL $155.3M · Scored 2026-11-16"
         },
         {
           "name": "Compound V3 WETH",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $113.6M · Scored 2026-11-02"
+          "description": "Version v3 · TVL $92.2M · Scored 2026-11-16"
         },
         {
           "name": "Compound V3 USDS",
           "value": "Core 7.90",
-          "description": "Version v3 · TVL $1.7M · Scored 2026-11-02"
+          "description": "Version v3 · TVL $1.7M · Scored 2026-11-16"
+        },
+        {
+          "name": "Compound V3 WBTC",
+          "value": "Prime 8.56",
+          "description": "Version v3 · TVL $849K · Scored 2026-11-16"
+        },
+        {
+          "name": "Compound V3 wstETH",
+          "value": "Core 7.50",
+          "description": "Version v3 · TVL $370K · Scored 2026-11-16"
         }
       ],
-      "updatedAt": "2026-11-02",
+      "updatedAt": "2026-11-16",
       "url": "https://analytics.philidor.io/protocols/compound",
-      "note": "Counted: 4 of the 4 live vault(s) Philidor lists for compound under version v3, with 1 shut-down vault(s) left out. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
+      "note": "Counted: 6 of the 6 live vault(s) Philidor lists for compound under version v3. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
         "facts": [
           {
@@ -115,19 +125,19 @@
           },
           {
             "name": "Vaults listed",
-            "value": "5"
+            "value": "6"
           },
           {
             "name": "Vaults live",
-            "value": "4"
+            "value": "6"
           },
           {
             "name": "Vaults shut down",
-            "value": "1"
+            "value": "0"
           },
           {
             "name": "Vaults rated",
-            "value": "4"
+            "value": "6"
           }
         ],
         "vaults": [
@@ -137,8 +147,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 374877232,
-            "scoredAt": "2026-11-02",
+            "tvlUsd": 350934478,
+            "scoredAt": "2026-11-16",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc3d688b66703497daa19211eedff47f25384cdc3"
           },
           {
@@ -146,9 +156,9 @@
             "version": "v3",
             "curator": null,
             "tier": "Core",
-            "score": 7.5,
-            "tvlUsd": 158685277,
-            "scoredAt": "2026-11-02",
+            "score": 7.48,
+            "tvlUsd": 155285041,
+            "scoredAt": "2026-11-16",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3afdc9bca9213a35503b077a6072f3d0d5ab0840"
           },
           {
@@ -157,8 +167,8 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 113596246,
-            "scoredAt": "2026-11-02",
+            "tvlUsd": 92160092,
+            "scoredAt": "2026-11-16",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa17581a9e3356d9a858b789d68b4d866e593ae94"
           },
           {
@@ -167,14 +177,34 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1725794,
-            "scoredAt": "2026-11-02",
+            "tvlUsd": 1712950,
+            "scoredAt": "2026-11-16",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5d409e56d886231adaf00c8775665ad0f9897b56"
+          },
+          {
+            "name": "Compound V3 WBTC",
+            "version": "v3",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.56,
+            "tvlUsd": 848602,
+            "scoredAt": "2026-11-16",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xe85dc543813b8c2cfeaac371517b925a166a9293"
+          },
+          {
+            "name": "Compound V3 wstETH",
+            "version": "v3",
+            "curator": null,
+            "tier": "Core",
+            "score": 7.5,
+            "tvlUsd": 369593,
+            "scoredAt": "2026-11-16",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x3d0bb1ccab520a66e607822fc55bc921738fafe3"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-11-02T23:54:40.328Z"
+      "since": "2026-11-16T15:22:38.896Z"
     },
     "pigi": {
       "status": "none",

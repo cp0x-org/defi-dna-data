@@ -125,7 +125,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "39 · red",
+      "value": "32 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -135,8 +135,8 @@
         },
         {
           "name": "Liveness",
-          "value": "62",
-          "description": "tvl_change_7d_pct: -5.33"
+          "value": "40",
+          "description": "tvl_change_7d_pct: -13.88"
         },
         {
           "name": "Security",
@@ -144,14 +144,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-02",
+      "updatedAt": "2026-11-16",
       "url": "https://defiscoring.com/protocols/liquity-v1",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "39"
+            "value": "32"
           },
           {
             "name": "Band",
@@ -163,7 +163,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-02T23:54:40.328Z"
+      "since": "2026-11-16T15:22:38.896Z"
     },
     "philidor": {
       "status": "none",
@@ -171,31 +171,47 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "B 78/100",
+      "value": "B 78.96/100",
       "summary": "Liquity V1 — ownerless LUSD CDP system (Ethereum, since 2021-04-05)",
       "details": [
         {
           "name": "Node rating",
           "value": "78/100",
-          "description": "pigi’s own rating of liquity-v1-protocol itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-10-08, methodology 1.15.0. Weight in the score: 1."
+          "description": "pigi’s own rating of liquity-v1-protocol itself, 0–100, higher = safer. Its rubric covers audits and bounty, admin and pause authority, operational history and scale. Rated 2026-10-08, methodology 1.15.0. Weight in the score: 0.6."
+        },
+        {
+          "name": "Vault score, TVL-weighted",
+          "value": "80.4",
+          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v1-protocol, weighted by their 30-day average TVL ($6.5M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
         },
         {
           "name": "Weights",
-          "value": "node 1 · vaults 0",
-          "description": "pigi’s fixed formula: score = 1 × node rating + 0 × vault score. With no rated vault the node rating stands alone. No rated vault deposits into this protocol; the score is the protocol rating alone (applied.k1 = 1)."
+          "value": "node 0.6 · vaults 0.4",
+          "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-11-16",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v1-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
-        "vaults": [],
+        "vaults": [
+          {
+            "name": "Liquity v1 - Stability Pool",
+            "version": "Liquity v1",
+            "curator": null,
+            "tier": "B",
+            "score": 80.4,
+            "tvlUsd": 6500730,
+            "scoredAt": "2026-11-16",
+            "url": "https://app.pigi.finance/vault/3"
+          }
+        ],
         "text": [
           "score = 0.6 × the protocol node's own rating + 0.4 × the TVL-weighted mean (weight = tvl_30d_ma share) of the latest published score of every rated vault that deposits into it; with no rated vault the node rating stands alone (applied.k1 = 1). The band is read straight off the thresholds, without the dwell rule that smooths vault bands, so it can move on any day. A vault that deposits into more than one protocol node (every Morpho vault: the framework and the Blue instance) counts toward each. Vault scores are the published ones — their caps were computed against the node rating as of their own date, so after a node re-rate the two terms agree again at the next nightly. chain_id narrows the vault set only."
         ]
       },
       "status": "ok",
-      "since": "2026-10-16T09:54:15.185Z"
+      "since": "2026-11-16T15:22:38.896Z"
     },
     "risklayer": {
       "status": "none",
