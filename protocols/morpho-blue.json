@@ -75,7 +75,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "36 · red",
+      "value": "37 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -85,8 +85,8 @@
         },
         {
           "name": "Liveness",
-          "value": "54",
-          "description": "tvl_change_7d_pct: -8.56"
+          "value": "56",
+          "description": "tvl_change_7d_pct: -7.64"
         },
         {
           "name": "Security",
@@ -94,14 +94,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "url": "https://defiscoring.com/protocols/morpho-blue",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "36"
+            "value": "37"
           },
           {
             "name": "Band",
@@ -113,7 +113,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-16T15:22:38.896Z"
+      "since": "2026-11-17T00:51:17.650Z"
     },
     "philidor": {
       "status": "none",
@@ -132,7 +132,7 @@
         {
           "name": "Vault score, TVL-weighted",
           "value": "40.13",
-          "description": "The mean of pigi’s latest scores of the 112 rated Ethereum vault(s) that deposit into morpho-blue-ethereum, weighted by their 30-day average TVL ($2.97B in all). Weight in the score: 0.4. Vaults by band: A 0, B 26, C 35, D 8, F 43. 1 vault(s) left out as stale (no rating for over a week)."
+          "description": "The mean of pigi’s latest scores of the 111 rated Ethereum vault(s) that deposit into morpho-blue-ethereum, weighted by their 30-day average TVL ($2.97B in all). Weight in the score: 0.4. Vaults by band: A 0, B 26, C 35, D 7, F 43. 2 vault(s) left out as stale (no rating for over a week)."
         },
         {
           "name": "Weights",
@@ -142,7 +142,7 @@
       ],
       "updatedAt": "2026-11-16",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
-      "note": "Headline: morpho-blue-ethereum. Vault score counts Ethereum vaults only. Top 100 vaults by TVL shown, 12 more at pigi.",
+      "note": "Headline: morpho-blue-ethereum. Vault score counts Ethereum vaults only. Top 100 vaults by TVL shown, 11 more at pigi.",
       "extra": {
         "vaults": [
           {
@@ -956,16 +956,6 @@
             "url": "https://app.pigi.finance/vault/20006"
           },
           {
-            "name": "Gauntlet WBTC Core",
-            "version": "Morpho",
-            "curator": null,
-            "tier": "D",
-            "score": 50.1,
-            "tvlUsd": 1523583,
-            "scoredAt": "2026-11-09",
-            "url": "https://app.pigi.finance/vault/20007"
-          },
-          {
             "name": "Safe x Smokehouse USDC",
             "version": "Morpho",
             "curator": null,
@@ -1144,6 +1134,16 @@
             "tvlUsd": 568485,
             "scoredAt": "2026-11-16",
             "url": "https://app.pigi.finance/vault/50057"
+          },
+          {
+            "name": "Steakhouse Reservoir USDC",
+            "version": "Morpho",
+            "curator": null,
+            "tier": "F",
+            "score": 17,
+            "tvlUsd": 541253,
+            "scoredAt": "2026-11-16",
+            "url": "https://app.pigi.finance/vault/4018"
           }
         ],
         "text": [
@@ -1151,7 +1151,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-16T15:22:38.896Z"
+      "since": "2026-11-17T00:51:17.650Z"
     },
     "risklayer": {
       "value": "4.8/10 · medium",
