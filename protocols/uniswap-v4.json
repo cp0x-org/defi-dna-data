@@ -75,7 +75,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "37 · red",
+      "value": "40 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -85,8 +85,8 @@
         },
         {
           "name": "Liveness",
-          "value": "55",
-          "description": "tvl_change_7d_pct: -8.19"
+          "value": "65",
+          "description": "tvl_change_7d_pct: -3.91"
         },
         {
           "name": "Security",
@@ -101,7 +101,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "37"
+            "value": "40"
           },
           {
             "name": "Band",
@@ -113,7 +113,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-17T00:51:17.650Z"
+      "since": "2026-11-17T14:34:41.840Z"
     },
     "philidor": {
       "value": "38 vaults rated",
@@ -587,7 +587,7 @@
       "since": "2026-11-17T00:51:17.650Z"
     },
     "pigi": {
-      "value": "B 79.32/100",
+      "value": "B 79.35/100",
       "summary": "Uniswap v4 — the Ethereum PoolManager singleton; hookless pools only",
       "details": [
         {
@@ -597,8 +597,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "76.8",
-          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into uniswap-v4, weighted by their 30-day average TVL ($234.7M in all). Weight in the score: 0.4. Vaults by band: A 0, B 3, C 2, D 0, F 0."
+          "value": "76.88",
+          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into uniswap-v4, weighted by their 30-day average TVL ($233.5M in all). Weight in the score: 0.4. Vaults by band: A 0, B 3, C 2, D 0, F 0."
         },
         {
           "name": "Weights",
@@ -606,7 +606,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: uniswap-v4. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -617,8 +617,8 @@
             "curator": null,
             "tier": "B",
             "score": 83.3,
-            "tvlUsd": 100119168,
-            "scoredAt": "2026-11-16",
+            "tvlUsd": 100119191,
+            "scoredAt": "2026-11-17",
             "url": "https://app.pigi.finance/vault/120000"
           },
           {
@@ -627,8 +627,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.5,
-            "tvlUsd": 53199589,
-            "scoredAt": "2026-11-16",
+            "tvlUsd": 53366254,
+            "scoredAt": "2026-11-17",
             "url": "https://app.pigi.finance/vault/120001"
           },
           {
@@ -637,8 +637,8 @@
             "curator": null,
             "tier": "B",
             "score": 71,
-            "tvlUsd": 38653973,
-            "scoredAt": "2026-11-16",
+            "tvlUsd": 38653527,
+            "scoredAt": "2026-11-17",
             "url": "https://app.pigi.finance/vault/120004"
           },
           {
@@ -647,8 +647,8 @@
             "curator": null,
             "tier": "C",
             "score": 63.13,
-            "tvlUsd": 23230319,
-            "scoredAt": "2026-11-16",
+            "tvlUsd": 22412804,
+            "scoredAt": "2026-11-17",
             "url": "https://app.pigi.finance/vault/120002"
           },
           {
@@ -657,8 +657,8 @@
             "curator": null,
             "tier": "C",
             "score": 66.63,
-            "tvlUsd": 19537663,
-            "scoredAt": "2026-11-16",
+            "tvlUsd": 18989989,
+            "scoredAt": "2026-11-17",
             "url": "https://app.pigi.finance/vault/120003"
           }
         ],
@@ -667,7 +667,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-16T15:22:38.896Z"
+      "since": "2026-11-17T14:34:41.840Z"
     },
     "risklayer": {
       "value": "4.3/10 · medium",

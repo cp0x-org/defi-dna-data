@@ -125,7 +125,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "33 · red",
+      "value": "35 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -135,8 +135,8 @@
         },
         {
           "name": "Liveness",
-          "value": "43",
-          "description": "tvl_change_7d_pct: -12.93"
+          "value": "51",
+          "description": "tvl_change_7d_pct: -9.53"
         },
         {
           "name": "Security",
@@ -151,7 +151,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "33"
+            "value": "35"
           },
           {
             "name": "Band",
@@ -163,7 +163,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-17T00:51:17.650Z"
+      "since": "2026-11-17T14:34:41.840Z"
     },
     "philidor": {
       "status": "none",
@@ -190,7 +190,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v1-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -201,8 +201,8 @@
             "curator": null,
             "tier": "B",
             "score": 80.4,
-            "tvlUsd": 6500730,
-            "scoredAt": "2026-11-16",
+            "tvlUsd": 6492474,
+            "scoredAt": "2026-11-17",
             "url": "https://app.pigi.finance/vault/3"
           }
         ],
@@ -211,7 +211,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-16T15:22:38.896Z"
+      "since": "2026-11-17T14:34:41.840Z"
     },
     "risklayer": {
       "status": "none",
