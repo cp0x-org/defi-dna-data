@@ -75,7 +75,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "10 · red",
+      "value": "9 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -85,8 +85,8 @@
         },
         {
           "name": "Liveness",
-          "value": "34",
-          "description": "tvl_change_7d_pct: -16.28"
+          "value": "31",
+          "description": "tvl_change_7d_pct: -17.44"
         },
         {
           "name": "Security",
@@ -101,7 +101,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "10"
+            "value": "9"
           },
           {
             "name": "Band",
@@ -113,7 +113,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-18T14:10:45.922Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "philidor": {
       "status": "none",
@@ -123,11 +123,6 @@
     "pigi": {
       "status": "none",
       "note": "pigi.finance has no data for Balancer v3.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
-    "risklayer": {
-      "status": "none",
-      "note": "Risklayer has no data for Balancer v3.",
       "since": "2026-10-11T16:59:48.502Z"
     }
   }

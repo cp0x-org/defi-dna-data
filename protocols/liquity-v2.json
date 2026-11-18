@@ -12,7 +12,7 @@
       "since": "2026-10-17T20:20:41.256Z"
     },
     "defiscan": {
-      "value": "0 admins · 41 contracts",
+      "value": "3 external vendors",
       "summary": "Liquity V2 is an immutable borrowing protocol that lets users open collateralized debt positions (Troves) against wstETH, rETH, or WETH to mint BOLD, a USD-pegged stablecoin. All 44 smart contracts are deployed as immutable (non-upgradeable), and the protocol has no admin keys, timelocks, or governance-controlled parameters -- ownership of the BoldToken and Governance contracts is renounced to the zero address. The protocol relies on three Chainlink price feeds (ETH/USD, stETH/USD, rETH/ETH) and the wstETH and rETH token contracts for exchange rate conversions, making oracle liveness and accuracy the primary external risk factor. Total collateral held across all branches is $0.",
       "details": [
         {
@@ -71,12 +71,34 @@
       ],
       "updatedAt": "2026-04-15",
       "url": "https://www.defiscan.info/protocol/liquity-v2",
-      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-15; the compiled JSON was rebuilt on 2026-09-30.",
+      "note": "Review covers Ethereum. The headline and the findings are the ones DeFiScan’s own page derives from this review, under its rules and in its words. DeFiScan’s review date is 2026-04-15; the compiled JSON was rebuilt on 2026-09-30.",
+      "extra": {
+        "findings": [
+          {
+            "title": "Fully immutable protocol",
+            "severity": "positive",
+            "category": null,
+            "description": "All admin controls resolve to immutable contracts or revoked addresses. No admin can modify protocol behavior after deployment."
+          },
+          {
+            "title": "$37.1M TVS",
+            "severity": "info",
+            "category": null,
+            "description": "Total Value Secured by the protocol, consisting of $37.1M in protocol token market cap."
+          },
+          {
+            "title": "3 external vendors",
+            "severity": "warning",
+            "category": null,
+            "description": "The protocol depends on 5 external contracts from 3 vendors, introducing third-party risk. A failure or compromise in any dependency could affect protocol operations."
+          }
+        ]
+      },
       "status": "ok",
-      "since": "2026-10-11T16:59:48.502Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "31 · red",
+      "value": "28 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -86,8 +108,8 @@
         },
         {
           "name": "Liveness",
-          "value": "37",
-          "description": "tvl_change_7d_pct: -15.17"
+          "value": "25",
+          "description": "tvl_change_7d_pct: -21.93"
         },
         {
           "name": "Security",
@@ -102,7 +124,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "31"
+            "value": "28"
           },
           {
             "name": "Band",
@@ -114,7 +136,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-18T14:10:45.922Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "philidor": {
       "status": "none",
@@ -163,11 +185,6 @@
       },
       "status": "ok",
       "since": "2026-11-18T14:10:45.922Z"
-    },
-    "risklayer": {
-      "status": "none",
-      "note": "Risklayer has no data for Liquity v2.",
-      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

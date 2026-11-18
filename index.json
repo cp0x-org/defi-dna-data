@@ -1,79 +1,71 @@
 {
-  "generatedAt": "2026-11-18T14:10:45.922Z",
+  "generatedAt": "2026-11-18T23:25:44.696Z",
   "sources": {
     "credora": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     },
     "defipunkd": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
       "lastOkAt": "2026-11-02T23:54:40.328Z",
       "note": "HTTP 402 for GET https://defipunkd.com/api/extension/index.json"
     },
     "defiscan": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     },
     "philidor": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     },
     "pigi": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
-    },
-    "risklayer": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-10-16T09:54:15.185Z",
-      "note": "12 of 26 protocols could not be read."
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     },
     "governance": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     },
     "incidents": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     },
     "tvl": {
-      "lastRunAt": "2026-11-18T14:10:45.922Z",
-      "lastOkAt": "2026-11-18T14:10:45.922Z"
+      "lastRunAt": "2026-11-18T23:25:44.696Z",
+      "lastOkAt": "2026-11-18T23:25:44.696Z"
     }
   },
   "rows": [
     {
       "id": "aave-v3",
-      "tvl": 11617523439,
+      "tvl": 11406962050,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": true,
         "defiscoring": true,
         "philidor": true,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
-        "pigi": "neutral",
-        "risklayer": "neutral"
+        "pigi": "neutral"
       }
     },
     {
       "id": "aave-v4",
-      "tvl": 460286611,
+      "tvl": 453974009,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": true,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
@@ -82,15 +74,14 @@
     },
     {
       "id": "balancer-v2",
-      "tvl": 10270774,
+      "tvl": 10295348,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": false,
-        "risklayer": false
+        "pigi": false
       },
       "readings": {
         "defiscoring": "negative"
@@ -98,15 +89,14 @@
     },
     {
       "id": "balancer-v3",
-      "tvl": 5609228,
+      "tvl": 5526749,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": false,
-        "risklayer": false
+        "pigi": false
       },
       "readings": {
         "defiscoring": "negative"
@@ -114,33 +104,30 @@
     },
     {
       "id": "compound-v3",
-      "tvl": 986809234,
+      "tvl": 964363805,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": true,
         "defiscoring": false,
         "philidor": true,
-        "pigi": false,
-        "risklayer": false
+        "pigi": false
       },
       "readings": {}
     },
     {
       "id": "compound-v2",
-      "tvl": 80825175,
+      "tvl": 79080149,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": false,
-        "risklayer": true
+        "pigi": false
       },
       "readings": {
-        "defiscoring": "negative",
-        "risklayer": "negative"
+        "defiscoring": "negative"
       }
     },
     {
@@ -152,8 +139,7 @@
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": false,
-        "risklayer": false
+        "pigi": false
       },
       "readings": {
         "defiscoring": "negative"
@@ -161,32 +147,29 @@
     },
     {
       "id": "curve",
-      "tvl": 1033598404,
+      "tvl": 1026970955,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
-        "pigi": "neutral",
-        "risklayer": "negative"
+        "pigi": "neutral"
       }
     },
     {
       "id": "euler",
-      "tvl": 33724393,
+      "tvl": 33553131,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
@@ -195,15 +178,14 @@
     },
     {
       "id": "fluid",
-      "tvl": 590564679,
+      "tvl": 581459619,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
@@ -212,15 +194,14 @@
     },
     {
       "id": "gearbox",
-      "tvl": 16603114,
+      "tvl": 16301362,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
@@ -229,33 +210,30 @@
     },
     {
       "id": "lido",
-      "tvl": 17576712104,
+      "tvl": 17140400357,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": true,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
-        "pigi": "positive",
-        "risklayer": "neutral"
+        "pigi": "positive"
       }
     },
     {
       "id": "liquity-v1",
-      "tvl": 128530023,
+      "tvl": 125773418,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": true,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
@@ -264,15 +242,14 @@
     },
     {
       "id": "liquity-v2",
-      "tvl": 69019095,
+      "tvl": 63519578,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": true,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
@@ -281,15 +258,14 @@
     },
     {
       "id": "mellow",
-      "tvl": 223262051,
+      "tvl": 218987884,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
@@ -298,20 +274,18 @@
     },
     {
       "id": "morpho-blue",
-      "tvl": 4492469165,
+      "tvl": 4466194320,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
-        "pigi": "positive",
-        "risklayer": "neutral"
+        "pigi": "positive"
       }
     },
     {
@@ -323,143 +297,126 @@
         "defiscan": false,
         "defiscoring": false,
         "philidor": true,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
-        "pigi": "neutral",
-        "risklayer": "neutral"
+        "pigi": "neutral"
       }
     },
     {
       "id": "oneinch",
-      "tvl": 2216038,
+      "tvl": 2165552,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
-        "pigi": false,
-        "risklayer": false
+        "pigi": false
       },
       "readings": {}
     },
     {
       "id": "pendle",
-      "tvl": 768355465,
+      "tvl": 768649045,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": false,
         "defiscoring": true,
         "philidor": false,
-        "pigi": false,
-        "risklayer": true
+        "pigi": false
       },
       "readings": {
-        "defiscoring": "negative",
-        "risklayer": "negative"
+        "defiscoring": "negative"
       }
     },
     {
       "id": "rocketpool",
-      "tvl": 865769484,
+      "tvl": 845554864,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
-        "pigi": false,
-        "risklayer": true
+        "pigi": false
       },
-      "readings": {
-        "risklayer": "neutral"
-      }
+      "readings": {}
     },
     {
       "id": "spark",
-      "tvl": 7052125537,
+      "tvl": 7037651072,
       "feeds": {
         "credora": true,
         "defipunkd": true,
         "defiscan": true,
         "defiscoring": true,
         "philidor": true,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
-        "pigi": "positive",
-        "risklayer": "neutral"
+        "pigi": "positive"
       }
     },
     {
       "id": "uniswap-v2",
-      "tvl": 414610710,
+      "tvl": 596208192,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": true,
         "defiscoring": true,
         "philidor": true,
-        "pigi": false,
-        "risklayer": true
+        "pigi": false
       },
       "readings": {
-        "defiscoring": "negative",
-        "risklayer": "neutral"
+        "defiscoring": "negative"
       }
     },
     {
       "id": "uniswap-v3",
-      "tvl": 700758049,
+      "tvl": 682704854,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": true,
         "defiscoring": true,
         "philidor": true,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
-        "pigi": "positive",
-        "risklayer": "neutral"
+        "pigi": "positive"
       }
     },
     {
       "id": "uniswap-v4",
-      "tvl": 742363976,
+      "tvl": 629392202,
       "feeds": {
         "credora": false,
         "defipunkd": true,
         "defiscan": false,
         "defiscoring": true,
         "philidor": true,
-        "pigi": true,
-        "risklayer": true
+        "pigi": true
       },
       "readings": {
         "defiscoring": "negative",
-        "pigi": "positive",
-        "risklayer": "neutral"
+        "pigi": "positive"
       }
     },
     {
       "id": "yearn",
-      "tvl": 115308541,
+      "tvl": 113714075,
       "feeds": {
         "credora": false,
         "defipunkd": false,
         "defiscan": false,
         "defiscoring": false,
         "philidor": true,
-        "pigi": true,
-        "risklayer": false
+        "pigi": true
       },
       "readings": {
         "pigi": "negative"
@@ -474,8 +431,7 @@
         "defiscan": false,
         "defiscoring": false,
         "philidor": false,
-        "pigi": false,
-        "risklayer": false
+        "pigi": false
       },
       "readings": {}
     }

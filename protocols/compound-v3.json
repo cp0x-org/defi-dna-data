@@ -12,7 +12,7 @@
       "since": "2026-10-17T20:20:41.256Z"
     },
     "defiscan": {
-      "value": "1 admins · $987.0M capital at risk",
+      "value": "2 external vendors",
       "summary": "Compound V3 (Comet) is a lending protocol that operates isolated markets for individual base assets (USDC, USDT, WETH), each accepting a curated set of collateral tokens. Unlike Compound V2's shared-pool model, V3 isolates risk per market: suppliers lend a single base asset and borrowers post collateral against it. All three Ethereum markets are upgradeable EIP-1967 proxies controlled by a Compound governance Timelock with a 48-hour delay, with $986.97M in total capital at risk across all admin-controlled contracts. The protocol depends on Chainlink price feeds and a ConstantPriceFeed for USDT pricing.",
       "details": [
         {
@@ -66,9 +66,31 @@
       ],
       "updatedAt": "2026-05-06",
       "url": "https://www.defiscan.info/protocol/compound-v3",
-      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-05-06; the compiled JSON was rebuilt on 2026-09-30.",
+      "note": "Review covers Ethereum. The headline and the findings are the ones DeFiScan’s own page derives from this review, under its rules and in its words. DeFiScan’s review date is 2026-05-06; the compiled JSON was rebuilt on 2026-09-30.",
+      "extra": {
+        "findings": [
+          {
+            "title": "$1.24B TVS",
+            "severity": "info",
+            "category": null,
+            "description": "Total Value Secured by the protocol: $987.0M in TVL (funds locked in protocol contracts) and $250.7M in protocol token market cap."
+          },
+          {
+            "title": "2 external vendors",
+            "severity": "warning",
+            "category": null,
+            "description": "The protocol depends on 5 external contracts from 2 vendors, introducing third-party risk. A failure or compromise in any dependency could affect protocol operations."
+          },
+          {
+            "title": "14 out of 17 functions with potential impact on funds have mitigations",
+            "severity": "info",
+            "category": null,
+            "description": "Taking into account only functions which can impact funds. Mitigations include time delays (2 days)."
+          }
+        ]
+      },
       "status": "ok",
-      "since": "2026-10-11T16:59:48.502Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
       "status": "none",
@@ -82,17 +104,17 @@
         {
           "name": "Compound V3 USDC",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $350.5M · Scored 2026-11-18"
+          "description": "Version v3 · TVL $350.3M · Scored 2026-11-18"
         },
         {
           "name": "Compound V3 USDT",
           "value": "Core 7.48",
-          "description": "Version v3 · TVL $153.2M · Scored 2026-11-18"
+          "description": "Version v3 · TVL $152.1M · Scored 2026-11-18"
         },
         {
           "name": "Compound V3 WETH",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $91.3M · Scored 2026-11-18"
+          "description": "Version v3 · TVL $89.5M · Scored 2026-11-18"
         },
         {
           "name": "Compound V3 USDS",
@@ -102,12 +124,12 @@
         {
           "name": "Compound V3 WBTC",
           "value": "Prime 8.56",
-          "description": "Version v3 · TVL $837K · Scored 2026-11-18"
+          "description": "Version v3 · TVL $816K · Scored 2026-11-18"
         },
         {
           "name": "Compound V3 wstETH",
           "value": "Core 7.50",
-          "description": "Version v3 · TVL $365K · Scored 2026-11-18"
+          "description": "Version v3 · TVL $359K · Scored 2026-11-18"
         }
       ],
       "updatedAt": "2026-11-18",
@@ -147,7 +169,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 350493076,
+            "tvlUsd": 350289004,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc3d688b66703497daa19211eedff47f25384cdc3"
           },
@@ -157,7 +179,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.48,
-            "tvlUsd": 153152453,
+            "tvlUsd": 152114023,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3afdc9bca9213a35503b077a6072f3d0d5ab0840"
           },
@@ -167,7 +189,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 91271436,
+            "tvlUsd": 89544122,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa17581a9e3356d9a858b789d68b4d866e593ae94"
           },
@@ -177,7 +199,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1713178,
+            "tvlUsd": 1713221,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5d409e56d886231adaf00c8775665ad0f9897b56"
           },
@@ -187,7 +209,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.56,
-            "tvlUsd": 837195,
+            "tvlUsd": 816021,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe85dc543813b8c2cfeaac371517b925a166a9293"
           },
@@ -197,23 +219,18 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 364741,
+            "tvlUsd": 358603,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3d0bb1ccab520a66e607822fc55bc921738fafe3"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-11-18T14:10:45.922Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "pigi": {
       "status": "none",
       "note": "pigi.finance has no data for Compound v3.",
-      "since": "2026-10-11T16:59:48.502Z"
-    },
-    "risklayer": {
-      "status": "none",
-      "note": "Risklayer has no data for Compound v3.",
       "since": "2026-10-11T16:59:48.502Z"
     }
   }

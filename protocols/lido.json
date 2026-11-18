@@ -70,7 +70,7 @@
       "since": "2026-10-17T20:20:41.256Z"
     },
     "defiscan": {
-      "value": "20 admins · $115.5M capital at risk",
+      "value": "5 multisigs with permissioned access · 1 external vendor",
       "summary": "Lido is a liquid staking protocol that allows users to stake ETH and receive stETH, a rebasing liquid staking token representing their staked position. Governance operates through an Aragon-based DAO (LDO token voting) with a Dual Governance module that gives stETH holders veto power over DAO proposals via an EmergencyProtectedTimelock. The protocol manages $115.54M in capital, with oracle committees reporting validator balances and a guardian committee securing the deposit flow against front-running attacks. The Lido V3 (stVaults) upgrade adds a customizable staking layer where node operators and institutional users deploy individual StakingVaults coordinated by a central VaultHub, with pe…",
       "details": [
         {
@@ -129,12 +129,40 @@
       ],
       "updatedAt": "2026-04-28",
       "url": "https://www.defiscan.info/protocol/lido",
-      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-28; the compiled JSON was rebuilt on 2026-09-30.",
+      "note": "Review covers Ethereum. The headline and the findings are the ones DeFiScan’s own page derives from this review, under its rules and in its words. DeFiScan’s review date is 2026-04-28; the compiled JSON was rebuilt on 2026-09-30.",
+      "extra": {
+        "findings": [
+          {
+            "title": "5 multisigs with permissioned access",
+            "severity": "warning",
+            "category": null,
+            "description": "Multisig wallets provide distributed control but still require trust in a known group of signers. Emergency Activation 4/7 Multisig, Emergency Execution 5/7 Multisig, Reseal Committee 5/6 Multisig, Community Staking 4/6 Multisig, 3/6 50% GnosisSafe."
+          },
+          {
+            "title": "$26.78B TVS",
+            "severity": "info",
+            "category": null,
+            "description": "Total Value Secured by the protocol: $115.5M in TVL (funds locked in protocol contracts) and $26.66B in protocol token market cap."
+          },
+          {
+            "title": "1 external vendor",
+            "severity": "warning",
+            "category": null,
+            "description": "The protocol depends on 1 external contract from 1 vendor, introducing third-party risk. A failure or compromise in any dependency could affect protocol operations."
+          },
+          {
+            "title": "8 out of 90 functions with potential impact on funds have mitigations",
+            "severity": "info",
+            "category": null,
+            "description": "Taking into account only functions which can impact funds. Mitigations include value range limits and additional safeguards."
+          }
+        ]
+      },
       "status": "ok",
-      "since": "2026-10-11T16:59:48.502Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "41 · red",
+      "value": "40 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -144,8 +172,8 @@
         },
         {
           "name": "Liveness",
-          "value": "70",
-          "description": "tvl_change_7d_pct: -12"
+          "value": "65",
+          "description": "tvl_change_7d_pct: -13.82"
         },
         {
           "name": "Security",
@@ -160,7 +188,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "41"
+            "value": "40"
           },
           {
             "name": "Band",
@@ -172,7 +200,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-18T14:10:45.922Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "philidor": {
       "status": "none",
@@ -251,136 +279,6 @@
       },
       "status": "ok",
       "since": "2026-11-18T14:10:45.922Z"
-    },
-    "risklayer": {
-      "value": "4.2/10 · medium",
-      "summary": "Lido is the largest Ethereum liquid staking protocol, holding roughly $15B in pooled ETH across mainnet and bridged L2 deployments. It has operated since 2020 with no successful core smart-contract exploit, backed by one of DeFi's deepest audit programs (99+ reports, including recent V3 v3.0.2 fix reviews) and mature mainnet governance with Dual Governance, a ~4-day timelock, and emergency multisigs. Primary risks are a large upgradeable contract surface (20+ proxies still admin-controlled by the Aragon Agent), 12 Etherscan-unverified contracts including the proxy admin itself, dependence on a custom oracle committee with no on-chain fallback, weaker L2 governance controls, and concentrated…",
-      "details": [
-        {
-          "name": "Dependency Risk",
-          "value": "6.0/10",
-          "description": "Ethereum beacon chain is an immutable single point of failure for all pooled ETH. Custom HashConsensus oracle committee (no on-chain fallback) drives all stETH rebases; v3 stVaults add LazyOracle/IPFS merkle-report dependency. L2 wstETH relies on canonical ro…"
-        },
-        {
-          "name": "Governance Risk",
-          "value": "4.5/10",
-          "description": "Mature Aragon DAO with Dual Governance, Emergency Protected Timelock (~4-day execution delay), and 4/7–5/7 emergency multisigs provides strong mainnet controls. L2 bridge executors accept Aragon Agent actions with zero delay and no guardian, creating cross-ch…"
-        },
-        {
-          "name": "Tokenomics Risk",
-          "value": "4.8/10",
-          "description": "LDO has fixed 1B supply with vesting complete since Feb 2024, but governance concentration remains high (~22% in top three addresses; top-five ~50%+ voting power). Latent controller-gated LDO mint authority persists; stETH rebasing depends on oracle quorum an…"
-        },
-        {
-          "name": "Audit Coverage Risk",
-          "value": "2.8/10",
-          "description": "One of DeFi's most extensive audit programs (99+ reports; Certora, Consensys, OpenZeppelin, MixBytes) with V3 v3.0.2 fix reviews confirming zero remaining critical/high issues. However, 12 of 51 deployed contracts (23%) are unverified on Etherscan—blocking by…"
-        },
-        {
-          "name": "Smart Contract Risk",
-          "value": "4.8/10",
-          "description": "Core v3.0.2 contracts (~$15B TVL) use 20+ upgradeable OssifiableProxy/AppProxy deployments with Aragon Agent as sole admin; 12 contracts remain Etherscan-unverified including the Agent, AccountingOracle, and Burner. Oracle quorum, SanityChecker bounds, DSM gu…"
-        }
-      ],
-      "updatedAt": "2026-06-09",
-      "url": "https://risklayer.online/protocol/lido.fi",
-      "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Analyzed domain",
-            "value": "lido.fi"
-          },
-          {
-            "name": "Risk level",
-            "value": "medium"
-          },
-          {
-            "name": "Overall score",
-            "value": "4.2"
-          },
-          {
-            "name": "Analysis status",
-            "value": "completed"
-          }
-        ],
-        "findings": [
-          {
-            "title": "Aragon Agent (0x3e40D73E) Unverified on Etherscan",
-            "severity": "critical",
-            "category": "verification",
-            "description": "The Aragon Agent is the on-chain proxy admin for LidoLocator, StakingRouter, WithdrawalQueue, VaultHub, LazyOracle, AccountingOracle proxy, CSModule, Burner, Accounting, and all L1 bridge gateways. Without verified source, privileged execution paths cannot be independently audited, yet this contract can upgrade core protocol logic."
-          },
-          {
-            "title": "AccountingOracle Proxy Unverified",
-            "severity": "critical",
-            "category": "verification",
-            "description": "AccountingOracle (0x852deD01…) submits consensus reports that drive stETH rebases and withdrawal finalization. Proxy is OssifiableProxy with Agent admin; Etherscan source unavailable for independent audit."
-          },
-          {
-            "title": "Burner Contract Unverified",
-            "severity": "critical",
-            "category": "verification",
-            "description": "Burner (0xE76c5275…) handles stETH share burning for exited validators and coverage fund flows. Unverified bytecode prevents auditing burn authorization and fund routing logic."
-          },
-          {
-            "title": "Ethereum Beacon Chain Is Foundational Single Point of Failure",
-            "severity": "critical",
-            "category": "consensus",
-            "description": "All staked ETH is deposited via the immutable Ethereum deposit contract and validator rewards/penalties are derived from consensus-layer state. A beacon-chain halt, consensus failure, or prolonged CL data unavailability would freeze rebases, withdrawals, and oracle reporting for the entire pool."
-          },
-          {
-            "title": "LDO Token Contract Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "LDO governance token (0x5A98FcBE…) is unverified on Etherscan. While not directly custodial, unverified token logic prevents confirming mint/burn/pause controls."
-          },
-          {
-            "title": "Veto Signaling Escrow Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "Veto Signaling Escrow (0x165813A3…) is part of Dual Governance veto mechanics. Unverified status prevents auditing escrow withdrawal and rage-quit logic."
-          },
-          {
-            "title": "L1 Base Bridge Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "L1ERC20TokenBridge for Base (0x9de443Ad…) is unverified. Controls wstETH bridging to Base; upgrade path cannot be source-audited."
-          },
-          {
-            "title": "OpStackTokenRatePusher Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "OpStackTokenRatePusher (0xd54c1c64…) pushes wstETH/stETH exchange rates to L2 bridges. Unverified contract cannot be audited for rate manipulation or unauthorized pushes."
-          },
-          {
-            "title": "Arbitrum Chainlink Rate Feed Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "Chainlink wstETH/stETH rate feed on Arbitrum (0xB1552C5e…) is unverified. L2 integrations relying on this feed cannot have aggregator logic independently verified."
-          },
-          {
-            "title": "Optimism TokenRateOracle Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "TokenRateOracle on Optimism (0x294ED1f2…) provides rebasing rate data for bridged stETH. Unverified status blocks audit of rate update authorization."
-          },
-          {
-            "title": "Base L2ERC20TokenBridge Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "L2ERC20TokenBridge on Base (0xac9D11cD…) handles wstETH deposits/withdrawals on L2. Unverified bytecode prevents auditing mint/burn and admin upgrade paths."
-          },
-          {
-            "title": "Polygon DataBus Unverified",
-            "severity": "high",
-            "category": "verification",
-            "description": "DataBus on Polygon (0x37De961D…) is unverified. Cross-chain messaging component cannot be source-audited on this deployment."
-          }
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

@@ -191,7 +191,7 @@
       "since": "2026-10-17T20:20:41.256Z"
     },
     "defiscan": {
-      "value": "10 admins · $5.67B capital at risk",
+      "value": "4 multisigs with permissioned access · 8 external vendors",
       "summary": "Spark is a lending protocol built on an Aave V3 fork (SparkLend) with an integrated savings layer that routes deposits through the Sky (formerly MakerDAO) DAI Savings Rate (DSR) via the Pot contract. Governance decisions execute through the Sky governance stack — DSPause enforces a 24-hour delay before DSPauseProxy forwards calls to SubProxy, which holds admin rights on every SparkLend contract. An Asset Liability Management (ALM) layer controlled by three separate multisigs lets the protocol rebalance capital via arbitrary external calls. Price data comes from a mix of Chainlink, Chronicle, RedStone, and protocol-specific exchange-rate oracles for liquid staking and restaking tokens. The p…",
       "details": [
         {
@@ -250,9 +250,37 @@
       ],
       "updatedAt": "2026-04-23",
       "url": "https://www.defiscan.info/protocol/spark",
-      "note": "Review covers Ethereum. DeFiScan’s review date is 2026-04-23; the compiled JSON was rebuilt on 2026-09-30.",
+      "note": "Review covers Ethereum. The headline and the findings are the ones DeFiScan’s own page derives from this review, under its rules and in its words. DeFiScan’s review date is 2026-04-23; the compiled JSON was rebuilt on 2026-09-30.",
+      "extra": {
+        "findings": [
+          {
+            "title": "4 multisigs with permissioned access",
+            "severity": "warning",
+            "category": null,
+            "description": "Multisig wallets provide distributed control but still require trust in a known group of signers. SparkLend Freezer 3/5 Multisig, ALM Allocator 1/2 Multisig, ALM Allocator 2/5 Multisig, ALM Freezer 2/4 Multisig."
+          },
+          {
+            "title": "$5.92B TVS",
+            "severity": "info",
+            "category": null,
+            "description": "Total Value Secured by the protocol: $5.67B in TVL (funds locked in protocol contracts) and $249.4M in protocol token market cap."
+          },
+          {
+            "title": "8 external vendors",
+            "severity": "warning",
+            "category": null,
+            "description": "The protocol depends on 23 external contracts from 8 vendors, introducing third-party risk. A failure or compromise in any dependency could affect protocol operations."
+          },
+          {
+            "title": "78 out of 237 functions with potential impact on funds have mitigations",
+            "severity": "info",
+            "category": null,
+            "description": "Taking into account only functions which can impact funds. Mitigations include time delays (1 day) and additional safeguards."
+          }
+        ]
+      },
       "status": "ok",
-      "since": "2026-10-11T16:59:48.502Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
       "value": "24 · red",
@@ -265,8 +293,8 @@
         },
         {
           "name": "Liveness",
-          "value": "81",
-          "description": "tvl_change_7d_pct: -7.61"
+          "value": "80",
+          "description": "tvl_change_7d_pct: -8.02"
         },
         {
           "name": "Security",
@@ -293,7 +321,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-18T14:10:45.922Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "philidor": {
       "value": "19 vaults rated",
@@ -307,47 +335,47 @@
         {
           "name": "SparkLend wstETH",
           "value": "Prime 8.73",
-          "description": "Version v1 · TVL $2.75B · Scored 2026-11-18"
+          "description": "Version v1 · TVL $2.72B · Scored 2026-11-18"
         },
         {
           "name": "SparkLend USDS",
           "value": "Core 7.90",
-          "description": "Version v1 · TVL $985.6M · Scored 2026-11-18"
+          "description": "Version v1 · TVL $995.8M · Scored 2026-11-18"
         },
         {
           "name": "SparkLend WETH",
           "value": "Prime 8.88",
-          "description": "Version v1 · TVL $928.3M · Scored 2026-11-18"
+          "description": "Version v1 · TVL $910.5M · Scored 2026-11-18"
         },
         {
           "name": "SparkLend cbBTC",
-          "value": "Prime 8.90",
-          "description": "Version v1 · TVL $497.3M · Scored 2026-11-18"
+          "value": "Prime 8.89",
+          "description": "Version v1 · TVL $500.1M · Scored 2026-11-18"
         },
         {
           "name": "SparkLend USDT",
           "value": "Prime 8.11",
-          "description": "Version v1 · TVL $363.9M · Scored 2026-11-18"
+          "description": "Version v1 · TVL $364.9M · Scored 2026-11-18"
         },
         {
           "name": "Spark Savings USDT",
           "value": "Prime 8.35",
-          "description": "Version v2 · TVL $297.1M · Scored 2026-11-18"
+          "description": "Version v2 · TVL $297.9M · Scored 2026-11-18"
         },
         {
           "name": "Spark Savings USDC",
           "value": "Prime 8.73",
-          "description": "Version v2 · TVL $274.1M · Scored 2026-11-18"
+          "description": "Version v2 · TVL $274.0M · Scored 2026-11-18"
         },
         {
           "name": "SparkLend DAI",
-          "value": "Prime 8.89",
+          "value": "Prime 8.88",
           "description": "Version v1 · TVL $258.5M · Scored 2026-11-18"
         },
         {
           "name": "DAI Savings Vault",
           "value": "Prime 8.62",
-          "description": "Version v2 · TVL $159.0M · Scored 2026-11-18"
+          "description": "Version v2 · TVL $160.0M · Scored 2026-11-18"
         }
       ],
       "updatedAt": "2026-11-18",
@@ -387,7 +415,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 3693654709,
+            "tvlUsd": 3693238690,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
           },
@@ -397,7 +425,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.73,
-            "tvlUsd": 2747685822,
+            "tvlUsd": 2717558953,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x12b54025c112aa61face2cdb7118740875a566e9"
           },
@@ -407,7 +435,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 985617747,
+            "tvlUsd": 995796905,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
           },
@@ -417,7 +445,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.88,
-            "tvlUsd": 928301988,
+            "tvlUsd": 910502888,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db"
           },
@@ -426,8 +454,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.9,
-            "tvlUsd": 497261609,
+            "score": 8.89,
+            "tvlUsd": 500084997,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb3973d459df38ae57797811f2a1fd061da1bc123"
           },
@@ -437,7 +465,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.11,
-            "tvlUsd": 363941795,
+            "tvlUsd": 364896629,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe7df13b8e3d6740fe17cbe928c7334243d86c92f"
           },
@@ -447,7 +475,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.35,
-            "tvlUsd": 297050743,
+            "tvlUsd": 297906647,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xe2e7a17dff93280dec073c995595155283e3c372"
           },
@@ -457,7 +485,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.73,
-            "tvlUsd": 274064892,
+            "tvlUsd": 273989144,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x28b3a8fb53b741a8fd78c0fb9a6b2393d896a43d"
           },
@@ -466,8 +494,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.89,
-            "tvlUsd": 258471993,
+            "score": 8.88,
+            "tvlUsd": 258466933,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b"
           },
@@ -477,7 +505,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.62,
-            "tvlUsd": 159017182,
+            "tvlUsd": 159988470,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x83f20f44975d03b1b09e64809b757c47f942beea"
           },
@@ -487,7 +515,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.45,
-            "tvlUsd": 148355270,
+            "tvlUsd": 148872731,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe"
           },
@@ -497,7 +525,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.84,
-            "tvlUsd": 130636233,
+            "tvlUsd": 127407270,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4197ba364ae6698015ae5c1468f54087602715b2"
           },
@@ -506,8 +534,8 @@
             "version": "v1",
             "curator": null,
             "tier": "Prime",
-            "score": 8.9,
-            "tvlUsd": 100000866,
+            "score": 8.89,
+            "tvlUsd": 100000606,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x779224df1c756b4edd899854f32a53e8c2b2ce5d"
           },
@@ -517,7 +545,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 72459396,
+            "tvlUsd": 70505399,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa9d4ecebd48c282a70cfd3c469d6c8f178a5738e"
           },
@@ -527,7 +555,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 56633727,
+            "tvlUsd": 56695898,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
           },
@@ -537,7 +565,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.3,
-            "tvlUsd": 51469935,
+            "tvlUsd": 51446161,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x377c3bd93f2a2984e1e7be6a5c22c525ed4a4815"
           },
@@ -547,7 +575,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.43,
-            "tvlUsd": 49341917,
+            "tvlUsd": 48516730,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f"
           },
@@ -557,7 +585,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.86,
-            "tvlUsd": 30001219,
+            "tvlUsd": 30000254,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x59275fb72c8004f44ba44432e25082932fd677f1"
           },
@@ -567,14 +595,14 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 3326124,
+            "tvlUsd": 3326268,
             "scoredAt": "2026-11-18",
             "url": "https://analytics.philidor.io/vault/ethereum/0x6715bc100a183cc65502f05845b589c1919ca3d3"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-11-18T14:10:45.922Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "pigi": {
       "value": "B 78.3/100",
@@ -718,136 +746,6 @@
       },
       "status": "ok",
       "since": "2026-11-18T14:10:45.922Z"
-    },
-    "risklayer": {
-      "value": "4.9/10 · medium",
-      "summary": "Spark is a Sky/Maker ecosystem capital allocator with roughly $4.8B TVL across eight chains, offering SparkLend (Aave v3 fork), Spark Savings vaults, and a $2.1B cross-chain liquidity layer. It has operated since 2023 with no direct fund losses and one of DeFi's stronger audit programs (22+ tier-1 reviews, $5M Immunefi bounty). Primary risks are deep Sky/USDS dependency, 13 unverified contracts (22%) including L2 governance executors, executive control via Sky's SubProxy rather than SPK token voting, and acute SPK token unlock pressure in June 2026. Overall risk is moderate at 4.9/10.",
-      "details": [
-        {
-          "name": "Dependency Risk",
-          "value": "4.5/10",
-          "description": "Deep Sky/Maker stack coupling (USDS vault, SSR, PSM) is a root single point of failure; Chainlink-primary SparkLend oracles lack a configured fallback, and ALM integrates a wide surface of external venues (Aave, Ethena, Curve, CCTP, LayerZero)."
-        },
-        {
-          "name": "Governance Risk",
-          "value": "5.5/10",
-          "description": "Executive control flows through Sky Pause Proxy and StarGuard (7-day max delay) via SubProxy rather than SPK token voting; operational freezer multisigs (3/5 and 2/4) add emergency powers, and cross-chain governance parity is weakened by unverified L2 executo…"
-        },
-        {
-          "name": "Tokenomics Risk",
-          "value": "6.0/10",
-          "description": "~78% of SPK supply sits in protocol-controlled wallets, year 1–2 farming emits ~65% annual inflation against float, and an imminent June 2026 unlock cluster (~770–900M SPK) adds acute sell-pressure with limited direct product utility beyond governance signali…"
-        },
-        {
-          "name": "Audit Coverage Risk",
-          "value": "3.0/10",
-          "description": "Strong tier-1 audit program (22+ ChainSecurity/Cantina engagements, inherited Aave v3 audits, $5M Immunefi bounty) with no open critical/high findings, but gaps remain from unverified deployments, post-v1.7.0 ALM differential-only reviews, and unaudited SPK/s…"
-        },
-        {
-          "name": "Smart Contract Risk",
-          "value": "6.0/10",
-          "description": "Mature Aave v3-fork and ALM architecture with strong access controls, but 13/58 contracts (22%) are unverified—including PoolConfigurator, L2 executors, and ALM Controllers—and SubProxy holds centralized upgrade authority without an on-chain timelock."
-        }
-      ],
-      "updatedAt": "2026-06-09",
-      "url": "https://risklayer.online/protocol/spark.fi",
-      "note": "Risklayer is in beta and publishes no ordering for its bands, so the figure is shown exactly as reported.",
-      "extra": {
-        "facts": [
-          {
-            "name": "Analyzed domain",
-            "value": "spark.fi"
-          },
-          {
-            "name": "Risk level",
-            "value": "medium"
-          },
-          {
-            "name": "Overall score",
-            "value": "4.9"
-          },
-          {
-            "name": "Analysis status",
-            "value": "completed"
-          }
-        ],
-        "findings": [
-          {
-            "title": "13 Unverified Core Contracts Block Source Auditing",
-            "severity": "critical",
-            "category": "verification",
-            "description": "22% of discovered contracts lack verified source on block explorers. Unverified targets include SparkLend PoolConfigurator (reserve/oracle config), KillSwitchOracle, spETH vault proxy, Spark Savings Intents, Optimism Token Bridge proxy, SparkLend Freezer multisig shell, and all L2 Spark Executors / ALM Controllers on Arbitrum, Base, Optimism, and Unichain plus Gnosis Pool. Without verified byteco…"
-          },
-          {
-            "title": "Unverified PoolConfigurator Controls SparkLend Reserve Parameters",
-            "severity": "high",
-            "category": "verification",
-            "description": "PoolConfigurator proxy at 0x542DBa469bdE58FAeE189ffB60C6b49CE60E0738 is a core SparkLend contract responsible for reserve initialization, collateral parameters, interest rate strategies, and pause/freeze flags. It is deployed behind an Aave-style proxy with upgrade authority flowing through PoolAddressesProvider (owned by SubProxy), but the implementation source is not Etherscan-verified, prevent…"
-          },
-          {
-            "title": "Unverified L2 ALM Controllers Hold Cross-Chain Capital",
-            "severity": "high",
-            "category": "verification",
-            "description": "ForeignController ALM instances on Arbitrum (0x689502…06f7 on Optimism, 0xF16DE7…D5bA on Unichain, plus Arbitrum/Base entries in registry) are unverified despite controlling rate-limited DeFi deployments via ALM Proxy. Verified ForeignController source on Arbitrum (0xC40611…) shows RELAYER/FREEZER AccessControl and nonReentrant guards, but unverified deployments cannot be confirmed to match audit…"
-          },
-          {
-            "title": "Unverified Cross-Chain Executors and Gov Relays",
-            "severity": "high",
-            "category": "verification",
-            "description": "Spark Executor on Arbitrum (0x65d946…f7a1), Base (0xF93B71…F579), and Sky Gov Relay on Base (0xdD0BCc…C255) lack verified source. These contracts receive L1 governance messages and delegatecall into L2 targets. Arbitrum PSM3 (0x2B05F8…7266) is also unverified. Cross-chain spell execution is a high-privilege path; unverified executors create governance asymmetry versus fully verified mainnet SubPr…"
-          },
-          {
-            "title": "SparkLend Core Uses Immutable-Admin Proxies Upgradable by SubProxy",
-            "severity": "high",
-            "category": "upgradability",
-            "description": "Pool (0xC13e21…) and PoolConfigurator deploy as InitializableImmutableAdminUpgradeabilityProxy instances whose admin is PoolAddressesProvider. On-chain, PoolAddressesProvider.owner()=SubProxy (0x3300f198…8c4). SubProxy can upgrade Pool/Configurator implementations, set oracles, ACLManager, and sentinel addresses via onlyOwner functions—concentrating upgrade authority in Maker-style governance rat…"
-          },
-          {
-            "title": "SubProxy Delegatecall Enables Arbitrary Target Execution",
-            "severity": "high",
-            "category": "access-control",
-            "description": "SubProxy.exec(target, args) performs delegatecall into any target for addresses with wards. Verified on-chain wards are held by Sky Pause Proxy (0xBE8E3e36…) and Spark StarGuard (0x6605aa12…). While StarGuard enforces a 7-day maxDelay for whitelisted spells, SubProxy itself has no on-chain timelock—compromise of a ward holder enables immediate execution of arbitrary delegatecall payloads against…"
-          },
-          {
-            "title": "ALM Proxy Grants Controller Arbitrary External and Delegate Calls",
-            "severity": "high",
-            "category": "access-control",
-            "description": "ALMProxy (verified) exposes doCall, doCallWithValue, and doDelegateCall restricted to CONTROLLER role. MainnetController holds this role and can route capital through Aave, Curve, CCTP, LayerZero, PSM, and other integrations. ALMProxyFreezable adds FREEZER role to revoke controllers. Compromise of a RELAYER key or governance spell error could move funds across integrated protocols within rate-lim…"
-          },
-          {
-            "title": "Executive Control via Sky Parent, Not SPK Holders",
-            "severity": "high",
-            "category": "centralization",
-            "description": "On-chain verification shows SubProxy wards are held by Sky Pause Proxy (0xBE8E3e36…) and Spark StarGuard (0x6605aa12…), not SPK token holders. SubProxy owns PoolAddressesProvider, is ACL admin, holds POOL_ADMIN and EMERGENCY_ADMIN on ACLManager, and DEFAULT_ADMIN on ALM MainnetController. SPK governance is off-chain Snapshot signaling; execution requires Sky Atlas updates and executive spells."
-          },
-          {
-            "title": "No Timelock on SubProxy Direct Execution",
-            "severity": "high",
-            "category": "centralization",
-            "description": "SubProxy.exec() performs immediate delegatecall execution for any address with wards. While StarGuard enforces a 7-day maxDelay for whitelisted proxy spells, the SubProxy contract itself has no built-in timelock. Sky Pause Proxy can authorize and execute changes without an on-chain delay at the SubProxy layer."
-          },
-          {
-            "title": "Unverified Arbitrum Spark Executor",
-            "severity": "high",
-            "category": "cross-chain",
-            "description": "Cross-chain governance on Arbitrum routes L1 SubProxy messages through ArbitrumReceiver (l1Authority=SubProxy) to Spark Executor 0x65d946…f7a1, which is unverified on-chain. This creates a governance asymmetry: mainnet contracts are verified and auditable, but the primary Arbitrum execution target cannot be source-audited."
-          },
-          {
-            "title": "Extreme Supply Concentration in Protocol-Controlled Wallets",
-            "severity": "high",
-            "category": "concentration",
-            "description": "On-chain balanceOf queries (June 2026) show top protocol addresses hold ~78% of total supply: Sky Pause Proxy 5.13B (51.4%), team/subDAO proxy 1.24B (12.4%), long-term treasury 600M (6.0%), stSPK vault 570M (5.7%), mid-term treasury 185M (1.9%), airdrops-legacy 61M (0.6%). Top-10 holder analysis (CoinLore/Etherscan) confirms ~89% held by top 10 addresses, overwhelmingly treasuries and vesting con…"
-          },
-          {
-            "title": "Aggressive Year 1–2 Farming Emissions",
-            "severity": "high",
-            "category": "emission",
-            "description": "Sky Atlas farming schedule releases 1.625B SPK/year in years 1–2 (32.5% of total supply over 2 years), halving in subsequent biennial periods. On-chain farming reserve dropped from 6.5B to 5.13B, confirming ~1.37B already distributed. Against ~2.5B circulating supply, annualized farming inflation is ~65% in year 2—well above typical DeFi governance tokens and a sustained sell-pressure source unle…"
-          }
-        ]
-      },
-      "status": "ok",
-      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }

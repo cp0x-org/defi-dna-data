@@ -17,7 +17,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "14 · red",
+      "value": "12 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -27,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "45",
-          "description": "tvl_change_7d_pct: -11.96"
+          "value": "40",
+          "description": "tvl_change_7d_pct: -13.88"
         },
         {
           "name": "Security",
@@ -43,7 +43,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "14"
+            "value": "12"
           },
           {
             "name": "Band",
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-18T14:10:45.922Z"
+      "since": "2026-11-18T23:25:44.696Z"
     },
     "philidor": {
       "status": "none",
@@ -154,11 +154,6 @@
       },
       "status": "ok",
       "since": "2026-11-18T14:10:45.922Z"
-    },
-    "risklayer": {
-      "status": "none",
-      "note": "Risklayer has no data for Mellow.",
-      "since": "2026-10-11T16:59:48.502Z"
     }
   }
 }
