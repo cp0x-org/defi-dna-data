@@ -1,53 +1,53 @@
 {
-  "generatedAt": "2026-11-17T23:52:38.240Z",
+  "generatedAt": "2026-11-18T14:10:45.922Z",
   "sources": {
     "credora": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     },
     "defipunkd": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
       "lastOkAt": "2026-11-02T23:54:40.328Z",
       "note": "HTTP 402 for GET https://defipunkd.com/api/extension/index.json"
     },
     "defiscan": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     },
     "defiscoring": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     },
     "philidor": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     },
     "pigi": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     },
     "risklayer": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
       "lastOkAt": "2026-10-16T09:54:15.185Z",
       "note": "12 of 26 protocols could not be read."
     },
     "governance": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     },
     "incidents": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     },
     "tvl": {
-      "lastRunAt": "2026-11-17T23:52:38.240Z",
-      "lastOkAt": "2026-11-17T23:52:38.240Z"
+      "lastRunAt": "2026-11-18T14:10:45.922Z",
+      "lastOkAt": "2026-11-18T14:10:45.922Z"
     }
   },
   "rows": [
     {
       "id": "aave-v3",
-      "tvl": 11659030917,
+      "tvl": 11617523439,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -65,7 +65,7 @@
     },
     {
       "id": "aave-v4",
-      "tvl": 461175476,
+      "tvl": 460286611,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -82,7 +82,7 @@
     },
     {
       "id": "balancer-v2",
-      "tvl": 10281844,
+      "tvl": 10270774,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -98,7 +98,7 @@
     },
     {
       "id": "balancer-v3",
-      "tvl": 5541911,
+      "tvl": 5609228,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -114,7 +114,7 @@
     },
     {
       "id": "compound-v3",
-      "tvl": 993386142,
+      "tvl": 986809234,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -128,7 +128,7 @@
     },
     {
       "id": "compound-v2",
-      "tvl": 81184311,
+      "tvl": 80825175,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -161,7 +161,7 @@
     },
     {
       "id": "curve",
-      "tvl": 1035183367,
+      "tvl": 1033598404,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -178,7 +178,7 @@
     },
     {
       "id": "euler",
-      "tvl": 33766818,
+      "tvl": 33724393,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -195,7 +195,7 @@
     },
     {
       "id": "fluid",
-      "tvl": 585322144,
+      "tvl": 590564679,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -212,7 +212,7 @@
     },
     {
       "id": "gearbox",
-      "tvl": 16633208,
+      "tvl": 16603114,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -229,7 +229,7 @@
     },
     {
       "id": "lido",
-      "tvl": 17606491069,
+      "tvl": 17576712104,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -247,7 +247,7 @@
     },
     {
       "id": "liquity-v1",
-      "tvl": 128240929,
+      "tvl": 128530023,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -264,7 +264,7 @@
     },
     {
       "id": "liquity-v2",
-      "tvl": 69205212,
+      "tvl": 69019095,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -281,7 +281,7 @@
     },
     {
       "id": "mellow",
-      "tvl": 223881445,
+      "tvl": 223262051,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -298,7 +298,7 @@
     },
     {
       "id": "morpho-blue",
-      "tvl": 4503466912,
+      "tvl": 4492469165,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -333,7 +333,7 @@
     },
     {
       "id": "oneinch",
-      "tvl": 2222414,
+      "tvl": 2216038,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -347,7 +347,7 @@
     },
     {
       "id": "pendle",
-      "tvl": 775236068,
+      "tvl": 768355465,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -364,7 +364,7 @@
     },
     {
       "id": "rocketpool",
-      "tvl": 871808106,
+      "tvl": 865769484,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -380,7 +380,7 @@
     },
     {
       "id": "spark",
-      "tvl": 7028215980,
+      "tvl": 7052125537,
       "feeds": {
         "credora": true,
         "defipunkd": true,
@@ -398,7 +398,7 @@
     },
     {
       "id": "uniswap-v2",
-      "tvl": 607483191,
+      "tvl": 414610710,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -415,7 +415,7 @@
     },
     {
       "id": "uniswap-v3",
-      "tvl": 699722188,
+      "tvl": 700758049,
       "feeds": {
         "credora": false,
         "defipunkd": false,
@@ -433,7 +433,7 @@
     },
     {
       "id": "uniswap-v4",
-      "tvl": 633646304,
+      "tvl": 742363976,
       "feeds": {
         "credora": false,
         "defipunkd": true,
@@ -451,7 +451,7 @@
     },
     {
       "id": "yearn",
-      "tvl": 114806827,
+      "tvl": 115308541,
       "feeds": {
         "credora": false,
         "defipunkd": false,
