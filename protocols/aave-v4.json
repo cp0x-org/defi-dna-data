@@ -28,7 +28,7 @@
         {
           "name": "Liveness",
           "value": "75",
-          "description": "tvl_change_7d_pct: -0.08"
+          "description": "tvl_change_7d_pct: 1.23"
         },
         {
           "name": "Security",
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-19T14:30:00.057Z"
+      "since": "2026-11-19T23:37:37.586Z"
     },
     "philidor": {
       "value": "41 vaults rated",
@@ -63,38 +63,38 @@
       "details": [
         {
           "name": "Aave V4 Main WETH",
-          "value": "Prime 8.05",
-          "description": "Version v4 · TVL $91.8M · Scored 2026-11-19"
-        },
-        {
-          "name": "Aave V4 Etherfi weETH",
-          "value": "Core 7.90",
-          "description": "Version v4 · TVL $81.8M · Scored 2026-11-19"
-        },
-        {
-          "name": "Aave V4 RLUSD Yield RLUSD",
-          "value": "Core 7.90",
-          "description": "Version v4 · TVL $72.1M · Scored 2026-11-19"
-        },
-        {
-          "name": "Aave V4 Main USDG",
-          "value": "Core 7.90",
-          "description": "Version v4 · TVL $70.3M · Scored 2026-11-19"
+          "value": "Prime 8.06",
+          "description": "Version v4 · TVL $88.2M · Scored 2026-11-19"
         },
         {
           "name": "Aave V4 Main USDC",
           "value": "Prime 8.23",
-          "description": "Version v4 · TVL $69.0M · Scored 2026-11-19"
+          "description": "Version v4 · TVL $77.2M · Scored 2026-11-19"
         },
         {
-          "name": "Aave V4 Maple SyrupUSDG syrupUSDG",
-          "value": "Edge 4.90",
-          "description": "Version v4 · TVL $60.3M · Scored 2026-11-19"
+          "name": "Aave V4 Etherfi weETH",
+          "value": "Core 7.90",
+          "description": "Version v4 · TVL $75.3M · Scored 2026-11-19"
         },
         {
           "name": "Aave V4 Main wstETH",
           "value": "Prime 8.07",
-          "description": "Version v4 · TVL $57.8M · Scored 2026-11-19"
+          "description": "Version v4 · TVL $74.4M · Scored 2026-11-19"
+        },
+        {
+          "name": "Aave V4 RLUSD Yield RLUSD",
+          "value": "Core 7.90",
+          "description": "Version v4 · TVL $74.2M · Scored 2026-11-19"
+        },
+        {
+          "name": "Aave V4 Main USDG",
+          "value": "Core 7.90",
+          "description": "Version v4 · TVL $68.7M · Scored 2026-11-19"
+        },
+        {
+          "name": "Aave V4 Maple SyrupUSDG syrupUSDG",
+          "value": "Edge 4.90",
+          "description": "Version v4 · TVL $59.8M · Scored 2026-11-19"
         },
         {
           "name": "Aave V4 Maple SyrupUSDG USDG",
@@ -103,18 +103,18 @@
         },
         {
           "name": "Aave V4 RLUSD Yield USDe",
-          "value": "Core 7.87",
+          "value": "Core 7.66",
           "description": "Version v4 · TVL $50.0M · Scored 2026-11-19"
         },
         {
           "name": "Aave V4 Main WBTC",
           "value": "Prime 8.04",
-          "description": "Version v4 · TVL $45.4M · Scored 2026-11-19"
+          "description": "Version v4 · TVL $44.1M · Scored 2026-11-19"
         }
       ],
       "updatedAt": "2026-11-19",
       "url": "https://analytics.philidor.io/protocols/aave",
-      "note": "Counted: 41 of the 41 live vault(s) Philidor lists for aave under version v4, with 1 shut-down vault(s) left out. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
+      "note": "Counted: 41 of the 42 live vault(s) Philidor lists for aave under version v4, with 1 shut-down vault(s) left out. No vault stands in for the protocol and nothing is averaged — Philidor publishes no protocol-level score.",
       "extra": {
         "facts": [
           {
@@ -127,11 +127,11 @@
           },
           {
             "name": "Vaults listed",
-            "value": "42"
+            "value": "43"
           },
           {
             "name": "Vaults live",
-            "value": "41"
+            "value": "42"
           },
           {
             "name": "Vaults shut down",
@@ -148,10 +148,20 @@
             "version": "v4",
             "curator": null,
             "tier": "Prime",
-            "score": 8.05,
-            "tvlUsd": 91764141,
+            "score": 8.06,
+            "tvlUsd": 88241542,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x2dbec45b81201f85b2254c281d9607dc332cfb7f"
+          },
+          {
+            "name": "Aave V4 Main USDC",
+            "version": "v4",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.23,
+            "tvlUsd": 77161997,
+            "scoredAt": "2026-11-19",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x787f2a4f1a23ca9355b9eac77330da47efb06254"
           },
           {
             "name": "Aave V4 Etherfi weETH",
@@ -159,9 +169,19 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 81771478,
+            "tvlUsd": 75322208,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x105116a23e46ae26d2fcef81856b853a03395744"
+          },
+          {
+            "name": "Aave V4 Main wstETH",
+            "version": "v4",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.07,
+            "tvlUsd": 74440795,
+            "scoredAt": "2026-11-19",
+            "url": "https://analytics.philidor.io/vault/ethereum/0x233e066816ebe277e148a77d7a6d3d79091d7b98"
           },
           {
             "name": "Aave V4 RLUSD Yield RLUSD",
@@ -169,7 +189,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 72087222,
+            "tvlUsd": 74154756,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x4c94f9a038409b5f2fd3ea56a5d377bc890712b4"
           },
@@ -179,19 +199,9 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 70302235,
+            "tvlUsd": 68708722,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x7f8bb7efffc48af5c4630f4a626a6fd2ec9a275e"
-          },
-          {
-            "name": "Aave V4 Main USDC",
-            "version": "v4",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.23,
-            "tvlUsd": 68974973,
-            "scoredAt": "2026-11-19",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x787f2a4f1a23ca9355b9eac77330da47efb06254"
           },
           {
             "name": "Aave V4 Maple SyrupUSDG syrupUSDG",
@@ -199,19 +209,9 @@
             "curator": null,
             "tier": "Edge",
             "score": 4.9,
-            "tvlUsd": 60315794,
+            "tvlUsd": 59808198,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xcb7922af881367a87200489c431bc3ef2374621e"
-          },
-          {
-            "name": "Aave V4 Main wstETH",
-            "version": "v4",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.07,
-            "tvlUsd": 57755242,
-            "scoredAt": "2026-11-19",
-            "url": "https://analytics.philidor.io/vault/ethereum/0x233e066816ebe277e148a77d7a6d3d79091d7b98"
           },
           {
             "name": "Aave V4 Maple SyrupUSDG USDG",
@@ -219,7 +219,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.76,
-            "tvlUsd": 49996268,
+            "tvlUsd": 49996059,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9d6b7c3799798711192a1c4c92ee3e55947954ee"
           },
@@ -228,7 +228,7 @@
             "version": "v4",
             "curator": null,
             "tier": "Core",
-            "score": 7.87,
+            "score": 7.66,
             "tvlUsd": 49980584,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x124ebf9bcc64924d630f762d4fff086a9bd79cd1"
@@ -239,7 +239,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.04,
-            "tvlUsd": 45368599,
+            "tvlUsd": 44088453,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdf7c0942dcc6f0f7f80e7ec2b5ec9a3ca67252df"
           },
@@ -249,7 +249,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 37753720,
+            "tvlUsd": 38133571,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbc3fca0dabada2bca89b2a5e7f755cba656ac309"
           },
@@ -259,7 +259,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.72,
-            "tvlUsd": 35499008,
+            "tvlUsd": 34536998,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbbb6608d29b39920423592d6803ec88b011d6d1b"
           },
@@ -269,7 +269,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.86,
-            "tvlUsd": 29604533,
+            "tvlUsd": 29607744,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdf4992ca6532ac84e8cacbd5b78c18caf82940b0"
           },
@@ -279,7 +279,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.4,
-            "tvlUsd": 26426497,
+            "tvlUsd": 25703207,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa299c34865d8c109cae3f1c3372113303c3b0d4a"
           },
@@ -289,7 +289,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 22884037,
+            "tvlUsd": 22876492,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x29df6dfe7a3b1afff6f9b1941e7b5748d2db490e"
           },
@@ -299,7 +299,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.04,
-            "tvlUsd": 19447482,
+            "tvlUsd": 20448054,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdaf4e797c45b01e6918f470841e9af0f93d3ae43"
           },
@@ -309,7 +309,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.09,
-            "tvlUsd": 18377186,
+            "tvlUsd": 18408142,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9e36ac9e849e2e29945ca3bb23e040cf8e6e007f"
           },
@@ -319,7 +319,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.41,
-            "tvlUsd": 17549256,
+            "tvlUsd": 16917199,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xc1e1df7307a3613629a277d49fb83d9e1e11f97a"
           },
@@ -329,19 +329,9 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.43,
-            "tvlUsd": 14617550,
+            "tvlUsd": 14217861,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x91f65da08e7c5775ae04fdd1e66fdd0ec629d0a0"
-          },
-          {
-            "name": "Aave V4 Gold XAUt",
-            "version": "v4",
-            "curator": null,
-            "tier": "Core",
-            "score": 7.9,
-            "tvlUsd": 7438350,
-            "scoredAt": "2026-11-19",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xc34cf5e4c58c1304d3d54b7e86bf8c263461e05c"
           },
           {
             "name": "Aave V4 Bluechip USDC",
@@ -349,9 +339,19 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.57,
-            "tvlUsd": 7432470,
+            "tvlUsd": 8404227,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd28e4bba5120b9c083be89c7b155a6e08ee46f0b"
+          },
+          {
+            "name": "Aave V4 Gold XAUt",
+            "version": "v4",
+            "curator": null,
+            "tier": "Core",
+            "score": 7.9,
+            "tvlUsd": 7895650,
+            "scoredAt": "2026-11-19",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xc34cf5e4c58c1304d3d54b7e86bf8c263461e05c"
           },
           {
             "name": "Aave V4 Main LINK",
@@ -359,7 +359,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.84,
-            "tvlUsd": 7102457,
+            "tvlUsd": 6917180,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x5576cd54c0015eaa1a53dcb09a889890c600662a"
           },
@@ -368,8 +368,8 @@
             "version": "v4",
             "curator": null,
             "tier": "Prime",
-            "score": 8.4,
-            "tvlUsd": 6099443,
+            "score": 8.41,
+            "tvlUsd": 6100014,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xf8de65fcf6bc0530ae1b1612fdf3b8ff83c6d9cd"
           },
@@ -379,7 +379,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.6,
-            "tvlUsd": 5554097,
+            "tvlUsd": 5430202,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdbee6ed9ad43e16e4e1c5525eda09306ede75aa0"
           },
@@ -389,7 +389,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.6,
-            "tvlUsd": 4616831,
+            "tvlUsd": 4617264,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x24cb5be362db9290d0036229831589736fa59f11"
           },
@@ -399,19 +399,9 @@
             "curator": null,
             "tier": "Core",
             "score": 7.5,
-            "tvlUsd": 4404625,
+            "tvlUsd": 4379279,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x17738c9ac285a7e7fc2ae067fef91a676a0e1f01"
-          },
-          {
-            "name": "Aave V4 Bluechip WETH",
-            "version": "v4",
-            "curator": null,
-            "tier": "Prime",
-            "score": 8.41,
-            "tvlUsd": 4340099,
-            "scoredAt": "2026-11-19",
-            "url": "https://analytics.philidor.io/vault/ethereum/0xcad06ce6a6753100274d57ce91db2b461a310081"
           },
           {
             "name": "Aave V4 Ethena Ecosystem USDt",
@@ -419,9 +409,19 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 4296784,
+            "tvlUsd": 4318254,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x35f81fe75bd828721a78cbec3e54af01f5cca6fd"
+          },
+          {
+            "name": "Aave V4 Bluechip WETH",
+            "version": "v4",
+            "curator": null,
+            "tier": "Prime",
+            "score": 8.42,
+            "tvlUsd": 4143844,
+            "scoredAt": "2026-11-19",
+            "url": "https://analytics.philidor.io/vault/ethereum/0xcad06ce6a6753100274d57ce91db2b461a310081"
           },
           {
             "name": "Aave V4 Main AAVE",
@@ -429,7 +429,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.73,
-            "tvlUsd": 4105937,
+            "tvlUsd": 3979747,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x62fc9c2b2e2462268fe6479edfa37487ff477880"
           },
@@ -439,7 +439,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 3000909,
+            "tvlUsd": 3001296,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x2c157032b5722b1a1bdc2ad1c9109754bea307e6"
           },
@@ -449,7 +449,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.86,
-            "tvlUsd": 2902771,
+            "tvlUsd": 2901435,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd6245213f8cc53816d9f62879eb6989f3c1ffd33"
           },
@@ -459,7 +459,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.37,
-            "tvlUsd": 2855315,
+            "tvlUsd": 2855587,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x039f044d5327aa392a30f215414c418252871935"
           },
@@ -469,7 +469,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 2494795,
+            "tvlUsd": 2495099,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x012001f9d18b526f6dbad8359f9d87ceebab00fe"
           },
@@ -479,7 +479,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.43,
-            "tvlUsd": 2306090,
+            "tvlUsd": 2245899,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x08ae7ee99a564d912a7e190fe80fff8afd5d72ee"
           },
@@ -489,7 +489,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.47,
-            "tvlUsd": 1897495,
+            "tvlUsd": 1900560,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x9ae9cfa8be49d8c35474b093f739d674ddaa382c"
           },
@@ -499,7 +499,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.01,
-            "tvlUsd": 663856,
+            "tvlUsd": 663178,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xcf9041ff179713166f69f1fec296ef281842f519"
           },
@@ -509,7 +509,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.35,
-            "tvlUsd": 608769,
+            "tvlUsd": 608787,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x95bc27e8c10ae76cdbb660a5d6c1920ca7970054"
           },
@@ -519,7 +519,7 @@
             "curator": null,
             "tier": "Prime",
             "score": 8.1,
-            "tvlUsd": 432431,
+            "tvlUsd": 432442,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd134cf57d59f24fa711ef7ed2fb6beb73d672bd5"
           },
@@ -529,7 +529,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.6,
-            "tvlUsd": 371530,
+            "tvlUsd": 374557,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x8467b03f3201923ea7648d5809e5f063dced39ed"
           },
@@ -539,7 +539,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 243084,
+            "tvlUsd": 263677,
             "scoredAt": "2026-11-19",
             "url": "https://analytics.philidor.io/vault/ethereum/0x8a2705265f46a9db7af21ef81b642ba92a7e0892"
           },
@@ -556,7 +556,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-19T14:30:00.057Z"
+      "since": "2026-11-19T23:37:37.586Z"
     },
     "pigi": {
       "value": "C 57.34/100",
