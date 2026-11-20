@@ -83,7 +83,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "37 · red",
+      "value": "31 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -93,8 +93,8 @@
         },
         {
           "name": "Liveness",
-          "value": "57",
-          "description": "tvl_change_7d_pct: -7.01"
+          "value": "38",
+          "description": "tvl_change_7d_pct: -14.9"
         },
         {
           "name": "Security",
@@ -109,7 +109,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "37"
+            "value": "31"
           },
           {
             "name": "Band",
@@ -121,7 +121,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-20T14:06:34.445Z"
+      "since": "2026-11-20T23:09:09.621Z"
     },
     "philidor": {
       "value": "8 vaults rated",
@@ -129,42 +129,42 @@
       "details": [
         {
           "name": "Uniswap V2 USDC/WETH",
-          "value": "Prime 8.56",
-          "description": "Version v2 · TVL $16.9M · Scored 2026-11-20"
+          "value": "Prime 8.57",
+          "description": "Version v2 · TVL $16.3M · Scored 2026-11-20"
         },
         {
           "name": "Uniswap V2 WETH/USDT",
-          "value": "Prime 8.34",
-          "description": "Version v2 · TVL $12.2M · Scored 2026-11-20"
+          "value": "Prime 8.36",
+          "description": "Version v2 · TVL $11.8M · Scored 2026-11-20"
         },
         {
           "name": "Uniswap V2 DAI/WETH",
-          "value": "Prime 8.49",
-          "description": "Version v2 · TVL $6.5M · Scored 2026-11-20"
+          "value": "Prime 8.52",
+          "description": "Version v2 · TVL $6.2M · Scored 2026-11-20"
         },
         {
           "name": "Uniswap V2 WBTC/WETH",
-          "value": "Prime 8.36",
-          "description": "Version v2 · TVL $6.4M · Scored 2026-11-20"
+          "value": "Prime 8.39",
+          "description": "Version v2 · TVL $6.1M · Scored 2026-11-20"
         },
         {
           "name": "Uniswap V2 USDC/USDT",
-          "value": "Prime 8.49",
+          "value": "Prime 8.51",
           "description": "Version v2 · TVL $3.3M · Scored 2026-11-20"
         },
         {
           "name": "Uniswap V2 UNI/WETH",
-          "value": "Core 7.76",
-          "description": "Version v2 · TVL $2.6M · Scored 2026-11-20"
+          "value": "Core 7.80",
+          "description": "Version v2 · TVL $2.4M · Scored 2026-11-20"
         },
         {
           "name": "Uniswap V2 LINK/WETH",
           "value": "Core 7.90",
-          "description": "Version v2 · TVL $1.0M · Scored 2026-11-20"
+          "description": "Version v2 · TVL $955K · Scored 2026-11-20"
         },
         {
           "name": "Uniswap V2 DAI/USDC",
-          "value": "Prime 8.64",
+          "value": "Prime 8.67",
           "description": "Version v2 · TVL $856K · Scored 2026-11-20"
         }
       ],
@@ -204,8 +204,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.56,
-            "tvlUsd": 16934049,
+            "score": 8.57,
+            "tvlUsd": 16342739,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
           },
@@ -214,8 +214,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.34,
-            "tvlUsd": 12214970,
+            "score": 8.36,
+            "tvlUsd": 11785194,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852"
           },
@@ -224,8 +224,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.49,
-            "tvlUsd": 6460265,
+            "score": 8.52,
+            "tvlUsd": 6234062,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa478c2975ab1ea89e8196811f51a7b7ade33eb11"
           },
@@ -234,8 +234,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.36,
-            "tvlUsd": 6404775,
+            "score": 8.39,
+            "tvlUsd": 6078016,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0xbb2b8038a1640196fbe3e38816f3e67cba72d940"
           },
@@ -244,8 +244,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.49,
-            "tvlUsd": 3340457,
+            "score": 8.51,
+            "tvlUsd": 3340248,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0x3041cbd36888becc7bbcbc0045e3b1f144466f5f"
           },
@@ -254,8 +254,8 @@
             "version": "v2",
             "curator": null,
             "tier": "Core",
-            "score": 7.76,
-            "tvlUsd": 2598109,
+            "score": 7.8,
+            "tvlUsd": 2425843,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0xd3d2e2692501a5c9ca623199d38826e513033a17"
           },
@@ -265,7 +265,7 @@
             "curator": null,
             "tier": "Core",
             "score": 7.9,
-            "tvlUsd": 1004810,
+            "tvlUsd": 955351,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974"
           },
@@ -274,15 +274,15 @@
             "version": "v2",
             "curator": null,
             "tier": "Prime",
-            "score": 8.64,
-            "tvlUsd": 855549,
+            "score": 8.67,
+            "tvlUsd": 855512,
             "scoredAt": "2026-11-20",
             "url": "https://analytics.philidor.io/vault/ethereum/0xae461ca67b15dc8dc81ce7615e0320da1a9ab8d5"
           }
         ]
       },
       "status": "ok",
-      "since": "2026-11-20T14:06:34.445Z"
+      "since": "2026-11-20T23:09:09.621Z"
     },
     "pigi": {
       "status": "none",
