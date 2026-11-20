@@ -147,7 +147,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "34 · red",
+      "value": "35 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -157,8 +157,8 @@
         },
         {
           "name": "Liveness",
-          "value": "47",
-          "description": "tvl_change_7d_pct: -11.04"
+          "value": "49",
+          "description": "tvl_change_7d_pct: -10.23"
         },
         {
           "name": "Security",
@@ -166,14 +166,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-19",
+      "updatedAt": "2026-11-20",
       "url": "https://defiscoring.com/protocols/liquity-v1",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "34"
+            "value": "35"
           },
           {
             "name": "Band",
@@ -185,7 +185,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-19T23:37:37.586Z"
+      "since": "2026-11-20T14:06:34.445Z"
     },
     "philidor": {
       "status": "none",
@@ -212,7 +212,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-19",
+      "updatedAt": "2026-11-20",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v1-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -223,8 +223,8 @@
             "curator": null,
             "tier": "B",
             "score": 80.4,
-            "tvlUsd": 6475911,
-            "scoredAt": "2026-11-19",
+            "tvlUsd": 6461610,
+            "scoredAt": "2026-11-20",
             "url": "https://app.pigi.finance/vault/3"
           }
         ],
@@ -233,7 +233,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-19T14:30:00.057Z"
+      "since": "2026-11-20T14:06:34.445Z"
     }
   }
 }

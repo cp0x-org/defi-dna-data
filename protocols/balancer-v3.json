@@ -75,7 +75,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "10 · red",
+      "value": "13 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -85,8 +85,8 @@
         },
         {
           "name": "Liveness",
-          "value": "34",
-          "description": "tvl_change_7d_pct: -16.36"
+          "value": "42",
+          "description": "tvl_change_7d_pct: -13.23"
         },
         {
           "name": "Security",
@@ -94,14 +94,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-19",
+      "updatedAt": "2026-11-20",
       "url": "https://defiscoring.com/protocols/balancer-v3",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "10"
+            "value": "13"
           },
           {
             "name": "Band",
@@ -113,7 +113,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-19T23:37:37.586Z"
+      "since": "2026-11-20T14:06:34.445Z"
     },
     "philidor": {
       "status": "none",
