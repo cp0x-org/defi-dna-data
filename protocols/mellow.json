@@ -17,7 +17,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "9 · red",
+      "value": "17 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -27,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "30",
-          "description": "tvl_change_7d_pct: -17.86"
+          "value": "56",
+          "description": "tvl_change_7d_pct: -7.57"
         },
         {
           "name": "Security",
@@ -36,14 +36,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-20",
+      "updatedAt": "2026-11-21",
       "url": "https://defiscoring.com/protocols/mellow",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "9"
+            "value": "17"
           },
           {
             "name": "Band",
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-20T23:09:09.621Z"
+      "since": "2026-11-21T13:31:59.532Z"
     },
     "philidor": {
       "status": "none",
@@ -73,8 +73,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "22.79",
-          "description": "The mean of pigi’s latest scores of the 6 rated Ethereum vault(s) that deposit into mellow-core, weighted by their 30-day average TVL ($497.6M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 0, D 1, F 5."
+          "value": "22.8",
+          "description": "The mean of pigi’s latest scores of the 6 rated Ethereum vault(s) that deposit into mellow-core, weighted by their 30-day average TVL ($494.0M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 0, D 1, F 5."
         },
         {
           "name": "Weights",
@@ -82,7 +82,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-20",
+      "updatedAt": "2026-11-21",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: mellow-core. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -93,8 +93,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 192628621,
-            "scoredAt": "2026-11-20",
+            "tvlUsd": 190780212,
+            "scoredAt": "2026-11-21",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -103,8 +103,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 191167901,
-            "scoredAt": "2026-11-20",
+            "tvlUsd": 189393921,
+            "scoredAt": "2026-11-21",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -113,8 +113,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 57056538,
-            "scoredAt": "2026-11-20",
+            "tvlUsd": 57057264,
+            "scoredAt": "2026-11-21",
             "url": "https://app.pigi.finance/vault/100011"
           },
           {
@@ -123,8 +123,8 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 48572628,
-            "scoredAt": "2026-11-20",
+            "tvlUsd": 48983985,
+            "scoredAt": "2026-11-21",
             "url": "https://app.pigi.finance/vault/100012"
           },
           {
@@ -133,8 +133,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 7976582,
-            "scoredAt": "2026-11-20",
+            "tvlUsd": 7605607,
+            "scoredAt": "2026-11-21",
             "url": "https://app.pigi.finance/vault/100013"
           },
           {
@@ -153,7 +153,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-20T14:06:34.445Z"
+      "since": "2026-11-21T13:31:59.532Z"
     }
   }
 }
