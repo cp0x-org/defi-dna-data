@@ -98,7 +98,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "32 · red",
+      "value": "31 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -108,8 +108,8 @@
         },
         {
           "name": "Liveness",
-          "value": "40",
-          "description": "tvl_change_7d_pct: -13.94"
+          "value": "38",
+          "description": "tvl_change_7d_pct: -14.92"
         },
         {
           "name": "Security",
@@ -117,14 +117,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-21",
+      "updatedAt": "2026-11-22",
       "url": "https://defiscoring.com/protocols/liquity-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "32"
+            "value": "31"
           },
           {
             "name": "Band",
@@ -136,7 +136,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-21T22:13:15.785Z"
+      "since": "2026-11-22T13:25:59.403Z"
     },
     "philidor": {
       "status": "none",
@@ -144,7 +144,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "B 80.36/100",
+      "value": "B 79.24/100",
       "summary": "Liquity V2 — immutable BOLD CDP system (Ethereum; current deployment 2025-05-19)",
       "details": [
         {
@@ -154,7 +154,7 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "76.4",
+          "value": "73.6",
           "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v2-protocol, weighted by their 30-day average TVL ($8.6M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
         },
         {
@@ -163,7 +163,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-21",
+      "updatedAt": "2026-11-22",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v2-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -173,9 +173,9 @@
             "version": "Liquity V2",
             "curator": null,
             "tier": "B",
-            "score": 76.4,
-            "tvlUsd": 8645163,
-            "scoredAt": "2026-11-21",
+            "score": 73.6,
+            "tvlUsd": 8573602,
+            "scoredAt": "2026-11-22",
             "url": "https://app.pigi.finance/vault/42"
           }
         ],
@@ -184,7 +184,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-21T13:31:59.532Z"
+      "since": "2026-11-22T13:25:59.403Z"
     }
   }
 }
