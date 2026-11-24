@@ -7,7 +7,7 @@
       "since": "2026-10-15T20:22:38.297Z"
     },
     "defipunkd": {
-      "value": "Curve DEX — Control: tentative green, Ability to exit: tentative green, Autonomy: tentative green, Open Access: tentative green, Verifiability: tentative green · crvUSD — Control: tentative orange (3/3 models submitted), Ability to exit: tentative unknown (3/3 models submitted), Autonomy: tentative orange, Open Access: tentative unknown (2/3 models submitted), Verifiability: tentative green",
+      "value": "Curve DEX — green, green, green, green, green (all tentative) · crvUSD — orange, unknown, orange, unknown, green (all tentative)",
       "summary": "Curve DEX is an automated market maker (AMM) for stablecoin and pegged-asset swaps on Ethereum and 28 other chains, where users swap tokens or provide liquidity to earn trading fees and CRV emissions. Stableswap pools (3pool, FRAX/USDC, etc.) use a hybrid constant-sum/constant-product invariant for low-slippage stablecoin trades; Cryptoswap and Tricrypto pools use a dynamic-peg invariant with internal EMA price tracking for volatile-asset pairs; Stableswap-NG adds optional per-pool rate oracles for rate-bearing tokens (wstETH, sDAI, cbETH) and dynamic fees. Pools are immutable and deployed permissionlessly via blueprint factories. Note: the Curve Finance umbrella also includes crvUSD (the L…",
       "details": [
         {
@@ -62,7 +62,7 @@
         }
       ],
       "url": "https://defipunkd.com/protocol/curve-dex",
-      "note": "DeFiPunk’d files Curve as Curve DEX (\"curve-dex\") and crvUSD (\"crvusd\"); each is graded separately and every one is shown. Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
+      "note": "DeFiPunk’d files Curve as Curve DEX (\"curve-dex\") and crvUSD (\"crvusd\"); each is graded separately and every one is shown, grades in the order Control, Ability to exit, Autonomy, Open Access, Verifiability. Grades cover the deployment on every chain it runs on, not Ethereum mainnet alone, and DeFiPunk’d publishes no date with them.",
       "extra": {
         "facts": [
           {
@@ -120,7 +120,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "defiscan": {
       "status": "none",

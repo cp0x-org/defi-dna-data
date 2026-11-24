@@ -7,7 +7,7 @@
       "since": "2026-10-15T20:22:38.297Z"
     },
     "defipunkd": {
-      "value": "Control: orange · Ability to exit: tentative orange (3/3 models submitted) · Autonomy: tentative orange · Open Access: green · Verifiability: green",
+      "value": "Control: orange · Ability to exit: orange · Autonomy: orange · Open Access: green · Verifiability: green (2 tentative)",
       "summary": "Pendle V2 splits yield-bearing assets into PT/YT via SY wrappers and trades them on a time-decay AMM. The Router V3 and PendleMarketV3 contracts are immutable; SY adapters and several factories are upgradable via a TransparentUpgradeableProxy ProxyAdmin owned by a 3-of-5 Safe with no timelock. Boros is a separate, smaller IRS module on Arbitrum with its own permissioned admin/risk surface.",
       "details": [
         {
@@ -59,7 +59,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "defiscan": {
       "status": "none",
@@ -77,8 +77,8 @@
         },
         {
           "name": "Liveness",
-          "value": "81",
-          "description": "tvl_change_7d_pct: -7.71"
+          "value": "80",
+          "description": "tvl_change_7d_pct: -8"
         },
         {
           "name": "Security",
@@ -105,7 +105,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T03:22:07.511Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "philidor": {
       "status": "none",

@@ -7,7 +7,7 @@
       "since": "2026-10-15T20:22:38.297Z"
     },
     "defipunkd": {
-      "value": "Control: tentative orange · Ability to exit: tentative orange · Autonomy: tentative orange · Open Access: tentative green · Verifiability: tentative green",
+      "value": "Control: orange · Ability to exit: orange · Autonomy: orange · Open Access: green · Verifiability: green (all tentative)",
       "summary": "Lido is a liquid staking protocol on Ethereum where users deposit ETH and receive stETH, a rebasing ERC-20 token representing their staked position plus accrued rewards. Deposited ETH is pooled and delegated to a DAO-curated set of professional node operators via the StakingRouter, with validators never having direct custody of user funds. stETH holders can redeem ETH natively through the WithdrawalQueueERC721 or trade on secondary markets. Governance is conducted by LDO token holders via Aragon on-chain voting, with a Dual Governance mechanism allowing stETH holders to veto or delay DAO proposals through an escrow-based signaling system.",
       "details": [
         {
@@ -67,7 +67,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "defiscan": {
       "value": "5 multisigs with permissioned access · 1 external vendor",
@@ -162,7 +162,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "45 · red",
+      "value": "44 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -172,8 +172,8 @@
         },
         {
           "name": "Liveness",
-          "value": "84",
-          "description": "tvl_change_7d_pct: -6.49"
+          "value": "81",
+          "description": "tvl_change_7d_pct: -7.7"
         },
         {
           "name": "Security",
@@ -188,7 +188,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "45"
+            "value": "44"
           },
           {
             "name": "Band",
@@ -200,7 +200,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T03:22:07.511Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "philidor": {
       "status": "none",
@@ -227,7 +227,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: lido-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -239,7 +239,7 @@
             "tier": "B",
             "score": 80.9,
             "tvlUsd": 20010336178,
-            "scoredAt": "2026-11-23",
+            "scoredAt": "2026-11-24",
             "url": "https://app.pigi.finance/vault/13"
           },
           {
@@ -249,7 +249,7 @@
             "tier": "F",
             "score": 22,
             "tvlUsd": 186948361,
-            "scoredAt": "2026-11-23",
+            "scoredAt": "2026-11-24",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -259,7 +259,7 @@
             "tier": "F",
             "score": 22,
             "tvlUsd": 185436847,
-            "scoredAt": "2026-11-23",
+            "scoredAt": "2026-11-24",
             "url": "https://app.pigi.finance/vault/100009"
           }
         ],
@@ -268,7 +268,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T03:22:07.511Z"
+      "since": "2026-11-24T15:57:55.457Z"
     }
   }
 }

@@ -7,7 +7,7 @@
       "since": "2026-10-15T20:22:38.297Z"
     },
     "defipunkd": {
-      "value": "Control: tentative green · Ability to exit: tentative green · Autonomy: tentative green · Open Access: tentative green · Verifiability: tentative green",
+      "value": "Control: green · Ability to exit: green · Autonomy: green · Open Access: green · Verifiability: green (all tentative)",
       "summary": "Liquity V1 is an immutable, ETH-collateralized CDP protocol on Ethereum. Users open Troves by depositing ETH and minting LUSD (a USD-pegged stablecoin) at a 110% minimum collateral ratio with a one-time borrowing fee; LUSD holders can redeem 1 LUSD for $1 of ETH at any time, and Stability Pool depositors absorb liquidations in exchange for ETH gains. Core contracts have owner()=0x0 (renounced) — no admin, no governance, no upgrade path.",
       "details": [
         {
@@ -63,7 +63,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "defiscan": {
       "value": "2 external vendors",
@@ -147,7 +147,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "38 · red",
+      "value": "36 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -157,8 +157,8 @@
         },
         {
           "name": "Liveness",
-          "value": "60",
-          "description": "tvl_change_7d_pct: -5.84"
+          "value": "54",
+          "description": "tvl_change_7d_pct: -8.38"
         },
         {
           "name": "Security",
@@ -173,7 +173,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "38"
+            "value": "36"
           },
           {
             "name": "Band",
@@ -185,7 +185,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T03:22:07.511Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "philidor": {
       "status": "none",
@@ -212,7 +212,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v1-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -224,7 +224,7 @@
             "tier": "B",
             "score": 80.4,
             "tvlUsd": 6405394,
-            "scoredAt": "2026-11-23",
+            "scoredAt": "2026-11-24",
             "url": "https://app.pigi.finance/vault/3"
           }
         ],
@@ -233,7 +233,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T03:22:07.511Z"
+      "since": "2026-11-24T15:57:55.457Z"
     }
   }
 }

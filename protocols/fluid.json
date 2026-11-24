@@ -7,7 +7,7 @@
       "since": "2026-10-15T20:22:38.297Z"
     },
     "defipunkd": {
-      "value": "Control: unknown · Ability to exit: unknown · Autonomy: unknown · Open Access: unknown · Verifiability: tentative green",
+      "value": "Control: unknown · Ability to exit: unknown · Autonomy: unknown · Open Access: unknown · Verifiability: green (1 tentative)",
       "summary": "Fluid DEX is a decentralized exchange built by Instadapp (rebranded from Instadapp in late 2024) on top of the Fluid Liquidity Layer — a unified liquidity primitive shared across lending, vaulting, and DEX protocols. Users swap tokens through DEX pools (type T1) deployed via CREATE opcode and identified by integer dexId; a DexLite variant offers a simplified single-contract swap interface. The protocol's key innovation is that vault collateral and debt positions simultaneously serve as DEX liquidity, maximising capital efficiency across all three protocol types.",
       "details": [
         {
@@ -59,7 +59,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-10-17T20:20:41.256Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "defiscan": {
       "status": "none",
@@ -77,8 +77,8 @@
         },
         {
           "name": "Liveness",
-          "value": "99",
-          "description": "tvl_change_7d_pct: -0.24"
+          "value": "100",
+          "description": "tvl_change_7d_pct: -0.19"
         },
         {
           "name": "Security",
@@ -105,7 +105,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T03:22:07.511Z"
+      "since": "2026-11-24T15:57:55.457Z"
     },
     "philidor": {
       "status": "none",
@@ -132,7 +132,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: fluid. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -144,7 +144,7 @@
             "tier": "C",
             "score": 55,
             "tvlUsd": 147443003,
-            "scoredAt": "2026-11-23",
+            "scoredAt": "2026-11-24",
             "url": "https://app.pigi.finance/vault/9"
           },
           {
@@ -154,7 +154,7 @@
             "tier": "F",
             "score": 25,
             "tvlUsd": 39048815,
-            "scoredAt": "2026-11-23",
+            "scoredAt": "2026-11-24",
             "url": "https://app.pigi.finance/vault/58"
           },
           {
@@ -164,7 +164,7 @@
             "tier": "C",
             "score": 65,
             "tvlUsd": 20817465,
-            "scoredAt": "2026-11-23",
+            "scoredAt": "2026-11-24",
             "url": "https://app.pigi.finance/vault/7"
           }
         ],
@@ -173,7 +173,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T03:22:07.511Z"
+      "since": "2026-11-24T15:57:55.457Z"
     }
   }
 }
