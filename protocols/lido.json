@@ -162,7 +162,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "50 · yellow",
+      "value": "45 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -172,8 +172,8 @@
         },
         {
           "name": "Liveness",
-          "value": "100",
-          "description": "tvl_change_7d_pct: -0.01"
+          "value": "84",
+          "description": "tvl_change_7d_pct: -6.49"
         },
         {
           "name": "Security",
@@ -181,18 +181,18 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "url": "https://defiscoring.com/protocols/lido",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "50"
+            "value": "45"
           },
           {
             "name": "Band",
-            "value": "yellow"
+            "value": "red"
           }
         ],
         "text": [
@@ -200,7 +200,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     },
     "philidor": {
       "status": "none",
@@ -218,8 +218,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "79.83",
-          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($20.59B in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 2. 1 vault(s) left out as stale (no rating for over a week)."
+          "value": "79.82",
+          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into lido-protocol, weighted by their 30-day average TVL ($20.38B in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 2. 1 vault(s) left out as stale (no rating for over a week)."
         },
         {
           "name": "Weights",
@@ -238,7 +238,7 @@
             "curator": null,
             "tier": "B",
             "score": 80.9,
-            "tvlUsd": 20212441203,
+            "tvlUsd": 20010336178,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/13"
           },
@@ -248,7 +248,7 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 188233172,
+            "tvlUsd": 186948361,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/100010"
           },
@@ -258,7 +258,7 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 186709959,
+            "tvlUsd": 185436847,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/100009"
           }
@@ -268,7 +268,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     }
   }
 }

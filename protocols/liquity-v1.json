@@ -147,7 +147,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "42 · red",
+      "value": "38 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -157,8 +157,8 @@
         },
         {
           "name": "Liveness",
-          "value": "72",
-          "description": "tvl_change_7d_pct: -1.11"
+          "value": "60",
+          "description": "tvl_change_7d_pct: -5.84"
         },
         {
           "name": "Security",
@@ -166,14 +166,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "url": "https://defiscoring.com/protocols/liquity-v1",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "42"
+            "value": "38"
           },
           {
             "name": "Band",
@@ -185,7 +185,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     },
     "philidor": {
       "status": "none",
@@ -223,7 +223,7 @@
             "curator": null,
             "tier": "B",
             "score": 80.4,
-            "tvlUsd": 6419076,
+            "tvlUsd": 6405394,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/3"
           }
@@ -233,7 +233,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     }
   }
 }

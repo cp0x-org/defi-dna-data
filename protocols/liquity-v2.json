@@ -98,7 +98,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "35 · red",
+      "value": "33 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -108,8 +108,8 @@
         },
         {
           "name": "Liveness",
-          "value": "49",
-          "description": "tvl_change_7d_pct: -10.36"
+          "value": "42",
+          "description": "tvl_change_7d_pct: -13.35"
         },
         {
           "name": "Security",
@@ -117,14 +117,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "url": "https://defiscoring.com/protocols/liquity-v2",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "35"
+            "value": "33"
           },
           {
             "name": "Band",
@@ -136,7 +136,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     },
     "philidor": {
       "status": "none",
@@ -155,7 +155,7 @@
         {
           "name": "Vault score, TVL-weighted",
           "value": "73.6",
-          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v2-protocol, weighted by their 30-day average TVL ($8.5M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
+          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v2-protocol, weighted by their 30-day average TVL ($8.4M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
         },
         {
           "name": "Weights",
@@ -174,7 +174,7 @@
             "curator": null,
             "tier": "B",
             "score": 73.6,
-            "tvlUsd": 8510474,
+            "tvlUsd": 8448268,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/42"
           }
@@ -184,7 +184,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     }
   }
 }

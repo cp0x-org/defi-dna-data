@@ -77,8 +77,8 @@
         },
         {
           "name": "Liveness",
-          "value": "100",
-          "description": "tvl_change_7d_pct: 2.68"
+          "value": "99",
+          "description": "tvl_change_7d_pct: -0.24"
         },
         {
           "name": "Security",
@@ -86,7 +86,7 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "url": "https://defiscoring.com/protocols/fluid",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
@@ -105,7 +105,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     },
     "philidor": {
       "status": "none",
@@ -113,7 +113,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "D 50.15/100",
+      "value": "D 50.14/100",
       "summary": "Fluid (Instadapp) — unified liquidity layer / lending / DEX / vaults ($1.01B, Ethereum-led)",
       "details": [
         {
@@ -123,8 +123,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "50.38",
-          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into fluid, weighted by their 30-day average TVL ($208.6M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 0, F 1."
+          "value": "50.35",
+          "description": "The mean of pigi’s latest scores of the 3 rated Ethereum vault(s) that deposit into fluid, weighted by their 30-day average TVL ($207.3M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 0, F 1."
         },
         {
           "name": "Weights",
@@ -143,7 +143,7 @@
             "curator": null,
             "tier": "C",
             "score": 55,
-            "tvlUsd": 148512356,
+            "tvlUsd": 147443003,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/9"
           },
@@ -153,7 +153,7 @@
             "curator": null,
             "tier": "F",
             "score": 25,
-            "tvlUsd": 39106552,
+            "tvlUsd": 39048815,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/58"
           },
@@ -163,7 +163,7 @@
             "curator": null,
             "tier": "C",
             "score": 65,
-            "tvlUsd": 20979181,
+            "tvlUsd": 20817465,
             "scoredAt": "2026-11-23",
             "url": "https://app.pigi.finance/vault/7"
           }
@@ -173,7 +173,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-23T16:06:38.383Z"
+      "since": "2026-11-24T03:22:07.511Z"
     }
   }
 }
