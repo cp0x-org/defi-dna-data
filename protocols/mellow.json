@@ -28,7 +28,7 @@
         {
           "name": "Liveness",
           "value": "58",
-          "description": "tvl_change_7d_pct: -6.7"
+          "description": "tvl_change_7d_pct: -6.96"
         },
         {
           "name": "Security",
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-25T01:27:25.986Z"
+      "since": "2026-11-25T15:44:17.531Z"
     },
     "philidor": {
       "status": "none",
@@ -63,7 +63,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "F 37.33/100",
+      "value": "F 37.34/100",
       "summary": "Mellow Core — flexible-vaults framework: upgradeable per-vault proxies, Merkle-gated curator, report-priced shares",
       "details": [
         {
@@ -73,8 +73,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "22.83",
-          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into mellow-core, weighted by their 30-day average TVL ($487.0M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 0, D 0, F 5. 1 vault(s) left out as stale (no rating for over a week)."
+          "value": "22.85",
+          "description": "The mean of pigi’s latest scores of the 6 rated Ethereum vault(s) that deposit into mellow-core, weighted by their 30-day average TVL ($484.9M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 0, D 1, F 5."
         },
         {
           "name": "Weights",
@@ -82,7 +82,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-24",
+      "updatedAt": "2026-11-25",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: mellow-core. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -93,8 +93,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 186948361,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 185640132,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/100010"
           },
           {
@@ -103,8 +103,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 185436847,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 184154221,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/100009"
           },
           {
@@ -113,8 +113,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 57523336,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 57685845,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/100011"
           },
           {
@@ -123,8 +123,8 @@
             "curator": null,
             "tier": "F",
             "score": 30,
-            "tvlUsd": 50555619,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 51150248,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/100012"
           },
           {
@@ -133,9 +133,19 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 6496835,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 6127896,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/100013"
+          },
+          {
+            "name": "Theoriq AlphaVault ETH",
+            "version": "Mellow",
+            "curator": null,
+            "tier": "D",
+            "score": 43.4,
+            "tvlUsd": 176203,
+            "scoredAt": "2026-11-25",
+            "url": "https://app.pigi.finance/vault/100016"
           }
         ],
         "text": [
@@ -143,7 +153,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T15:57:55.457Z"
+      "since": "2026-11-25T15:44:17.531Z"
     }
   }
 }

@@ -86,7 +86,7 @@
         {
           "name": "Liveness",
           "value": "75",
-          "description": "tvl_change_7d_pct: 32.88"
+          "description": "tvl_change_7d_pct: 32.44"
         },
         {
           "name": "Security",
@@ -113,7 +113,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-25T01:27:25.986Z"
+      "since": "2026-11-25T15:44:17.531Z"
     },
     "philidor": {
       "value": "39 vaults rated",
@@ -425,8 +425,8 @@
             "name": "Uniswap V4 eUSD/USDC 0%",
             "version": "v4",
             "curator": null,
-            "tier": "Prime",
-            "score": 8.43,
+            "tier": "Core",
+            "score": 7.9,
             "tvlUsd": 1000055,
             "scoredAt": "2026-11-25",
             "url": "https://analytics.philidor.io/vault/ethereum/0xdda3c47e70fb237fb50e3856169019bf26fe4c09d7b6618c4f9d6e2423903870"
@@ -436,7 +436,7 @@
             "version": "v4",
             "curator": null,
             "tier": "Prime",
-            "score": 8.51,
+            "score": 8.52,
             "tvlUsd": 797170,
             "scoredAt": "2026-11-25",
             "url": "https://analytics.philidor.io/vault/ethereum/0x50ae33c238824aa1937d5d9f1766c487bca39b548f8d957994e8357eeeca3280"
@@ -594,10 +594,10 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-25T01:27:25.986Z"
+      "since": "2026-11-25T15:44:17.531Z"
     },
     "pigi": {
-      "value": "B 78.96/100",
+      "value": "B 78.98/100",
       "summary": "Uniswap v4 — the Ethereum PoolManager singleton; hookless pools only",
       "details": [
         {
@@ -607,8 +607,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "75.89",
-          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into uniswap-v4, weighted by their 30-day average TVL ($224.7M in all). Weight in the score: 0.4. Vaults by band: A 0, B 3, C 2, D 0, F 0."
+          "value": "75.96",
+          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into uniswap-v4, weighted by their 30-day average TVL ($223.5M in all). Weight in the score: 0.4. Vaults by band: A 0, B 3, C 2, D 0, F 0."
         },
         {
           "name": "Weights",
@@ -616,7 +616,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-24",
+      "updatedAt": "2026-11-25",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: uniswap-v4. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -627,8 +627,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.9,
-            "tvlUsd": 100119153,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 100119144,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/120000"
           },
           {
@@ -637,8 +637,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.5,
-            "tvlUsd": 54532976,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 54699795,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/120001"
           },
           {
@@ -647,8 +647,8 @@
             "curator": null,
             "tier": "B",
             "score": 73.4,
-            "tvlUsd": 38652139,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 38652105,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/120004"
           },
           {
@@ -657,8 +657,8 @@
             "curator": null,
             "tier": "C",
             "score": 63.13,
-            "tvlUsd": 16418182,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 15576060,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/120002"
           },
           {
@@ -667,8 +667,8 @@
             "curator": null,
             "tier": "C",
             "score": 66.63,
-            "tvlUsd": 15002853,
-            "scoredAt": "2026-11-24",
+            "tvlUsd": 14502699,
+            "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/120003"
           }
         ],
@@ -677,7 +677,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-24T15:57:55.457Z"
+      "since": "2026-11-25T15:44:17.531Z"
     }
   }
 }
