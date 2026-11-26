@@ -86,7 +86,7 @@
         {
           "name": "Liveness",
           "value": "75",
-          "description": "tvl_change_7d_pct: 34.16"
+          "description": "tvl_change_7d_pct: 29.69"
         },
         {
           "name": "Security",
@@ -113,7 +113,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-26T01:01:22.932Z"
+      "since": "2026-11-26T15:25:35.563Z"
     },
     "philidor": {
       "value": "39 vaults rated",
@@ -597,7 +597,7 @@
       "since": "2026-11-26T01:01:22.932Z"
     },
     "pigi": {
-      "value": "B 78.98/100",
+      "value": "B 79.01/100",
       "summary": "Uniswap v4 — the Ethereum PoolManager singleton; hookless pools only",
       "details": [
         {
@@ -607,8 +607,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "75.96",
-          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into uniswap-v4, weighted by their 30-day average TVL ($223.5M in all). Weight in the score: 0.4. Vaults by band: A 0, B 3, C 2, D 0, F 0."
+          "value": "76.03",
+          "description": "The mean of pigi’s latest scores of the 5 rated Ethereum vault(s) that deposit into uniswap-v4, weighted by their 30-day average TVL ($222.4M in all). Weight in the score: 0.4. Vaults by band: A 0, B 3, C 2, D 0, F 0."
         },
         {
           "name": "Weights",
@@ -616,7 +616,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-25",
+      "updatedAt": "2026-11-26",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: uniswap-v4. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -627,8 +627,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.9,
-            "tvlUsd": 100119144,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 100119135,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/120000"
           },
           {
@@ -637,8 +637,8 @@
             "curator": null,
             "tier": "B",
             "score": 78.5,
-            "tvlUsd": 54699795,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 54866658,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/120001"
           },
           {
@@ -647,8 +647,8 @@
             "curator": null,
             "tier": "B",
             "score": 73.4,
-            "tvlUsd": 38652105,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 38652093,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/120004"
           },
           {
@@ -657,8 +657,8 @@
             "curator": null,
             "tier": "C",
             "score": 63.13,
-            "tvlUsd": 15576060,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 14730939,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/120002"
           },
           {
@@ -667,8 +667,8 @@
             "curator": null,
             "tier": "C",
             "score": 66.63,
-            "tvlUsd": 14502699,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 14002263,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/120003"
           }
         ],
@@ -677,7 +677,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-25T15:44:17.531Z"
+      "since": "2026-11-26T15:25:35.563Z"
     }
   }
 }

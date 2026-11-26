@@ -17,7 +17,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "28 · red",
+      "value": "17 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -27,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "93",
-          "description": "tvl_change_7d_pct: -2.7"
+          "value": "55",
+          "description": "tvl_change_7d_pct: -17.96"
         },
         {
           "name": "Security",
@@ -43,7 +43,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "28"
+            "value": "17"
           },
           {
             "name": "Band",
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-26T01:01:22.932Z"
+      "since": "2026-11-26T15:25:35.563Z"
     },
     "philidor": {
       "status": "none",
@@ -63,7 +63,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "C 59.03/100",
+      "value": "C 59.05/100",
       "summary": "Euler v2 — EVK framework, GenericFactory & EVC (all chains)",
       "details": [
         {
@@ -73,8 +73,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "38.08",
-          "description": "The mean of pigi’s latest scores of the 17 rated Ethereum vault(s) that deposit into euler-v2, weighted by their 30-day average TVL ($17.9M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 9, F 6. 3 vault(s) left out as stale (no rating for over a week)."
+          "value": "38.13",
+          "description": "The mean of pigi’s latest scores of the 17 rated Ethereum vault(s) that deposit into euler-v2, weighted by their 30-day average TVL ($17.8M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 9, F 6. 3 vault(s) left out as stale (no rating for over a week)."
         },
         {
           "name": "Weights",
@@ -82,7 +82,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-25",
+      "updatedAt": "2026-11-26",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: euler-v2. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -93,8 +93,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 4004855,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 3975811,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2006"
           },
           {
@@ -103,8 +103,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 2761009,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 2728269,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/30013"
           },
           {
@@ -113,8 +113,8 @@
             "curator": null,
             "tier": "D",
             "score": 47,
-            "tvlUsd": 2620428,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 2620647,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/30011"
           },
           {
@@ -123,8 +123,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 1922672,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 1917601,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2009"
           },
           {
@@ -133,8 +133,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 1547799,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 1516169,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/30015"
           },
           {
@@ -143,8 +143,8 @@
             "curator": null,
             "tier": "F",
             "score": 17,
-            "tvlUsd": 1483469,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 1484376,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2015"
           },
           {
@@ -153,8 +153,8 @@
             "curator": null,
             "tier": "C",
             "score": 58,
-            "tvlUsd": 784697,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 784644,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2002"
           },
           {
@@ -163,8 +163,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 750519,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 726330,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2013"
           },
           {
@@ -172,9 +172,9 @@
             "version": "Euler",
             "curator": null,
             "tier": "D",
-            "score": 49.1,
-            "tvlUsd": 467951,
-            "scoredAt": "2026-11-25",
+            "score": 51,
+            "tvlUsd": 464486,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/30030"
           },
           {
@@ -183,8 +183,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 430306,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 428250,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2017"
           },
           {
@@ -193,8 +193,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 324737,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 324211,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2003"
           },
           {
@@ -203,8 +203,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 241451,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 238976,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/30000"
           },
           {
@@ -213,8 +213,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 188159,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 188079,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/30001"
           },
           {
@@ -223,8 +223,8 @@
             "curator": null,
             "tier": "F",
             "score": 22,
-            "tvlUsd": 173318,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 173021,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/30002"
           },
           {
@@ -233,8 +233,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 145260,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 145378,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/200208"
           },
           {
@@ -243,8 +243,8 @@
             "curator": null,
             "tier": "D",
             "score": 51,
-            "tvlUsd": 57939,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 57760,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2010"
           },
           {
@@ -253,8 +253,8 @@
             "curator": null,
             "tier": "C",
             "score": 58,
-            "tvlUsd": 21076,
-            "scoredAt": "2026-11-25",
+            "tvlUsd": 21079,
+            "scoredAt": "2026-11-26",
             "url": "https://app.pigi.finance/vault/2016"
           }
         ],
@@ -263,7 +263,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-26T01:01:22.932Z"
+      "since": "2026-11-26T15:25:35.563Z"
     }
   }
 }
