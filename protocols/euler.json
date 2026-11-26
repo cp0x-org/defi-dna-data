@@ -17,7 +17,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "defiscoring": {
-      "value": "27 · red",
+      "value": "28 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -27,8 +27,8 @@
         },
         {
           "name": "Liveness",
-          "value": "90",
-          "description": "tvl_change_7d_pct: -3.91"
+          "value": "93",
+          "description": "tvl_change_7d_pct: -2.7"
         },
         {
           "name": "Security",
@@ -36,14 +36,14 @@
           "description": "Source code unavailable · real: false"
         }
       ],
-      "updatedAt": "2026-11-25",
+      "updatedAt": "2026-11-26",
       "url": "https://defiscoring.com/protocols/euler",
       "note": "Pillars marked real: false — Security (Source code unavailable). Sources named by DeFi Scoring: defillama.",
       "extra": {
         "facts": [
           {
             "name": "Score",
-            "value": "27"
+            "value": "28"
           },
           {
             "name": "Band",
@@ -55,7 +55,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-25T15:44:17.531Z"
+      "since": "2026-11-26T01:01:22.932Z"
     },
     "philidor": {
       "status": "none",
@@ -63,7 +63,7 @@
       "since": "2026-10-11T16:59:48.502Z"
     },
     "pigi": {
-      "value": "C 59.04/100",
+      "value": "C 59.03/100",
       "summary": "Euler v2 — EVK framework, GenericFactory & EVC (all chains)",
       "details": [
         {
@@ -73,8 +73,8 @@
         },
         {
           "name": "Vault score, TVL-weighted",
-          "value": "38.1",
-          "description": "The mean of pigi’s latest scores of the 18 rated Ethereum vault(s) that deposit into euler-v2, weighted by their 30-day average TVL ($17.9M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 3, D 9, F 6. 2 vault(s) left out as stale (no rating for over a week)."
+          "value": "38.08",
+          "description": "The mean of pigi’s latest scores of the 17 rated Ethereum vault(s) that deposit into euler-v2, weighted by their 30-day average TVL ($17.9M in all). Weight in the score: 0.4. Vaults by band: A 0, B 0, C 2, D 9, F 6. 3 vault(s) left out as stale (no rating for over a week)."
         },
         {
           "name": "Weights",
@@ -256,16 +256,6 @@
             "tvlUsd": 21076,
             "scoredAt": "2026-11-25",
             "url": "https://app.pigi.finance/vault/2016"
-          },
-          {
-            "name": "EVK Vault eUSDC-45 (Ethereum Mainnet)",
-            "version": "Euler",
-            "curator": null,
-            "tier": "C",
-            "score": 58,
-            "tvlUsd": 18697,
-            "scoredAt": "2026-11-18",
-            "url": "https://app.pigi.finance/vault/2004"
           }
         ],
         "text": [
@@ -273,7 +263,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-25T15:44:17.531Z"
+      "since": "2026-11-26T01:01:22.932Z"
     }
   }
 }
