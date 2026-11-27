@@ -147,7 +147,7 @@
       "since": "2026-11-18T23:25:44.696Z"
     },
     "defiscoring": {
-      "value": "39 · red",
+      "value": "43 · red",
       "summary": "S = 0.4*Trust + 0.3*Liveness + 0.3*Security",
       "details": [
         {
@@ -157,8 +157,8 @@
         },
         {
           "name": "Liveness",
-          "value": "63",
-          "description": "tvl_change_7d_pct: -4.79"
+          "value": "75",
+          "description": "tvl_change_7d_pct: 5.48"
         },
         {
           "name": "Security",
@@ -173,7 +173,7 @@
         "facts": [
           {
             "name": "Score",
-            "value": "39"
+            "value": "43"
           },
           {
             "name": "Band",
@@ -185,7 +185,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-27T01:02:28.590Z"
+      "since": "2026-11-27T15:12:29.722Z"
     },
     "philidor": {
       "status": "none",
@@ -204,7 +204,7 @@
         {
           "name": "Vault score, TVL-weighted",
           "value": "80.4",
-          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v1-protocol, weighted by their 30-day average TVL ($6.4M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
+          "description": "The mean of pigi’s latest scores of the 1 rated Ethereum vault(s) that deposit into liquity-v1-protocol, weighted by their 30-day average TVL ($6.3M in all). Weight in the score: 0.4. Vaults by band: A 0, B 1, C 0, D 0, F 0."
         },
         {
           "name": "Weights",
@@ -212,7 +212,7 @@
           "description": "pigi’s fixed formula: score = 0.6 × node rating + 0.4 × vault score. With no rated vault the node rating stands alone."
         }
       ],
-      "updatedAt": "2026-11-26",
+      "updatedAt": "2026-11-27",
       "url": "https://app.pigi.finance/defi-api-docs#api-v1-protocols-node-id",
       "note": "Headline: liquity-v1-protocol. Vault score counts Ethereum vaults only.",
       "extra": {
@@ -223,8 +223,8 @@
             "curator": null,
             "tier": "B",
             "score": 80.4,
-            "tvlUsd": 6367255,
-            "scoredAt": "2026-11-26",
+            "tvlUsd": 6342837,
+            "scoredAt": "2026-11-27",
             "url": "https://app.pigi.finance/vault/3"
           }
         ],
@@ -233,7 +233,7 @@
         ]
       },
       "status": "ok",
-      "since": "2026-11-26T15:25:35.563Z"
+      "since": "2026-11-27T15:12:29.722Z"
     }
   }
 }
